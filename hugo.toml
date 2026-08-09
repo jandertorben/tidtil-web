@@ -33,6 +33,5 @@ disableKinds = ["taxonomy", "term"]
 
 [params]
   # Kontakt-Adresse für Support & Datenschutz.
-  # TODO: vor der App-Store-Einreichung durch eine echte Adresse ersetzen.
-  email = "support@example.com"
+  email = "torbenjander@icloud.com"
   appStoreURL = ""   # sobald die App live ist, hier den App-Store-Link eintragen
