@@ -11,7 +11,6 @@
       <p class="hero-sub">{{ $p.hero_sub }}</p>
       <p class="hero-badge">{{ $p.hero_note }}</p>
     </div>
-
     <div class="hero-art">
       <div class="phone">
         <img src="{{ "img/screen-detail.png" | relURL }}" alt="{{ i18n "shot_alt_detail" }}" loading="eager" width="300" height="652">
@@ -20,38 +19,22 @@
   </div>
 </section>
 
-<section id="features" class="features">
+<section id="features" class="rows">
   <div class="wrap">
-    <h2 class="section-title">{{ $p.features_title }}</h2>
-    <div class="feature-grid">
-      {{ range $p.features }}
-      <div class="feature">
-        <div class="feature-icon">{{ .icon }}</div>
-        <h3>{{ .title }}</h3>
-        <p>{{ .text }}</p>
+    {{ range $i, $row := $p.rows }}
+    <div class="row-item {{ if eq (mod $i 2) 1 }}reverse{{ end }}">
+      <div class="row-art">
+        <div class="phone phone-sm">
+          <img src="{{ $row.image | relURL }}" alt="{{ $row.alt }}" loading="lazy" width="240" height="522">
+        </div>
       </div>
-      {{ end }}
+      <div class="row-copy">
+        <p class="kicker">{{ $row.kicker }}</p>
+        <h2 class="row-title">{{ $row.title }}</h2>
+        <p class="row-text">{{ $row.text }}</p>
+      </div>
     </div>
-  </div>
-</section>
-
-<section class="screens">
-  <div class="wrap">
-    <h2 class="section-title">{{ i18n "screens_title" }}</h2>
-    <div class="screen-grid">
-      <figure class="screen-item">
-        <div class="phone phone-sm"><img src="{{ "img/screen-neuer-termin.png" | relURL }}" alt="{{ i18n "shot_alt_new" }}" loading="lazy" width="240" height="522"></div>
-        <figcaption>{{ i18n "screens_cap1" }}</figcaption>
-      </figure>
-      <figure class="screen-item">
-        <div class="phone phone-sm"><img src="{{ "img/screen-detail.png" | relURL }}" alt="{{ i18n "shot_alt_detail" }}" loading="lazy" width="240" height="522"></div>
-        <figcaption>{{ i18n "screens_cap2" }}</figcaption>
-      </figure>
-      <figure class="screen-item">
-        <div class="phone phone-sm"><img src="{{ "img/screen-gut-zu-wissen.png" | relURL }}" alt="{{ i18n "shot_alt_help" }}" loading="lazy" width="240" height="522"></div>
-        <figcaption>{{ i18n "screens_cap3" }}</figcaption>
-      </figure>
-    </div>
+    {{ end }}
   </div>
 </section>
 
@@ -74,6 +57,22 @@
     <p class="sync-free">{{ $p.sync_free }}</p>
     <p class="sync-text">{{ $p.sync_text }}</p>
     <p class="sync-note">{{ $p.sync_note }}</p>
+  </div>
+</section>
+{{ end }}
+
+{{ with $p.faq }}
+<section class="faq">
+  <div class="wrap wrap-narrow">
+    <h2 class="section-title">{{ $p.faq_title }}</h2>
+    <div class="faq-list">
+      {{ range . }}
+      <details class="faq-item">
+        <summary>{{ .q }}</summary>
+        <p>{{ .a }}</p>
+      </details>
+      {{ end }}
+    </div>
   </div>
 </section>
 {{ end }}
