@@ -1,0 +1,63 @@
+{{ define "main" }}
+{{ $p := .Params }}
+
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <p class="kicker">{{ $p.hero_kicker }}</p>
+      <h1 class="hero-title">
+        {{ $p.hero_title }} <span class="script">{{ $p.hero_script }}</span>
+      </h1>
+      <p class="hero-sub">{{ $p.hero_sub }}</p>
+      <p class="hero-badge">{{ $p.hero_note }}</p>
+    </div>
+
+    <div class="hero-art" aria-hidden="true">
+      <div class="phone">
+        <div class="phone-screen">
+          <p class="ps-day">{{ i18n "mock_today" }}</p>
+          <p class="ps-date">9. {{ i18n "mock_month" }}</p>
+          <div class="ps-hero">
+            <span>{{ $p.hero_title }} <em class="script">{{ $p.hero_script }}</em></span>
+          </div>
+          <div class="ps-card"><span class="dot"></span>{{ i18n "mock_event1" }}</div>
+          <div class="ps-card"><span class="dot alt"></span>{{ i18n "mock_event2" }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="features" class="features">
+  <div class="wrap">
+    <h2 class="section-title">{{ $p.features_title }}</h2>
+    <div class="feature-grid">
+      {{ range $p.features }}
+      <div class="feature">
+        <div class="feature-icon">{{ .icon }}</div>
+        <h3>{{ .title }}</h3>
+        <p>{{ .text }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="privacy-band">
+  <div class="wrap privacy-inner">
+    <div class="privacy-mark" aria-hidden="true">🔒</div>
+    <div>
+      <h2 class="section-title">{{ $p.privacy_title }}</h2>
+      <p>{{ $p.privacy_text }}</p>
+      <a class="text-link" href="{{ (.Site.GetPage "privacy").RelPermalink }}">{{ i18n "nav_privacy" }} →</a>
+    </div>
+  </div>
+</section>
+
+<section class="closing">
+  <div class="wrap closing-inner">
+    <h2 class="closing-title">{{ $p.closing_title }}</h2>
+    <p>{{ $p.closing_text }}</p>
+  </div>
+</section>
+{{ end }}

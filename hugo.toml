@@ -1,0 +1,38 @@
+# TidTil – Website (Hugo)
+# GitHub-Pages-Projektseite: Basis-URL enthält den Repo-Pfad.
+baseURL = "https://jandertorben.github.io/tidtil-web/"
+title = "TidTil"
+
+# Mehrsprachig: Deutsch ist Standard (ohne URL-Präfix), en/da bekommen /en/ bzw. /da/.
+defaultContentLanguage = "de"
+defaultContentLanguageInSubdir = false
+
+# Übersetzungen werden über den Dateinamen zugeordnet (_index.de.md, _index.en.md …).
+enableEmoji = true
+
+# Es gibt keine Tags/Kategorien – die Taxonomie-Templates spart das.
+disableKinds = ["taxonomy", "term"]
+
+[languages]
+  [languages.de]
+    label = "Deutsch"
+    locale = "de-DE"
+    weight = 1
+  [languages.en]
+    label = "English"
+    locale = "en"
+    weight = 2
+  [languages.da]
+    label = "Dansk"
+    locale = "da"
+    weight = 3
+
+[markup.goldmark.renderer]
+  # Erlaubt gezieltes HTML in den Rechtstexten (z. B. Links, Hervorhebungen).
+  unsafe = true
+
+[params]
+  # Kontakt-Adresse für Support & Datenschutz.
+  # TODO: vor der App-Store-Einreichung durch eine echte Adresse ersetzen.
+  email = "support@example.com"
+  appStoreURL = ""   # sobald die App live ist, hier den App-Store-Link eintragen
