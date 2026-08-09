@@ -134,6 +134,24 @@ h1, h2, h3 {
 .privacy-band p { color: var(--ink-soft); max-width: 60ch; margin: 10px 0 14px; }
 .text-link { font-weight: 500; }
 
+/* ---------- Sync / geplantes Abo ---------- */
+.sync { padding: clamp(44px, 7vw, 84px) 0; }
+.sync-inner {
+  max-width: 640px; margin-inline: auto; text-align: center;
+  background: color-mix(in srgb, var(--accent) 9%, var(--surface));
+  border: 1px solid color-mix(in srgb, var(--accent) 24%, var(--line));
+  border-radius: var(--radius); padding: clamp(28px, 5vw, 44px);
+}
+.badge {
+  display: inline-block; text-transform: uppercase; letter-spacing: 2px;
+  font-size: 0.68rem; font-weight: 600; color: var(--on-accent);
+  background: var(--accent); padding: 5px 12px; border-radius: 999px; margin-bottom: 16px;
+}
+.sync-title { font-size: clamp(2rem, 4.5vw, 2.8rem); margin: 0 0 12px; }
+.sync-free { font-weight: 500; color: var(--ink); font-size: 1.1rem; margin: 0 0 10px; }
+.sync-text { color: var(--ink-soft); max-width: 52ch; margin: 0 auto 16px; }
+.sync-note { font-size: 0.85rem; color: var(--ink-soft); font-style: italic; margin: 0; }
+
 /* ---------- Closing ---------- */
 .closing { padding: clamp(50px, 8vw, 96px) 0; text-align: center; }
 .closing-title { font-size: clamp(2.2rem, 5vw, 3.2rem); margin: 0 0 12px; }

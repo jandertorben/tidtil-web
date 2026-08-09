@@ -66,6 +66,18 @@
   </div>
 </section>
 
+{{ with $p.sync_title }}
+<section class="sync">
+  <div class="wrap sync-inner">
+    <span class="badge">{{ $p.sync_badge }}</span>
+    <h2 class="sync-title">{{ . }}</h2>
+    <p class="sync-free">{{ $p.sync_free }}</p>
+    <p class="sync-text">{{ $p.sync_text }}</p>
+    <p class="sync-note">{{ $p.sync_note }}</p>
+  </div>
+</section>
+{{ end }}
+
 <section class="closing">
   <div class="wrap closing-inner">
     <h2 class="closing-title">{{ $p.closing_title }}</h2>
