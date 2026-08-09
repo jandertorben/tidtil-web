@@ -94,24 +94,25 @@ h1, h2, h3 {
   padding: 9px 16px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface);
 }
 
-/* ---------- Phone mockup ---------- */
+/* ---------- Phone mockup (echtes Screenshot im Rahmen) ---------- */
 .hero-art { display: flex; justify-content: center; }
 .phone {
-  width: 250px; aspect-ratio: 9 / 19; background: var(--bg);
-  border: 8px solid color-mix(in srgb, var(--serif) 88%, #000); border-radius: 40px;
-  box-shadow: var(--shadow); padding: 18px 16px; overflow: hidden;
+  width: 260px; background: #0d0c0a;
+  border: 9px solid color-mix(in srgb, var(--serif) 90%, #000);
+  border-radius: 42px; box-shadow: var(--shadow); overflow: hidden; line-height: 0;
 }
-.phone-screen { height: 100%; }
-.ps-day { text-transform: uppercase; letter-spacing: 2px; font-size: 0.6rem; color: var(--accent); margin: 6px 0 2px; }
-.ps-date { font-family: "Cormorant Garamond", serif; font-size: 1.9rem; color: var(--serif); margin: 0 0 14px; }
-.ps-hero { font-family: "Cormorant Garamond", serif; font-size: 1.5rem; color: var(--serif); margin-bottom: 18px; }
-.ps-hero .script { font-size: 1.4rem; }
-.ps-card {
-  display: flex; align-items: center; gap: 8px; background: var(--surface);
-  border-radius: 12px; padding: 10px 12px; margin-bottom: 8px; font-size: 0.78rem; color: var(--ink);
+.phone img { display: block; width: 100%; height: auto; border-radius: 33px; }
+.phone-sm { width: 200px; border-width: 7px; border-radius: 34px; }
+.phone-sm img { border-radius: 27px; }
+
+/* ---------- Screenshots-Galerie ---------- */
+.screens { padding: clamp(20px, 3vw, 40px) 0 clamp(44px, 7vw, 80px); }
+.screen-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 34px; justify-items: center; }
+.screen-item { margin: 0; text-align: center; }
+.screen-item figcaption {
+  margin-top: 16px; color: var(--ink-soft); font-size: 0.95rem;
+  font-family: "Cormorant Garamond", serif; font-style: italic; font-size: 1.2rem;
 }
-.ps-card .dot { width: 8px; height: 8px; border-radius: 999px; background: var(--accent); flex: none; }
-.ps-card .dot.alt { background: #7c7fd0; }
 
 /* ---------- Features ---------- */
 .features { padding: clamp(40px, 7vw, 80px) 0; }
@@ -164,6 +165,7 @@ h1, h2, h3 {
   .hero-inner { grid-template-columns: 1fr; gap: 36px; }
   .hero-art { order: -1; }
   .feature-grid { grid-template-columns: 1fr; }
+  .screen-grid { grid-template-columns: 1fr; gap: 40px; }
   .site-nav { gap: 14px; }
   .site-nav a:not(.lang) { display: none; }
 }

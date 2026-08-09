@@ -12,17 +12,9 @@
       <p class="hero-badge">{{ $p.hero_note }}</p>
     </div>
 
-    <div class="hero-art" aria-hidden="true">
+    <div class="hero-art">
       <div class="phone">
-        <div class="phone-screen">
-          <p class="ps-day">{{ i18n "mock_today" }}</p>
-          <p class="ps-date">9. {{ i18n "mock_month" }}</p>
-          <div class="ps-hero">
-            <span>{{ $p.hero_title }} <em class="script">{{ $p.hero_script }}</em></span>
-          </div>
-          <div class="ps-card"><span class="dot"></span>{{ i18n "mock_event1" }}</div>
-          <div class="ps-card"><span class="dot alt"></span>{{ i18n "mock_event2" }}</div>
-        </div>
+        <img src="{{ "img/screen-detail.png" | relURL }}" alt="{{ i18n "shot_alt_detail" }}" loading="eager" width="300" height="652">
       </div>
     </div>
   </div>
@@ -39,6 +31,26 @@
         <p>{{ .text }}</p>
       </div>
       {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="screens">
+  <div class="wrap">
+    <h2 class="section-title">{{ i18n "screens_title" }}</h2>
+    <div class="screen-grid">
+      <figure class="screen-item">
+        <div class="phone phone-sm"><img src="{{ "img/screen-neuer-termin.png" | relURL }}" alt="{{ i18n "shot_alt_new" }}" loading="lazy" width="240" height="522"></div>
+        <figcaption>{{ i18n "screens_cap1" }}</figcaption>
+      </figure>
+      <figure class="screen-item">
+        <div class="phone phone-sm"><img src="{{ "img/screen-detail.png" | relURL }}" alt="{{ i18n "shot_alt_detail" }}" loading="lazy" width="240" height="522"></div>
+        <figcaption>{{ i18n "screens_cap2" }}</figcaption>
+      </figure>
+      <figure class="screen-item">
+        <div class="phone phone-sm"><img src="{{ "img/screen-gut-zu-wissen.png" | relURL }}" alt="{{ i18n "shot_alt_help" }}" loading="lazy" width="240" height="522"></div>
+        <figcaption>{{ i18n "screens_cap3" }}</figcaption>
+      </figure>
     </div>
   </div>
 </section>
