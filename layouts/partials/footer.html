@@ -4,6 +4,7 @@
     <nav class="footer-nav" aria-label="{{ i18n "nav_label" }}">
       <a href="{{ (.Site.GetPage "privacy").RelPermalink }}">{{ i18n "nav_privacy" }}</a>
       <a href="{{ (.Site.GetPage "support").RelPermalink }}">{{ i18n "nav_support" }}</a>
+      <a href="{{ (.Site.GetPage "impressum").RelPermalink }}">{{ i18n "nav_impressum" }}</a>
       <a href="mailto:{{ .Site.Params.email }}">{{ i18n "nav_contact" }}</a>
     </nav>
     <p class="footer-note">© {{ now.Year }} TidTil · {{ i18n "footer_made" }}</p>

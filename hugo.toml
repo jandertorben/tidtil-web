@@ -35,3 +35,11 @@ disableKinds = ["taxonomy", "term"]
   # Kontakt-Adresse für Support & Datenschutz.
   email = "torbenjander@icloud.com"
   appStoreURL = ""   # sobald die App live ist, hier den App-Store-Link eintragen
+
+  # Impressum-Angaben (§ 5 DDG). PLATZHALTER — vor dem Verkauf/Abo durch echte
+  # Daten ersetzen. Erscheinen ausschließlich auf der Impressum-Seite.
+  legalName  = "[Vor- und Nachname]"
+  legalAddr1 = "[Straße und Hausnummer]"
+  legalAddr2 = "[PLZ und Ort]"
+  legalPhone = "[Telefonnummer]"
+  legalVatId = ""   # USt-IdNr., falls vorhanden (sonst leer lassen)

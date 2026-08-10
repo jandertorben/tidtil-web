@@ -1,0 +1,13 @@
+{{- $p := .Site.Params -}}
+<p>
+{{ $p.legalName }}<br>
+{{ $p.legalAddr1 }}<br>
+{{ $p.legalAddr2 }}
+</p>
+<p>
+{{ i18n "legal_phone_label" }}: {{ $p.legalPhone }}<br>
+{{ i18n "legal_email_label" }}: <a href="mailto:{{ $p.email }}">{{ $p.email }}</a>
+</p>
+{{- with $p.legalVatId }}
+<p>{{ i18n "legal_vat_label" }}: {{ . }}</p>
+{{- end }}

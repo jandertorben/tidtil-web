@@ -21,3 +21,7 @@ shot_alt_new = "Creating an event in TidTil"
 shot_alt_help = "TidTil help page"
 
 shot_alt_home = "TidTil home screen"
+legal_phone_label = "Phone"
+legal_email_label = "Email"
+legal_vat_label = "VAT ID"
+nav_impressum = "Legal notice"

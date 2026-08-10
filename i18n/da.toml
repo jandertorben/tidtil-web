@@ -21,3 +21,7 @@ shot_alt_new = "Oprettelse af en aftale i TidTil"
 shot_alt_help = "TidTil hjælpeside"
 
 shot_alt_home = "TidTil startskærm"
+legal_phone_label = "Telefon"
+legal_email_label = "E-mail"
+legal_vat_label = "Moms-/CVR-nr."
+nav_impressum = "Juridisk info"
