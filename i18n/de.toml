@@ -19,3 +19,5 @@ screens_cap3 = "Ruhig erklärt, wo es nötig ist"
 shot_alt_detail = "TidTil Termin-Detailansicht"
 shot_alt_new = "Termin anlegen in TidTil"
 shot_alt_help = "TidTil Hilfe-Seite"
+
+shot_alt_home = "TidTil Startbildschirm"

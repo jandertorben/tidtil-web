@@ -19,3 +19,5 @@ screens_cap3 = "Calmly explained where needed"
 shot_alt_detail = "TidTil event detail view"
 shot_alt_new = "Creating an event in TidTil"
 shot_alt_help = "TidTil help page"
+
+shot_alt_home = "TidTil home screen"

@@ -19,3 +19,5 @@ screens_cap3 = "Roligt forklaret, hvor det er nødvendigt"
 shot_alt_detail = "TidTil aftale-detaljevisning"
 shot_alt_new = "Oprettelse af en aftale i TidTil"
 shot_alt_help = "TidTil hjælpeside"
+
+shot_alt_home = "TidTil startskærm"
