@@ -36,10 +36,9 @@ disableKinds = ["taxonomy", "term"]
   email = "torbenjander@icloud.com"
   appStoreURL = ""   # sobald die App live ist, hier den App-Store-Link eintragen
 
-  # Impressum-Angaben (§ 5 DDG). PLATZHALTER — vor dem Verkauf/Abo durch echte
-  # Daten ersetzen. Erscheinen ausschließlich auf der Impressum-Seite.
-  legalName  = "[Vor- und Nachname]"
-  legalAddr1 = "[Straße und Hausnummer]"
-  legalAddr2 = "[PLZ und Ort]"
-  legalPhone = "[Telefonnummer]"
+  # Impressum-Angaben (§ 5 DDG). Erscheinen ausschließlich auf der Impressum-Seite.
+  legalName  = "Torben Jander"
+  legalAddr1 = "Arster Landstraße 22"
+  legalAddr2 = "28279 Bremen"
+  legalPhone = "+49 177 2408874"
   legalVatId = ""   # USt-IdNr., falls vorhanden (sonst leer lassen)
