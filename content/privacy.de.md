@@ -23,8 +23,7 @@ Damit TidTil funktioniert, speicherst du selbst folgende Inhalte in der App:
 - **Personen**, die du anlegst (nur der Name) — etwa Kinder ohne eigenes Gerät, denen du Termine zuordnen möchtest
 - **Profildaten** (Name, optionales Profilfoto, optionaler Begrüßungstext)
 
-Diese Inhalte werden **nur** in deiner iCloud gespeichert und – wenn du die
-Familien-Freigabe nutzt – mit den von dir eingeladenen Personen geteilt.
+Diese Inhalte werden **nur** in deiner persönlichen iCloud gespeichert.
 
 ## Wo werden die Daten gespeichert?
 
@@ -33,13 +32,6 @@ Apple-Account. Die Speicherung und Übertragung erfolgt verschlüsselt über App
 Infrastruktur. Es gelten zusätzlich die
 [Datenschutzbestimmungen von Apple](https://www.apple.com/legal/privacy/de-ww/).
 Wir als Entwickler haben **zu keinem Zeitpunkt Zugriff** auf diese Daten.
-
-## Familien-Freigabe
-
-Wenn du deinen Kalender mit Familienmitgliedern teilst, werden die geteilten
-Termine und Personen über Apples CloudKit-Freigabe zwischen den beteiligten
-iCloud-Accounts synchronisiert. Du entscheidest selbst, wen du einlädst, und
-kannst die Freigabe jederzeit beenden.
 
 ## Fotos
 

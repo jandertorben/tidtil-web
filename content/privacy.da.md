@@ -26,8 +26,7 @@ For at TidTil virker, gemmer du selv følgende i appen:
 - **Personer**, du opretter (kun navnet) — f.eks. børn uden egen enhed, som du vil tildele aftaler
 - **Profildata** (navn, valgfrit profilbillede, valgfri velkomsttekst)
 
-Dette indhold gemmes **kun** i din iCloud og – hvis du bruger familiedeling –
-deles med de personer, du har inviteret.
+Dette indhold gemmes **kun** i din personlige iCloud.
 
 ## Hvor gemmes dataene?
 
@@ -35,12 +34,6 @@ Alle data ligger i **Apple iCloud (CloudKit)** under din egen Apple-konto.
 Lagring og overførsel sker krypteret via Apples infrastruktur. Apples
 [privatlivspolitik](https://www.apple.com/legal/privacy/da-ww/) gælder desuden.
 Vi som udvikler har **på intet tidspunkt adgang** til disse data.
-
-## Familiedeling
-
-Når du deler din kalender med familiemedlemmer, synkroniseres de delte aftaler og
-personer mellem de deltagende iCloud-konti via Apples CloudKit-deling. Du
-bestemmer selv, hvem du inviterer, og kan afslutte delingen når som helst.
 
 ## Billeder
 

@@ -23,8 +23,7 @@ For TidTil to work, you yourself store the following in the app:
 - **People** you create (name only) — such as children without their own device, whom you want to assign events to
 - **Profile details** (name, optional profile photo, optional welcome text)
 
-This content is stored **only** in your iCloud and – if you use family sharing –
-shared with the people you have invited.
+This content is stored **only** in your personal iCloud.
 
 ## Where is the data stored?
 
@@ -32,12 +31,6 @@ All data lives in **Apple iCloud (CloudKit)** under your own Apple account.
 Storage and transfer are encrypted through Apple's infrastructure. Apple's
 [Privacy Policy](https://www.apple.com/legal/privacy/en-ww/) also applies. We as
 the developer have **no access at any time** to this data.
-
-## Family sharing
-
-When you share your calendar with family members, the shared events and people
-are synced between the participating iCloud accounts via Apple's CloudKit
-sharing. You decide who to invite and can end the sharing at any time.
 
 ## Photos
 
