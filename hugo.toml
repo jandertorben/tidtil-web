@@ -9,6 +9,7 @@ defaultContentLanguageInSubdir = false
 
 # Übersetzungen werden über den Dateinamen zugeordnet (_index.de.md, _index.en.md …).
 enableEmoji = true
+enableRobotsTXT = true
 
 # Es gibt keine Tags/Kategorien – die Taxonomie-Templates spart das.
 disableKinds = ["taxonomy", "term"]
@@ -20,11 +21,11 @@ disableKinds = ["taxonomy", "term"]
     weight = 1
   [languages.en]
     label = "English"
-    locale = "en"
+    locale = "en-GB"
     weight = 2
   [languages.da]
     label = "Dansk"
-    locale = "da"
+    locale = "da-DK"
     weight = 3
 
 [markup.goldmark.renderer]
@@ -35,6 +36,7 @@ disableKinds = ["taxonomy", "term"]
   # Kontakt-Adresse für Support & Datenschutz.
   email = "torbenjander@icloud.com"
   appStoreURL = ""   # sobald die App live ist, hier den App-Store-Link eintragen
+  ogImage = "img/home.png"
 
   # Impressum-Angaben (§ 5 DDG). Erscheinen ausschließlich auf der Impressum-Seite.
   legalName  = "Torben Jander"
