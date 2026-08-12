@@ -1,16 +1,65 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{{ if .IsHome }}{{ .Site.Title }} – {{ i18n "tagline" }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
-<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ i18n "meta_description" }}{{ end }}">
+
+{{ $description := cond (ne .Description "") .Description (i18n "meta_description") }}
+{{ $pageTitle := cond .IsHome (printf "%s – %s" .Site.Title (i18n "tagline")) (printf "%s · %s" .Title .Site.Title) }}
+{{ $ogImage := (.Site.Params.ogImage | default "img/home.png") | absURL }}
+
+<title>{{ $pageTitle }}</title>
+<meta name="description" content="{{ $description }}">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<link rel="canonical" href="{{ .Permalink }}">
+<link rel="sitemap" type="application/xml" href="{{ "sitemap.xml" | absURL }}">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
-<meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ i18n "meta_description" }}{{ end }}">
-<meta property="og:locale" content="{{ .Site.Language.Lang }}">
+<meta property="og:site_name" content="TidTil">
+<meta property="og:title" content="{{ $pageTitle }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:image" content="{{ $ogImage }}">
+<meta property="og:image:alt" content="{{ i18n "og_image_alt" }}">
+<meta property="og:locale" content="{{ .Site.Language.Params.locale | default .Site.Language.Lang }}">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ $pageTitle }}">
+<meta name="twitter:description" content="{{ $description }}">
+<meta name="twitter:image" content="{{ $ogImage }}">
+
 <meta name="theme-color" content="#b8966f">
 
 {{ range .AllTranslations }}
 <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+{{ end }}
+{{ with .AllTranslations }}
+  {{ range . }}
+    {{ if eq .Language.Lang "de" }}<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">{{ end }}
+  {{ end }}
+{{ end }}
+
+{{ if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "TidTil",
+  "applicationCategory": "LifestyleApplication",
+  "operatingSystem": "iOS",
+  "description": {{ $description | jsonify }},
+  "url": {{ .Permalink | jsonify }},
+  "image": {{ $ogImage | jsonify }},
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/PreOrder"
+  },
+  "inLanguage": {{ .Site.Language.Lang | jsonify }},
+  "publisher": {
+    "@type": "Person",
+    "name": "Torben Jander"
+  }
+}
+</script>
 {{ end }}
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
