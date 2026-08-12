@@ -111,6 +111,31 @@ h1, h2, h3 { font-family: "Jost", sans-serif; font-weight: 600; color: var(--ink
 .phone-sm { width: 250px; border-width: 9px; border-radius: 42px; }
 .phone-sm img { border-radius: 33px; }
 
+/* ---------- Product philosophy ---------- */
+.philosophy {
+  padding: clamp(54px, 8vw, 96px) 0;
+  background: var(--surface-2);
+  border-block: 1px solid var(--line);
+}
+.philosophy-inner { max-width: 920px; }
+.philosophy-copy { max-width: 720px; margin-bottom: 34px; }
+.philosophy-lead { color: var(--ink-soft); font-size: 1.12rem; margin: 14px 0 0; max-width: 64ch; }
+.philosophy-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.philosophy-card {
+  border: 1px solid var(--line); border-radius: var(--radius); padding: clamp(24px, 4vw, 34px);
+  background: var(--bg);
+}
+.philosophy-card-accent {
+  background: color-mix(in srgb, var(--accent) 10%, var(--bg));
+  border-color: color-mix(in srgb, var(--accent) 35%, var(--line));
+}
+.philosophy-label { font-weight: 600; font-size: 1.08rem; margin: 0 0 8px; color: var(--ink); }
+.philosophy-card p:last-child { margin: 0; color: var(--ink-soft); }
+.philosophy-quote {
+  margin: 34px 0 0; padding: 0; border: 0; font-size: clamp(1.55rem, 3.5vw, 2.25rem);
+  line-height: 1.25; font-weight: 500; letter-spacing: -0.4px; color: var(--ink); max-width: 22ch;
+}
+
 /* ---------- Alternating rows ---------- */
 .rows { padding: clamp(20px, 4vw, 48px) 0; }
 .row-item {
@@ -201,6 +226,9 @@ h1, h2, h3 { font-family: "Jost", sans-serif; font-weight: 600; color: var(--ink
   .hero-inner { grid-template-columns: 1fr; gap: 40px; text-align: center; }
   .hero-copy { display: flex; flex-direction: column; align-items: center; }
   .hero-art { order: -1; }
+  .philosophy-grid { grid-template-columns: 1fr; }
+  .philosophy-copy { text-align: center; margin-inline: auto; }
+  .philosophy-quote { margin-inline: auto; text-align: center; }
   .row-item, .row-item.reverse { grid-template-columns: 1fr; gap: 28px; text-align: center; }
   .row-item.reverse .row-art { order: 0; }
   .row-copy { display: flex; flex-direction: column; align-items: center; }
