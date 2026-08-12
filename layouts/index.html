@@ -19,6 +19,29 @@
   </div>
 </section>
 
+{{ with $p.philosophy_title }}
+<section class="philosophy">
+  <div class="wrap philosophy-inner">
+    <div class="philosophy-copy">
+      <p class="kicker">{{ $p.philosophy_kicker }}</p>
+      <h2 class="section-title">{{ . }}</h2>
+      <p class="philosophy-lead">{{ $p.philosophy_text }}</p>
+    </div>
+    <div class="philosophy-grid">
+      <article class="philosophy-card">
+        <p class="philosophy-label">{{ $p.philosophy_classic_title }}</p>
+        <p>{{ $p.philosophy_classic_text }}</p>
+      </article>
+      <article class="philosophy-card philosophy-card-accent">
+        <p class="philosophy-label">{{ $p.philosophy_tidtil_title }}</p>
+        <p>{{ $p.philosophy_tidtil_text }}</p>
+      </article>
+    </div>
+    <blockquote class="philosophy-quote">{{ $p.philosophy_quote }}</blockquote>
+  </div>
+</section>
+{{ end }}
+
 <section id="features" class="rows">
   <div class="wrap">
     {{ range $i, $row := $p.rows }}
