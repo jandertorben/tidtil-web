@@ -30,7 +30,7 @@ rows:
     alt: "TidTil month calendar"
     kicker: "Today"
     title: "What is happening in our day?"
-    text: "TidTil is not designed to show as much as possible at once. Your day stays at the centre: what is next, when does it happen and who does it affect? A deliberately reduced month view is there when you need the bigger picture."
+    text: "One glance is enough. TidTil shows you what is happening today, when it happens and who it concerns. Your day stays at the centre – and when you want to look further ahead, the reduced month view gives you the overview you need."
   - image: "img/neuer-termin.png"
     alt: "Creating an event in TidTil"
     kicker: "Simple"
