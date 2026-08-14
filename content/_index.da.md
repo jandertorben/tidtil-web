@@ -35,7 +35,7 @@ rows:
     alt: "Oprettelse af en aftale i TidTil"
     kicker: "Enkelt"
     title: "Hvad? Hvornår? For hvem?"
-    text: "Mere behøver en familieaftale som regel ikke. TidTil reducerer oprettelsen til de valg, der virkelig betyder noget i hverdagen. Aftaler, fødselsdage, mærkedage, rejser og gentagelser oprettes hurtigt og tildeles de rette personer."
+    text: "Mere behøver en familieaftale som regel ikke. Ingen formular fyldt med muligheder og ingen indstillinger, I først skal forstå. TidTil spørger kun efter det, der betyder noget i hverdagen – og så er aftalen oprettet."
   - image: "img/darstellung.png"
     alt: "TidTil farvevælger"
     kicker: "Æstetisk"
