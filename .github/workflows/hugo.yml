@@ -29,6 +29,22 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: recursive
+      - name: Download local web fonts
+        run: |
+          set -euo pipefail
+          mkdir -p static/fonts/licenses
+          curl -fL --retry 3 \
+            "https://raw.githubusercontent.com/google/fonts/main/ofl/jost/Jost%5Bwght%5D.ttf" \
+            -o static/fonts/Jost-Variable.ttf
+          curl -fL --retry 3 \
+            "https://raw.githubusercontent.com/google/fonts/main/ofl/sacramento/Sacramento-Regular.ttf" \
+            -o static/fonts/Sacramento-Regular.ttf
+          curl -fL --retry 3 \
+            "https://raw.githubusercontent.com/google/fonts/main/ofl/jost/OFL.txt" \
+            -o static/fonts/licenses/Jost-OFL.txt
+          curl -fL --retry 3 \
+            "https://raw.githubusercontent.com/google/fonts/main/ofl/sacramento/OFL.txt" \
+            -o static/fonts/licenses/Sacramento-OFL.txt
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
