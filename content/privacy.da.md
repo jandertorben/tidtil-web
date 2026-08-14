@@ -24,6 +24,7 @@ Der er på nuværende tidspunkt ikke udpeget en databeskyttelsesrådgiver, da vi
 - Den nuværende kode indeholder **ingen reklame-, tracking- eller tredjepartsanalyse-SDK'er**.
 - Påmindelser og beskeder om nye familieaftaler oprettes som **lokale iOS-notifikationer**.
 - Køb og abonnementer håndteres via **Apple StoreKit/App Store**.
+- Hjemmesiden bruger **ingen eksternt indlæste webfonts, egen webanalyse eller reklametrackere**.
 
 # 1. Privatliv i TidTil-appen
 
@@ -177,17 +178,15 @@ Behandlingen sker for at levere hjemmesiden sikkert, stabilt og teknisk pålidel
 
 Yderligere oplysninger findes i GitHubs privatlivsinformation.
 
-## 2.2 Google Fonts
+## 2.2 Lokalt hostede webfonts
 
-Hjemmesiden indlæser i øjeblikket skrifttyperne **Jost** og **Sacramento** via Google Fonts. Din browser opretter derfor forbindelse til Googles servere, når siden indlæses. I den forbindelse kan blandt andet IP-adresse, browser-/enhedsoplysninger, tidspunkt samt den anmodede eller henvisende URL blive overført til Google.
+Skrifttyperne **Jost** og **Sacramento**, der bruges på denne hjemmeside, leveres sammen med hjemmesiden via GitHub Pages. Visningen af skrifttyperne medfører derfor **ingen forbindelse til Google Fonts eller andre eksterne fonttjenester**.
 
-Skrifttyperne bruges for at give hjemmesiden et ensartet visuelt udtryk. Behandlingen sker i øjeblikket på grundlag af vores legitime interesse i en ensartet og teknisk enkel visning, jf. GDPR artikel 6, stk. 1, litra f. Yderligere oplysninger findes i Googles privatlivspolitik.
+Skriftfilerne stammer fra det officielle Google Fonts-repository og anvendes under den respektive **SIL Open Font License (OFL)**. De gældende licenstekster leveres sammen med skriftfilerne.
 
 ## 2.3 Ingen egen webanalyse eller reklametrackere
 
-Vi bruger på nuværende tidspunkt ikke egen webanalyse, Google Analytics, reklamecookies eller reklametrackere på hjemmesiden.
-
-Teknisk nødvendig behandling hos hostingudbyderen og via de aktuelt eksternt indlæste Google Fonts berøres ikke af dette.
+Vi bruger på nuværende tidspunkt **ingen egen webanalyse, Google Analytics, reklamecookies eller reklametrackere** på hjemmesiden.
 
 ## 2.4 Kontakt via e-mail
 
@@ -201,8 +200,7 @@ Afhængigt af den anvendte funktion kan teknisk nødvendige data især blive beh
 
 - **Apple** til iCloud, CloudKit, CloudKit Sharing, push-/systemnotifikationer og StoreKit/App Store,
 - **familiemedlemmer, du inviterer**, for fælles delte kalenderdata,
-- **GitHub** til hosting af denne hjemmeside,
-- **Google** til de webfonts, der i øjeblikket indlæses eksternt.
+- **GitHub** til hosting af denne hjemmeside.
 
 Internationale udbydere kan behandle data uden for EU eller EØS. Sådanne overførsler er underlagt de garantier, den pågældende udbyder anvender, samt udbyderens gældende privatlivsvilkår.
 
@@ -211,13 +209,13 @@ Internationale udbydere kan behandle data uden for EU eller EØS. Sådanne overf
 Når GDPR finder anvendelse, baserer vi især behandlingen på:
 
 - **GDPR artikel 6, stk. 1, litra b**, når behandlingen er nødvendig for at levere appfunktioner, synkronisering, køb-/abonnementsfunktioner eller behandle kontraktrelaterede henvendelser,
-- **GDPR artikel 6, stk. 1, litra f**, når behandlingen er nødvendig for sikker og stabil drift af hjemmesiden, teknisk visning eller behandling af almindelige henvendelser.
+- **GDPR artikel 6, stk. 1, litra f**, når behandlingen er nødvendig for sikker og pålidelig drift af hjemmesiden eller behandling af generelle henvendelser.
 
-Når en behandling alene udløses af en valgfri funktion – f.eks. valg af profilbillede, aktivering af en påmindelse eller invitation af familiemedlemmer – sker behandlingen kun, når du aktivt bruger funktionen. Hvis en bestemt behandling fremover kræver samtykke, vil TidTil indhente dette særskilt.
+Når behandling alene udløses af en valgfri funktion – f.eks. valg af profilbillede, aktivering af en påmindelse eller invitation af familiemedlemmer – sker behandlingen kun, når du aktivt bruger funktionen. Hvis samtykke fremover bliver juridisk nødvendigt for en bestemt behandling, vil TidTil indhente det særskilt.
 
 # 5. Dine rettigheder
 
-Når de lovmæssige betingelser er opfyldt, har du blandt andet ret til:
+Når de juridiske betingelser er opfyldt, har du blandt andet ret til:
 
 - indsigt i dine personoplysninger,
 - berigtigelse af urigtige oplysninger,
@@ -226,13 +224,13 @@ Når de lovmæssige betingelser er opfyldt, har du blandt andet ret til:
 - dataportabilitet,
 - indsigelse mod behandling baseret på legitime interesser,
 - tilbagekaldelse af et samtykke med virkning for fremtiden,
-- at klage til en kompetent databeskyttelsesmyndighed.
+- at indgive en klage til en kompetent databeskyttelsesmyndighed.
 
-En væsentlig del af de private appdata ligger udelukkende i dit Apple-/iCloud-miljø. Da TidTil ikke driver en egen backendserver til dette kalenderindhold, kan vi ikke centralt hente disse oplysninger for dig på samme måde som en traditionel cloududbyder. Mange oplysninger kan administreres direkte i appen og via Apples iCloud-funktioner.
+En væsentlig del af de private appdata ligger udelukkende i dit Apple-/iCloud-miljø. Da TidTil ikke driver en egen backendserver til dette kalenderindhold, kan vi ikke centralt hente indholdet for dig på samme måde som en traditionel cloududbyder. Mange data kan administreres direkte via appen og Apples iCloud-funktioner.
 
 # 6. Ændringer af denne privatlivspolitik
 
-Vi opdaterer denne privatlivspolitik, når funktioner, tekniske processer, anvendte tjenester eller juridiske krav ændrer sig. Den aktuelle version findes altid på denne side. Datoen for seneste opdatering står øverst i politikken.
+Vi opdaterer denne privatlivspolitik, når funktioner, tekniske processer, anvendte tjenester eller juridiske krav ændrer sig. Den aktuelle version er altid tilgængelig på denne side. Opdateringsdatoen står øverst i politikken.
 
 ## Kontakt
 
