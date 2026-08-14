@@ -2,90 +2,237 @@
 title: "Datenschutz"
 slug: "datenschutz"
 updated: "August 2026"
-description: "Wie TidTil mit deinen Daten umgeht: ohne Tracking, ohne Werbung und ohne eigene Server für deine Kalenderdaten."
+description: "Datenschutz bei TidTil – transparent erklärt für App und Website."
 ---
 
-Diese Datenschutzrichtlinie erklärt, wie die App **TidTil** („die App“, „wir“) mit personenbezogenen Daten umgeht. TidTil ist so konzipiert, dass möglichst wenige Daten verarbeitet werden und deine Kalenderdaten über Apples iCloud- und CloudKit-Infrastruktur verwaltet werden.
-
-## Kurzfassung
-
-- TidTil nutzt **Apple iCloud und CloudKit** für die vorgesehenen Cloud- und Familienfunktionen.
-- Wir betreiben **keine eigenen Server für deine Kalenderdaten** und haben keinen direkten Zugriff auf deine privaten Kalenderinhalte.
-- Wir verwenden **kein eigenes Tracking, keine Werbung und keine Werbe-IDs**.
-- Wenn du die Familienfreigabe verwendest, werden die dafür vorgesehenen Daten über CloudKit mit den von dir eingeladenen Personen geteilt.
+Diese Datenschutzerklärung beschreibt die Verarbeitung personenbezogener Daten bei der Nutzung der **TidTil-App** sowie dieser **TidTil-Website**. Sie orientiert sich am derzeitigen technischen Stand der App und der Website.
 
 ## Verantwortlicher
 
-Verantwortlich für TidTil und diese Datenschutzinformationen ist der im **Impressum** genannte Anbieter. Bei Fragen zum Datenschutz erreichst du uns unter: {{< email >}}
+Verantwortlich für TidTil und diese Website ist:
 
-## Welche Daten verarbeitet die App?
+{{< legal >}}
 
-Je nach Nutzung können insbesondere folgende Daten verarbeitet werden:
+Ein Datenschutzbeauftragter ist derzeit nicht benannt, da nach der aktuellen Unternehmensgröße keine entsprechende gesetzliche Pflicht angenommen wird. Sollte sich dies ändern, wird diese Erklärung angepasst.
 
-- **Termine** (z. B. Titel, Datum, Uhrzeit, Wiederholungen und Erinnerungen)
-- **Personen**, die du innerhalb deiner Familie anlegst oder einlädst
-- **Profildaten** (z. B. Name, optionales Profilfoto und optionaler Begrüßungstext)
-- die für **CloudKit-Freigaben und Synchronisierung** technisch erforderlichen Informationen
+## Kurzfassung
 
-Die Verarbeitung erfolgt, damit TidTil seine Kalender-, Synchronisierungs- und – soweit von dir genutzt – Familienfunktionen bereitstellen kann.
+- TidTil benötigt **kein eigenes Benutzerkonto** und kein zusätzliches TidTil-Passwort.
+- Kalender- und Profildaten werden lokal auf dem Gerät und über **Apple iCloud/CloudKit** verarbeitet.
+- Für die Familienfreigabe verwendet TidTil **CloudKit Sharing**. Freigegebene Inhalte sind für die von dir eingeladenen Mitglieder zugänglich.
+- TidTil betreibt **keinen eigenen Backend-Server für Kalenderinhalte**.
+- Die App enthält nach aktuellem Stand **keine Werbe-, Tracking- oder Analyse-SDKs**.
+- Erinnerungen und Hinweise auf neue Familientermine werden als **lokale iOS-Mitteilungen** erzeugt.
+- Käufe und Abonnements werden über **Apple StoreKit/App Store** abgewickelt.
 
-## Wo werden die Daten gespeichert?
+# 1. Datenschutz in der TidTil-App
 
-TidTil verwendet für die vorgesehenen Cloud-Funktionen **Apple iCloud (CloudKit)**. Speicherung, Synchronisierung und Übertragung erfolgen über Apples Infrastruktur und unterliegen zusätzlich den [Datenschutzbestimmungen von Apple](https://www.apple.com/legal/privacy/de-ww/).
+## 1.1 Welche Daten verarbeitet TidTil?
 
-Wir betreiben keinen eigenen Server, auf dem wir deine privaten Kalenderinhalte sammeln oder auswerten.
+Je nachdem, welche Funktionen du nutzt, verarbeitet die App insbesondere folgende Daten.
 
-## Familienfreigabe
+### Termine und Kalenderdaten
 
-Wenn du die Familienfreigabe bzw. Synchronisierung verwendest, können die dafür vorgesehenen Daten über **Apple CloudKit** mit Personen geteilt werden, die du selbst eingeladen hast. Ohne aktivierte Familienfreigabe werden keine Kalenderdaten von TidTil an andere Familienmitglieder freigegeben.
+Bei einem Termin können unter anderem gespeichert werden:
 
-Welche Personen Zugriff erhalten, bestimmst du durch deine Einladungen und Freigaben innerhalb der App.
+- Titel des Termins,
+- Start- und Enddatum sowie Start- und Endzeit,
+- Kennzeichnung als mehrtägiger Termin,
+- Wiederholungsregel,
+- gewählte Erinnerung,
+- Terminart, z. B. normaler Termin, Geburtstag oder Jahrestag,
+- Name einer Person bei Geburtstagen oder Jahrestagen,
+- Zuordnung zu Familienmitgliedern oder lokal angelegten Personen,
+- technische Kennungen der zugeordneten CloudKit-Teilnehmer,
+- technische Kennung des Familienmitglieds, das einen Termin angelegt hat.
 
-## Fotos
+### Familienmitglieder und lokal angelegte Personen
 
-Wenn du ein Profilfoto hinzufügst, verwendet TidTil Apples System-Fotoauswahl. Die App erhält dabei nur das von dir ausgewählte Bild und nicht automatisch Zugriff auf deine gesamte Fotomediathek. Das ausgewählte Bild wird im Rahmen der vorgesehenen iCloud-/CloudKit-Funktionen verarbeitet.
+TidTil unterscheidet zwischen Personen mit eigener App-/iCloud-Teilnahme und lokal angelegten Personen, beispielsweise Kindern ohne eigenes iPhone. Dabei können insbesondere verarbeitet werden:
 
-## Was wir nicht tun
+- Name,
+- interne technische Kennung,
+- optional vorhandene Bilddaten,
+- Zuordnung zu einer Familie und zu Terminen.
 
-- Wir verwenden keine eigenen Analyse- oder Tracking-Systeme zur Erstellung von Nutzerprofilen.
-- Wir verwenden keine Werbe-IDs und zeigen keine personalisierte Werbung.
-- Wir verkaufen keine persönlichen Kalenderdaten.
-- Wir betreiben keine eigenen Server zur Speicherung deiner privaten Kalenderinhalte.
+Bei einer aktiven Familienfreigabe können Namen und Terminzuordnungen der zur Familie gehörenden Personen mit den eingeladenen Familienmitgliedern synchronisiert werden.
 
-Apple verarbeitet technisch erforderliche Daten im Rahmen der von TidTil verwendeten iCloud- und CloudKit-Dienste. Bei einer von dir eingerichteten Familienfreigabe erhalten außerdem die von dir eingeladenen Personen Zugriff auf die freigegebenen Inhalte.
+### Benutzerprofil
 
-## Rechtsgrundlagen
+Im eigenen Profil können folgende Daten gespeichert werden:
 
-Soweit personenbezogene Daten im Zusammenhang mit TidTil verarbeitet werden und die DSGVO Anwendung findet, erfolgt die Verarbeitung insbesondere zur **Bereitstellung der von dir gewünschten App-Funktionen** (Art. 6 Abs. 1 lit. b DSGVO). Soweit eine Verarbeitung auf deiner freiwilligen Auswahl oder Freigabe beruht, erfolgt sie nur aufgrund der von dir ausgelösten Funktion. Gesetzliche Verpflichtungen bleiben unberührt.
+- Name,
+- Telefonnummer,
+- E-Mail-Adresse,
+- frei gewählter Text für die Startkarte,
+- optionales Profilfoto.
 
-## Speicherdauer und Löschung
+Diese Profildaten werden grundsätzlich dem privaten CloudKit-Bereich des jeweiligen Nutzers zugeordnet. Wenn du einen gemeinsamen Familienkalender verwendest, wird dein **Profilname zusätzlich im gemeinsamen Familienbereich veröffentlicht**, damit andere Familienmitglieder dich in der Teilnehmerliste erkennen können. Telefonnummer, E-Mail-Adresse, Profilfoto und Startkartentext werden durch diese Namensveröffentlichung nicht automatisch für Familienmitglieder freigegeben.
 
-Deine Inhalte bleiben grundsätzlich gespeichert, bis du sie selbst löschst oder die entsprechenden iCloud-/CloudKit-Daten entfernst.
+### CloudKit-Teilnehmerdaten
 
-Du kannst insbesondere:
+Für Einladungen und die Verwaltung eines gemeinsamen Kalenders stellt Apple über CloudKit technische Teilnehmerinformationen bereit. Abhängig vom Einladungs- und Annahmestatus können dazu gehören:
 
-- einzelne Termine direkt in der App löschen,
-- in den Einstellungen von TidTil vorhandene Funktionen zum Löschen bzw. Zurücksetzen verwenden,
-- Freigaben für Familienmitglieder beenden,
-- entsprechende Daten über die von Apple bereitgestellten iCloud-Funktionen verwalten.
+- CloudKit-Benutzer-/Datensatzkennung,
+- Anzeigename bzw. Namensbestandteile,
+- Status der Einladung,
+- Rolle als Besitzer oder Teilnehmer,
+- bei noch nicht angenommenen Einladungen gegebenenfalls die von Apple bereitgestellte E-Mail-Adresse oder Telefonnummer.
 
-**Das reine Löschen der App vom Gerät bedeutet nicht zwangsläufig, dass bereits in iCloud bzw. CloudKit gespeicherte Daten automatisch gelöscht werden.**
+TidTil verwendet diese Angaben ausschließlich, um Einladungen, Teilnehmerlisten und die Zuordnung von Terminen innerhalb des gemeinsamen Kalenders zu ermöglichen. Solche Angaben können außerdem Bestandteil einer internen stabilen Teilnehmerkennung sein, solange Apple noch keine dauerhafte CloudKit-Datensatzkennung bereitstellt.
 
-## Deine Datenschutzrechte
+## 1.2 Lokale Speicherung und iCloud/CloudKit
 
-Soweit die gesetzlichen Voraussetzungen vorliegen, hast du insbesondere Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit sowie Widerspruch. Außerdem besteht das Recht, sich bei einer zuständigen Datenschutzaufsichtsbehörde zu beschweren.
+TidTil verwendet **Core Data** für die lokale Datenhaltung und **Apple CloudKit** für die Synchronisierung. Die App arbeitet mit einem privaten CloudKit-Bereich für eigene Daten und einem geteilten CloudKit-Bereich für Daten, die andere mit dir teilen.
 
-Da wir keinen direkten Zugriff auf deine privaten CloudKit-Kalenderinhalte haben, können bestimmte Daten unmittelbar nur über die App bzw. deine Apple-/iCloud-Einstellungen verwaltet werden.
+Die lokale Datenbank wird mit dem iOS-Dateischutz `CompleteUntilFirstUserAuthentication` geschützt. Das bedeutet, dass die Daten nach einem Neustart des Geräts erst nach der ersten Entsperrung verfügbar werden; danach kann iOS die Daten im erforderlichen Umfang auch für Hintergrund-Synchronisierung verwenden.
 
-## Kinder
+Für CloudKit gelten zusätzlich die Datenschutz- und Sicherheitsbestimmungen von Apple. TidTil betreibt keinen eigenen Anwendungsserver, an den deine privaten Kalenderinhalte zu Analyse- oder Werbezwecken übertragen werden.
 
-TidTil ist ein Familienkalender. Eltern bzw. Erziehungsberechtigte können Personen innerhalb ihrer Familie anlegen und Termine zuordnen. Dabei können personenbezogene Angaben entstehen. Diese Angaben sollten nur von hierzu berechtigten Personen eingetragen werden und werden im Rahmen der beschriebenen iCloud-/CloudKit-Funktionen verarbeitet.
+## 1.3 Familienfreigabe und Synchronisierung
 
-TidTil verwendet diese Daten nicht für Werbung, Tracking oder die Erstellung von Nutzerprofilen.
+Die Familienfreigabe basiert auf **Apple CloudKit Sharing**. Wenn du einen Familienkalender freigibst, können die von dir eingeladenen und berechtigten Teilnehmer die freigegebenen Kalenderdaten sehen und – entsprechend der von TidTil verwendeten Freigabeberechtigung – bearbeiten.
 
-## Änderungen dieser Richtlinie
+Die Freigabe wird über Apples Systemdialog verwaltet. Nur Personen, die in die Freigabe aufgenommen wurden, erhalten Zugriff auf den gemeinsamen Kalender. Besitzer können Teilnehmer über die von Apple bereitgestellte Freigabeverwaltung entfernen; Teilnehmer können eine Freigabe verlassen.
 
-Wir können diese Datenschutzrichtlinie anpassen, wenn sich Funktionen, technische Abläufe oder rechtliche Anforderungen ändern. Die jeweils aktuelle Fassung findest du auf dieser Seite. Das Aktualisierungsdatum steht am Anfang der Datenschutzerklärung.
+Bei einer aktiven Freigabe können insbesondere gemeinsame Termine, lokal angelegte Familienpersonen und das für die Teilnehmeranzeige veröffentlichte Profilnamens-Verzeichnis zwischen den beteiligten Geräten synchronisiert werden.
+
+## 1.4 Profilfoto und Fotoauswahl
+
+Für die Auswahl eines Profilfotos verwendet TidTil Apples **System-Fotoauswahl (PhotosPicker)**. Die App erhält dabei nur Zugriff auf das von dir ausgewählte Bild und nicht automatisch auf deine gesamte Fotomediathek.
+
+Das gewählte Bild wird für das Profil verkleinert und in den Profildaten gespeichert. Es wird nicht an einen eigenen TidTil-Server übertragen.
+
+## 1.5 Mitteilungen und Erinnerungen
+
+TidTil verwendet Apples Benachrichtigungssystem für:
+
+- selbst gewählte Erinnerungen an Termine,
+- Hinweise auf neu synchronisierte Familientermine, die dich betreffen.
+
+Diese Mitteilungen werden auf dem Gerät über `UNUserNotificationCenter` erstellt. Inhalte können den Termintitel, Datum, Uhrzeit und gegebenenfalls den Namen des Familienmitglieds enthalten, das den Termin angelegt hat.
+
+CloudKit kann die App über System- bzw. Hintergrundbenachrichtigungen über Änderungen informieren. TidTil betreibt dafür keinen eigenen Push-Server.
+
+Die Berechtigung für Mitteilungen wird über den iOS-Systemdialog erteilt. Hinweise auf neue Familientermine können zusätzlich in den TidTil-Einstellungen deaktiviert werden.
+
+## 1.6 Geräteeinstellungen und UserDefaults
+
+Einige nicht-inhaltliche Einstellungen werden lokal über Apples `UserDefaults` bzw. SwiftUI `AppStorage` gespeichert, insbesondere:
+
+- gewählte Akzentfarbe,
+- Einstellung für Hinweise auf neue Familientermine,
+- eine technische Fortschrittsmarke, damit bereits verarbeitete CloudKit-Änderungen nicht mehrfach gemeldet werden.
+
+Diese Einstellungen dienen ausschließlich der App-Funktion und werden nicht für Werbung oder Profiling verwendet.
+
+## 1.7 TidTil Sync, StoreKit und Abonnements
+
+Für das geplante TidTil-Sync-Abo verwendet die App **Apple StoreKit 2**. Produktinformationen, Kauf, Verlängerung, Wiederherstellung und Verwaltung des Abonnements erfolgen über Apple bzw. den App Store.
+
+TidTil prüft innerhalb der App, ob für die vorgesehenen Produktkennungen eine gültige Berechtigung besteht. Zahlungsdaten wie Kreditkarten- oder Bankdaten werden nicht von TidTil verarbeitet und nicht auf eigenen Servern gespeichert.
+
+Für Käufe und Abonnements gelten ergänzend die Bedingungen und Datenschutzinformationen von Apple.
+
+## 1.8 Keine Werbung, kein Tracking und keine Drittanbieter-Analyse
+
+Nach dem derzeit geprüften Stand des App-Codes:
+
+- enthält TidTil keine Werbe-SDKs,
+- enthält TidTil keine Drittanbieter-Analytics-SDKs,
+- verwendet TidTil keine Werbe-ID zur Nachverfolgung,
+- erstellt TidTil keine Nutzerprofile für Werbe- oder Marketingzwecke,
+- sendet TidTil Kalenderinhalte nicht an einen eigenen Analyse- oder Trackingdienst.
+
+Apple kann im Rahmen seiner Betriebssystem-, iCloud-, CloudKit- und App-Store-Dienste eigene technische Daten verarbeiten. Dafür gelten die Datenschutzbestimmungen von Apple.
+
+## 1.9 Speicherdauer und Löschung in der App
+
+Die aktuelle App-Version behandelt Daten insbesondere wie folgt:
+
+- Eigene einmalige Termine werden grundsätzlich bis zur manuellen Löschung gespeichert; einmalige Termine, deren Ende mehr als **30 Tage** zurückliegt, werden von der App automatisch aus dem eigenen privaten Store entfernt.
+- Wiederkehrende Termine, Geburtstage und Jahrestage werden nicht durch diese automatische 30-Tage-Bereinigung gelöscht.
+- Termine aus einem von anderen Personen geteilten Kalender werden nicht von deinem Gerät automatisch für alle Beteiligten gelöscht.
+- Einzelne Termine können direkt in der App gelöscht werden.
+- „Alle meine Termine löschen“ entfernt die eigenen Termine aus dem privaten Bereich.
+- „App vollständig zurücksetzen“ entfernt bzw. leert die eigenen Termine, eigenen Personen-Einträge und Profildaten. Daten anderer Teilnehmer im gemeinsamen Kalender werden dadurch nicht pauschal gelöscht.
+- Eine bestehende CloudKit-Freigabe muss gegebenenfalls zusätzlich über die Familien-/Freigabeverwaltung beendet oder verlassen werden.
+- Das bloße Löschen der App vom iPhone bedeutet **nicht zwingend**, dass bereits in iCloud/CloudKit gespeicherte Daten gelöscht werden.
+
+## 1.10 Kinder und andere Personen ohne eigenes Gerät
+
+Eltern oder andere berechtigte Nutzer können Personen – insbesondere Kinder ohne eigenes Gerät – innerhalb der Familie anlegen und ihnen Termine zuordnen. Dabei werden je nach Nutzung Name, interne Kennung, gegebenenfalls Bilddaten und Terminzuordnungen verarbeitet.
+
+Wenn der Kalender mit anderen Familienmitgliedern geteilt wird, können diese Daten für die eingeladenen Teilnehmer sichtbar und bearbeitbar sein. Bitte trage personenbezogene Daten anderer Personen nur ein, wenn du hierzu berechtigt bist.
+
+TidTil verwendet diese Angaben nicht für Werbung, Tracking oder Profiling.
+
+# 2. Datenschutz auf der TidTil-Website
+
+## 2.1 Hosting über GitHub Pages
+
+Diese Website wird über **GitHub Pages** bereitgestellt. Beim Aufruf einer GitHub-Pages-Website kann GitHub insbesondere die IP-Adresse des Besuchers protokollieren und für Sicherheitszwecke speichern. Darüber hinaus können technisch erforderliche Verbindungs- und Request-Daten verarbeitet werden.
+
+Die Verarbeitung erfolgt zur sicheren, stabilen und technisch zuverlässigen Bereitstellung der Website auf Grundlage unseres berechtigten Interesses gemäß Art. 6 Abs. 1 lit. f DSGVO.
+
+Weitere Informationen findest du in den Datenschutzinformationen von GitHub.
+
+## 2.2 Google Fonts
+
+Die Website bindet derzeit die Schriftarten **Jost** und **Sacramento** über Google Fonts ein. Beim Aufruf einer Seite stellt dein Browser deshalb eine Verbindung zu Servern von Google her. Dabei können insbesondere IP-Adresse, Browser-/Geräteinformationen, Zeitpunkt und die angefragte bzw. verweisende URL an Google übermittelt werden.
+
+Die Einbindung dient einer einheitlichen Darstellung der Website. Sie erfolgt derzeit auf Grundlage unseres berechtigten Interesses an einer konsistenten und technisch einfachen Darstellung gemäß Art. 6 Abs. 1 lit. f DSGVO. Weitere Informationen zur Datenverarbeitung durch Google findest du in der Datenschutzerklärung von Google.
+
+## 2.3 Keine eigene Webanalyse und keine Werbetracker
+
+Nach dem derzeitigen Stand der Website verwenden wir keine eigene Webanalyse, kein Google Analytics, keine Werbe-Cookies und keine Werbetracker.
+
+Technisch notwendige Datenverarbeitungen durch den Hostinganbieter sowie durch die eingebundenen Google Fonts bleiben davon unberührt.
+
+## 2.4 Kontaktaufnahme per E-Mail
+
+Wenn du uns per E-Mail kontaktierst, verarbeiten wir die von dir übermittelten Angaben, insbesondere deine E-Mail-Adresse, den Nachrichteninhalt und gegebenenfalls deinen Namen, um deine Anfrage zu beantworten.
+
+Soweit die Anfrage auf einen Vertrag oder vorvertragliche Maßnahmen gerichtet ist, erfolgt die Verarbeitung auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO. In anderen Fällen erfolgt sie auf Grundlage unseres berechtigten Interesses an der Bearbeitung von Anfragen gemäß Art. 6 Abs. 1 lit. f DSGVO.
+
+# 3. Empfänger und Drittlandverarbeitung
+
+Technisch erforderliche Daten können – abhängig von der genutzten Funktion – insbesondere von folgenden Empfängern verarbeitet werden:
+
+- **Apple** für iCloud, CloudKit, CloudKit Sharing, Push-/Systembenachrichtigungen und StoreKit/App Store,
+- **von dir eingeladene Familienmitglieder** für gemeinsam freigegebene Kalenderdaten,
+- **GitHub** für das Hosting dieser Website,
+- **Google** für die aktuell extern eingebundenen Webfonts.
+
+Bei internationalen Anbietern kann eine Verarbeitung auch außerhalb der Europäischen Union bzw. des Europäischen Wirtschaftsraums stattfinden. Für solche Übermittlungen gelten die vom jeweiligen Anbieter eingesetzten datenschutzrechtlichen Garantien und die jeweiligen Datenschutzbestimmungen.
+
+# 4. Rechtsgrundlagen
+
+Soweit die DSGVO anwendbar ist, stützen wir die Verarbeitung insbesondere auf:
+
+- **Art. 6 Abs. 1 lit. b DSGVO**, soweit die Verarbeitung zur Bereitstellung von App-Funktionen, Synchronisierung, Kauf-/Abo-Funktionen oder zur Bearbeitung vertragsbezogener Anfragen erforderlich ist,
+- **Art. 6 Abs. 1 lit. f DSGVO**, soweit die Verarbeitung zur sicheren und zuverlässigen Bereitstellung der Website, zur technischen Darstellung oder zur Bearbeitung allgemeiner Anfragen erforderlich ist.
+
+Soweit eine Verarbeitung ausschließlich durch eine freiwillige Funktion ausgelöst wird – etwa das Auswählen eines Profilfotos, das Aktivieren einer Erinnerung oder das Einladen von Familienmitgliedern – erfolgt die Verarbeitung nur, wenn du diese Funktion aktiv nutzt. Soweit für einzelne Vorgänge künftig eine Einwilligung erforderlich sein sollte, wird TidTil diese gesondert einholen.
+
+# 5. Deine Rechte
+
+Soweit die gesetzlichen Voraussetzungen erfüllt sind, stehen dir insbesondere folgende Rechte zu:
+
+- Auskunft über deine personenbezogenen Daten,
+- Berichtigung unrichtiger Daten,
+- Löschung,
+- Einschränkung der Verarbeitung,
+- Datenübertragbarkeit,
+- Widerspruch gegen Verarbeitungen auf Grundlage berechtigter Interessen,
+- Widerruf einer erteilten Einwilligung mit Wirkung für die Zukunft,
+- Beschwerde bei einer zuständigen Datenschutzaufsichtsbehörde.
+
+Ein wesentlicher Teil der privaten App-Daten liegt ausschließlich in deinem Apple-/iCloud-Bereich. Da TidTil keinen eigenen Backend-Server für diese Kalenderinhalte betreibt, können wir diese Daten nicht wie ein klassischer Cloudanbieter zentral für dich auslesen. Viele Daten können direkt über die App und die Apple-/iCloud-Funktionen verwaltet werden.
+
+# 6. Änderungen dieser Datenschutzerklärung
+
+Wir passen diese Datenschutzerklärung an, wenn sich Funktionen, technische Abläufe, eingesetzte Dienste oder rechtliche Anforderungen ändern. Die jeweils aktuelle Fassung ist auf dieser Seite verfügbar. Das Aktualisierungsdatum steht am Anfang der Erklärung.
 
 ## Kontakt
 
