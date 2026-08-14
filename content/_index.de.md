@@ -35,7 +35,7 @@ rows:
     alt: "Termin anlegen in TidTil"
     kicker: "Einfach"
     title: "Was? Wann? Für wen?"
-    text: "Mehr braucht ein Familientermin meistens nicht. TidTil reduziert das Anlegen auf die Entscheidungen, die im Alltag wirklich zählen. Termine, Geburtstage, Jahrestage, Reisen und Wiederholungen sind schnell erfasst und den richtigen Personen zugeordnet."
+    text: "Mehr braucht ein Familientermin meistens nicht. Kein Formular voller Möglichkeiten, keine Einstellungen, die ihr erst verstehen müsst. TidTil fragt nach dem, was im Alltag zählt – und dann ist der Termin drin."
   - image: "img/darstellung.png"
     alt: "TidTil Farbauswahl"
     kicker: "Ästhetisch"
