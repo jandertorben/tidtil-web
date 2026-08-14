@@ -72,7 +72,7 @@ sync_free: "The current version of TidTil is completely free to use – includin
 sync_text: "At launch, there are no in-app purchases and no subscription."
 sync_note: "Later, only the convenience of family syncing is planned to become optional paid functionality. Personal use and TidTil's core features will remain meaningfully free. One family subscription is intended to cover the family."
 privacy_title: "Privacy is not an extra"
-privacy_text: "TidTil does not run its own servers for your calendar data, shows no ads and does not sell personal calendar data. For its intended cloud features, TidTil relies on Apple's iCloud and CloudKit infrastructure."
+privacy_text: "Your events belong to you. TidTil requires no separate user account, shows no ads and does not build a business model around your personal calendar data. For syncing, TidTil uses Apple's iCloud and CloudKit infrastructure."
 closing_title: "Know what's ahead. Then put the phone away."
 closing_text: "TidTil should demand less of your attention, not more. A quick look at your day – and then more time for what really matters."
 ---
