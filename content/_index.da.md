@@ -48,7 +48,7 @@ rows:
     text: "TidTil forklarer kun det, der behøver en forklaring. Resten skal give sig selv. Familieplanlægning bør ikke først kræve planlægning."
 philosophy_kicker: "Bevidst mindre"
 philosophy_title: "Ikke alt. Bare det rigtige gjort enkelt."
-philosophy_text: "Mange familieplanlæggere samler kalender, opgaver, lister, chats og stadig flere funktioner. TidTil går bevidst den anden vej. Vi fokuserer på fælles aftaler og det ene spørgsmål, der betyder noget i hverdagen: Hvad skal vores familie i dag?"
+philosophy_text: "Mange familieplanlæggere samler kalender, opgaver, lister, chats og stadig flere funktioner. TidTil går bevidst den anden vej. TidTil fokuserer på fælles aftaler og ét enkelt spørgsmål: Hvad skal vores familie i dag?"
 philosophy_classic_title: "Mange familieplanlæggere"
 philosophy_classic_text: "forsøger at samle så mange dele af familielivet som muligt i én app. Det kan være praktisk – men det giver også flere menuer, indstillinger og valg."
 philosophy_tidtil_title: "TidTil"
