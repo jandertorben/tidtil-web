@@ -42,5 +42,4 @@ disableKinds = ["taxonomy", "term"]
   legalName  = "Torben Jander"
   legalAddr1 = "Arster Landstraße 22"
   legalAddr2 = "28279 Bremen"
-  legalPhone = "+49 177 2408874"
   legalVatId = ""   # USt-IdNr., falls vorhanden (sonst leer lassen)
