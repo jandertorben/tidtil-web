@@ -30,7 +30,7 @@ rows:
     alt: "TidTil månedskalender"
     kicker: "I dag"
     title: "Hvad skal vi i dag?"
-    text: "TidTil er ikke bygget til at vise så meget som muligt på én gang. Jeres dag er i centrum: Hvad kommer som det næste, hvornår sker det, og hvem vedrører det? Når I har brug for det større overblik, er der en bevidst enkel månedsvisning."
+    text: "Et blik er nok. TidTil viser jer, hvad der skal ske i dag, hvornår det sker, og hvem det vedrører. Dagen er i centrum – og når I vil se længere frem, giver den enkle månedsvisning jer det overblik, I har brug for."
   - image: "img/neuer-termin.png"
     alt: "Oprettelse af en aftale i TidTil"
     kicker: "Enkelt"
