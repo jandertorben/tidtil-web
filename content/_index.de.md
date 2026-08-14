@@ -30,7 +30,7 @@ rows:
     alt: "TidTil Monatskalender"
     kicker: "Heute"
     title: "Was steht bei uns an?"
-    text: "TidTil ist nicht dafür gebaut, möglichst viel auf einmal zu zeigen. Im Mittelpunkt steht euer Tag: Was kommt als Nächstes, wann passiert es und wen betrifft es? Für den größeren Überblick gibt es eine bewusst reduzierte Monatsansicht."
+    text: "Ein Blick genügt. TidTil zeigt euch, was heute ansteht, wann es passiert und wen es betrifft. Der Tag steht im Mittelpunkt – und wenn ihr weiter vorausblicken möchtet, gibt euch die reduzierte Monatsansicht den nötigen Überblick."
   - image: "img/neuer-termin.png"
     alt: "Termin anlegen in TidTil"
     kicker: "Einfach"
