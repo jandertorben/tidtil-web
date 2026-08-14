@@ -2,69 +2,91 @@
 title: "Privacy"
 slug: "privacy"
 updated: "August 2026"
-description: "How TidTil handles your data – in short: it doesn't. Everything stays in your personal iCloud."
+description: "How TidTil handles your data: no tracking, no advertising and no own servers for your calendar data."
 ---
 
-This privacy policy explains how the **TidTil** app ("the app", "we") handles
-your data. Privacy matters deeply to us – which is why TidTil is built so that
-your data stays your data.
+This privacy policy explains how the **TidTil** app ("the app", "we") handles personal data. TidTil is designed to process as little data as possible and to manage your calendar data through Apple's iCloud and CloudKit infrastructure.
 
 ## In short
 
-- TidTil stores all your content **solely in your personal iCloud** (Apple CloudKit).
-- We run **no servers of our own** and have **no access** to your data.
-- We **collect no usage data**, use **no tracking** and **no advertising**.
+- TidTil uses **Apple iCloud and CloudKit** for its intended cloud and family features.
+- We operate **no servers of our own for your calendar data** and have no direct access to your private calendar content.
+- We use **no proprietary tracking, no advertising and no advertising IDs**.
+- If you use family sharing, the relevant data is shared through CloudKit with the people you invite.
+
+## Data controller
+
+The provider named in the **Legal Notice** is responsible for TidTil and this privacy information. For privacy questions, contact us at: {{< email >}}
 
 ## What data does the app process?
 
-For TidTil to work, you yourself store the following in the app:
+Depending on how you use TidTil, the following data may be processed:
 
-- **Events** (title, date, time, repeats, reminders)
-- **People** you create (name only) — such as children without their own device, whom you want to assign events to
-- **Profile details** (name, optional profile photo, optional welcome text)
+- **Events** (for example title, date, time, repeats and reminders)
+- **People** you create or invite within your family
+- **Profile details** (for example name, optional profile photo and optional welcome text)
+- technical information required for **CloudKit sharing and synchronisation**
 
-This content is stored **only** in your personal iCloud.
+This processing is necessary to provide TidTil's calendar, synchronisation and, where used, family features.
 
 ## Where is the data stored?
 
-All data lives in **Apple iCloud (CloudKit)** under your own Apple account.
-Storage and transfer are encrypted through Apple's infrastructure. Apple's
-[Privacy Policy](https://www.apple.com/legal/privacy/en-ww/) also applies. We as
-the developer have **no access at any time** to this data.
+TidTil uses **Apple iCloud (CloudKit)** for its intended cloud features. Storage, synchronisation and transmission take place through Apple's infrastructure and are also subject to Apple's [Privacy Policy](https://www.apple.com/legal/privacy/en-ww/).
+
+We do not operate our own server on which we collect or analyse your private calendar content.
+
+## Family sharing
+
+If you use family sharing or synchronisation, the relevant data may be shared through **Apple CloudKit** with people you have invited yourself. Without an active family share, TidTil does not share your calendar data with other family members.
+
+You determine who receives access through the invitations and sharing options you use in the app.
 
 ## Photos
 
-If you want to add a profile photo, the app opens Apple's system photo picker.
-TidTil then receives **only the single image you select** – the app has no access
-to the rest of your photo library. The chosen image is stored solely in your iCloud.
+When you add a profile photo, TidTil uses Apple's system photo picker. The app receives only the image you select and does not automatically gain access to your entire photo library. The selected image is processed as part of the intended iCloud/CloudKit features.
 
-## What we do NOT do
+## What we do not do
 
-- We collect no analytical or statistical usage data.
-- We use no tracking and no advertising IDs.
-- We share no data with third parties.
-- We store nothing on servers of our own.
+- We do not use our own analytics or tracking systems to create user profiles.
+- We do not use advertising IDs or display personalised advertising.
+- We do not sell personal calendar data.
+- We do not operate our own servers for storing your private calendar content.
 
-## Your rights / deletion
+Apple processes technically necessary data as part of the iCloud and CloudKit services used by TidTil. If you set up family sharing, the people you invite can also access the content you share with them.
 
-You can delete your data yourself at any time:
+## Legal basis
 
-- Remove individual events directly in the app.
-- Under the app's "Data & Sharing" settings, delete all events or reset the app completely.
-- Deleting the app or removing the iCloud data removes your content from iCloud.
+Where the GDPR applies, personal data associated with TidTil is processed in particular to **provide the app functions you request** (Art. 6(1)(b) GDPR). Where processing results from a voluntary selection or sharing action, it takes place only because you initiated that function. Statutory obligations remain unaffected.
+
+## Retention and deletion
+
+Your content generally remains stored until you delete it yourself or remove the corresponding iCloud/CloudKit data.
+
+You can, in particular:
+
+- delete individual events directly in the app,
+- use available deletion or reset functions in TidTil's settings,
+- end sharing with family members,
+- manage relevant data through the iCloud functions provided by Apple.
+
+**Simply deleting the app from your device does not necessarily delete data that has already been stored in iCloud or CloudKit.**
+
+## Your privacy rights
+
+Where the legal requirements are met, you may have rights including access, rectification, erasure, restriction of processing, data portability and objection. You also have the right to lodge a complaint with a competent data protection supervisory authority.
+
+Because we do not have direct access to your private CloudKit calendar content, some data can only be managed directly through the app or your Apple/iCloud settings.
 
 ## Children
 
-TidTil is a family calendar. Parents can create people (including children) with
-a name in order to assign events to them. Only this name is stored – no photo, no
-date of birth, no contact details. The entry is made by the parents themselves,
-lives solely in their private iCloud and is never transmitted to us or third parties.
+TidTil is a family calendar. Parents or legal guardians can create people within their family and assign events to them. This may involve personal information. Such information should only be entered by people authorised to do so and is processed as part of the iCloud/CloudKit functions described above.
+
+TidTil does not use this information for advertising, tracking or user profiling.
 
 ## Changes to this policy
 
-We may update this privacy policy from time to time. The current version is
-always available at this address.
+We may update this privacy policy when features, technical processes or legal requirements change. The current version is always available on this page. The update date is shown at the beginning of the privacy policy.
 
 ## Contact
 
-For privacy questions, reach us at: {{< email >}}
+For privacy questions, contact us at: {{< email >}}
