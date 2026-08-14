@@ -48,7 +48,7 @@ rows:
     text: "TidTil explains only what needs explaining. The rest should feel obvious. Family organisation should not need organising first."
 philosophy_kicker: "Less, on purpose"
 philosophy_title: "Not everything. Just the right things, made simple."
-philosophy_text: "Many family organisers combine calendars, tasks, lists, chats and more. TidTil deliberately goes the other way. We focus on shared events and the one question that matters in everyday life: what is happening in our family today?"
+philosophy_text: "Many family organisers combine calendars, tasks, lists, chats and more. TidTil deliberately goes the other way. TidTil focuses on shared events and one simple question: what is happening in our family today?"
 philosophy_classic_title: "Many family planners"
 philosophy_classic_text: "try to cover as many parts of family life as possible. That can be useful – but it also means more menus, settings and decisions."
 philosophy_tidtil_title: "TidTil"
