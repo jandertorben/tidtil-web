@@ -1,5 +1,21 @@
 /* TidTil – Website. Hell, minimalistisch, moderne Sans — warmer Gold-Akzent bleibt. */
 
+@font-face {
+  font-family: "Jost";
+  src: url("../../fonts/Jost-Variable.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sacramento";
+  src: url("../../fonts/Sacramento-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
 :root {
   --bg: #ffffff;
   --surface: #f7f4ee;
@@ -28,6 +44,7 @@
     --shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
   }
 }
+
 :root[data-theme="dark"] {
   --bg: #16150f; --surface: #201e17; --surface-2: #1b1a13; --ink: #f4efe4;
   --ink-soft: #ada592; --line: #322f27; --accent: #cbaa7d; --accent-strong: #c09a6b;
