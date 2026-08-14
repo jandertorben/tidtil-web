@@ -24,6 +24,7 @@ No data protection officer is currently designated because, based on the present
 - Based on the current code, the app contains **no advertising, tracking or third-party analytics SDKs**.
 - Event reminders and notifications about new family events are generated as **local iOS notifications**.
 - Purchases and subscriptions are handled through **Apple StoreKit/App Store**.
+- The website uses **no externally loaded web fonts, proprietary web analytics or advertising trackers**.
 
 # 1. Privacy in the TidTil app
 
@@ -177,17 +178,15 @@ This processing serves the secure, stable and reliable provision of the website 
 
 Further information is available in GitHub's privacy information.
 
-## 2.2 Google Fonts
+## 2.2 Locally hosted web fonts
 
-The website currently loads the **Jost** and **Sacramento** fonts through Google Fonts. Your browser therefore establishes a connection to Google servers when a page is loaded. This may transmit information including your IP address, browser/device information, time of access and the requested or referring URL to Google.
+The **Jost** and **Sacramento** fonts used on this website are delivered together with the website through GitHub Pages. Displaying these fonts therefore establishes **no connection to Google Fonts or another external font service**.
 
-The fonts are currently integrated to provide a consistent visual presentation of the website. This processing is based on our legitimate interest in consistent and technically straightforward presentation under Art. 6(1)(f) GDPR. Further information is available in Google's privacy policy.
+The font files originate from the official Google Fonts repository and are used under their respective **SIL Open Font License (OFL)**. The applicable licence texts are delivered together with the font files.
 
 ## 2.3 No proprietary web analytics or advertising trackers
 
-At present, we do not use proprietary web analytics, Google Analytics, advertising cookies or advertising trackers on the website.
-
-Technically necessary processing by the hosting provider and the currently embedded Google Fonts remains unaffected.
+At present, we use **no proprietary web analytics, Google Analytics, advertising cookies or advertising trackers** on the website.
 
 ## 2.4 Contact by email
 
@@ -201,8 +200,7 @@ Depending on the function used, technically necessary data may in particular be 
 
 - **Apple** for iCloud, CloudKit, CloudKit Sharing, push/system notifications and StoreKit/App Store,
 - **family members you invite** for jointly shared calendar data,
-- **GitHub** for hosting this website,
-- **Google** for the web fonts currently loaded externally.
+- **GitHub** for hosting this website.
 
 International providers may process data outside the European Union or European Economic Area. Such transfers are subject to the safeguards used by the relevant provider and its applicable privacy terms.
 
@@ -211,7 +209,7 @@ International providers may process data outside the European Union or European 
 Where the GDPR applies, we rely in particular on:
 
 - **Art. 6(1)(b) GDPR** where processing is necessary to provide app functionality, synchronisation, purchase/subscription functions or to handle contract-related enquiries,
-- **Art. 6(1)(f) GDPR** where processing is necessary for secure and reliable website operation, technical presentation or handling general enquiries.
+- **Art. 6(1)(f) GDPR** where processing is necessary for secure and reliable website operation or handling general enquiries.
 
 Where processing is triggered solely by an optional feature – such as selecting a profile photo, enabling a reminder or inviting family members – processing occurs only when you actively use that feature. If consent becomes legally required for a particular operation in the future, TidTil will request it separately.
 
