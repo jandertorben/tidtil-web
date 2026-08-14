@@ -72,7 +72,7 @@ sync_free: "Den aktuelle version af TidTil er helt gratis at bruge – inklusive
 sync_text: "Ved lanceringen er der ingen køb i appen og intet abonnement."
 sync_note: "Senere er planen, at kun bekvemmeligheden ved familiesynkronisering bliver en valgfri betalingsfunktion. Personlig brug og TidTils grundlæggende funktioner skal fortsat kunne bruges meningsfuldt gratis. Ét familieabonnement er tænkt til at dække familien."
 privacy_title: "Privatliv er ikke ekstraudstyr"
-privacy_text: "TidTil driver ingen egne servere til jeres kalenderdata, viser ingen reklamer og sælger ikke personlige kalenderdata. Til de planlagte cloudfunktioner bruger TidTil Apples iCloud- og CloudKit-infrastruktur."
+privacy_text: "Jeres aftaler tilhører jer. TidTil kræver ingen separat brugerkonto, viser ingen reklamer og bygger ikke en forretningsmodel på jeres personlige kalenderdata. Til synkronisering bruger TidTil Apples iCloud- og CloudKit-infrastruktur."
 closing_title: "Se, hvad der skal ske. Læg så telefonen væk."
 closing_text: "TidTil skal kræve mindre af jeres opmærksomhed, ikke mere. Et hurtigt blik på dagen – og så mere tid til det, der virkelig betyder noget."
 ---
