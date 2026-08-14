@@ -48,7 +48,7 @@ rows:
     text: "TidTil erklärt nur, was erklärt werden muss. Der Rest soll sich von selbst erschließen. Denn gute Familienorganisation sollte nicht erst organisiert werden müssen."
 philosophy_kicker: "Bewusst weniger"
 philosophy_title: "Nicht alles können. Das Richtige einfach machen."
-philosophy_text: "Viele Familienplaner bündeln Kalender, Aufgaben, Listen, Chats und immer mehr Funktionen. TidTil geht bewusst in die andere Richtung. Wir konzentrieren uns auf gemeinsame Termine und die eine Frage, die im Alltag zählt: Was steht heute bei uns an?"
+philosophy_text: "Viele Familienplaner bündeln Kalender, Aufgaben, Listen, Chats und immer mehr Funktionen. TidTil geht bewusst in die andere Richtung. TidTil konzentriert sich auf gemeinsame Termine und eine einfache Frage: Was steht heute bei uns an?"
 philosophy_classic_title: "Viele Familienplaner"
 philosophy_classic_text: "wollen möglichst viele Bereiche des Familienlebens in einer App abbilden. Das kann praktisch sein – bringt aber auch mehr Menüs, Einstellungen und Entscheidungen mit sich."
 philosophy_tidtil_title: "TidTil"
