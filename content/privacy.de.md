@@ -24,6 +24,7 @@ Ein Datenschutzbeauftragter ist derzeit nicht benannt, da nach der aktuellen Unt
 - Die App enthält nach aktuellem Stand **keine Werbe-, Tracking- oder Analyse-SDKs**.
 - Erinnerungen und Hinweise auf neue Familientermine werden als **lokale iOS-Mitteilungen** erzeugt.
 - Käufe und Abonnements werden über **Apple StoreKit/App Store** abgewickelt.
+- Die Website verwendet **keine extern geladenen Webfonts, keine Webanalyse und keine Werbetracker**.
 
 # 1. Datenschutz in der TidTil-App
 
@@ -177,17 +178,15 @@ Die Verarbeitung erfolgt zur sicheren, stabilen und technisch zuverlässigen Ber
 
 Weitere Informationen findest du in den Datenschutzinformationen von GitHub.
 
-## 2.2 Google Fonts
+## 2.2 Lokale Webfonts
 
-Die Website bindet derzeit die Schriftarten **Jost** und **Sacramento** über Google Fonts ein. Beim Aufruf einer Seite stellt dein Browser deshalb eine Verbindung zu Servern von Google her. Dabei können insbesondere IP-Adresse, Browser-/Geräteinformationen, Zeitpunkt und die angefragte bzw. verweisende URL an Google übermittelt werden.
+Die auf dieser Website verwendeten Schriftarten **Jost** und **Sacramento** werden zusammen mit der Website über GitHub Pages ausgeliefert. Beim Anzeigen der Schriftarten wird daher **keine Verbindung zu Google Fonts oder anderen externen Font-Diensten** hergestellt.
 
-Die Einbindung dient einer einheitlichen Darstellung der Website. Sie erfolgt derzeit auf Grundlage unseres berechtigten Interesses an einer konsistenten und technisch einfachen Darstellung gemäß Art. 6 Abs. 1 lit. f DSGVO. Weitere Informationen zur Datenverarbeitung durch Google findest du in der Datenschutzerklärung von Google.
+Die Schriftdateien stammen aus dem offiziellen Google-Fonts-Repository und werden unter der jeweiligen **SIL Open Font License (OFL)** verwendet. Die Lizenztexte werden zusammen mit den Schriftdateien bereitgestellt.
 
 ## 2.3 Keine eigene Webanalyse und keine Werbetracker
 
-Nach dem derzeitigen Stand der Website verwenden wir keine eigene Webanalyse, kein Google Analytics, keine Werbe-Cookies und keine Werbetracker.
-
-Technisch notwendige Datenverarbeitungen durch den Hostinganbieter sowie durch die eingebundenen Google Fonts bleiben davon unberührt.
+Nach dem derzeitigen Stand der Website verwenden wir **keine eigene Webanalyse, kein Google Analytics, keine Werbe-Cookies und keine Werbetracker**.
 
 ## 2.4 Kontaktaufnahme per E-Mail
 
@@ -201,8 +200,7 @@ Technisch erforderliche Daten können – abhängig von der genutzten Funktion �
 
 - **Apple** für iCloud, CloudKit, CloudKit Sharing, Push-/Systembenachrichtigungen und StoreKit/App Store,
 - **von dir eingeladene Familienmitglieder** für gemeinsam freigegebene Kalenderdaten,
-- **GitHub** für das Hosting dieser Website,
-- **Google** für die aktuell extern eingebundenen Webfonts.
+- **GitHub** für das Hosting dieser Website.
 
 Bei internationalen Anbietern kann eine Verarbeitung auch außerhalb der Europäischen Union bzw. des Europäischen Wirtschaftsraums stattfinden. Für solche Übermittlungen gelten die vom jeweiligen Anbieter eingesetzten datenschutzrechtlichen Garantien und die jeweiligen Datenschutzbestimmungen.
 
@@ -211,7 +209,7 @@ Bei internationalen Anbietern kann eine Verarbeitung auch außerhalb der Europä
 Soweit die DSGVO anwendbar ist, stützen wir die Verarbeitung insbesondere auf:
 
 - **Art. 6 Abs. 1 lit. b DSGVO**, soweit die Verarbeitung zur Bereitstellung von App-Funktionen, Synchronisierung, Kauf-/Abo-Funktionen oder zur Bearbeitung vertragsbezogener Anfragen erforderlich ist,
-- **Art. 6 Abs. 1 lit. f DSGVO**, soweit die Verarbeitung zur sicheren und zuverlässigen Bereitstellung der Website, zur technischen Darstellung oder zur Bearbeitung allgemeiner Anfragen erforderlich ist.
+- **Art. 6 Abs. 1 lit. f DSGVO**, soweit die Verarbeitung zur sicheren und zuverlässigen Bereitstellung der Website oder zur Bearbeitung allgemeiner Anfragen erforderlich ist.
 
 Soweit eine Verarbeitung ausschließlich durch eine freiwillige Funktion ausgelöst wird – etwa das Auswählen eines Profilfotos, das Aktivieren einer Erinnerung oder das Einladen von Familienmitgliedern – erfolgt die Verarbeitung nur, wenn du diese Funktion aktiv nutzt. Soweit für einzelne Vorgänge künftig eine Einwilligung erforderlich sein sollte, wird TidTil diese gesondert einholen.
 
