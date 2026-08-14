@@ -35,7 +35,7 @@ rows:
     alt: "Creating an event in TidTil"
     kicker: "Simple"
     title: "What? When? Who?"
-    text: "That is usually all a family event needs. TidTil reduces adding an event to the decisions that really matter in everyday life. Events, birthdays, anniversaries, trips and repeats are captured quickly and assigned to the right people."
+    text: "That is usually all a family event needs. No form packed with options, no settings you have to understand first. TidTil asks for what matters in everyday life – and then the event is done."
   - image: "img/darstellung.png"
     alt: "TidTil colour picker"
     kicker: "Aesthetic"
