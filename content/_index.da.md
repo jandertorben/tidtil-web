@@ -25,6 +25,9 @@ features:
   - icon: "🔒"
     title: "Privat fra starten"
     text: "Ingen egne TidTil-servere til jeres kalenderdata, ingen reklamer og ingen forretningsmodel bygget på jeres personlige kalender."
+  - icon: "💬"
+    title: "Feedback direkte i TidTil"
+    text: "Rapportér fejl eller del idéer direkte fra appen. I kan valgfrit vedhæfte et skærmbillede – kalender-, familie- og profildata sendes ikke med."
 rows:
   - image: "img/monat.png"
     alt: "TidTil månedskalender"
@@ -74,7 +77,7 @@ sync_free: "Ved lanceringen er TidTil helt gratis – inklusive synkronisering m
 sync_text: "Senere vil TidTil fortsat kunne bruges gratis på jeres egen enhed. Jeres aftaler bevares og kan fortsat oprettes og administreres."
 sync_note: "Hvis I vil bruge TidTil sammen som familie, invitere medlemmer og synkronisere jeres aftaler, er et familieabonnement planlagt til 1,99 € om måneden eller 19,99 € om året. Ét abonnement dækker jeres familie."
 privacy_title: "Privatliv er ikke ekstraudstyr"
-privacy_text: "Jeres aftaler tilhører jer. TidTil kræver ingen separat brugerkonto, viser ingen reklamer og bygger ikke en forretningsmodel på jeres personlige kalenderdata. Til synkronisering bruger TidTil Apples iCloud- og CloudKit-infrastruktur."
+privacy_text: "Jeres aftaler tilhører jer. TidTil kræver ingen separat brugerkonto, viser ingen reklamer og bygger ikke en forretningsmodel på jeres personlige kalenderdata. Til synkronisering bruger TidTil Apples iCloud- og CloudKit-infrastruktur. Når I sender feedback, overføres kun de oplysninger, I selv indtaster, grundlæggende tekniske oplysninger og – hvis valgt – skærmbilledet; kalender-, familie- og profildata sendes ikke med."
 closing_title: "Se, hvad der skal ske. Læg så telefonen væk."
 closing_text: "TidTil skal kræve mindre af jeres opmærksomhed, ikke mere. Et hurtigt blik på dagen – og så mere tid til det, der virkelig betyder noget."
 ---
