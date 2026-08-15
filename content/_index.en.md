@@ -25,6 +25,9 @@ features:
   - icon: "🔒"
     title: "Private by design"
     text: "No TidTil servers for your calendar data, no ads and no business model built on your personal schedule."
+  - icon: "💬"
+    title: "Feedback directly in TidTil"
+    text: "Report bugs or share ideas directly from the app. You can optionally attach a screenshot – your calendar, family and profile data are not included."
 rows:
   - image: "img/monat.png"
     alt: "TidTil month calendar"
@@ -74,7 +77,7 @@ sync_free: "At launch, TidTil is completely free – including syncing with your
 sync_text: "Later, TidTil will remain free to use on your own device. Your events stay available and can still be created and managed."
 sync_note: "If you want to use TidTil together as a family, invite members and keep your events in sync, a family subscription is planned at €1.99 per month or €19.99 per year. One subscription covers your family."
 privacy_title: "Privacy is not an extra"
-privacy_text: "Your events belong to you. TidTil requires no separate user account, shows no ads and does not build a business model around your personal calendar data. For syncing, TidTil uses Apple's iCloud and CloudKit infrastructure."
+privacy_text: "Your events belong to you. TidTil requires no separate user account, shows no ads and does not build a business model around your personal calendar data. For syncing, TidTil uses Apple's iCloud and CloudKit infrastructure. When you send feedback, only the information you enter, basic technical details and – if selected – the screenshot are transmitted; calendar, family and profile data are not included."
 closing_title: "Know what's ahead. Then put the phone away."
 closing_text: "TidTil should demand less of your attention, not more. A quick look at your day – and then more time for what really matters."
 ---
