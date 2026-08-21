@@ -168,6 +168,23 @@ Wenn der Kalender mit anderen Familienmitgliedern geteilt wird, können diese Da
 
 TidTil verwendet diese Angaben nicht für Werbung, Tracking oder Profiling.
 
+## 1.11 Feedback-Formular in der App
+
+Die App enthält ein Formular, über das du einen Fehler melden oder eine Idee schicken kannst. Die Übermittlung erfolgt **ausschließlich dann, wenn du das Formular bewusst absendest**.
+
+Dabei werden verarbeitet:
+
+- **Titel und Nachricht**, die du selbst verfasst
+- ein **Screenshot**, sofern du selbst einen anhängst
+- **App-Version, Build-Nummer, iOS-Version und Gerätemodell**, damit sich ein gemeldeter Fehler nachstellen lässt
+- der Zeitpunkt der Übermittlung
+
+Diese Meldungen werden in der **öffentlichen Datenbank unseres iCloud-Containers** gespeichert. Zugriff darauf haben ausschließlich wir als Anbieter, um dir zu antworten und den Fehler zu beheben; andere Nutzer der App können deine Meldung nicht einsehen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Fehlerbehebung und Verbesserung der App) bzw. deine Einwilligung durch das bewusste Absenden.
+
+**Nicht übermittelt werden** dein Name, dein Profilfoto, deine Termine sowie die Daten deiner Familienmitglieder. Bitte gib im Text keine personenbezogenen Daten an, die für die Bearbeitung nicht erforderlich sind.
+
+Wir speichern die Meldungen nur so lange, wie es zur Bearbeitung erforderlich ist. Auf Wunsch löschen wir deine Meldung – schreib uns dazu einfach an die unten genannte Adresse.
+
 # 2. Datenschutz auf der TidTil-Website
 
 ## 2.1 Hosting über GitHub Pages

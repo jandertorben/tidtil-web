@@ -168,6 +168,23 @@ If the calendar is shared with other family members, these details may be visibl
 
 TidTil does not use this information for advertising, tracking or profiling.
 
+## 1.11 Feedback form in the app
+
+The app contains a form for reporting a problem or sending us an idea. Data is transmitted **only if you deliberately submit the form**.
+
+The following are processed:
+
+- the **title and message** you write yourself
+- a **screenshot**, if you attach one yourself
+- **app version, build number, iOS version and device model**, so that a reported problem can be reproduced
+- the time of submission
+
+These reports are stored in the **public database of our iCloud container**. Only we as the provider have access, in order to reply to you and fix the problem; other users of the app cannot view your report. The legal basis is Art. 6(1)(f) GDPR (legitimate interest in fixing errors and improving the app), or your consent through deliberate submission.
+
+**Not transmitted** are your name, your profile photo, your events or the data of your family members. Please do not include personal data in the text that is not necessary for handling your request.
+
+We keep reports only as long as needed to process them. On request we will delete your report — simply write to the address given below.
+
 # 2. Privacy on the TidTil website
 
 ## 2.1 Hosting through GitHub Pages

@@ -168,6 +168,23 @@ Hvis kalenderen deles med andre familiemedlemmer, kan disse oplysninger være sy
 
 TidTil bruger ikke disse oplysninger til reklamer, tracking eller profilering.
 
+## 1.11 Feedbackformular i appen
+
+Appen indeholder en formular, hvor du kan melde en fejl eller sende os en idé. Data overføres **kun, hvis du bevidst indsender formularen**.
+
+Følgende behandles:
+
+- den **titel og besked**, du selv skriver
+- et **skærmbillede**, hvis du selv vedhæfter et
+- **appversion, buildnummer, iOS-version og enhedsmodel**, så en meldt fejl kan genskabes
+- tidspunktet for indsendelsen
+
+Disse meldinger gemmes i den **offentlige database i vores iCloud-container**. Kun vi som udbyder har adgang, så vi kan svare dig og rette fejlen; andre brugere af appen kan ikke se din melding. Retsgrundlaget er art. 6, stk. 1, litra f, i GDPR (legitim interesse i fejlretning og forbedring af appen) eller dit samtykke ved bevidst indsendelse.
+
+**Overføres ikke:** dit navn, dit profilbillede, dine aftaler eller dine familiemedlemmers data. Undlad venligst at angive personoplysninger i teksten, som ikke er nødvendige for behandlingen.
+
+Vi opbevarer kun meldinger, så længe det er nødvendigt for at behandle dem. På anmodning sletter vi din melding — skriv blot til adressen nedenfor.
+
 # 2. Privatliv på TidTil-hjemmesiden
 
 ## 2.1 Hosting via GitHub Pages
