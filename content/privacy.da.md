@@ -127,13 +127,11 @@ Nogle ikke-indholdsmæssige indstillinger gemmes lokalt via Apples `UserDefaults
 
 Disse indstillinger bruges kun til appens funktion og ikke til reklamer eller profilering.
 
-## 1.7 TidTil Sync, StoreKit og abonnementer
+## 1.7 Køb og abonnementer
 
-Det planlagte TidTil Sync-abonnement bruger **Apple StoreKit 2**. Produktinformation, køb, fornyelse, gendannelse og administration af abonnementet håndteres af Apple og App Store.
+**Den nuværende version af TidTil indeholder ingen køb i appen og intet abonnement.** Appen kan bruges helt gratis, indeholder ingen købsramme og behandler ingen betalings- eller købsoplysninger overhovedet.
 
-TidTil kontrollerer i appen, om der findes en gyldig rettighed til de relevante produkt-id'er. Betalingsoplysninger som kreditkort- eller bankoplysninger behandles ikke af TidTil og gemmes ikke på servere drevet af TidTil.
-
-Apples vilkår og privatlivsinformation gælder desuden for køb og abonnementer.
+Et valgfrit abonnement (**TidTil Sync**) er planlagt til en senere version og vil kunne låse op for familiedeling. Hvis det bliver indført, vil køb, fornyelse, gendannelse og administration udelukkende foregå via Apple og App Store; betalingsoplysninger som kreditkort- eller bankoplysninger vil heller ikke da blive behandlet eller gemt af os. Denne privatlivspolitik opdateres i så fald, før en sådan indførelse.
 
 ## 1.8 Ingen reklamer, tracking eller tredjepartsanalyse
 

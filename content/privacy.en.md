@@ -127,13 +127,11 @@ Some non-content settings are stored locally through Apple's `UserDefaults` / Sw
 
 These settings are used only for app functionality and not for advertising or profiling.
 
-## 1.7 TidTil Sync, StoreKit and subscriptions
+## 1.7 Purchases and subscriptions
 
-The planned TidTil Sync subscription uses **Apple StoreKit 2**. Product information, purchases, renewals, restoration and subscription management are handled by Apple and the App Store.
+**The current version of TidTil contains no in-app purchases and no subscription.** The app is free to use in full, includes no purchase framework and processes no payment or purchase data whatsoever.
 
-TidTil checks inside the app whether a valid entitlement exists for the relevant product identifiers. Payment information such as credit-card or bank details is not processed by TidTil and is not stored on TidTil-operated servers.
-
-Apple's terms and privacy information additionally apply to purchases and subscriptions.
+An optional subscription (**TidTil Sync**) is planned for a later version, which would unlock family sharing. Should it be introduced, purchases, renewals, restoration and management would run exclusively through Apple and the App Store; payment details such as credit-card or bank information would not be processed or stored by us even then. This privacy policy will be updated accordingly before any such introduction.
 
 ## 1.8 No advertising, tracking or third-party analytics
 

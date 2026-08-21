@@ -127,13 +127,11 @@ Einige nicht-inhaltliche Einstellungen werden lokal über Apples `UserDefaults` 
 
 Diese Einstellungen dienen ausschließlich der App-Funktion und werden nicht für Werbung oder Profiling verwendet.
 
-## 1.7 TidTil Sync, StoreKit und Abonnements
+## 1.7 Käufe und Abonnements
 
-Für das geplante TidTil-Sync-Abo verwendet die App **Apple StoreKit 2**. Produktinformationen, Kauf, Verlängerung, Wiederherstellung und Verwaltung des Abonnements erfolgen über Apple bzw. den App Store.
+**Die aktuelle Version von TidTil enthält keine In-App-Käufe und kein Abonnement.** Die App ist vollständig kostenlos nutzbar, bindet kein Kauf-Framework ein und verarbeitet keinerlei Zahlungs- oder Kaufdaten.
 
-TidTil prüft innerhalb der App, ob für die vorgesehenen Produktkennungen eine gültige Berechtigung besteht. Zahlungsdaten wie Kreditkarten- oder Bankdaten werden nicht von TidTil verarbeitet und nicht auf eigenen Servern gespeichert.
-
-Für Käufe und Abonnements gelten ergänzend die Bedingungen und Datenschutzinformationen von Apple.
+Für eine spätere Version ist ein optionales Abo (**TidTil Sync**) geplant, mit dem sich die Familienfreigabe freischalten lässt. Sollte es eingeführt werden, laufen Kauf, Verlängerung, Wiederherstellung und Verwaltung ausschließlich über Apple bzw. den App Store; Zahlungsdaten wie Kreditkarten- oder Bankverbindungen würden auch dann nicht von uns verarbeitet oder gespeichert. Diese Datenschutzerklärung wird vor einer solchen Einführung entsprechend aktualisiert.
 
 ## 1.8 Keine Werbung, kein Tracking und keine Drittanbieter-Analyse
 
