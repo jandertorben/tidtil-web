@@ -81,7 +81,7 @@ faq:
     a: "TidTil betreibt keine eigenen Server für eure Kalenderdaten. Die vorgesehenen Cloud-Funktionen basieren auf Apples iCloud- und CloudKit-Infrastruktur; persönliche Daten werden nicht zu Werbezwecken verkauft oder ausgewertet."
   - q: "Können auch Kinder ohne iPhone dabei sein?"
     a: "Ja. Du legst sie einmal mit Namen an und ordnest ihnen danach ganz normal Termine zu."
-  - q: "Was bedeutet „privat" bei einem Termin?"
+  - q: "Was bedeutet „privat“ bei einem Termin?"
     a: "Private Termine sind nur für dich sichtbar und werden getrennt von den Familienterminen gespeichert – andere Familienmitglieder sehen sie nicht."
 sync_badge: "Kostenlos zum Start"
 sync_title: "Gemeinsam, wenn ihr es braucht"
