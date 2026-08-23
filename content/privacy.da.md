@@ -129,9 +129,11 @@ Disse indstillinger bruges kun til appens funktion og ikke til reklamer eller pr
 
 ## 1.7 Køb og abonnementer
 
-**Den nuværende version af TidTil indeholder ingen køb i appen og intet abonnement.** Appen kan bruges helt gratis, indeholder ingen købsramme og behandler ingen betalings- eller købsoplysninger overhovedet.
+**TidTils private kalender er og forbliver helt gratis.** Fra version 2.2 kan den fælles familiekalender låses op med et valgfrit abonnement (**TidTil Familie**). Inviterede familiemedlemmer skal aldrig have deres eget abonnement.
 
-Et valgfrit abonnement (**TidTil Sync**) er planlagt til en senere version og vil kunne låse op for familiedeling. Hvis det bliver indført, vil køb, fornyelse, gendannelse og administration udelukkende foregå via Apple og App Store; betalingsoplysninger som kreditkort- eller bankoplysninger vil heller ikke da blive behandlet eller gemt af os. Denne privatlivspolitik opdateres i så fald, før en sådan indførelse.
+Køb, fornyelse, gendannelse og opsigelse foregår **udelukkende via Apple og App Store**. Betalingsoplysninger som kreditkort- eller bankoplysninger bliver hverken behandlet eller gemt af os og når os på intet tidspunkt.
+
+Kontrollen af, om der findes et gyldigt abonnement, sker **udelukkende på din enhed** via Apples StoreKit. Der er ingen egen server involveret og ingen overførsel til os. Har du brugt TidTil før version 2.2, beholder du familiekalenderen gratis permanent; også den kontrol sker lokalt ud fra den kvittering, Apple har signeret.
 
 ## 1.8 Ingen reklamer, tracking eller tredjepartsanalyse
 

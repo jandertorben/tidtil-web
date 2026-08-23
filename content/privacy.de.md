@@ -129,9 +129,11 @@ Diese Einstellungen dienen ausschließlich der App-Funktion und werden nicht fü
 
 ## 1.7 Käufe und Abonnements
 
-**Die aktuelle Version von TidTil enthält keine In-App-Käufe und kein Abonnement.** Die App ist vollständig kostenlos nutzbar, bindet kein Kauf-Framework ein und verarbeitet keinerlei Zahlungs- oder Kaufdaten.
+**Der private Kalender von TidTil ist und bleibt vollständig kostenlos.** Ab Version 2.2 lässt sich der gemeinsame Familienkalender über ein optionales Abonnement (**TidTil Familie**) freischalten. Eingeladene Familienmitglieder benötigen kein eigenes Abo.
 
-Für eine spätere Version ist ein optionales Abo (**TidTil Sync**) geplant, mit dem sich die Familienfreigabe freischalten lässt. Sollte es eingeführt werden, laufen Kauf, Verlängerung, Wiederherstellung und Verwaltung ausschließlich über Apple bzw. den App Store; Zahlungsdaten wie Kreditkarten- oder Bankverbindungen würden auch dann nicht von uns verarbeitet oder gespeichert. Diese Datenschutzerklärung wird vor einer solchen Einführung entsprechend aktualisiert.
+Kauf, Verlängerung, Wiederherstellung und Kündigung laufen **ausschließlich über Apple bzw. den App Store**. Zahlungsdaten wie Kreditkarten- oder Bankverbindungen werden von uns weder verarbeitet noch gespeichert und erreichen uns zu keinem Zeitpunkt.
+
+Die Prüfung, ob ein gültiges Abo vorliegt, findet **ausschließlich auf deinem Gerät** über Apples StoreKit statt. Es gibt dafür keinen eigenen Server und keine Übermittlung an uns. Wer TidTil bereits vor Version 2.2 genutzt hat, behält den Familienkalender dauerhaft kostenlos; auch diese Prüfung erfolgt lokal anhand des von Apple signierten Kaufnachweises.
 
 ## 1.8 Keine Werbung, kein Tracking und keine Drittanbieter-Analyse
 

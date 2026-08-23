@@ -129,9 +129,11 @@ These settings are used only for app functionality and not for advertising or pr
 
 ## 1.7 Purchases and subscriptions
 
-**The current version of TidTil contains no in-app purchases and no subscription.** The app is free to use in full, includes no purchase framework and processes no payment or purchase data whatsoever.
+**TidTil's private calendar is and remains completely free.** From version 2.2, the shared family calendar can be unlocked with an optional subscription (**TidTil Family**). Invited family members never need their own subscription.
 
-An optional subscription (**TidTil Sync**) is planned for a later version, which would unlock family sharing. Should it be introduced, purchases, renewals, restoration and management would run exclusively through Apple and the App Store; payment details such as credit-card or bank information would not be processed or stored by us even then. This privacy policy will be updated accordingly before any such introduction.
+Purchase, renewal, restoration and cancellation run **exclusively through Apple and the App Store**. Payment details such as credit-card or bank information are neither processed nor stored by us and never reach us at any point.
+
+Whether a valid subscription exists is checked **entirely on your device** via Apple's StoreKit. There is no server of our own involved and no transmission to us. Anyone who used TidTil before version 2.2 keeps the family calendar free permanently; that check is also performed locally, based on the purchase receipt signed by Apple.
 
 ## 1.8 No advertising, tracking or third-party analytics
 
