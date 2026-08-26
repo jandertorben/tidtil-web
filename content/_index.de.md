@@ -77,7 +77,7 @@ faq:
   - q: "Was bedeutet „privat“ bei einem Termin?"
     a: "Private Termine sind nur für dich sichtbar und werden getrennt von den Familienterminen gespeichert – andere Familienmitglieder sehen sie nicht."
   - q: "Gibt es Erinnerungen für jeden einzelnen Termin?"
-    a: "Nein. TidTil bleibt bewusst ruhig. Optional bekommst du morgens maximal eine kompakte Übersicht über die Termine des Tages. An terminfreien Tagen bleibt es still."
+    a: "Ja. Für jeden Termin kannst du individuell eine Erinnerung einstellen. Zusätzlich kannst du optional den Tagesüberblick aktivieren, der dir morgens eine kompakte Übersicht über deine Termine des Tages zeigt."
 closing_title: "Wissen, was ansteht. Dann das Handy weglegen."
 closing_text: "TidTil soll nicht mehr Aufmerksamkeit verlangen, sondern weniger. Ein kurzer Blick auf euren Tag – und dann bleibt mehr Zeit für das, was wirklich wichtig ist."
 closing_proof: "Kostenlos auf deinem Gerät · Keine Werbung · Kein eigenes TidTil-Konto"
