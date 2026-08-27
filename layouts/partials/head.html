@@ -36,6 +36,16 @@
   {{ if eq .Language.Lang "de" }}<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">{{ end }}
 {{ end }}
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "TidTil",
+  "url": {{ .Site.Home.Permalink | jsonify }},
+  "inLanguage": {{ .Site.Language.Lang | jsonify }}
+}
+</script>
+
 {{ if .IsHome }}
 <script type="application/ld+json">
 {
@@ -46,12 +56,28 @@
   "operatingSystem": "iOS",
   "description": {{ $description | jsonify }},
   "url": {{ .Permalink | jsonify }},
+  "installUrl": {{ .Site.Params.appStoreURL | jsonify }},
   "image": {{ $ogImage | jsonify }},
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "EUR"
-  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "TidTil Persönlich",
+      "price": "0",
+      "priceCurrency": "EUR"
+    },
+    {
+      "@type": "Offer",
+      "name": "TidTil Familie – monatlich",
+      "price": "1.99",
+      "priceCurrency": "EUR"
+    },
+    {
+      "@type": "Offer",
+      "name": "TidTil Familie – jährlich",
+      "price": "19.99",
+      "priceCurrency": "EUR"
+    }
+  ],
   "inLanguage": {{ .Site.Language.Lang | jsonify }},
   "publisher": {
     "@type": "Person",
@@ -59,6 +85,26 @@
   }
 }
 </script>
+{{ with .Params.faq }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {{ range $i, $item := . }}{{ if $i }},{{ end }}
+    {
+      "@type": "Question",
+      "name": {{ $item.q | jsonify }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ $item.a | jsonify }}
+      }
+    }
+    {{ end }}
+  ]
+}
+</script>
+{{ end }}
 {{ end }}
 
 {{ $css := resources.Get "css/main.css" | resources.Minify | resources.Fingerprint }}
