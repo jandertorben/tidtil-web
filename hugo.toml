@@ -1,6 +1,5 @@
 # TidTil – Website (Hugo)
-# GitHub-Pages-Projektseite: Basis-URL enthält den Repo-Pfad.
-baseURL = "https://jandertorben.github.io/tidtil-web/"
+baseURL = "https://tidtil.app/"
 title = "TidTil"
 
 # Mehrsprachig: Deutsch ist Standard (ohne URL-Präfix), en/da bekommen /en/ bzw. /da/.
@@ -35,7 +34,7 @@ disableKinds = ["taxonomy", "term"]
 [params]
   # Kontakt-Adresse für Support & Datenschutz.
   email = "torbenjander@icloud.com"
-  appStoreURL = ""   # sobald die App live ist, hier den App-Store-Link eintragen
+  appStoreURL = "https://apps.apple.com/us/app/tidtil/id6780019857"
   ogImage = "img/home.png"
 
   # Impressum-Angaben (§ 5 DDG). Erscheinen ausschließlich auf der Impressum-Seite.
