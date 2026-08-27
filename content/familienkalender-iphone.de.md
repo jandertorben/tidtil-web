@@ -1,22 +1,22 @@
 ---
-title: "Familienkalender für iPhone – einfach gemeinsam planen"
-description: "Ein einfacher Familienkalender für iPhone: Mit TidTil organisiert ihr gemeinsame und private Termine, Familienmitglieder und euren Tagesüberblick ohne unnötige Zusatzfunktionen."
+title: "Familienkalender fürs iPhone – einfach gemeinsam planen"
+description: "TidTil ist ein einfacher Familienkalender fürs iPhone: gemeinsame und private Termine organisieren, Familie synchronisieren und den Tag im Blick behalten."
 url: "/familienkalender-iphone/"
 ---
 
-## Ein Familienkalender, der sich auf Termine konzentriert
+## Ein Familienkalender fürs iPhone, der sich auf Termine konzentriert
 
 Wer in der Familie hauptsächlich wissen möchte, **was heute ansteht, wann ein Termin stattfindet und wen er betrifft**, braucht nicht zwingend Aufgabenlisten, Chats oder ein umfangreiches Organisationssystem.
 
-TidTil ist ein Familienkalender und Familienplaner für das iPhone, der sich bewusst auf Termine konzentriert. Ihr könnt Termine Familienmitgliedern zuordnen, gemeinsame Termine miteinander synchronisieren und persönliche Termine privat halten.
+TidTil ist eine Familienkalender-App und ein Familienplaner fürs iPhone, der sich bewusst auf Termine konzentriert. Ihr könnt Termine Familienmitgliedern zuordnen, gemeinsame Termine miteinander synchronisieren und persönliche Termine privat halten.
 
-## Gemeinsame Termine auf dem iPhone organisieren
+## Gemeinsamer Familienkalender auf dem iPhone
 
 Mit TidTil könnt ihr Familienmitglieder einladen und Familientermine über Apples iCloud- und CloudKit-Infrastruktur synchronisieren. Ein Familienabo reicht für eure Familie. Kinder ohne eigenes iPhone können ebenfalls als Familienmitglieder angelegt werden, damit Termine eindeutig zugeordnet werden können.
 
 Persönliche Termine lassen sich auf dem eigenen Gerät kostenlos erstellen und verwalten. Die Familiensynchronisierung ist optional.
 
-## Private und gemeinsame Termine
+## Private und gemeinsame Termine in einer App
 
 Nicht jeder Termin gehört in den gemeinsamen Familienkalender. Deshalb könnt ihr beim Anlegen eines Termins entscheiden, ob er **privat** bleibt oder für die **Familie** sichtbar sein soll.
 
@@ -28,14 +28,32 @@ TidTil legt den Schwerpunkt auf den aktuellen Tag. Auf Wunsch kann morgens ein k
 
 Die reduzierte Monatsansicht hilft dabei, kommende Termine im Blick zu behalten, ohne den eigentlichen Fokus auf den Familienalltag zu verlieren.
 
-## Was unterscheidet TidTil von klassischen Familienplanern?
+## Familienplaner ohne Aufgabenlisten, Chats und Funktionsballast
 
-Viele Familien-Apps kombinieren Kalender, Aufgaben, Einkaufslisten, Chats und weitere Organisationsfunktionen. Das kann sinnvoll sein, wenn eine Familie genau diese Komplettlösung sucht.
+Viele Familien-Apps kombinieren Kalender, Aufgaben, Einkaufslisten, Chats, Dokumente und weitere Organisationsfunktionen. Das kann sinnvoll sein, wenn eine Familie genau diese Komplettlösung sucht.
 
-TidTil verfolgt einen anderen Ansatz: **Termine organisieren, den Tag überblicken und danach das Handy wieder weglegen.** Die App soll keinen klassischen Kalender ersetzen, sondern Familien eine bewusst einfachere gemeinsame Terminübersicht geben.
+TidTil verfolgt bewusst einen anderen Ansatz: **Termine organisieren, den Tag überblicken und danach das Handy wieder weglegen.** Die App soll keinen klassischen Allzweck-Kalender ersetzen, sondern Familien eine einfachere gemeinsame Terminübersicht geben.
+
+## Für wen passt TidTil?
+
+TidTil passt besonders zu Familien, die einen **einfachen Familienkalender fürs iPhone** suchen und nicht noch ein weiteres komplettes Organisationssystem pflegen möchten. Wenn gemeinsame Termine, private Termine, Erinnerungen und ein ruhiger Tagesüberblick im Mittelpunkt stehen sollen, ist genau dafür TidTil gedacht.
+
+## Häufige Fragen zum Familienkalender
+
+### Kann ich Termine mit meiner Familie teilen?
+Ja. Mit dem Familienabo könnt ihr Familienmitglieder einladen und gemeinsame Termine synchronisieren.
+
+### Braucht jedes Familienmitglied ein Abo?
+Nein. Ein Familienabo reicht für eure Familie.
+
+### Kann ich Termine privat halten?
+Ja. Beim Anlegen entscheidet ihr, ob ein Termin privat bleibt oder für die Familie sichtbar ist.
+
+### Gibt es Erinnerungen?
+Ja. Für einzelne Termine könnt ihr jeweils eine Erinnerung einstellen. Zusätzlich gibt es optional einen morgendlichen Tagesüberblick.
 
 ## TidTil für iPhone
 
 TidTil ist für persönliche Termine kostenlos nutzbar. Die gemeinsame Familiensynchronisierung kostet 1,99 € pro Monat oder 19,99 € pro Jahr; ein Abo reicht für eure Familie.
 
-[Mehr über die Funktionen von TidTil erfahren](/#features) oder [TidTil im App Store öffnen](https://apps.apple.com/us/app/tidtil/id6780019857).
+[Mehr über die Funktionen von TidTil erfahren](/#features), [Datenschutz bei TidTil lesen](/privacy/) oder [TidTil im App Store öffnen](https://apps.apple.com/us/app/tidtil/id6780019857).
