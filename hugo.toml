@@ -35,7 +35,7 @@ disableKinds = ["taxonomy", "term"]
   # Kontakt-Adresse für Support & Datenschutz.
   email = "torbenjander@icloud.com"
   appStoreURL = "https://apps.apple.com/us/app/tidtil/id6780019857"
-  ogImage = "img/home.png"
+  ogImage = "img/6D558C1C-D51B-4FCA-91BE-E40C717ED879.png"
 
   # Impressum-Angaben (§ 5 DDG). Erscheinen ausschließlich auf der Impressum-Seite.
   legalName  = "Torben Jander"
