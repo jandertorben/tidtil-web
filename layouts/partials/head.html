@@ -2,14 +2,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 {{ $description := cond (ne .Description "") .Description (i18n "meta_description") }}
-{{ $pageTitle := cond .IsHome (printf "%s – %s" .Site.Title (i18n "tagline")) (printf "%s · %s" .Title .Site.Title) }}
+{{ $pageTitle := cond .IsHome (printf "%s – %s" .Site.Title (i18n "tagline")) (printf "%s · %s" (cond (eq .Kind "404") (i18n "error_404_title") .Title) .Site.Title) }}
 {{ $ogImage := (.Site.Params.ogImage | default "img/tidtil-social-preview.jpg") | absURL }}
 {{ $localeMap := dict "de" "de_DE" "en" "en_GB" "da" "da_DK" }}
 {{ $ogLocale := index $localeMap .Site.Language.Lang | default .Site.Language.Lang }}
 
 <title>{{ $pageTitle }}</title>
 <meta name="description" content="{{ $description }}">
-<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="robots" content="{{ if eq .Kind "404" }}noindex,follow{{ else }}index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1{{ end }}">
 <link rel="canonical" href="{{ .Permalink }}">
 <link rel="sitemap" type="application/xml" href="{{ "sitemap.xml" | absURL }}">
 
@@ -47,8 +47,8 @@
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "TidTil",
-  "url": {{ .Site.Home.Permalink | jsonify }},
-  "inLanguage": {{ .Site.Language.Lang | jsonify }}
+  "url": {{ .Site.Home.Permalink | jsonify | safeJS }},
+  "inLanguage": {{ .Site.Language.Lang | jsonify | safeJS }}
 }
 </script>
 
@@ -60,31 +60,31 @@
   "name": "TidTil",
   "applicationCategory": "LifestyleApplication",
   "operatingSystem": "iOS",
-  "description": {{ $description | jsonify }},
-  "url": {{ .Permalink | jsonify }},
-  "installUrl": {{ .Site.Params.appStoreURL | jsonify }},
-  "image": {{ $ogImage | jsonify }},
+  "description": {{ $description | jsonify | safeJS }},
+  "url": {{ .Permalink | jsonify | safeJS }},
+  "installUrl": {{ .Site.Params.appStoreURL | jsonify | safeJS }},
+  "image": {{ $ogImage | jsonify | safeJS }},
   "offers": [
     {
       "@type": "Offer",
-      "name": "TidTil Persönlich",
+      "name": {{ i18n "offer_name_personal" | jsonify | safeJS }},
       "price": "0",
       "priceCurrency": "EUR"
     },
     {
       "@type": "Offer",
-      "name": "TidTil Familie – monatlich",
+      "name": {{ i18n "offer_name_family_monthly" | jsonify | safeJS }},
       "price": "1.99",
       "priceCurrency": "EUR"
     },
     {
       "@type": "Offer",
-      "name": "TidTil Familie – jährlich",
+      "name": {{ i18n "offer_name_family_yearly" | jsonify | safeJS }},
       "price": "19.99",
       "priceCurrency": "EUR"
     }
   ],
-  "inLanguage": {{ .Site.Language.Lang | jsonify }},
+  "inLanguage": {{ .Site.Language.Lang | jsonify | safeJS }},
   "publisher": {
     "@type": "Person",
     "name": "Torben Jander"
@@ -100,10 +100,10 @@
     {{ range $i, $item := . }}{{ if $i }},{{ end }}
     {
       "@type": "Question",
-      "name": {{ $item.q | jsonify }},
+      "name": {{ $item.q | jsonify | safeJS }},
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": {{ $item.a | jsonify }}
+        "text": {{ $item.a | jsonify | safeJS }}
       }
     }
     {{ end }}
