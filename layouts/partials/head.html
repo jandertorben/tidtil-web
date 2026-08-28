@@ -33,7 +33,9 @@
 <meta name="twitter:image" content="{{ $ogImage }}">
 <meta name="twitter:image:alt" content="{{ i18n "og_image_alt" }}">
 
-<meta name="theme-color" content="#b8966f">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#b8966f" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#cbaa7d" media="(prefers-color-scheme: dark)">
 
 {{ range .AllTranslations }}
 <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
