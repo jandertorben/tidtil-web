@@ -9,5 +9,7 @@
       {{ block "main" . }}{{ end }}
     </main>
     {{ partial "footer.html" . }}
+    {{ $revealJS := resources.Get "js/reveal.js" | resources.Minify | resources.Fingerprint }}
+    <script src="{{ $revealJS.RelPermalink }}" defer></script>
   </body>
 </html>
