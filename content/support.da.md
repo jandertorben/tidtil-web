@@ -13,7 +13,7 @@ læser hver besked.
 
 ## Kontakt
 
-Send os en e-mail: {{< email >}}
+Send os en e-mail: {{< email-support >}}
 
 Vi svarer så hurtigt, vi kan – som regel inden for et par dage.
 
