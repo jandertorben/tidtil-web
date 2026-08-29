@@ -102,15 +102,15 @@ h1, h2, h3 { font-family: "Jost", sans-serif; font-weight: 600; color: var(--ink
   backdrop-filter: saturate(140%) blur(14px);
   border-bottom: 1px solid var(--line);
 }
-.header-inner { display: flex; align-items: center; justify-content: space-between; padding: 18px 0; }
+.header-inner { display: flex; align-items: center; gap: 26px; padding: 18px 0; }
 .wordmark { font-size: 1.5rem; font-weight: 600; letter-spacing: -0.3px; }
 .wordmark-tid { color: var(--ink); }
 .wordmark-til { color: var(--accent); }
-.site-nav { display: flex; align-items: center; gap: 26px; }
+.site-nav { display: flex; align-items: center; gap: 26px; margin-left: auto; }
 .site-nav a { color: var(--ink-soft); font-size: 0.95rem; font-weight: 400; }
 .site-nav a:hover { color: var(--ink); text-decoration: none; }
 
-.lang-switch { display: inline-flex; gap: 3px; margin-left: 4px; padding: 3px; background: var(--surface); border-radius: 999px; }
+.lang-switch { display: inline-flex; gap: 3px; padding: 3px; background: var(--surface); border-radius: 999px; }
 .lang { font-size: 0.76rem; font-weight: 500; padding: 4px 10px; border-radius: 999px; color: var(--ink-soft); }
 .lang.current { background: var(--accent); color: var(--on-accent); }
 .lang:hover { text-decoration: none; }
@@ -340,8 +340,17 @@ h1, h2, h3 { font-family: "Jost", sans-serif; font-weight: 600; color: var(--ink
   .row-copy { display: flex; flex-direction: column; align-items: center; }
   .row-text { max-width: 52ch; }
   .privacy-inner { flex-direction: column; align-items: center; text-align: center; }
-  .site-nav { gap: 14px; }
-  .site-nav a:not(.lang) { display: none; }
+
+  /* Am Handy füllt das Hero-Bild fast die Breite — der seitliche Überstand des
+     Scheins würde die Seite horizontal scrollbar machen. */
+  .hero-art::before { inset: -10% 0; }
+
+  /* Zweizeilige Kopfzeile: Wortmarke und Sprachwahl oben, Seitenlinks darunter.
+     Vorher waren Datenschutz und Support (beide App-Store-Pflichtseiten) am
+     Handy ausgeblendet und nur über die Fußzeile erreichbar. */
+  .header-inner { flex-wrap: wrap; gap: 10px 26px; padding: 14px 0; }
+  .lang-switch { margin-left: auto; }
+  .site-nav { order: 1; width: 100%; margin-left: 0; justify-content: center; flex-wrap: wrap; gap: 20px; }
 }
 
 @media (max-width: 700px) {

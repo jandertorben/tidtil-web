@@ -56,4 +56,4 @@ Yes. You can set an individual reminder for each event. There's also an optional
 
 TidTil is free to use for personal events. Shared family syncing costs €1.99 per month or €19.99 per year; one subscription covers your family.
 
-[Learn more about TidTil's features](/en/#features), [read about privacy at TidTil](/en/privacy/) or [open TidTil in the App Store](https://apps.apple.com/us/app/tidtil/id6780019857).
+[Learn more about TidTil's features](/en/#features), [read about privacy at TidTil](/en/privacy/) or [open TidTil in the App Store](https://apps.apple.com/app/id6780019857).
