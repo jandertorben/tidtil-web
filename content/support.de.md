@@ -10,7 +10,7 @@ Familienprojekt und lesen jede Nachricht.
 
 ## Kontakt
 
-Schreib uns eine E-Mail: {{< email >}}
+Schreib uns eine E-Mail: {{< email-support >}}
 
 Wir antworten so schnell wir können – meist innerhalb weniger Tage.
 
