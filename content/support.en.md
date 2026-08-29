@@ -10,7 +10,7 @@ every message.
 
 ## Contact
 
-Send us an email: {{< email >}}
+Send us an email: {{< email-support >}}
 
 We reply as quickly as we can – usually within a few days.
 
