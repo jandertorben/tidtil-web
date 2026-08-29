@@ -56,4 +56,4 @@ Ja. I kan indstille en individuel påmindelse for hver aftale. Der findes desude
 
 TidTil kan bruges gratis til personlige aftaler. Fælles familiesynkronisering koster 1,99 € om måneden eller 19,99 € om året; ét abonnement dækker jeres familie.
 
-[Læs mere om TidTils funktioner](/da/#features), [læs om privatliv hos TidTil](/da/privatliv/) eller [åbn TidTil i App Store](https://apps.apple.com/us/app/tidtil/id6780019857).
+[Læs mere om TidTils funktioner](/da/#features), [læs om privatliv hos TidTil](/da/privatliv/) eller [åbn TidTil i App Store](https://apps.apple.com/app/id6780019857).

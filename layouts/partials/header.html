@@ -8,15 +8,15 @@
       <a href="{{ .Site.Home.RelPermalink }}#features">{{ i18n "nav_features" }}</a>
       <a href="{{ (.Site.GetPage "privacy").RelPermalink }}">{{ i18n "nav_privacy" }}</a>
       <a href="{{ (.Site.GetPage "support").RelPermalink }}">{{ i18n "nav_support" }}</a>
-
-      {{ if .IsTranslated }}
-      <span class="lang-switch" aria-label="{{ i18n "lang_label" }}">
-        <a class="lang current" aria-current="page">{{ .Site.Language.Lang | upper }}</a>
-        {{ range .Translations }}
-        <a class="lang" href="{{ .Permalink }}" hreflang="{{ .Language.Lang }}">{{ .Language.Lang | upper }}</a>
-        {{ end }}
-      </span>
-      {{ end }}
     </nav>
+
+    {{ if .IsTranslated }}
+    <span class="lang-switch" aria-label="{{ i18n "lang_label" }}">
+      <a class="lang current" aria-current="page">{{ .Site.Language.Lang | upper }}</a>
+      {{ range .Translations }}
+      <a class="lang" href="{{ .Permalink }}" hreflang="{{ .Language.Lang }}">{{ .Language.Lang | upper }}</a>
+      {{ end }}
+    </span>
+    {{ end }}
   </div>
 </header>

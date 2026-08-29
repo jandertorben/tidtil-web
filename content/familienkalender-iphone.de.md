@@ -56,4 +56,4 @@ Ja. Für einzelne Termine könnt ihr jeweils eine Erinnerung einstellen. Zusätz
 
 TidTil ist für persönliche Termine kostenlos nutzbar. Die gemeinsame Familiensynchronisierung kostet 1,99 € pro Monat oder 19,99 € pro Jahr; ein Abo reicht für eure Familie.
 
-[Mehr über die Funktionen von TidTil erfahren](/#features), [Datenschutz bei TidTil lesen](/datenschutz/) oder [TidTil im App Store öffnen](https://apps.apple.com/us/app/tidtil/id6780019857).
+[Mehr über die Funktionen von TidTil erfahren](/#features), [Datenschutz bei TidTil lesen](/datenschutz/) oder [TidTil im App Store öffnen](https://apps.apple.com/app/id6780019857).
