@@ -28,8 +28,9 @@ disableKinds = ["taxonomy", "term"]
   unsafe = true
 
 [params]
-  email = "torbenjander@icloud.com"
-  # Ohne Ländercode: Apple leitet automatisch in den Store des Besuchers.
+  email = "hallo@tidtil.app"
+  emailSupport = "support@tidtil.app"
+   # Ohne Ländercode: Apple leitet automatisch in den Store des Besuchers.
   appStoreURL = "https://apps.apple.com/app/id6780019857"
   ogImage = "img/tidtil-social-preview.jpg"
 
