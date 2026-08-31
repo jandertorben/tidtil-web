@@ -170,7 +170,7 @@ h1, h2, h3 { font-family: "Jost", sans-serif; font-weight: 600; color: var(--ink
   transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 .feature-lifestyle:hover { transform: translateY(-6px); }
-.feature-lifestyle img { display: block; width: 100%; height: auto; aspect-ratio: 1098 / 1536; object-fit: cover; }
+.feature-lifestyle img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
 .sync-lifestyle {
   margin: 0; width: 300px; aspect-ratio: 4 / 5; border-radius: 22px; overflow: hidden;
   background: var(--surface-2); box-shadow: 0 14px 34px rgba(0, 0, 0, 0.08); align-self: start;

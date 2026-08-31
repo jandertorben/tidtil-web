@@ -1,5 +1,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preload" as="font" type="font/ttf" href="{{ "fonts/Jost-Variable.ttf" | relURL }}" crossorigin>
 
 {{ $description := cond (ne .Description "") .Description (i18n "meta_description") }}
 {{ $pageTitle := cond .IsHome (printf "%s – %s" .Site.Title (i18n "tagline")) (printf "%s · %s" (cond (eq .Kind "404") (i18n "error_404_title") .Title) .Site.Title) }}
