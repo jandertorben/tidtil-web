@@ -1,0 +1,59 @@
+{{ $p := .Params }}
+{{ $today := index $p.rows 0 }}
+{{ $lang := .Lang }}
+{{ $weekday := cond (eq $lang "da") "FREDAG · I DAG" (cond (eq $lang "en") "FRIDAY · TODAY" "FREITAG · HEUTE") }}
+{{ $date := cond (eq $lang "da") "28. august" (cond (eq $lang "en") "28 August" "28. August") }}
+{{ $person := cond (eq $lang "da") "Far" (cond (eq $lang "en") "Dad" "Papa") }}
+{{ $familyTitle := cond (eq $lang "da") "Tid til os" (cond (eq $lang "en") "Time for us" "Zeit für uns") }}
+{{ $familyText := cond (eq $lang "da") "Læg telefonen væk og nyd tiden sammen!" (cond (eq $lang "en") "Put the phone away and enjoy time together!" "Leg das Handy weg und genießt gemeinsame Zeit!") }}
+{{ $emptyTitle := cond (eq $lang "da") "Intet planlagt" (cond (eq $lang "en") "Nothing planned" "Nichts geplant") }}
+{{ $emptyText := cond (eq $lang "da") "En fri dag – nyd den." (cond (eq $lang "en") "A free day – enjoy it." "Ein freier Tag – genießt ihn.") }}
+
+<section class="today-section" aria-labelledby="today-title">
+  <div class="wrap today-layout">
+    <div class="today-copy">
+      <p class="kicker">{{ $today.kicker }}</p>
+      <h2 id="today-title" class="today-title">{{ $today.title }}</h2>
+      <p class="today-text">{{ $today.text }}</p>
+
+      {{ with $p.core_benefits }}
+      <div class="today-benefits">
+        {{ range . }}
+        <article class="today-benefit">
+          <div class="today-benefit-icon" aria-hidden="true">{{ .icon }}</div>
+          <div>
+            <h3>{{ .title }}</h3>
+            <p>{{ .text }}</p>
+          </div>
+        </article>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+
+    <div class="today-visual" role="img" aria-label="{{ $today.alt }}">
+      <div class="today-scene">
+        <div class="today-plant" aria-hidden="true"></div>
+        <div class="today-cup" aria-hidden="true"></div>
+        <div class="today-hand" aria-hidden="true"></div>
+
+        <div class="today-phone" aria-hidden="true">
+          <div class="today-phone-island"></div>
+          <div class="today-phone-status"><span>09:41</span><span>5G ▰</span></div>
+          <div class="today-phone-content">
+            <div class="today-phone-top"><span>{{ $weekday }}</span><span class="today-person">• {{ $person }}⌄</span></div>
+            <div class="today-date">{{ $date }}</div>
+            <div class="today-dots"><span></span><span></span><span></span><span class="active"></span><span></span><span></span></div>
+            <div class="today-family-time">
+              <h3>{{ $familyTitle }}</h3>
+              <p>{{ $familyText }}</p>
+            </div>
+            <div class="today-avatar">T</div>
+            <div class="today-empty-state"><span class="today-leaf">⌁</span><strong>{{ $emptyTitle }}</strong><small>{{ $emptyText }}</small></div>
+            <div class="today-add">+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
