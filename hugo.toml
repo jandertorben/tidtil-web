@@ -32,7 +32,7 @@ disableKinds = ["taxonomy", "term"]
   emailSupport = "support@tidtil.app"
    # Ohne Ländercode: Apple leitet automatisch in den Store des Besuchers.
   appStoreURL = "https://apps.apple.com/app/id6780019857"
-  ogImage = "img/tidtil-social-preview.jpg"
+  ogImage = "img/AB14F977-D8D0-4346-BADC-8E84A292D4FC.png"
 
   legalName  = "Torben Jander"
   legalAddr1 = "Arster Landstraße 22"
