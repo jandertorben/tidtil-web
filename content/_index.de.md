@@ -25,7 +25,7 @@ rows:
     kicker: "Heute"
     title: "Was steht bei uns an?"
     text: "Ein Blick genügt. TidTil zeigt euch, was heute ansteht, wann es passiert und wen es betrifft. Der Tag steht im Mittelpunkt – und die reduzierte Monatsansicht gibt euch den nötigen Blick nach vorn."
-  - image: "img/feature-neuer-termin.webp"
+  - image: "img/082F5B69-D9A8-444F-A2A5-782343FCE30B.png"
     alt: "Neuen Familientermin in TidTil anlegen"
     kicker: "Einfach"
     title: "Was? Wann? Für wen? Und wer darf's sehen?"
