@@ -84,7 +84,8 @@
 
 {{ $mainCSS := resources.Get "css/main.css" }}
 {{ $todayCSS := resources.Get "css/today-section.css" }}
-{{ $css := slice $mainCSS $todayCSS | resources.Concat "css/site.css" | resources.Minify | resources.Fingerprint }}
+{{ $responsiveCSS := resources.Get "css/responsive.css" }}
+{{ $css := slice $mainCSS $todayCSS $responsiveCSS | resources.Concat "css/site.css" | resources.Minify | resources.Fingerprint }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 
 <link rel="icon" type="image/png" sizes="48x48" href="{{ "favicon-48.png" | relURL }}">
