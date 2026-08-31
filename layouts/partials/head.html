@@ -9,7 +9,7 @@
 
 <title>{{ $pageTitle }}</title>
 <meta name="description" content="{{ $description }}">
-<meta name="robots" content="{{ if eq .Kind "404") }}noindex,follow{{ else }}index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1{{ end }}">
+<meta name="robots" content="{{ if eq .Kind "404" }}noindex,follow{{ else }}index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1{{ end }}">
 <link rel="canonical" href="{{ .Permalink }}">
 <link rel="sitemap" type="application/xml" href="{{ "sitemap.xml" | absURL }}">
 
