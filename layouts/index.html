@@ -4,8 +4,7 @@
 <section class="hero" style="padding:clamp(28px,5vw,64px) 0 clamp(40px,6vw,72px);">
   <div class="wrap">
     <div style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">
-      <h1>{{ $p.hero_title }} {{ $p.hero_script }}</h1>
-      <p>{{ $p.hero_sub }}</p>
+      <h1>{{ $p.hero_title }} {{ $p.hero_script }}</h1><p>{{ $p.hero_sub }}</p>
     </div>
     <figure style="position:relative;margin:0;width:100%;border-radius:28px;overflow:hidden;box-shadow:var(--shadow-float);background:var(--surface-2);">
       <img src="{{ "img/tidtil-header-hq.webp" | relURL }}" alt="{{ $p.hero_alt }}" loading="eager" fetchpriority="high" width="1672" height="941" style="display:block;width:100%;height:auto;aspect-ratio:1672 / 941;object-fit:contain;">
@@ -14,11 +13,9 @@
   </div>
 </section>
 
-{{ with $p.core_benefits }}
-<section class="benefit-strip"><div class="wrap benefit-grid">{{ range . }}<article class="benefit-card"><div class="benefit-icon" aria-hidden="true">{{ .icon }}</div><h2>{{ .title }}</h2><p>{{ .text }}</p></article>{{ end }}</div></section>
-{{ end }}
+{{ partial "home-today.html" . }}
 
-<section id="features" class="rows"><div class="wrap">{{ range $i, $row := $p.rows }}<div class="row-item {{ if eq (mod $i 2) 1 }}reverse{{ end }}"><div class="row-art"><figure class="feature-lifestyle"><img src="{{ $row.image | relURL }}" alt="{{ $row.alt }}" loading="lazy" width="1098" height="1536"></figure></div><div class="row-copy"><p class="kicker">{{ $row.kicker }}</p><h2 class="row-title">{{ $row.title }}</h2><p class="row-text">{{ $row.text }}</p></div></div>{{ end }}</div></div></section>
+<section id="features" class="rows"><div class="wrap">{{ range $i, $row := after 1 $p.rows }}<div class="row-item {{ if eq (mod $i 2) 1 }}reverse{{ end }}"><div class="row-art"><figure class="feature-lifestyle"><img src="{{ $row.image | relURL }}" alt="{{ $row.alt }}" loading="lazy" width="1098" height="1536"></figure></div><div class="row-copy"><p class="kicker">{{ $row.kicker }}</p><h2 class="row-title">{{ $row.title }}</h2><p class="row-text">{{ $row.text }}</p></div></div>{{ end }}</div></section>
 
 {{ with $p.philosophy_title }}<section class="philosophy philosophy-compact"><div class="wrap philosophy-inner"><div class="philosophy-copy"><p class="kicker">{{ $p.philosophy_kicker }}</p><h2 class="section-title">{{ . }}</h2><p class="philosophy-lead">{{ $p.philosophy_text }}</p></div><div class="philosophy-grid"><article class="philosophy-card"><p class="philosophy-label">{{ $p.philosophy_classic_title }}</p><p>{{ $p.philosophy_classic_text }}</p></article><article class="philosophy-card philosophy-card-accent"><p class="philosophy-label">{{ $p.philosophy_tidtil_title }}</p><p>{{ $p.philosophy_tidtil_text }}</p></article></div><blockquote class="philosophy-quote">{{ $p.philosophy_quote }}</blockquote></div></section>{{ end }}
 
