@@ -43,6 +43,40 @@ Many family apps combine calendars, tasks, shopping lists, chats, documents and 
 
 TidTil deliberately takes a different approach: **organise events, get an overview of the day, then put the phone away again.** The app isn't meant to replace a classic all-purpose calendar – it's meant to give families a simpler, shared overview of events.
 
+## TidTil compared
+
+TidTil isn't meant to replace a full calendar app – it's deliberately leaner. This overview shows how TidTil differs from Apple Calendar, Google Calendar and FamCal.
+
+<div class="compare-table-wrap">
+<table class="compare-table">
+<thead>
+<tr><th></th><th>TidTil</th><th>Apple Calendar</th><th>Google Calendar</th><th>FamCal</th></tr>
+</thead>
+<tbody>
+<tr><td>Price (family)</td><td>€1.99/month or €19.99/year</td><td>Free</td><td>Free</td><td>€3.99/month or €22.99/year<sup>3</sup></td></tr>
+<tr><td>Private/shared per event</td><td>Yes, for every event</td><td>No – the shared Family calendar is a separate calendar; there's no per-event visibility setting<sup>1,2</sup></td><td>Yes, with a caveat – members with edit permissions can still see events marked private<sup>4</sup></td><td>Not documented in official sources<sup>5,6</sup></td></tr>
+<tr><td>Family members without their own account</td><td>Yes, by name only</td><td>No – every member needs an Apple ID, including children (as a Child Account)<sup>7</sup></td><td>No – every member needs their own Google Account<sup>8</sup></td><td>Not documented in official sources<sup>5,6</sup></td></tr>
+<tr><td>Task lists, notes &amp; extras</td><td>Deliberately not included</td><td>Not part of the Calendar app (separate Reminders app)</td><td>Not part of the Calendar app (separate Tasks app)</td><td>Yes – tasks, notes, recipes, trip expenses and more<sup>6</sup></td></tr>
+</tbody>
+</table>
+</div>
+
+<p class="compare-caveat">All figures are based on official sources (Apple and Google support pages, and official App Store / manufacturer sites), as of 31 Aug 2026. FamCal's price is from the German App Store (as of 31 Aug 2026) and may vary by country or App Store account. Where a cell shows "not documented in official sources," that doesn't mean the feature doesn't exist – only that we couldn't find an official, verifiable source for it.</p>
+
+<details class="sources-details">
+<summary>Sources and verification date</summary>
+<ol>
+<li>Apple Support – "Share a calendar on iCloud.com". <a href="https://support.apple.com/guide/icloud/share-a-calendar-mm6b1a9479/icloud" target="_blank" rel="noopener">support.apple.com/guide/icloud/share-a-calendar-mm6b1a9479</a>. Checked 31 Aug 2026.</li>
+<li>Apple Support – "Add events to your Family Sharing calendar". <a href="https://support.apple.com/en-ie/guide/mac-help/add-events-to-your-family-sharing-calendar-mhd8f2037623" target="_blank" rel="noopener">support.apple.com/…/add-events-to-your-family-sharing-calendar</a>. Checked 31 Aug 2026.</li>
+<li>Apple App Store (Germany) – "Shared Family Calendar: FamCal". <a href="https://apps.apple.com/de/app/shared-family-calendar-famcal/id1098999871" target="_blank" rel="noopener">apps.apple.com/de/app/…/id1098999871</a>. Pricing as of 31 Aug 2026, German App Store.</li>
+<li>Google Calendar Help – "Change your event visibility settings". <a href="https://support.google.com/calendar/answer/34580" target="_blank" rel="noopener">support.google.com/calendar/answer/34580</a>. Checked 31 Aug 2026.</li>
+<li>Google Play Store – "Family Shared Calendar: FamCal" listing (documents visibility for lists, not events). Checked 31 Aug 2026.</li>
+<li>Official FamCal website. <a href="https://www.famcal.app/home" target="_blank" rel="noopener">famcal.app/home</a>. Checked 31 Aug 2026.</li>
+<li>Apple Support – "How to set up Family Sharing on your iPhone, iPad, or Mac". <a href="https://support.apple.com/en-us/108380" target="_blank" rel="noopener">support.apple.com/en-us/108380</a>. Checked 31 Aug 2026.</li>
+<li>Google Families Help – "Use a family calendar on Google". <a href="https://support.google.com/families/answer/7157782" target="_blank" rel="noopener">support.google.com/families/answer/7157782</a>. Checked 31 Aug 2026.</li>
+</ol>
+</details>
+
 ## Who is TidTil for?
 
 TidTil is a good fit for families who want a **simple family calendar for iPhone** and don't want to maintain yet another complete organisation system. If shared events, private events, reminders and a calm daily overview are what matter most, TidTil is built exactly for that.
