@@ -2,6 +2,15 @@
 title: "Familiekalender til iPhone – planlæg enkelt sammen"
 description: "TidTil er en enkel familiekalender til iPhone: organisér fælles og private aftaler, synkronisér med familien, og bevar overblikket over dagen."
 url: "/familiekalender-iphone/"
+faq:
+  - q: "Kan jeg dele aftaler med min familie?"
+    a: "Ja. Med familieabonnementet kan I invitere familiemedlemmer og synkronisere fælles aftaler."
+  - q: "Skal hvert familiemedlem have et abonnement?"
+    a: "Nej. Ét familieabonnement dækker jeres familie."
+  - q: "Kan jeg holde aftaler private?"
+    a: "Ja. Ved oprettelsen vælger I, om en aftale forbliver privat eller er synlig for familien."
+  - q: "Er der påmindelser?"
+    a: "Ja. I kan indstille en individuel påmindelse for hver aftale. Der findes desuden et valgfrit morgenligt dagsoverblik."
 ---
 
 ## En familiekalender til iPhone, der fokuserer på aftaler

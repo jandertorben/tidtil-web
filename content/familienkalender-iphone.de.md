@@ -2,6 +2,15 @@
 title: "Familienkalender fürs iPhone – einfach gemeinsam planen"
 description: "TidTil ist ein einfacher Familienkalender fürs iPhone: gemeinsame und private Termine organisieren, Familie synchronisieren und den Tag im Blick behalten."
 url: "/familienkalender-iphone/"
+faq:
+  - q: "Kann ich Termine mit meiner Familie teilen?"
+    a: "Ja. Mit dem Familienabo könnt ihr Familienmitglieder einladen und gemeinsame Termine synchronisieren."
+  - q: "Braucht jedes Familienmitglied ein Abo?"
+    a: "Nein. Ein Familienabo reicht für eure Familie."
+  - q: "Kann ich Termine privat halten?"
+    a: "Ja. Beim Anlegen entscheidet ihr, ob ein Termin privat bleibt oder für die Familie sichtbar ist."
+  - q: "Gibt es Erinnerungen?"
+    a: "Ja. Für einzelne Termine könnt ihr jeweils eine Erinnerung einstellen. Zusätzlich gibt es optional einen morgendlichen Tagesüberblick."
 ---
 
 ## Ein Familienkalender fürs iPhone, der sich auf Termine konzentriert

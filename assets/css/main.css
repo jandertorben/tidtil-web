@@ -136,6 +136,10 @@ h1, h2, h3 { font-family: "Jost", sans-serif; font-weight: 600; color: var(--ink
 .appstore-button:hover { text-decoration: none; transform: translateY(-1px); opacity: 0.92; }
 .appstore-icon { width: 1em; height: 1.2em; flex: 0 0 auto; fill: currentColor; }
 
+/* Invisible hero tap target sits at a fixed % of the image, so on narrow
+   viewports it shrinks well below the 44x44 tap-target minimum. Floor it. */
+.appstore-hero-link { min-width: 44px; min-height: 44px; }
+
 /* ---------- Phone frame (echtes Screenshot) ---------- */
 .hero-art { display: flex; justify-content: center; position: relative; }
 .hero-art::before {

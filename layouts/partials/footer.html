@@ -2,6 +2,7 @@
   <div class="wrap footer-inner">
     <p class="footer-brand"><span class="wordmark-tid">Tid</span><span class="wordmark-til">Til</span></p>
     <nav class="footer-nav" aria-label="{{ i18n "nav_label" }}">
+      <a href="{{ (.Site.GetPage "familienkalender-iphone").RelPermalink }}">{{ i18n "nav_family_calendar" }}</a>
       <a href="{{ (.Site.GetPage "privacy").RelPermalink }}">{{ i18n "nav_privacy" }}</a>
       <a href="{{ (.Site.GetPage "support").RelPermalink }}">{{ i18n "nav_support" }}</a>
       <a href="{{ (.Site.GetPage "impressum").RelPermalink }}">{{ i18n "nav_impressum" }}</a>
