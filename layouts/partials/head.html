@@ -9,7 +9,7 @@
 
 <title>{{ $pageTitle }}</title>
 <meta name="description" content="{{ $description }}">
-<meta name="robots" content="{{ if eq .Kind "404" }}noindex,follow{{ else }}index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1{{ end }}">
+<meta name="robots" content="{{ if eq .Kind "404") }}noindex,follow{{ else }}index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1{{ end }}">
 <link rel="canonical" href="{{ .Permalink }}">
 <link rel="sitemap" type="application/xml" href="{{ "sitemap.xml" | absURL }}">
 
@@ -67,56 +67,25 @@
   "installUrl": {{ .Site.Params.appStoreURL | jsonify | safeJS }},
   "image": {{ $ogImage | jsonify | safeJS }},
   "offers": [
-    {
-      "@type": "Offer",
-      "name": {{ i18n "offer_name_personal" | jsonify | safeJS }},
-      "price": "0",
-      "priceCurrency": "EUR"
-    },
-    {
-      "@type": "Offer",
-      "name": {{ i18n "offer_name_family_monthly" | jsonify | safeJS }},
-      "price": "1.99",
-      "priceCurrency": "EUR"
-    },
-    {
-      "@type": "Offer",
-      "name": {{ i18n "offer_name_family_yearly" | jsonify | safeJS }},
-      "price": "19.99",
-      "priceCurrency": "EUR"
-    }
+    {"@type":"Offer","name":{{ i18n "offer_name_personal" | jsonify | safeJS }},"price":"0","priceCurrency":"EUR"},
+    {"@type":"Offer","name":{{ i18n "offer_name_family_monthly" | jsonify | safeJS }},"price":"1.99","priceCurrency":"EUR"},
+    {"@type":"Offer","name":{{ i18n "offer_name_family_yearly" | jsonify | safeJS }},"price":"19.99","priceCurrency":"EUR"}
   ],
   "inLanguage": {{ .Site.Language.Lang | jsonify | safeJS }},
-  "publisher": {
-    "@type": "Person",
-    "name": "Torben Jander"
-  }
+  "publisher": {"@type":"Person","name":"Torben Jander"}
 }
 </script>
 {{ with .Params.faq }}
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {{ range $i, $item := . }}{{ if $i }},{{ end }}
-    {
-      "@type": "Question",
-      "name": {{ $item.q | jsonify | safeJS }},
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": {{ $item.a | jsonify | safeJS }}
-      }
-    }
-    {{ end }}
-  ]
-}
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{{ range $i, $item := . }}{{ if $i }},{{ end }}{"@type":"Question","name":{{ $item.q | jsonify | safeJS }},"acceptedAnswer":{"@type":"Answer","text":{{ $item.a | jsonify | safeJS }}}}{{ end }}]}
 </script>
 {{ end }}
 {{ end }}
 
-{{ $css := resources.Get "css/main.css" | resources.Minify | resources.Fingerprint }}
-<link rel="stylesheet" href="{{ $css.RelPermalink }}">
+{{ $mainCSS := resources.Get "css/main.css" }}
+{{ $todayCSS := resources.Get "css/today-section.css" }}
+{{ $css := slice $mainCSS $todayCSS | resources.Concat "css/site.css" | resources.Minify | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 
 <link rel="icon" type="image/png" sizes="48x48" href="{{ "favicon-48.png" | relURL }}">
 <link rel="apple-touch-icon" sizes="180x180" href="{{ "apple-touch-icon.png" | relURL }}">
