@@ -24,7 +24,7 @@ rows:
     kicker: "I dag"
     title: "Hvad skal vi i dag?"
     text: "Et blik er nok. TidTil viser jer, hvad der skal ske i dag, hvornår det sker, og hvem det vedrører. Dagen er i centrum, mens den enkle månedsvisning giver jer overblik over det næste."
-  - image: "img/feature-neuer-termin.webp"
+  - image: "img/082F5B69-D9A8-444F-A2A5-782343FCE30B.png"
     alt: "Oprettelse af en ny familieaftale i TidTil"
     kicker: "Enkelt"
     title: "Hvad? Hvornår? For hvem? Og hvem må se det?"
