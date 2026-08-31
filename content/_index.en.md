@@ -24,7 +24,7 @@ rows:
     kicker: "Today"
     title: "What's happening in our day?"
     text: "One glance is enough. TidTil shows what is happening today, when it happens and who it concerns. Today stays at the centre, while the reduced month view gives you the overview you need for what comes next."
-  - image: "img/feature-neuer-termin.webp"
+  - image: "img/082F5B69-D9A8-444F-A2A5-782343FCE30B.png"
     alt: "Creating a new family event in TidTil"
     kicker: "Simple"
     title: "What? When? Who? And who can see it?"
