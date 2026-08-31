@@ -1,0 +1,22 @@
+{{ define "main" }}
+<article class="page landing-page">
+  <section class="landing-hero">
+    <div class="wrap wrap-narrow landing-hero-copy">
+      <h1 class="page-title">{{ .Title }}</h1>
+      {{ with .Params.hero_lead }}<p class="landing-hero-lead">{{ . }}</p>{{ end }}
+      {{ partial "appstore-button.html" . }}
+    </div>
+    {{ with .Params.hero_image }}
+    <figure class="landing-hero-figure wrap">
+      <img src="{{ . | relURL }}" alt="{{ $.Params.hero_alt }}" loading="eager" fetchpriority="high" width="1536" height="1024">
+    </figure>
+    {{ end }}
+  </section>
+  <div class="wrap wrap-narrow">
+    {{ with .Params.updated }}<p class="page-meta">{{ i18n "updated" }}: {{ . }}</p>{{ end }}
+    <div class="prose">
+      {{ .Content }}
+    </div>
+  </div>
+</article>
+{{ end }}

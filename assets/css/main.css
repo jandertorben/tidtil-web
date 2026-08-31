@@ -309,6 +309,18 @@ h1, h2, h3 { font-family: "Jost", sans-serif; font-weight: 600; color: var(--ink
   color: var(--ink-soft); font-style: italic;
 }
 
+/* ---------- Landing page hero (feature pages, e.g. /familienkalender-iphone/) ---------- */
+.landing-hero { text-align: center; margin-bottom: clamp(36px, 6vw, 64px); }
+.landing-hero-copy { margin-bottom: clamp(24px, 4vw, 36px); }
+.landing-hero-copy .page-title { margin-bottom: 14px; }
+.landing-hero-lead { color: var(--ink-soft); font-size: 1.15rem; font-weight: 300; max-width: 46ch; margin: 0 auto 22px; }
+.landing-hero-figure {
+  margin: 0 auto; max-width: 900px; overflow: hidden; border-radius: 28px;
+  box-shadow: var(--shadow-float); background: var(--surface-2);
+}
+.landing-hero-figure img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: contain; }
+.landing-page .prose .appstore-button { margin: 8px 0 4px; }
+
 /* ---------- Footer ---------- */
 .site-footer { border-top: 1px solid var(--line); background: var(--surface-2); padding: 48px 0; margin-top: 20px; }
 .footer-inner { display: flex; flex-direction: column; align-items: center; gap: 14px; text-align: center; }

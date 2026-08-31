@@ -2,6 +2,10 @@
 title: "Family Calendar for iPhone – Plan Together, Simply"
 description: "TidTil is a simple family calendar for iPhone: organise shared and private events, sync with family members and keep your day in view."
 url: "/family-calendar-iphone/"
+layout: "landing"
+hero_image: "img/familien-sync-banner.webp"
+hero_alt: "Inviting family members and syncing together in TidTil"
+hero_lead: "Organise shared events – without task lists, chats or calendar clutter."
 faq:
   - q: "Can I share events with my family?"
     a: "Yes. With the family subscription you can invite family members and sync shared events."
@@ -47,6 +51,8 @@ TidTil deliberately takes a different approach: **organise events, get an overvi
 
 TidTil is a good fit for families who want a **simple family calendar for iPhone** and don't want to maintain yet another complete organisation system. If shared events, private events, reminders and a calm daily overview are what matter most, TidTil is built exactly for that.
 
+{{< appstore-button >}}
+
 ## Frequently asked questions about the family calendar
 
 ### Can I share events with my family?
@@ -65,4 +71,6 @@ Yes. You can set an individual reminder for each event. There's also an optional
 
 TidTil is free to use for personal events. Shared family syncing costs €1.99 per month or €19.99 per year; one subscription covers your family.
 
-[Learn more about TidTil's features](/en/#features), [read about privacy at TidTil](/en/privacy/) or [open TidTil in the App Store](https://apps.apple.com/app/id6780019857).
+{{< appstore-button >}}
+
+Learn more about [TidTil's features](/en/#features) or read about [privacy at TidTil](/en/privacy/).
