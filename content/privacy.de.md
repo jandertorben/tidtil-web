@@ -1,7 +1,7 @@
 ---
 title: "Datenschutz"
 slug: "datenschutz"
-updated: "August 2026"
+updated: "September 2026"
 description: "Datenschutz bei TidTil – transparent erklärt für App und Website."
 ---
 
@@ -23,6 +23,7 @@ Ein Datenschutzbeauftragter ist derzeit nicht benannt, da nach der aktuellen Unt
 - TidTil betreibt **keinen eigenen Backend-Server für Kalenderinhalte**.
 - Die App enthält nach aktuellem Stand **keine Werbe-, Tracking- oder Analyse-SDKs**.
 - Erinnerungen und Hinweise auf neue Familientermine werden als **lokale iOS-Mitteilungen** erzeugt.
+- **TidTil Familie** kann einmalig 14 Tage kostenlos getestet werden. Der Testzugang endet automatisch und wird nicht kostenpflichtig verlängert.
 - Käufe und Abonnements werden über **Apple StoreKit/App Store** abgewickelt.
 - Die Website verwendet **keine extern geladenen Webfonts, keine Webanalyse und keine Werbetracker**.
 
@@ -82,6 +83,16 @@ Für Einladungen und die Verwaltung eines gemeinsamen Kalenders stellt Apple üb
 
 TidTil verwendet diese Angaben ausschließlich, um Einladungen, Teilnehmerlisten und die Zuordnung von Terminen innerhalb des gemeinsamen Kalenders zu ermöglichen. Solche Angaben können außerdem Bestandteil einer internen stabilen Teilnehmerkennung sein, solange Apple noch keine dauerhafte CloudKit-Datensatzkennung bereitstellt.
 
+### Testzugang und technische Berechtigungsdaten
+
+Für den einmaligen 14-tägigen Testzugang zu **TidTil Familie** verarbeitet die App technische Berechtigungsdaten. Dazu gehören insbesondere:
+
+- Beginn und Ende des Testzeitraums,
+- der aktuelle Status des Testzugangs,
+- die Information, ob der Testzugang bereits verwendet wurde.
+
+Diese Angaben werden im privaten iCloud-/CloudKit-Bereich gespeichert und können auf dem Gerät zwischengespeichert werden. Sie enthalten keine Kalenderinhalte und werden ausschließlich verwendet, um den Testzugang bereitzustellen, die verbleibende Testdauer zu bestimmen und eine mehrfache Nutzung zu verhindern.
+
 ## 1.2 Lokale Speicherung und iCloud/CloudKit
 
 TidTil verwendet **Core Data** für die lokale Datenhaltung und **Apple CloudKit** für die Synchronisierung. Die App arbeitet mit einem privaten CloudKit-Bereich für eigene Daten und einem geteilten CloudKit-Bereich für Daten, die andere mit dir teilen.
@@ -127,13 +138,17 @@ Einige nicht-inhaltliche Einstellungen werden lokal über Apples `UserDefaults` 
 
 Diese Einstellungen dienen ausschließlich der App-Funktion und werden nicht für Werbung oder Profiling verwendet.
 
-## 1.7 Käufe und Abonnements
+## 1.7 Käufe, Abonnements und kostenloser Testzugang
 
 **Der private Kalender von TidTil ist und bleibt vollständig kostenlos.** Ab Version 2.2 lässt sich der gemeinsame Familienkalender über ein optionales Abonnement (**TidTil Familie**) freischalten. Eingeladene Familienmitglieder benötigen kein eigenes Abo.
 
+Vor dem Abschluss eines kostenpflichtigen Familienabonnements kann der Inhaber der Familienfreigabe **TidTil Familie einmalig 14 Tage kostenlos testen**. Der Testzeitraum beginnt erst mit der bewussten Aktivierung der Familienfreigabe und endet automatisch. Es findet keine automatische kostenpflichtige Verlängerung statt.
+
+Die für den Testzugang erforderlichen technischen Berechtigungsdaten werden im privaten iCloud-/CloudKit-Bereich verarbeitet. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO, da die Verarbeitung zur Bereitstellung des von dir angeforderten Testzugangs und zur Verwaltung der Zugangsberechtigung erforderlich ist.
+
 Kauf, Verlängerung, Wiederherstellung und Kündigung laufen **ausschließlich über Apple bzw. den App Store**. Zahlungsdaten wie Kreditkarten- oder Bankverbindungen werden von uns weder verarbeitet noch gespeichert und erreichen uns zu keinem Zeitpunkt.
 
-Die Prüfung, ob ein gültiges Abo vorliegt, findet **ausschließlich auf deinem Gerät** über Apples StoreKit statt. Es gibt dafür keinen eigenen Server und keine Übermittlung an uns. Wer TidTil bereits vor Version 2.2 genutzt hat, behält den Familienkalender dauerhaft kostenlos; auch diese Prüfung erfolgt lokal anhand des von Apple signierten Kaufnachweises.
+Die Prüfung, ob ein gültiges kostenpflichtiges Abo vorliegt, findet **ausschließlich auf deinem Gerät** über Apples StoreKit statt. Dafür gibt es keinen eigenen TidTil-Server und keine Übermittlung von Zahlungsdaten an uns. Die davon getrennte Prüfung des einmaligen Testzugangs verwendet die oben beschriebenen technischen Berechtigungsdaten in iCloud/CloudKit. Wer TidTil bereits vor Version 2.2 genutzt hat, behält den Familienkalender dauerhaft kostenlos; auch diese Prüfung erfolgt lokal anhand des von Apple signierten Kaufnachweises.
 
 ## 1.8 Keine Werbung, kein Tracking und keine Drittanbieter-Analyse
 
@@ -159,6 +174,7 @@ Die aktuelle App-Version behandelt Daten insbesondere wie folgt:
 - „App vollständig zurücksetzen“ entfernt bzw. leert die eigenen Termine, eigenen Personen-Einträge und Profildaten. Daten anderer Teilnehmer im gemeinsamen Kalender werden dadurch nicht pauschal gelöscht.
 - Eine bestehende CloudKit-Freigabe muss gegebenenfalls zusätzlich über die Familien-/Freigabeverwaltung beendet oder verlassen werden.
 - Das bloße Löschen der App vom iPhone bedeutet **nicht zwingend**, dass bereits in iCloud/CloudKit gespeicherte Daten gelöscht werden.
+- Beginn, Ende und Status des Testzugangs werden so lange gespeichert, wie dies für seine Bereitstellung und Abwicklung erforderlich ist. Die Information, dass der einmalige Testzugang bereits verwendet wurde, bleibt gespeichert, solange dies erforderlich ist, um eine erneute Nutzung zu verhindern. Gesetzliche Löschungsansprüche bleiben unberührt.
 
 ## 1.10 Kinder und andere Personen ohne eigenes Gerät
 
@@ -225,7 +241,7 @@ Bei internationalen Anbietern kann eine Verarbeitung auch außerhalb der Europä
 
 Soweit die DSGVO anwendbar ist, stützen wir die Verarbeitung insbesondere auf:
 
-- **Art. 6 Abs. 1 lit. b DSGVO**, soweit die Verarbeitung zur Bereitstellung von App-Funktionen, Synchronisierung, Kauf-/Abo-Funktionen oder zur Bearbeitung vertragsbezogener Anfragen erforderlich ist,
+- **Art. 6 Abs. 1 lit. b DSGVO**, soweit die Verarbeitung zur Bereitstellung von App-Funktionen, Synchronisierung, Testzugängen, Käufen und Abonnements oder zur Bearbeitung vertragsbezogener Anfragen erforderlich ist,
 - **Art. 6 Abs. 1 lit. f DSGVO**, soweit die Verarbeitung zur sicheren und zuverlässigen Bereitstellung der Website oder zur Bearbeitung allgemeiner Anfragen erforderlich ist.
 
 Soweit eine Verarbeitung ausschließlich durch eine freiwillige Funktion ausgelöst wird – etwa das Auswählen eines Profilfotos, das Aktivieren einer Erinnerung oder das Einladen von Familienmitgliedern – erfolgt die Verarbeitung nur, wenn du diese Funktion aktiv nutzt. Soweit für einzelne Vorgänge künftig eine Einwilligung erforderlich sein sollte, wird TidTil diese gesondert einholen.

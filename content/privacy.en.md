@@ -1,7 +1,7 @@
 ---
 title: "Privacy"
 slug: "privacy"
-updated: "August 2026"
+updated: "September 2026"
 description: "Privacy at TidTil – transparent information about the app and website."
 ---
 
@@ -23,6 +23,7 @@ No data protection officer is currently designated because, based on the present
 - TidTil operates **no proprietary backend server for calendar content**.
 - Based on the current code, the app contains **no advertising, tracking or third-party analytics SDKs**.
 - Event reminders and notifications about new family events are generated as **local iOS notifications**.
+- **TidTil Family** can be tried once free of charge for 14 days. The trial access ends automatically and does not convert into a paid subscription.
 - Purchases and subscriptions are handled through **Apple StoreKit/App Store**.
 - The website uses **no externally loaded web fonts, proprietary web analytics or advertising trackers**.
 
@@ -82,6 +83,16 @@ For invitations and management of a shared calendar, Apple provides technical pa
 
 TidTil uses this information only to support invitations, participant lists and event assignments inside the shared calendar. Such information may also form part of an internal stable participant identifier until Apple provides a permanent CloudKit record identifier.
 
+### Trial access and technical entitlement data
+
+For the one-time 14-day trial access to **TidTil Family**, the app processes technical entitlement data. This includes in particular:
+
+- the start and end of the trial period,
+- the current status of the trial access,
+- whether the trial access has already been used.
+
+This information is stored in the private iCloud/CloudKit area and may be cached on the device. It contains no calendar content and is used solely to provide the trial access, determine the remaining trial period and prevent repeated use.
+
 ## 1.2 Local storage and iCloud/CloudKit
 
 TidTil uses **Core Data** for local storage and **Apple CloudKit** for synchronisation. The app uses a private CloudKit scope for a user's own data and a shared CloudKit scope for data shared with that user by others.
@@ -127,13 +138,17 @@ Some non-content settings are stored locally through Apple's `UserDefaults` / Sw
 
 These settings are used only for app functionality and not for advertising or profiling.
 
-## 1.7 Purchases and subscriptions
+## 1.7 Purchases, subscriptions and free trial access
 
 **TidTil's private calendar is and remains completely free.** From version 2.2, the shared family calendar can be unlocked with an optional subscription (**TidTil Family**). Invited family members never need their own subscription.
 
+Before taking out a paid family subscription, the owner of the family share can **try TidTil Family once free of charge for 14 days**. The trial period starts only when family sharing is deliberately activated and ends automatically. It does not automatically convert into a paid subscription.
+
+The technical entitlement data required for the trial access is processed in the private iCloud/CloudKit area. The legal basis is Art. 6(1)(b) GDPR because the processing is necessary to provide the trial access you request and administer the access entitlement.
+
 Purchase, renewal, restoration and cancellation run **exclusively through Apple and the App Store**. Payment details such as credit-card or bank information are neither processed nor stored by us and never reach us at any point.
 
-Whether a valid subscription exists is checked **entirely on your device** via Apple's StoreKit. There is no server of our own involved and no transmission to us. Anyone who used TidTil before version 2.2 keeps the family calendar free permanently; that check is also performed locally, based on the purchase receipt signed by Apple.
+Whether a valid paid subscription exists is checked **entirely on your device** via Apple's StoreKit. No proprietary TidTil server is involved, and no payment data is transmitted to us. The separate check for the one-time trial access uses the technical entitlement data in iCloud/CloudKit described above. Anyone who used TidTil before version 2.2 keeps the family calendar free permanently; that check is also performed locally, based on the purchase receipt signed by Apple.
 
 ## 1.8 No advertising, tracking or third-party analytics
 
@@ -159,6 +174,7 @@ The current app version handles data in particular as follows:
 - “Reset app completely” removes or clears your own events, your own person entries and profile data. It does not indiscriminately delete other participants' data from the shared calendar.
 - An existing CloudKit share may additionally need to be ended or left through the family/sharing controls.
 - Simply deleting the app from the iPhone does **not necessarily** delete data already stored in iCloud/CloudKit.
+- The start, end and status of trial access are retained for as long as necessary to provide and administer it. The information that the one-time trial access has already been used is retained for as long as necessary to prevent repeated use. Statutory rights to erasure remain unaffected.
 
 ## 1.10 Children and other people without their own device
 
@@ -225,7 +241,7 @@ International providers may process data outside the European Union or European 
 
 Where the GDPR applies, we rely in particular on:
 
-- **Art. 6(1)(b) GDPR** where processing is necessary to provide app functionality, synchronisation, purchase/subscription functions or to handle contract-related enquiries,
+- **Art. 6(1)(b) GDPR** where processing is necessary to provide app functionality, synchronisation, trial access, purchases and subscriptions or to handle contract-related enquiries,
 - **Art. 6(1)(f) GDPR** where processing is necessary for secure and reliable website operation or handling general enquiries.
 
 Where processing is triggered solely by an optional feature – such as selecting a profile photo, enabling a reminder or inviting family members – processing occurs only when you actively use that feature. If consent becomes legally required for a particular operation in the future, TidTil will request it separately.

@@ -1,7 +1,7 @@
 ---
 title: "Privatliv"
 slug: "privatliv"
-updated: "August 2026"
+updated: "September 2026"
 description: "Privatliv hos TidTil – transparent information om appen og hjemmesiden."
 ---
 
@@ -23,6 +23,7 @@ Der er på nuværende tidspunkt ikke udpeget en databeskyttelsesrådgiver, da vi
 - TidTil driver **ingen egen backendserver til kalenderindhold**.
 - Den nuværende kode indeholder **ingen reklame-, tracking- eller tredjepartsanalyse-SDK'er**.
 - Påmindelser og beskeder om nye familieaftaler oprettes som **lokale iOS-notifikationer**.
+- **TidTil Familie** kan prøves gratis én gang i 14 dage. Prøveadgangen slutter automatisk og bliver ikke til et betalt abonnement.
 - Køb og abonnementer håndteres via **Apple StoreKit/App Store**.
 - Hjemmesiden bruger **ingen eksternt indlæste webfonts, egen webanalyse eller reklametrackere**.
 
@@ -82,6 +83,16 @@ Til invitationer og administration af en delt kalender stiller Apple tekniske de
 
 TidTil bruger disse oplysninger udelukkende til invitationer, deltagerlister og tildeling af aftaler i den fælles kalender. Oplysningerne kan også indgå i en intern stabil deltageridentifikator, indtil Apple stiller en permanent CloudKit-record-identifikator til rådighed.
 
+### Prøveadgang og tekniske adgangsdata
+
+Til den gratis 14-dages prøveadgang til **TidTil Familie** behandler appen tekniske adgangsdata. Det omfatter især:
+
+- prøveperiodens start og slutning,
+- prøveadgangens aktuelle status,
+- oplysningen om, hvorvidt prøveadgangen allerede er blevet brugt.
+
+Disse oplysninger gemmes i det private iCloud-/CloudKit-område og kan mellemlagres på enheden. De indeholder ikke kalenderindhold og bruges udelukkende til at levere prøveadgangen, beregne den resterende prøveperiode og forhindre gentagen brug.
+
 ## 1.2 Lokal lagring og iCloud/CloudKit
 
 TidTil bruger **Core Data** til lokal lagring og **Apple CloudKit** til synkronisering. Appen bruger et privat CloudKit-område til brugerens egne data og et delt CloudKit-område til data, som andre deler med brugeren.
@@ -127,13 +138,17 @@ Nogle ikke-indholdsmæssige indstillinger gemmes lokalt via Apples `UserDefaults
 
 Disse indstillinger bruges kun til appens funktion og ikke til reklamer eller profilering.
 
-## 1.7 Køb og abonnementer
+## 1.7 Køb, abonnementer og gratis prøveadgang
 
 **TidTils private kalender er og forbliver helt gratis.** Fra version 2.2 kan den fælles familiekalender låses op med et valgfrit abonnement (**TidTil Familie**). Inviterede familiemedlemmer skal aldrig have deres eget abonnement.
 
+Inden der tegnes et betalt familieabonnement, kan ejeren af familiedelingen **prøve TidTil Familie gratis én gang i 14 dage**. Prøveperioden begynder først, når familiedelingen aktiveres bevidst, og den slutter automatisk. Den bliver ikke automatisk til et betalt abonnement.
+
+De tekniske adgangsdata, der er nødvendige for prøveadgangen, behandles i det private iCloud-/CloudKit-område. Retsgrundlaget er GDPR artikel 6, stk. 1, litra b, da behandlingen er nødvendig for at levere den prøveadgang, du anmoder om, og administrere adgangsretten.
+
 Køb, fornyelse, gendannelse og opsigelse foregår **udelukkende via Apple og App Store**. Betalingsoplysninger som kreditkort- eller bankoplysninger bliver hverken behandlet eller gemt af os og når os på intet tidspunkt.
 
-Kontrollen af, om der findes et gyldigt abonnement, sker **udelukkende på din enhed** via Apples StoreKit. Der er ingen egen server involveret og ingen overførsel til os. Har du brugt TidTil før version 2.2, beholder du familiekalenderen gratis permanent; også den kontrol sker lokalt ud fra den kvittering, Apple har signeret.
+Kontrollen af, om der findes et gyldigt betalt abonnement, sker **udelukkende på din enhed** via Apples StoreKit. Der er ingen egen TidTil-server involveret, og ingen betalingsdata overføres til os. Den separate kontrol af den gratis engangsprøve bruger de tekniske adgangsdata i iCloud/CloudKit, som er beskrevet ovenfor. Har du brugt TidTil før version 2.2, beholder du familiekalenderen gratis permanent; også den kontrol sker lokalt ud fra den kvittering, Apple har signeret.
 
 ## 1.8 Ingen reklamer, tracking eller tredjepartsanalyse
 
@@ -159,6 +174,7 @@ Den nuværende appversion håndterer data blandt andet således:
 - “Nulstil appen helt” fjerner eller nulstiller dine egne aftaler, egne personposter og profildata. Andre deltageres data i den fælles kalender slettes ikke generelt af denne funktion.
 - En eksisterende CloudKit-deling skal eventuelt også afsluttes eller forlades via familie-/delingsadministrationen.
 - Hvis du blot sletter appen fra din iPhone, betyder det **ikke nødvendigvis**, at data, der allerede er gemt i iCloud/CloudKit, slettes.
+- Prøveadgangens start, slutning og status gemmes, så længe det er nødvendigt for at levere og administrere den. Oplysningen om, at engangsprøven allerede er blevet brugt, gemmes, så længe det er nødvendigt for at forhindre gentagen brug. Lovbestemte rettigheder til sletning berøres ikke.
 
 ## 1.10 Børn og andre personer uden egen enhed
 
@@ -225,7 +241,7 @@ Internationale udbydere kan behandle data uden for EU eller EØS. Sådanne overf
 
 Når GDPR finder anvendelse, baserer vi især behandlingen på:
 
-- **GDPR artikel 6, stk. 1, litra b**, når behandlingen er nødvendig for at levere appfunktioner, synkronisering, køb-/abonnementsfunktioner eller behandle kontraktrelaterede henvendelser,
+- **GDPR artikel 6, stk. 1, litra b**, når behandlingen er nødvendig for at levere appfunktioner, synkronisering, prøveadgang, køb og abonnementer eller behandle kontraktrelaterede henvendelser,
 - **GDPR artikel 6, stk. 1, litra f**, når behandlingen er nødvendig for sikker og pålidelig drift af hjemmesiden eller behandling af generelle henvendelser.
 
 Når behandling alene udløses af en valgfri funktion – f.eks. valg af profilbillede, aktivering af en påmindelse eller invitation af familiemedlemmer – sker behandlingen kun, når du aktivt bruger funktionen. Hvis samtykke fremover bliver juridisk nødvendigt for en bestemt behandling, vil TidTil indhente det særskilt.
