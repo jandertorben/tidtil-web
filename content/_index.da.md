@@ -1,9 +1,9 @@
 ---
 title: "TidTil"
 hero_kicker: "Den rolige familieplanlægger til iPhone"
-hero_title: "Familielivet med"
-hero_script: "ét blik"
-hero_sub: "Organisér familiens fælles aftaler – uden opgavelister, chats og kalenderrod."
+hero_title: "Vid, hvad der skal ske"
+hero_script: "i dag."
+hero_sub: "TidTil er den minimalistiske familieplanlægger. Fælles aftaler samlet ét sted. Mindre kaos, mere tid til familien."
 hero_note: "Nu i App Store"
 hero_proof: "Gratis på din egen enhed · Familiesynkronisering er valgfri"
 hero_alt: "TidTil familiekalender i familielivet"
