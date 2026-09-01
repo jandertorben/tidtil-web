@@ -1,9 +1,9 @@
 ---
 title: "TidTil"
 hero_kicker: "The calm family planner for iPhone"
-hero_title: "Family life at"
-hero_script: "a glance"
-hero_sub: "Organise shared events – without task lists, chats or calendar clutter."
+hero_title: "Know what's happening"
+hero_script: "today."
+hero_sub: "TidTil is the minimalist family planner. Shared events at a glance. Less chaos, more time for your family."
 hero_note: "Now on the App Store"
 hero_proof: "Free on your own device · Family sync optional"
 hero_alt: "TidTil family calendar in everyday family life"
