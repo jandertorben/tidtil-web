@@ -1,9 +1,9 @@
 ---
 title: "TidTil"
 hero_kicker: "Der ruhige Familienplaner für iPhone"
-hero_title: "Familienalltag auf"
-hero_script: "einen Blick"
-hero_sub: "Gemeinsame Termine organisieren – ohne Aufgabenlisten, Chats und Kalenderchaos."
+hero_title: "Wissen, was heute"
+hero_script: "ansteht."
+hero_sub: "TidTil ist der minimalistische Familienplaner. Gemeinsame Termine im Blick. Weniger Chaos, mehr Zeit für die Familie."
 hero_note: "Jetzt im App Store"
 hero_proof: "Auf dem eigenen Gerät kostenlos · Familien-Sync optional"
 hero_alt: "TidTil Familienkalender im Familienalltag"
