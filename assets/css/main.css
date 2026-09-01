@@ -116,7 +116,67 @@ h1, h2, h3 { font-family: "Jost", sans-serif; font-weight: 600; color: var(--ink
 .lang:hover { text-decoration: none; }
 
 /* ---------- Hero ---------- */
-.hero { padding: clamp(56px, 10vw, 130px) 0 clamp(48px, 8vw, 96px); }
+.hero { padding: clamp(28px, 5vw, 64px) 0 clamp(40px, 6vw, 72px); }
+.hero-figure {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 28px;
+  background: var(--surface-2);
+  box-shadow: var(--shadow-float);
+}
+.hero-background {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1672 / 941;
+  object-fit: cover;
+}
+.hero-localized-copy {
+  position: absolute;
+  inset: 0 auto 0 6.8%;
+  width: 42%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: #1b1813;
+}
+.hero-localized-title {
+  max-width: 100%;
+  margin: 0 0 clamp(7px, 1.15vw, 17px);
+  color: #1b1813;
+  font-size: clamp(1.12rem, 3.35vw, 3.35rem);
+  font-weight: 700;
+  letter-spacing: -.04em;
+  line-height: 1.02;
+}
+.hero-localized-title span { color: inherit; font: inherit; }
+.hero-localized-sub {
+  max-width: min(44ch, 100%);
+  margin: 0 0 clamp(7px, 1.35vw, 20px);
+  color: #514c44;
+  font-size: clamp(.5rem, 1.15vw, 1.05rem);
+  line-height: 1.45;
+}
+.appstore-button.hero-appstore-button {
+  position: relative;
+  width: auto;
+  max-width: none;
+  margin-top: 0;
+  padding: clamp(6px, .8vw, 11px) clamp(9px, 1.15vw, 16px);
+  border-radius: clamp(7px, .75vw, 10px);
+  background: #090909;
+  color: #fff;
+  font-size: clamp(.46rem, .82vw, .78rem);
+  white-space: nowrap;
+}
+.hero-appstore-button::after {
+  content: "";
+  position: absolute;
+  inset: -8px;
+}
 .hero-inner { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 56px; align-items: center; }
 .hero-title { font-size: clamp(3rem, 7.5vw, 5.2rem); font-weight: 700; letter-spacing: -1.5px; margin: 0 0 22px; }
 .hero-title .script { font-size: 1.05em; font-weight: 400; letter-spacing: 0; }

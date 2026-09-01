@@ -1,14 +1,14 @@
 {{ define "main" }}
 {{ $p := .Params }}
 
-<section class="hero" style="padding:clamp(28px,5vw,64px) 0 clamp(40px,6vw,72px);">
+<section class="hero">
   <div class="wrap">
-    <figure style="position:relative;margin:0;width:100%;border-radius:28px;overflow:hidden;box-shadow:var(--shadow-float);background:var(--surface-2);">
-      <img src="{{ "img/tidtil-header-hq.webp" | relURL }}" alt="{{ $p.hero_alt }}" loading="eager" fetchpriority="high" width="1672" height="941" style="display:block;width:100%;height:auto;aspect-ratio:1672 / 941;object-fit:contain;">
-      <div class="hero-localized-copy" style="position:absolute;inset:0 auto 0 0;width:50%;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:clamp(18px,4.2vw,66px);background:linear-gradient(90deg,rgba(250,248,243,.99) 0%,rgba(250,248,243,.98) 78%,rgba(250,248,243,.86) 90%,rgba(250,248,243,0) 100%);">
-        <h1 style="max-width:11ch;margin:0 0 clamp(8px,1.3vw,18px);font-size:clamp(1.35rem,3.15vw,3.15rem);font-weight:700;letter-spacing:-.04em;line-height:1.02;color:#1b1813;">{{ $p.hero_title }} <span class="script" style="font-family:inherit;color:inherit;font-weight:700;">{{ $p.hero_script }}</span></h1>
-        <p style="max-width:31ch;margin:0 0 clamp(8px,1.6vw,22px);font-size:clamp(.62rem,1.25vw,1.08rem);line-height:1.45;color:#5f594f;">{{ $p.hero_sub }}</p>
-        <a class="appstore-button" href="{{ $.Site.Params.appStoreURL }}" target="_blank" rel="noopener" aria-label="{{ $p.app_store_cta }}" title="{{ $p.app_store_cta }}" style="margin-top:0;padding:clamp(7px,1vw,12px) clamp(10px,1.5vw,18px);font-size:clamp(.58rem,1vw,.92rem);border-radius:10px;">
+    <figure class="hero-figure">
+      <img class="hero-background" src="{{ "img/tidtil-header-clean.webp" | relURL }}" alt="{{ $p.hero_alt }}" loading="eager" fetchpriority="high" width="1672" height="941">
+      <div class="hero-localized-copy">
+        <h1 class="hero-localized-title">{{ $p.hero_title }}<br><span>{{ $p.hero_script }}</span></h1>
+        <p class="hero-localized-sub">{{ $p.hero_sub }}</p>
+        <a class="appstore-button hero-appstore-button" href="{{ $.Site.Params.appStoreURL }}" target="_blank" rel="noopener" aria-label="{{ $p.app_store_cta }}" title="{{ $p.app_store_cta }}">
           <svg class="appstore-icon" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.3-2.8-74 20.6-88.1 20.6-15 0-49.4-19.7-72.3-19.7-38.2.6-73.1 22.2-92.8 56.5-39.5 68.5-10.1 169.9 28.4 225.6 19.8 28.7 43.8 60.9 75.1 59.7 30.1-1.2 41.5-19.2 77.9-19.2 35.3 0 46.8 19.2 78.5 18.6 32.5-.6 53.3-29.1 72.9-57.8-84.4-39.6-79.9-116.7-80.9-119.1zM260.9 102.5c26.3-31.1 23.9-59.4 23.1-69.5-23.2 1.3-50 15.8-65.3 33.6-16.8 19-26.6 42.5-24.5 68.8 25.1 1.9 47.9-11 66.7-32.9z"/></svg>{{ $p.app_store_cta }}
         </a>
       </div>
