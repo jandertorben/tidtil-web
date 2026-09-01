@@ -54,6 +54,7 @@ pricing_personal_text: "Eigene Termine auf deinem Gerät erstellen und verwalten
 pricing_family_title: "TidTil Familie"
 pricing_family_price: "1,99 € / Monat"
 pricing_family_text: "Oder 19,99 € / Jahr. Familienmitglieder einladen und gemeinsame Termine synchronisieren. Ein Abo reicht für eure Familie."
+pricing_cta: "Im App Store ansehen"
 sync_badge: "Familienabo jetzt verfügbar"
 sync_title: "Persönlich kostenlos. Gemeinsam, wenn ihr es braucht."
 sync_free: "TidTil bleibt auf dem eigenen Gerät kostenlos nutzbar. Die Familiensynchronisierung ist optional im Familienabo verfügbar."
