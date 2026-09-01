@@ -164,6 +164,7 @@ h1, h2, h3 { font-family: "Jost", sans-serif; font-weight: 600; color: var(--ink
   position: relative;
   width: auto;
   max-width: none;
+  min-height: 44px;
   margin-top: 0;
   padding: clamp(6px, .8vw, 11px) clamp(9px, 1.15vw, 16px);
   border-radius: clamp(7px, .75vw, 10px);
