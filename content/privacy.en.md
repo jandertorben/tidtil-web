@@ -27,9 +27,9 @@ No data protection officer is currently designated because, based on the present
 - Purchases and subscriptions are handled through **Apple StoreKit/App Store**.
 - The website uses **no externally loaded web fonts, proprietary web analytics or advertising trackers**.
 
-# 1. Privacy in the TidTil app
+## 1. Privacy in the TidTil app
 
-## 1.1 What data does TidTil process?
+### 1.1 What data does TidTil process?
 
 Depending on the features you use, the app processes the following categories of data in particular.
 
@@ -93,7 +93,7 @@ For the one-time 14-day trial access to **TidTil Family**, the app processes tec
 
 This information is stored in the private iCloud/CloudKit area and may be cached on the device. It contains no calendar content and is used solely to provide the trial access, determine the remaining trial period and prevent repeated use.
 
-## 1.2 Local storage and iCloud/CloudKit
+### 1.2 Local storage and iCloud/CloudKit
 
 TidTil uses **Core Data** for local storage and **Apple CloudKit** for synchronisation. The app uses a private CloudKit scope for a user's own data and a shared CloudKit scope for data shared with that user by others.
 
@@ -101,7 +101,7 @@ The local database is protected using the iOS file-protection class `CompleteUnt
 
 Apple's privacy and security terms also apply to CloudKit. TidTil does not operate a proprietary application server to which private calendar content is sent for analytics or advertising.
 
-## 1.3 Family sharing and synchronisation
+### 1.3 Family sharing and synchronisation
 
 Family sharing is based on **Apple CloudKit Sharing**. When you share a family calendar, invited and authorised participants can view and – under the sharing permissions used by TidTil – edit the shared calendar data.
 
@@ -109,13 +109,13 @@ Sharing is managed through Apple's system interface. Only people included in the
 
 With an active share, shared events, locally created family people and the profile-name directory used to identify participants may be synchronised between participating devices.
 
-## 1.4 Profile photos and photo selection
+### 1.4 Profile photos and photo selection
 
 TidTil uses Apple's **system photo picker (PhotosPicker)** to select a profile photo. The app receives access only to the image you select and does not automatically gain access to your entire photo library.
 
 The selected image is resized for use as a profile image and stored with the profile data. It is not uploaded to a proprietary TidTil server.
 
-## 1.5 Notifications and reminders
+### 1.5 Notifications and reminders
 
 TidTil uses Apple's notification system for:
 
@@ -128,7 +128,7 @@ CloudKit may wake the app through system/background notifications when changes o
 
 Notification permission is controlled through the iOS system dialog. Notifications about new family events can also be disabled in TidTil's settings.
 
-## 1.6 Device settings and UserDefaults
+### 1.6 Device settings and UserDefaults
 
 Some non-content settings are stored locally through Apple's `UserDefaults` / SwiftUI `AppStorage`, in particular:
 
@@ -138,7 +138,7 @@ Some non-content settings are stored locally through Apple's `UserDefaults` / Sw
 
 These settings are used only for app functionality and not for advertising or profiling.
 
-## 1.7 Purchases, subscriptions and free trial access
+### 1.7 Purchases, subscriptions and free trial access
 
 **TidTil's private calendar is and remains completely free.** From version 2.2, the shared family calendar can be unlocked with an optional subscription (**TidTil Family**). Invited family members never need their own subscription.
 
@@ -150,7 +150,7 @@ Purchase, renewal, restoration and cancellation run **exclusively through Apple 
 
 Whether a valid paid subscription exists is checked **entirely on your device** via Apple's StoreKit. No proprietary TidTil server is involved, and no payment data is transmitted to us. The separate check for the one-time trial access uses the technical entitlement data in iCloud/CloudKit described above. Anyone who used TidTil before version 2.2 keeps the family calendar free permanently; that check is also performed locally, based on the purchase receipt signed by Apple.
 
-## 1.8 No advertising, tracking or third-party analytics
+### 1.8 No advertising, tracking or third-party analytics
 
 Based on the currently reviewed app code:
 
@@ -162,7 +162,7 @@ Based on the currently reviewed app code:
 
 Apple may process its own technical data in connection with operating-system, iCloud, CloudKit and App Store services. Apple's privacy policy applies to that processing.
 
-## 1.9 Retention and deletion in the app
+### 1.9 Retention and deletion in the app
 
 The current app version handles data in particular as follows:
 
@@ -176,7 +176,7 @@ The current app version handles data in particular as follows:
 - Simply deleting the app from the iPhone does **not necessarily** delete data already stored in iCloud/CloudKit.
 - The start, end and status of trial access are retained for as long as necessary to provide and administer it. The information that the one-time trial access has already been used is retained for as long as necessary to prevent repeated use. Statutory rights to erasure remain unaffected.
 
-## 1.10 Children and other people without their own device
+### 1.10 Children and other people without their own device
 
 Parents or other authorised users can create people within a family – particularly children without their own device – and assign events to them. Depending on use, this may process a name, internal identifier, optional image data and event assignments.
 
@@ -184,7 +184,7 @@ If the calendar is shared with other family members, these details may be visibl
 
 TidTil does not use this information for advertising, tracking or profiling.
 
-## 1.11 Feedback form in the app
+### 1.11 Feedback form in the app
 
 The app contains a form for reporting a problem or sending us an idea. Data is transmitted **only if you deliberately submit the form**.
 
@@ -201,9 +201,9 @@ These reports are stored in the **public database of our iCloud container**. Onl
 
 We keep reports only as long as needed to process them. On request we will delete your report — simply write to the address given below.
 
-# 2. Privacy on the TidTil website
+## 2. Privacy on the TidTil website
 
-## 2.1 Hosting through GitHub Pages
+### 2.1 Hosting through GitHub Pages
 
 This website is hosted using **GitHub Pages**. When a GitHub Pages site is accessed, GitHub may log a visitor's IP address and retain it for security purposes. Other technically necessary connection and request information may also be processed.
 
@@ -211,23 +211,23 @@ This processing serves the secure, stable and reliable provision of the website 
 
 Further information is available in GitHub's privacy information.
 
-## 2.2 Locally hosted web fonts
+### 2.2 Locally hosted web fonts
 
 The **Jost** and **Sacramento** fonts used on this website are delivered together with the website through GitHub Pages. Displaying these fonts therefore establishes **no connection to Google Fonts or another external font service**.
 
 The font files originate from the official Google Fonts repository and are used under their respective **SIL Open Font License (OFL)**. The applicable licence texts are delivered together with the font files.
 
-## 2.3 No proprietary web analytics or advertising trackers
+### 2.3 No proprietary web analytics or advertising trackers
 
 At present, we use **no proprietary web analytics, Google Analytics, advertising cookies or advertising trackers** on the website.
 
-## 2.4 Contact by email
+### 2.4 Contact by email
 
 If you contact us by email, we process the information you provide, in particular your email address, message content and, where supplied, your name, in order to respond to your enquiry.
 
 Where the enquiry relates to a contract or pre-contractual steps, processing is based on Art. 6(1)(b) GDPR. In other cases it is based on our legitimate interest in responding to enquiries under Art. 6(1)(f) GDPR.
 
-# 3. Recipients and international processing
+## 3. Recipients and international processing
 
 Depending on the function used, technically necessary data may in particular be processed by:
 
@@ -237,7 +237,7 @@ Depending on the function used, technically necessary data may in particular be 
 
 International providers may process data outside the European Union or European Economic Area. Such transfers are subject to the safeguards used by the relevant provider and its applicable privacy terms.
 
-# 4. Legal bases
+## 4. Legal bases
 
 Where the GDPR applies, we rely in particular on:
 
@@ -246,7 +246,7 @@ Where the GDPR applies, we rely in particular on:
 
 Where processing is triggered solely by an optional feature – such as selecting a profile photo, enabling a reminder or inviting family members – processing occurs only when you actively use that feature. If consent becomes legally required for a particular operation in the future, TidTil will request it separately.
 
-# 5. Your rights
+## 5. Your rights
 
 Where the legal requirements are met, you have rights including:
 
@@ -261,7 +261,7 @@ Where the legal requirements are met, you have rights including:
 
 A substantial part of private app data resides exclusively within your Apple/iCloud environment. Because TidTil does not operate a proprietary backend server for this calendar content, we cannot centrally retrieve that content for you in the way a conventional cloud provider could. Many data items can be managed directly through the app and Apple's iCloud functions.
 
-# 6. Changes to this privacy policy
+## 6. Changes to this privacy policy
 
 We update this privacy policy when features, technical processes, services used or legal requirements change. The current version is always available on this page. The update date appears at the beginning of the policy.
 
