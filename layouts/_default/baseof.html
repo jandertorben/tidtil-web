@@ -2,6 +2,9 @@
 <html lang="{{ .Site.Language.Lang }}">
   <head>
     {{ partial "head.html" . }}
+    <style>
+      .back-to-top{position:fixed;right:22px;bottom:22px;width:46px;height:46px;border:1px solid var(--line);border-radius:50%;background:color-mix(in srgb,var(--bg) 92%,transparent);color:var(--ink);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 28px rgba(0,0,0,.12);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .2s ease,transform .2s ease,visibility .2s ease;z-index:999;cursor:pointer}.back-to-top.visible{opacity:1;visibility:visible;transform:translateY(0)}.back-to-top:hover{transform:translateY(-2px)}.back-to-top svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}@media(max-width:700px){.back-to-top{right:16px;bottom:16px;width:44px;height:44px}}
+    </style>
   </head>
   <body>
     {{ partial "header.html" . }}
@@ -9,7 +12,28 @@
       {{ block "main" . }}{{ end }}
     </main>
     {{ partial "footer.html" . }}
+
+    <button class="back-to-top" type="button" aria-label="Nach oben" title="Nach oben">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 15l6-6 6 6"/></svg>
+    </button>
+
     {{ $revealJS := resources.Get "js/reveal.js" | resources.Minify | resources.Fingerprint }}
     <script src="{{ $revealJS.RelPermalink }}" defer></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const button = document.querySelector('.back-to-top');
+        if (!button) return;
+
+        const toggleButton = () => {
+          button.classList.toggle('visible', window.scrollY > 500);
+        };
+
+        toggleButton();
+        window.addEventListener('scroll', toggleButton, { passive: true });
+        button.addEventListener('click', function () {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      });
+    </script>
   </body>
 </html>
