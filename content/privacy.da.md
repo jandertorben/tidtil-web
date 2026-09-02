@@ -27,9 +27,9 @@ Der er på nuværende tidspunkt ikke udpeget en databeskyttelsesrådgiver, da vi
 - Køb og abonnementer håndteres via **Apple StoreKit/App Store**.
 - Hjemmesiden bruger **ingen eksternt indlæste webfonts, egen webanalyse eller reklametrackere**.
 
-# 1. Privatliv i TidTil-appen
+## 1. Privatliv i TidTil-appen
 
-## 1.1 Hvilke data behandler TidTil?
+### 1.1 Hvilke data behandler TidTil?
 
 Afhængigt af hvilke funktioner du bruger, behandler appen især følgende kategorier af oplysninger.
 
@@ -93,7 +93,7 @@ Til den gratis 14-dages prøveadgang til **TidTil Familie** behandler appen tekn
 
 Disse oplysninger gemmes i det private iCloud-/CloudKit-område og kan mellemlagres på enheden. De indeholder ikke kalenderindhold og bruges udelukkende til at levere prøveadgangen, beregne den resterende prøveperiode og forhindre gentagen brug.
 
-## 1.2 Lokal lagring og iCloud/CloudKit
+### 1.2 Lokal lagring og iCloud/CloudKit
 
 TidTil bruger **Core Data** til lokal lagring og **Apple CloudKit** til synkronisering. Appen bruger et privat CloudKit-område til brugerens egne data og et delt CloudKit-område til data, som andre deler med brugeren.
 
@@ -101,7 +101,7 @@ Den lokale database er beskyttet med iOS-filbeskyttelsen `CompleteUntilFirstUser
 
 Apples privatlivs- og sikkerhedsvilkår gælder desuden for CloudKit. TidTil driver ikke en egen applikationsserver, hvortil privat kalenderindhold sendes med henblik på analyse eller reklamer.
 
-## 1.3 Familiedeling og synkronisering
+### 1.3 Familiedeling og synkronisering
 
 Familiedeling er baseret på **Apple CloudKit Sharing**. Når du deler en familiekalender, kan inviterede og autoriserede deltagere se og – i henhold til de delingsrettigheder TidTil anvender – redigere de delte kalenderdata.
 
@@ -109,13 +109,13 @@ Delingen administreres via Apples systemdialog. Kun personer, der er tilføjet t
 
 Ved aktiv deling kan fælles aftaler, lokalt oprettede familiepersoner og det profilnavne-register, der bruges til at identificere deltagere, synkroniseres mellem de deltagende enheder.
 
-## 1.4 Profilbilleder og billedvalg
+### 1.4 Profilbilleder og billedvalg
 
 TidTil bruger Apples **system-billedvælger (PhotosPicker)** til valg af profilbillede. Appen får kun adgang til det billede, du vælger, og får ikke automatisk adgang til hele dit billedbibliotek.
 
 Det valgte billede skaleres ned til brug som profilbillede og gemmes sammen med profildataene. Det uploades ikke til en egen TidTil-server.
 
-## 1.5 Notifikationer og påmindelser
+### 1.5 Notifikationer og påmindelser
 
 TidTil bruger Apples notifikationssystem til:
 
@@ -128,7 +128,7 @@ CloudKit kan vække appen via system-/baggrundsnotifikationer, når der sker æn
 
 Tilladelse til notifikationer gives via iOS' systemdialog. Beskeder om nye familieaftaler kan desuden deaktiveres i TidTils indstillinger.
 
-## 1.6 Enhedsindstillinger og UserDefaults
+### 1.6 Enhedsindstillinger og UserDefaults
 
 Nogle ikke-indholdsmæssige indstillinger gemmes lokalt via Apples `UserDefaults` / SwiftUI `AppStorage`, især:
 
@@ -138,7 +138,7 @@ Nogle ikke-indholdsmæssige indstillinger gemmes lokalt via Apples `UserDefaults
 
 Disse indstillinger bruges kun til appens funktion og ikke til reklamer eller profilering.
 
-## 1.7 Køb, abonnementer og gratis prøveadgang
+### 1.7 Køb, abonnementer og gratis prøveadgang
 
 **TidTils private kalender er og forbliver helt gratis.** Fra version 2.2 kan den fælles familiekalender låses op med et valgfrit abonnement (**TidTil Familie**). Inviterede familiemedlemmer skal aldrig have deres eget abonnement.
 
@@ -150,7 +150,7 @@ Køb, fornyelse, gendannelse og opsigelse foregår **udelukkende via Apple og Ap
 
 Kontrollen af, om der findes et gyldigt betalt abonnement, sker **udelukkende på din enhed** via Apples StoreKit. Der er ingen egen TidTil-server involveret, og ingen betalingsdata overføres til os. Den separate kontrol af den gratis engangsprøve bruger de tekniske adgangsdata i iCloud/CloudKit, som er beskrevet ovenfor. Har du brugt TidTil før version 2.2, beholder du familiekalenderen gratis permanent; også den kontrol sker lokalt ud fra den kvittering, Apple har signeret.
 
-## 1.8 Ingen reklamer, tracking eller tredjepartsanalyse
+### 1.8 Ingen reklamer, tracking eller tredjepartsanalyse
 
 Ud fra den aktuelt gennemgåede appkode:
 
@@ -162,7 +162,7 @@ Ud fra den aktuelt gennemgåede appkode:
 
 Apple kan behandle egne tekniske data i forbindelse med operativsystemet, iCloud, CloudKit og App Store. Apples privatlivspolitik gælder for denne behandling.
 
-## 1.9 Opbevaring og sletning i appen
+### 1.9 Opbevaring og sletning i appen
 
 Den nuværende appversion håndterer data blandt andet således:
 
@@ -176,7 +176,7 @@ Den nuværende appversion håndterer data blandt andet således:
 - Hvis du blot sletter appen fra din iPhone, betyder det **ikke nødvendigvis**, at data, der allerede er gemt i iCloud/CloudKit, slettes.
 - Prøveadgangens start, slutning og status gemmes, så længe det er nødvendigt for at levere og administrere den. Oplysningen om, at engangsprøven allerede er blevet brugt, gemmes, så længe det er nødvendigt for at forhindre gentagen brug. Lovbestemte rettigheder til sletning berøres ikke.
 
-## 1.10 Børn og andre personer uden egen enhed
+### 1.10 Børn og andre personer uden egen enhed
 
 Forældre eller andre berettigede brugere kan oprette personer i familien – især børn uden egen enhed – og tildele aftaler til dem. Afhængigt af brugen kan navn, intern identifikator, eventuelle billeddata og aftaletilknytninger blive behandlet.
 
@@ -184,7 +184,7 @@ Hvis kalenderen deles med andre familiemedlemmer, kan disse oplysninger være sy
 
 TidTil bruger ikke disse oplysninger til reklamer, tracking eller profilering.
 
-## 1.11 Feedbackformular i appen
+### 1.11 Feedbackformular i appen
 
 Appen indeholder en formular, hvor du kan melde en fejl eller sende os en idé. Data overføres **kun, hvis du bevidst indsender formularen**.
 
@@ -201,9 +201,9 @@ Disse meldinger gemmes i den **offentlige database i vores iCloud-container**. K
 
 Vi opbevarer kun meldinger, så længe det er nødvendigt for at behandle dem. På anmodning sletter vi din melding — skriv blot til adressen nedenfor.
 
-# 2. Privatliv på TidTil-hjemmesiden
+## 2. Privatliv på TidTil-hjemmesiden
 
-## 2.1 Hosting via GitHub Pages
+### 2.1 Hosting via GitHub Pages
 
 Denne hjemmeside hostes via **GitHub Pages**. Når en GitHub Pages-side besøges, kan GitHub blandt andet logge den besøgendes IP-adresse og gemme den til sikkerhedsformål. Andre teknisk nødvendige forbindelses- og requestdata kan også blive behandlet.
 
@@ -211,23 +211,23 @@ Behandlingen sker for at levere hjemmesiden sikkert, stabilt og teknisk pålidel
 
 Yderligere oplysninger findes i GitHubs privatlivsinformation.
 
-## 2.2 Lokalt hostede webfonts
+### 2.2 Lokalt hostede webfonts
 
 Skrifttyperne **Jost** og **Sacramento**, der bruges på denne hjemmeside, leveres sammen med hjemmesiden via GitHub Pages. Visningen af skrifttyperne medfører derfor **ingen forbindelse til Google Fonts eller andre eksterne fonttjenester**.
 
 Skriftfilerne stammer fra det officielle Google Fonts-repository og anvendes under den respektive **SIL Open Font License (OFL)**. De gældende licenstekster leveres sammen med skriftfilerne.
 
-## 2.3 Ingen egen webanalyse eller reklametrackere
+### 2.3 Ingen egen webanalyse eller reklametrackere
 
 Vi bruger på nuværende tidspunkt **ingen egen webanalyse, Google Analytics, reklamecookies eller reklametrackere** på hjemmesiden.
 
-## 2.4 Kontakt via e-mail
+### 2.4 Kontakt via e-mail
 
 Hvis du kontakter os via e-mail, behandler vi de oplysninger, du sender, især din e-mailadresse, beskedens indhold og eventuelt dit navn, for at kunne besvare din henvendelse.
 
 Hvis henvendelsen vedrører en aftale eller foranstaltninger forud for en aftale, sker behandlingen på grundlag af GDPR artikel 6, stk. 1, litra b. I andre tilfælde sker den på grundlag af vores legitime interesse i at besvare henvendelser, jf. artikel 6, stk. 1, litra f.
 
-# 3. Modtagere og international behandling
+## 3. Modtagere og international behandling
 
 Afhængigt af den anvendte funktion kan teknisk nødvendige data især blive behandlet af:
 
@@ -237,7 +237,7 @@ Afhængigt af den anvendte funktion kan teknisk nødvendige data især blive beh
 
 Internationale udbydere kan behandle data uden for EU eller EØS. Sådanne overførsler er underlagt de garantier, den pågældende udbyder anvender, samt udbyderens gældende privatlivsvilkår.
 
-# 4. Retsgrundlag
+## 4. Retsgrundlag
 
 Når GDPR finder anvendelse, baserer vi især behandlingen på:
 
@@ -246,7 +246,7 @@ Når GDPR finder anvendelse, baserer vi især behandlingen på:
 
 Når behandling alene udløses af en valgfri funktion – f.eks. valg af profilbillede, aktivering af en påmindelse eller invitation af familiemedlemmer – sker behandlingen kun, når du aktivt bruger funktionen. Hvis samtykke fremover bliver juridisk nødvendigt for en bestemt behandling, vil TidTil indhente det særskilt.
 
-# 5. Dine rettigheder
+## 5. Dine rettigheder
 
 Når de juridiske betingelser er opfyldt, har du blandt andet ret til:
 
@@ -261,7 +261,7 @@ Når de juridiske betingelser er opfyldt, har du blandt andet ret til:
 
 En væsentlig del af de private appdata ligger udelukkende i dit Apple-/iCloud-miljø. Da TidTil ikke driver en egen backendserver til dette kalenderindhold, kan vi ikke centralt hente indholdet for dig på samme måde som en traditionel cloududbyder. Mange data kan administreres direkte via appen og Apples iCloud-funktioner.
 
-# 6. Ændringer af denne privatlivspolitik
+## 6. Ændringer af denne privatlivspolitik
 
 Vi opdaterer denne privatlivspolitik, når funktioner, tekniske processer, anvendte tjenester eller juridiske krav ændrer sig. Den aktuelle version er altid tilgængelig på denne side. Opdateringsdatoen står øverst i politikken.
 
