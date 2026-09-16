@@ -107,4 +107,4 @@ TidTil ist für persönliche Termine kostenlos nutzbar. Die gemeinsame Familiens
 
 {{< appstore-button >}}
 
-Mehr über die [Funktionen von TidTil](/#features) erfahren oder [Datenschutz bei TidTil](/datenschutz/) lesen.
+Mehr über die [Funktionen von TidTil](/#features) erfahren, nachlesen, warum TidTil ein [Familienkalender ohne Werbung und ohne Konto](/familienkalender-ohne-werbung/) ist, oder [Datenschutz bei TidTil](/datenschutz/) lesen.

@@ -107,4 +107,4 @@ TidTil kan bruges gratis til personlige aftaler. Fælles familiesynkronisering k
 
 {{< appstore-button >}}
 
-Læs mere om [TidTils funktioner](/da/#features) eller om [privatliv hos TidTil](/da/privatliv/).
+Læs mere om [TidTils funktioner](/da/#features), om hvorfor TidTil er en [familiekalender uden reklamer og uden konto](/familiekalender-uden-reklamer/), eller om [privatliv hos TidTil](/da/privatliv/).
