@@ -107,4 +107,4 @@ TidTil is free to use for personal events. Shared family syncing costs €1.99 p
 
 {{< appstore-button >}}
 
-Learn more about [TidTil's features](/en/#features) or read about [privacy at TidTil](/en/privacy/).
+Learn more about [TidTil's features](/en/#features), read why TidTil is a [family calendar without ads or an account](/family-calendar-without-ads/), or read about [privacy at TidTil](/en/privacy/).

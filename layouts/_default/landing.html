@@ -8,7 +8,7 @@
     </div>
     {{ with .Params.hero_image }}
     <figure class="landing-hero-figure wrap">
-      <img src="{{ . | relURL }}" alt="{{ $.Params.hero_alt }}" loading="eager" fetchpriority="high" width="1536" height="1024">
+      <img src="{{ . | relURL }}" alt="{{ $.Params.hero_alt }}" loading="eager" fetchpriority="high" width="{{ $.Params.hero_width | default 1536 }}" height="{{ $.Params.hero_height | default 1024 }}">
     </figure>
     {{ end }}
   </section>
