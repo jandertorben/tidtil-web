@@ -213,9 +213,9 @@ Yderligere oplysninger findes i GitHubs privatlivsinformation.
 
 ### 2.2 Lokalt hostede webfonts
 
-Skrifttyperne **Jost** og **Sacramento**, der bruges på denne hjemmeside, leveres sammen med hjemmesiden via GitHub Pages. Visningen af skrifttyperne medfører derfor **ingen forbindelse til Google Fonts eller andre eksterne fonttjenester**.
+Skrifttypen **Archivo**, der bruges på denne hjemmeside, leveres sammen med hjemmesiden via GitHub Pages. Visningen af skrifttypen medfører derfor **ingen forbindelse til Google Fonts eller andre eksterne fonttjenester**.
 
-Skriftfilerne stammer fra det officielle Google Fonts-repository og anvendes under den respektive **SIL Open Font License (OFL)**. De gældende licenstekster leveres sammen med skriftfilerne.
+Skriftfilerne er baseret på Google Fonts-udgaven af skrifttypen (hentet via open source-projektet Fontsource) og anvendes under **SIL Open Font License (OFL)**. Licensteksten leveres sammen med skriftfilerne.
 
 ### 2.3 Ingen egen webanalyse eller reklametrackere
 

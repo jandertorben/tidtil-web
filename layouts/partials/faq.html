@@ -1,0 +1,8 @@
+{{- /* Akkordeon aus Front-Matter-FAQ. .open = Index des anfangs geöffneten Eintrags (-1 = alle zu). */ -}}
+{{- $open := .open -}}
+{{- range $i, $item := .items }}
+<details class="faq-item"{{ if eq $i $open }} open{{ end }}>
+  <summary>{{ $item.q }}<span class="faq-plus" aria-hidden="true">+</span></summary>
+  <p>{{ $item.a }}</p>
+</details>
+{{- end }}

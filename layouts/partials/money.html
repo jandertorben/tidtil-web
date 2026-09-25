@@ -1,0 +1,5 @@
+{{- /* Preis im Format der Seitensprache: DE/DA „1,99 €“ (geschütztes Leerzeichen), EN „€1.99“. */ -}}
+{{- $n := printf "%.2f" (float .amount) -}}
+{{- $s := printf "%s €" (replace $n "." ",") -}}
+{{- if eq .lang "en" }}{{ $s = printf "€%s" $n }}{{ end -}}
+{{- return $s -}}

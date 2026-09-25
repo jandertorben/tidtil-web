@@ -1,0 +1,80 @@
+{{- /* Gemeinsames Layout für alle Unterseiten (single + landing). */ -}}
+{{- $key := .File.ContentBaseName -}}
+
+{{- /* H2-Überschriften für das Inhaltsverzeichnis (nur bei ≥ 3). */ -}}
+{{- $h2 := slice -}}
+{{- range .Fragments.HeadingsMap -}}{{- if eq .Level 2 }}{{ $h2 = $h2 | append . }}{{ end -}}{{- end -}}
+{{- $toc := slice -}}
+{{- if ge (len $h2) 3 -}}
+  {{- /* HeadingsMap ist ungeordnet – Reihenfolge aus dem gerenderten HTML übernehmen. */ -}}
+  {{- range findRE `<h2 id="[^"]+"` .Content -}}
+    {{- $id := replaceRE `<h2 id="([^"]+)"` "$1" . -}}
+    {{- with index $.Fragments.HeadingsMap $id }}{{ $toc = $toc | append . }}{{ end -}}
+  {{- end -}}
+{{- end -}}
+
+<div class="wrap">
+  <header class="doc-head">
+    <div class="doc-head-copy">
+      <a class="doc-home" href="{{ .Site.Home.RelPermalink }}">TidTil</a>
+      <h1 class="doc-title">{{ .Title }}</h1>
+      {{- with .Params.hero_lead | default .Description }}
+      <p class="doc-lead">{{ . }}</p>
+      {{- end }}
+      {{- with .Params.updated }}
+      <span class="doc-updated">{{ i18n "updated" }}: {{ . }}</span>
+      {{- end }}
+    </div>
+    {{- with .Params.hero_image }}
+    <figure class="photo doc-photo">
+      <img src="{{ . | relURL }}" alt="{{ $.Params.hero_alt }}" width="{{ $.Params.hero_width | default 1536 }}" height="{{ $.Params.hero_height | default 1024 }}" loading="eager" fetchpriority="high">
+    </figure>
+    {{- end }}
+  </header>
+
+  <div class="doc-body">
+    {{- with $toc }}
+    <nav class="toc" aria-labelledby="toc-label">
+      <span class="toc-label" id="toc-label">{{ i18n "toc" }}</span>
+      {{- range . }}
+      <a href="#{{ .ID }}">{{ .Title | plainify }}</a>
+      {{- end }}
+    </nav>
+    {{- end }}
+    <div class="doc-main">
+      <div class="prose">
+        {{ .Content }}
+      </div>
+
+      {{- /* Akkordeon nur, wenn der Text die Fragen nicht schon selbst enthält (JSON-LD kommt immer aus dem Front Matter). */}}
+      {{- with .Params.faq }}
+      {{- if not (strings.Contains (string $.Content) (index . 0).q) }}
+      <section class="page-faq">
+        <h2>{{ i18n "faq_title" }}</h2>
+        {{ partial "faq.html" (dict "items" . "open" -1) }}
+      </section>
+      {{- end }}
+      {{- end }}
+    </div>
+  </div>
+
+  {{- /* Weiterführende Seiten: die anderen SEO-Seiten (+ Datenschutz) bzw. alle drei. */ -}}
+  {{- $seo := slice
+    (dict "key" "familienkalender-iphone" "label" (i18n "nav_family_calendar"))
+    (dict "key" "familienkalender-ohne-werbung" "label" (i18n "nav_no_ads"))
+    (dict "key" "familienkalender-kinder-ohne-handy" "label" (i18n "nav_kids"))
+  -}}
+  {{- $isSeo := false -}}
+  {{- range $seo }}{{ if eq .key $key }}{{ $isSeo = true }}{{ end }}{{ end -}}
+  {{- $related := slice -}}
+  {{- range $seo }}{{ if ne .key $key }}{{ $related = $related | append . }}{{ end }}{{ end -}}
+  {{- if $isSeo }}{{ $related = $related | append (dict "key" "privacy" "label" (i18n "nav_privacy")) }}{{ end }}
+  <nav class="related" aria-label="{{ i18n "related_label" }}">
+    {{- range $related }}
+    {{- $label := .label }}
+    {{- with $.Site.GetPage .key }}
+    <a href="{{ .RelPermalink }}">{{ $label }}</a>
+    {{- end }}
+    {{- end }}
+  </nav>
+</div>

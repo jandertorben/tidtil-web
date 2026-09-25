@@ -1,39 +1,17 @@
 <!doctype html>
-<html lang="{{ .Site.Language.Lang }}">
+<html lang="{{ .Site.Language.Lang }}" class="no-js">
   <head>
+    <script>document.documentElement.className="js"</script>
     {{ partial "head.html" . }}
-    <style>
-      .back-to-top{position:fixed;right:22px;bottom:22px;width:46px;height:46px;border:1px solid var(--line);border-radius:50%;background:color-mix(in srgb,var(--bg) 92%,transparent);color:var(--ink);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 28px rgba(0,0,0,.12);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .2s ease,transform .2s ease,visibility .2s ease;z-index:999;cursor:pointer}.back-to-top.visible{opacity:1;visibility:visible;transform:translateY(0)}.back-to-top:hover{transform:translateY(-2px)}.back-to-top svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}@media(max-width:700px){.back-to-top{right:10px;bottom:calc(10px + env(safe-area-inset-bottom));width:36px;height:36px;border-color:color-mix(in srgb,var(--line) 70%,transparent);background:color-mix(in srgb,var(--bg) 78%,transparent);box-shadow:0 6px 18px rgba(0,0,0,.08);opacity:0;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}.back-to-top.visible{opacity:.88}.back-to-top svg{width:15px;height:15px;stroke-width:2.2}}
-    </style>
   </head>
   <body>
+    <a class="skip-link" href="#main">{{ i18n "skip_link" }}</a>
     {{ partial "header.html" . }}
-    <main>
+    <main id="main">
       {{ block "main" . }}{{ end }}
     </main>
     {{ partial "footer.html" . }}
-
-    <button class="back-to-top" type="button" aria-label="Nach oben" title="Nach oben">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 15l6-6 6 6"/></svg>
-    </button>
-
-    {{ $revealJS := resources.Get "js/reveal.js" | resources.Minify | resources.Fingerprint }}
-    <script src="{{ $revealJS.RelPermalink }}" defer></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const button = document.querySelector('.back-to-top');
-        if (!button) return;
-
-        const toggleButton = () => {
-          button.classList.toggle('visible', window.scrollY > 650);
-        };
-
-        toggleButton();
-        window.addEventListener('scroll', toggleButton, { passive: true });
-        button.addEventListener('click', function () {
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-      });
-    </script>
+    {{ $js := resources.Get "js/site.js" | resources.Minify | resources.Fingerprint }}
+    <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
   </body>
 </html>
