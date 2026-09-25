@@ -213,9 +213,9 @@ Further information is available in GitHub's privacy information.
 
 ### 2.2 Locally hosted web fonts
 
-The **Jost** and **Sacramento** fonts used on this website are delivered together with the website through GitHub Pages. Displaying these fonts therefore establishes **no connection to Google Fonts or another external font service**.
+The **Archivo** font used on this website is delivered together with the website through GitHub Pages. Displaying this font therefore establishes **no connection to Google Fonts or another external font service**.
 
-The font files originate from the official Google Fonts repository and are used under their respective **SIL Open Font License (OFL)**. The applicable licence texts are delivered together with the font files.
+The font files are based on the Google Fonts release of the typeface (obtained via the open-source project Fontsource) and are used under the **SIL Open Font License (OFL)**. The licence text is delivered together with the font files.
 
 ### 2.3 No proprietary web analytics or advertising trackers
 

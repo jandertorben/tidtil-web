@@ -5,3 +5,6 @@
 
 # macOS
 .DS_Store
+
+# Design-Handoff (lokale Referenz, nicht Teil der Website)
+/design_handoff_tidtil_website/

@@ -8,9 +8,6 @@ Tak, fordi du bruger TidTil. Hvis du har et spørgsmål, noget ikke virker, elle
 du har fået en idé – så skriv endelig til os. Vi er et lille familieprojekt og
 læser hver besked.
 
-> Bemærk: Den danske tekst er lavet med omhu, men bør læses igennem af en dansk
-> modersmålstalende inden endelig offentliggørelse.
-
 ## Kontakt
 
 Send os en e-mail: {{< email-support >}}

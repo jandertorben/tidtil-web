@@ -1,22 +1,28 @@
+{{- $home := .Site.Home.RelPermalink -}}
+{{- $privacy := .Site.GetPage "privacy" -}}
+{{- $support := .Site.GetPage "support" -}}
 <header class="site-header">
   <div class="wrap header-inner">
-    <a class="wordmark" href="{{ .Site.Home.RelPermalink }}">
-      <span class="wordmark-tid">Tid</span><span class="wordmark-til">Til</span>
-    </a>
+    <a class="brand" href="{{ $home }}"><img src="{{ "img/tidtil-icon-light.png" | relURL }}" alt="" width="28" height="28">TidTil</a>
 
     <nav class="site-nav" aria-label="{{ i18n "nav_label" }}">
-      <a href="{{ .Site.Home.RelPermalink }}#features">{{ i18n "nav_features" }}</a>
-      <a href="{{ (.Site.GetPage "privacy").RelPermalink }}">{{ i18n "nav_privacy" }}</a>
-      <a href="{{ (.Site.GetPage "support").RelPermalink }}">{{ i18n "nav_support" }}</a>
+      <a href="{{ $home }}#features">{{ i18n "nav_features" }}</a>
+      <a href="{{ $home }}#pricing">{{ i18n "nav_pricing" }}</a>
+      <a href="{{ $privacy.RelPermalink }}"{{ if eq .RelPermalink $privacy.RelPermalink }} aria-current="page"{{ end }}>{{ i18n "nav_privacy" }}</a>
+      <a href="{{ $support.RelPermalink }}"{{ if eq .RelPermalink $support.RelPermalink }} aria-current="page"{{ end }}>{{ i18n "nav_support" }}</a>
     </nav>
 
-    {{ if .IsTranslated }}
-    <span class="lang-switch" aria-label="{{ i18n "lang_label" }}">
-      <a class="lang current" aria-current="page">{{ .Site.Language.Lang | upper }}</a>
-      {{ range .Translations }}
-      <a class="lang" href="{{ .Permalink }}" hreflang="{{ .Language.Lang }}">{{ .Language.Lang | upper }}</a>
-      {{ end }}
-    </span>
-    {{ end }}
+    {{- /* Jede Sprache verlinkt auf dieselbe Seite; fehlt eine Übersetzung, auf deren Startseite. */}}
+    <nav class="lang-switch" aria-label="{{ i18n "lang_label" }}">
+      {{- $page := . }}
+      {{- range hugo.Sites }}
+        {{- $lang := .Language.Lang }}
+        {{- $href := .Home.RelPermalink }}
+        {{- range $page.AllTranslations }}{{ if eq .Language.Lang $lang }}{{ $href = .RelPermalink }}{{ end }}{{ end }}
+        <a href="{{ $href }}" hreflang="{{ $lang }}" lang="{{ $lang }}" title="{{ .Language.Label }}"{{ if eq $lang $page.Site.Language.Lang }} aria-current="true"{{ end }}>{{ $lang | upper }}</a>
+      {{- end }}
+    </nav>
+
+    {{ with .Site.Params.appStoreURL }}<a class="btn btn-sm" href="{{ . }}" target="_blank" rel="noopener">{{ i18n "cta_short" }}</a>{{ end }}
   </div>
 </header>

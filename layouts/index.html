@@ -1,34 +1,224 @@
 {{ define "main" }}
-{{ $p := .Params }}
+{{- $p := .Params -}}
+{{- $lang := .Site.Language.Lang -}}
+{{- $app := .Site.Params.appStoreURL -}}
+{{- $live := $p.live -}}
+{{- $demo := $p.demo -}}
+{{- $price := $p.price -}}
+{{- $colors := slice "#84a383" "#6b645c" "#c4a466" "#b07a52" "#1d1714" -}}
+{{- $fmtTime := "%02d:%02d" -}}
 
-<section class="hero">
-  <div class="wrap">
-    <figure class="hero-figure">
-      <img class="hero-background" src="{{ "img/tidtil-header-clean.webp" | relURL }}" alt="{{ $p.hero_alt }}" loading="eager" fetchpriority="high" width="1672" height="941">
-      <div class="hero-localized-copy">
-        <h1 class="hero-localized-title">{{ $p.hero_title }}<br><span>{{ $p.hero_script }}</span></h1>
-        <p class="hero-localized-sub">{{ $p.hero_sub }}</p>
-        <a class="appstore-button hero-appstore-button" href="{{ $.Site.Params.appStoreURL }}" target="_blank" rel="noopener" aria-label="{{ $p.app_store_cta }}" title="{{ $p.app_store_cta }}">
-          <svg class="appstore-icon" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.3-2.8-74 20.6-88.1 20.6-15 0-49.4-19.7-72.3-19.7-38.2.6-73.1 22.2-92.8 56.5-39.5 68.5-10.1 169.9 28.4 225.6 19.8 28.7 43.8 60.9 75.1 59.7 30.1-1.2 41.5-19.2 77.9-19.2 35.3 0 46.8 19.2 78.5 18.6 32.5-.6 53.3-29.1 72.9-57.8-84.4-39.6-79.9-116.7-80.9-119.1zM260.9 102.5c26.3-31.1 23.9-59.4 23.1-69.5-23.2 1.3-50 15.8-65.3 33.6-16.8 19-26.6 42.5-24.5 68.8 25.1 1.9 47.9-11 66.7-32.9z"/></svg>{{ $p.app_store_cta }}
-        </a>
+{{- /* Startzustand ohne JavaScript: der Tag vor dem ersten Termin, Monatspreis, 4 Personen. */ -}}
+{{- $events := $live.events -}}
+{{- $first := index $events 0 -}}
+{{- $firstTime := printf $fmtTime (div $first.start 60) (mod $first.start 60) -}}
+{{- $summary := replace (replace (replace $live.left "{n}" (string (len $events))) "{what}" $first.what) "{time}" $firstTime -}}
+{{- $summary = printf "%s %s" (index $live.greet 0) $summary -}}
+{{- $members := 4 -}}
+{{- $monthly := partial "money.html" (dict "amount" 1.99 "lang" $lang) -}}
+{{- $yearly := partial "money.html" (dict "amount" 19.99 "lang" $lang) -}}
+{{- $perHead := partial "money.html" (dict "amount" (div 1.99 $members) "lang" $lang) -}}
+{{- $zero := cond (eq $lang "en") "€0" "0 €" -}}
+
+<section class="wrap hero">
+  <div class="hero-copy">
+    <p class="dateline js-only" data-dateline></p>
+    <h1 class="h-display">{{ $p.h1 }}</h1>
+    <p class="hero-sub">{{ $p.sub }}</p>
+    <div class="cta-row">
+      <a class="btn" href="{{ $app }}" target="_blank" rel="noopener">{{ i18n "get_app" }}</a>
+      <span class="proof">{{ $p.proof }}</span>
+    </div>
+  </div>
+  <figure class="photo hero-photo">
+    <img src="{{ "img/hero-familienalltag.webp" | relURL }}" alt="{{ $p.hero_alt }}" width="1024" height="1536" loading="eager" fetchpriority="high">
+  </figure>
+</section>
+
+<section id="today" class="today" aria-labelledby="today-title">
+  <div class="wrap today-inner">
+    <div class="today-head">
+      <div class="today-intro">
+        <h2 id="today-title" class="h-section">{{ $live.title }}</h2>
+        <p class="today-summary" data-summary aria-live="polite">{{ $summary }}</p>
       </div>
-    </figure>
+      <label class="scrubber js-only">
+        <span class="scrubber-top"><span>{{ $live.scrub }}</span><strong class="scrubber-clock" data-clock>{{ $firstTime }}</strong></span>
+        <input type="range" min="360" max="1380" step="5" value="360" aria-label="{{ $live.slider }}" data-scrubber>
+      </label>
+    </div>
+    <ol class="day-list" data-day>
+      {{- range $events }}
+      <li class="day-row">
+        <span class="day-time">{{ printf $fmtTime (div .start 60) (mod .start 60) }}</span>
+        <span class="day-main">
+          <span class="day-what">{{ .what }}</span>
+          <span class="day-who"><span class="dot" style="--c:{{ index $colors .who | safeCSS }}"></span>{{ index $live.who .who }} · {{ cond .family $live.fam $live.priv }}</span>
+        </span>
+        <span class="day-badge"></span>
+      </li>
+      {{- end }}
+    </ol>
   </div>
 </section>
 
-{{ partial "home-today.html" . }}
+{{- with $p.features }}
+{{- $r := .rows }}
+<section id="features" class="wrap features">
+  <div class="features-intro">
+    <h2 class="h-section">{{ .title }}</h2>
+    <p class="copy">{{ .text }}</p>
+  </div>
+  <div class="feature-stack">
+    {{- with index $r 0 }}
+    <div class="feature">
+      <figure class="photo feature-photo"><img src="{{ .image | relURL }}" alt="{{ .alt }}" width="1003" height="1568" loading="lazy" decoding="async" style="object-position:50% 40%"></figure>
+      <div class="feature-text">
+        <h3 class="h-feature">{{ .title }}</h3>
+        <p class="copy">{{ .text }}</p>
+      </div>
+    </div>
+    {{- end }}
+    {{- with index $r 1 }}
+    <div class="feature feature-reverse">
+      <div class="feature-text">
+        <h3 class="h-feature">{{ .title }}</h3>
+        <p class="copy">{{ .text }}</p>
+      </div>
+      <figure class="photo feature-photo"><img src="{{ .image | relURL }}" alt="{{ .alt }}" width="1122" height="1402" loading="lazy" decoding="async"></figure>
+    </div>
+    {{- end }}
+    <div class="feature-pair">
+      {{- with index $r 2 }}
+      <div class="feature-card">
+        <figure class="photo"><img src="{{ .image | relURL }}" alt="{{ .alt }}" width="1122" height="1402" loading="lazy" decoding="async"></figure>
+        <h3 class="h-feature-sm">{{ .title }}</h3>
+        <p class="copy">{{ .text }}</p>
+      </div>
+      {{- end }}
+      {{- with index $r 3 }}
+      <div class="feature-card">
+        <figure class="photo"><img src="{{ .image | relURL }}" alt="{{ .alt }}" width="853" height="1844" loading="lazy" decoding="async" style="object-position:50% 30%"></figure>
+        <h3 class="h-feature-sm">{{ .title }}</h3>
+        <p class="copy">{{ .text }}</p>
+      </div>
+      {{- end }}
+    </div>
+  </div>
+</section>
+{{- end }}
 
-<section id="features" class="rows"><div class="wrap">{{ range $i, $row := after 1 $p.rows }}<div class="row-item {{ if eq (mod $i 2) 1 }}reverse{{ end }}"><div class="row-art"><figure class="feature-lifestyle"><img src="{{ $row.image | relURL }}" alt="{{ $row.alt }}" loading="lazy" width="1200" height="900"></figure></div><div class="row-copy"><p class="kicker">{{ $row.kicker }}</p><h2 class="row-title">{{ $row.title }}</h2><p class="row-text">{{ $row.text }}</p></div></div>{{ end }}</div></section>
+<section id="demo" class="wrap demo-wrap" aria-labelledby="demo-title">
+  <div class="demo">
+    <div class="demo-head">
+      <h2 id="demo-title">{{ $demo.title }}</h2>
+      <p class="copy">{{ $demo.hint }}</p>
+    </div>
+    <p class="demo-sentence">
+      <input class="demo-input" type="text" data-demo-what placeholder="{{ $demo.placeholder }}" size="{{ math.Max 8 (strings.RuneCount $demo.placeholder) }}" maxlength="40" aria-label="{{ $demo.draft }}" autocomplete="off" enterkeyhint="done">
+      <span class="conn">{{ $demo.at }}</span> <button class="demo-token" type="button" data-demo-time>17:30</button><span class="conn"> {{ $demo.for }} </span><button class="demo-token" type="button" data-demo-who>{{ index $live.who 3 }}</button><span class="conn">, {{ $demo.visible }} </span><button class="demo-token" type="button" data-demo-vis>{{ $demo.fam }}</button>.
+    </p>
+    <div class="demo-actions js-only">
+      <button class="btn" type="button" data-demo-add>{{ $demo.add }}</button>
+      <span aria-live="polite"><a class="demo-done" href="#today" data-demo-done hidden>{{ $demo.done }}</a></span>
+    </div>
+  </div>
+</section>
 
-{{ with $p.philosophy_title }}<section class="philosophy philosophy-compact"><div class="wrap philosophy-inner"><div class="philosophy-copy"><p class="kicker">{{ $p.philosophy_kicker }}</p><h2 class="section-title">{{ . }}</h2><p class="philosophy-lead">{{ $p.philosophy_text }}</p></div><div class="philosophy-grid"><article class="philosophy-card"><p class="philosophy-label">{{ $p.philosophy_classic_title }}</p><p>{{ $p.philosophy_classic_text }}</p></article><article class="philosophy-card philosophy-card-accent"><p class="philosophy-label">{{ $p.philosophy_tidtil_title }}</p><p>{{ $p.philosophy_tidtil_text }}</p></article></div><blockquote class="philosophy-quote">{{ $p.philosophy_quote }}</blockquote></div></section>{{ end }}
+{{- with $p.stance }}
+<section class="wrap stance">
+  <blockquote>{{ .quote }}</blockquote>
+  <div class="stance-compare">
+    <div class="is-classic"><h3>{{ .classic_title }}</h3><p>{{ .classic_text }}</p></div>
+    <div><h3>{{ .tidtil_title }}</h3><p>{{ .tidtil_text }}</p></div>
+  </div>
+</section>
+{{- end }}
 
-{{ with $p.audience_title }}<section class="audience"><div class="wrap audience-inner"><div class="audience-copy"><p class="kicker">{{ $p.audience_kicker }}</p><h2 class="section-title">{{ . }}</h2><p class="audience-lead">{{ $p.audience_text }}</p>{{ with $p.audience_link_label }}<p class="audience-lead">{{ $p.audience_link_intro }} <a class="text-link" href="{{ $p.audience_link_url | relURL }}">{{ . }}</a> {{ $p.audience_link_outro }}</p>{{ end }}</div>{{ with $p.audience_points }}<ul class="audience-points">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}</div></section>{{ end }}
+<section id="pricing" class="pricing" aria-labelledby="pricing-title">
+  <div class="wrap pricing-inner">
+    <div class="pricing-head">
+      <h2 id="pricing-title" class="h-section">{{ $price.title }}</h2>
+      <div class="bill-toggle js-only" role="group" aria-label="{{ $price.family_title }}">
+        <button type="button" data-bill="m" aria-pressed="true">{{ $price.month }}</button>
+        <button type="button" data-bill="y" aria-pressed="false">{{ $price.year }}</button>
+      </div>
+    </div>
+    <div class="price-grid">
+      <div class="price-col">
+        <h3>{{ $price.personal_title }}</h3>
+        <span class="price-figure">{{ $zero }}</span>
+        <p class="copy">{{ $price.personal_text }}</p>
+      </div>
+      <div class="price-col">
+        <h3>{{ $price.family_title }}<span class="price-trial">{{ $price.trial }}</span></h3>
+        <span class="price-figure"><span data-price-amount>{{ $monthly }}</span><span class="price-unit" data-price-unit>{{ $price.per_month }}</span></span>
+        <p class="copy" data-price-note>{{ $price.month_note }}</p>
+        <noscript><p class="copy">{{ $yearly }} {{ $price.per_year }} · {{ replace $price.year_note "{m}" (partial "money.html" (dict "amount" (div 19.99 12) "lang" $lang)) }}</p></noscript>
+        <div class="per-head">
+          <span class="per-head-line" data-per-head aria-live="polite">{{ replace (replace $price.per_head "{n}" (string $members)) "{p}" $perHead }}</span>
+          <span class="stepper js-only">
+            <button type="button" data-members="-1" aria-label="{{ $price.fewer }}">–</button>
+            <button type="button" data-members="1" aria-label="{{ $price.more }}">+</button>
+          </span>
+        </div>
+      </div>
+    </div>
+    <p class="price-fine">{{ $price.trial_note }} {{ $price.no_sub }}</p>
+  </div>
+</section>
 
-{{ with $p.sync_title }}<section class="sync"><div class="wrap sync-inner"><span class="badge">{{ $p.sync_badge }}</span><h2 class="sync-title">{{ . }}</h2><p class="sync-free">{{ $p.sync_free }}</p>{{ with $p.sync_trial }}<div style="max-width:720px;margin:22px auto 0;padding:15px 20px;border:1px solid color-mix(in srgb,var(--accent) 45%,var(--line));border-radius:16px;background:color-mix(in srgb,var(--accent) 8%,var(--bg));text-align:center;"><strong style="display:block;color:var(--ink);font-size:1.05rem;margin-bottom:3px;">{{ $p.sync_trial_title }}</strong><span style="color:var(--ink-soft);line-height:1.5;">{{ . }}</span></div>{{ end }}<figure style="margin:clamp(28px,4vw,48px) 0 0;overflow:hidden;border-radius:28px;box-shadow:var(--shadow-float);background:var(--surface-2);"><img src="{{ "img/familien-sync-banner.webp" | relURL }}" alt="{{ $p.sync_alt }}" loading="lazy" width="1536" height="1024" style="display:block;width:100%;height:auto;aspect-ratio:3 / 2;object-fit:contain;"></figure><div class="pricing-grid" style="margin-top:clamp(28px,4vw,44px);"><article class="price-card"><p class="price-label">{{ $p.pricing_personal_title }}</p><p class="price-value">{{ $p.pricing_personal_price }}</p><p class="price-text">{{ $p.pricing_personal_text }}</p><a class="price-appstore-link" href="{{ $.Site.Params.appStoreURL }}" target="_blank" rel="noopener" aria-label="{{ $p.pricing_cta }} – {{ $p.pricing_personal_title }}">{{ $p.pricing_cta }} <span aria-hidden="true">→</span></a></article><article class="price-card featured"><p class="price-label">{{ $p.pricing_family_title }}</p>{{ with $p.pricing_family_trial }}<p style="display:inline-block;margin:0 0 10px;padding:5px 9px;border-radius:999px;background:var(--accent);color:var(--bg);font-size:.78rem;font-weight:700;letter-spacing:.02em;">{{ . }}</p>{{ end }}<p class="price-value">{{ $p.pricing_family_price }}</p><p class="price-text">{{ $p.pricing_family_text }}</p><a class="price-appstore-link" href="{{ $.Site.Params.appStoreURL }}" target="_blank" rel="noopener" aria-label="{{ $p.pricing_cta }} – {{ $p.pricing_family_title }}">{{ $p.pricing_cta }} <span aria-hidden="true">→</span></a></article></div><p class="sync-text">{{ $p.sync_text }}</p><p class="sync-note">{{ $p.sync_note }}</p></div></section>{{ end }}
+{{- with $p.privacy }}
+<section class="privacy-band">
+  <div class="wrap privacy-inner">
+    <div class="privacy-copy">
+      <h2 class="h-section-lg">{{ .title }}</h2>
+      <p>{{ .text }}</p>
+      <a href="{{ ($.Site.GetPage "privacy").RelPermalink }}">{{ i18n "nav_privacy" }}</a>
+    </div>
+    <div class="privacy-facts">
+      {{- range .facts }}
+      <div class="privacy-fact"><h3>{{ .title }}</h3><p>{{ .text }}</p></div>
+      {{- end }}
+    </div>
+  </div>
+</section>
+{{- end }}
 
-<section class="privacy-band"><div class="wrap privacy-inner"><div class="privacy-mark" aria-hidden="true">🔒</div><div><h2 class="section-title">{{ $p.privacy_title }}</h2><p>{{ $p.privacy_text }}</p><a class="text-link" href="{{ (.Site.GetPage "privacy").RelPermalink }}">{{ i18n "nav_privacy" }} →</a></div></div></section>
+{{- with $p.faq }}
+<section id="faq" class="wrap faq">
+  <h2 class="h-section">{{ i18n "faq_title" }}</h2>
+  <div class="faq-list" data-faq>
+    {{- partial "faq.html" (dict "items" . "open" 0) }}
+    <p class="faq-end">{{ i18n "faq_end" }} <a href="mailto:{{ $.Site.Params.emailSupport }}">{{ $.Site.Params.emailSupport }}</a>.</p>
+  </div>
+</section>
+{{- end }}
 
-{{ with $p.faq }}<section class="faq"><div class="wrap wrap-narrow"><h2 class="section-title">{{ $p.faq_title }}</h2><div class="faq-list">{{ range . }}<details class="faq-item"><summary>{{ .q }}</summary><p>{{ .a }}</p></details>{{ end }}</div></div></section>{{ end }}
+<section class="closing">
+  <figure class="photo closing-photo">
+    <img src="{{ "img/tidtil-header-clean.webp" | relURL }}" alt="{{ $p.hero_alt }}" width="1672" height="941" loading="lazy" decoding="async">
+  </figure>
+  <div class="wrap closing-inner">
+    <div class="closing-copy">
+      <img src="{{ "img/tidtil-icon-light.png" | relURL }}" alt="TidTil" width="88" height="88" loading="lazy">
+      <h2 class="h-section-lg">{{ $p.close.title }}</h2>
+    </div>
+    <div class="closing-cta">
+      <a class="btn" href="{{ $app }}" target="_blank" rel="noopener">{{ i18n "get_app" }}</a>
+      <span class="proof">{{ $p.proof }}</span>
+    </div>
+  </div>
+</section>
 
-<section class="closing"><div class="wrap closing-inner"><h2 class="closing-title">{{ $p.closing_title }}</h2><p>{{ $p.closing_text }}</p><a class="appstore-button" href="{{ $.Site.Params.appStoreURL }}" target="_blank" rel="noopener"><svg class="appstore-icon" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.3-2.8-74 20.6-88.1 20.6-15 0-49.4-19.7-72.3-19.7-38.2.6-73.1 22.2-92.8 56.5-39.5 68.5-10.1 169.9 28.4 225.6 19.8 28.7 43.8 60.9 75.1 59.7 30.1-1.2 41.5-19.2 77.9-19.2 35.3 0 46.8 19.2 78.5 18.6 32.5-.6 53.3-29.1 72.9-57.8-84.4-39.6-79.9-116.7-80.9-119.1zM260.9 102.5c26.3-31.1 23.9-59.4 23.1-69.5-23.2 1.3-50 15.8-65.3 33.6-16.8 19-26.6 42.5-24.5 68.8 25.1 1.9 47.9-11 66.7-32.9z"/></svg>{{ $p.app_store_cta }}</a>{{ with $p.closing_proof }}<p class="closing-proof">{{ . }}</p>{{ end }}</div></section>
+{{- /* Texte und Termine für assets/js/site.js – reine Daten, kein Skript. */}}
+{{- $data := dict
+  "locale" .Site.Language.Locale
+  "lang" $lang
+  "colors" $colors
+  "live" $live
+  "demo" (dict "draft" $demo.draft "fresh" $demo.fresh "fam" $demo.fam "priv" $demo.priv)
+  "price" (dict "perMonth" $price.per_month "perYear" $price.per_year "monthNote" $price.month_note "yearNote" $price.year_note "perHead" $price.per_head)
+}}
+<script type="application/json" id="tt-data">{{ $data | jsonify | safeJS }}</script>
 {{ end }}

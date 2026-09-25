@@ -1,6 +1,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="preload" as="font" type="font/ttf" href="{{ "fonts/Jost-Variable.ttf" | relURL }}" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="{{ "fonts/archivo-latin-700.woff2" | relURL }}" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="{{ "fonts/archivo-latin-400.woff2" | relURL }}" crossorigin>
 
 {{ $description := cond (ne .Description "") .Description (i18n "meta_description") }}
 {{ $pageTitle := cond .IsHome (printf "%s – %s" .Site.Title (i18n "tagline")) (printf "%s · %s" (cond (eq .Kind "404") (i18n "error_404_title") .Title) .Site.Title) }}
@@ -34,9 +35,8 @@
 <meta name="twitter:image" content="{{ $ogImage }}">
 <meta name="twitter:image:alt" content="{{ i18n "og_image_alt" }}">
 
-<meta name="color-scheme" content="light dark">
-<meta name="theme-color" content="#b8966f" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#cbaa7d" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#f6f2ea">
 
 {{ range .AllTranslations }}
 <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
@@ -83,10 +83,7 @@
 </script>
 {{ end }}
 
-{{ $mainCSS := resources.Get "css/main.css" }}
-{{ $todayCSS := resources.Get "css/today-section.css" }}
-{{ $responsiveCSS := resources.Get "css/responsive.css" }}
-{{ $css := slice $mainCSS $todayCSS $responsiveCSS | resources.Concat "css/site.css" | resources.Minify | resources.Fingerprint }}
+{{ $css := resources.Get "css/main.css" | resources.Minify | resources.Fingerprint }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 
 <link rel="icon" type="image/png" sizes="48x48" href="{{ "favicon-48.png" | relURL }}">

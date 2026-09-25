@@ -1,12 +1,10 @@
 {{- $p := .Site.Params -}}
-<p>
-{{ $p.legalName }}<br>
-{{ $p.legalAddr1 }}<br>
-{{ $p.legalAddr2 }}
-</p>
-<p>
-{{ i18n "legal_email_label" }}: <a href="mailto:{{ $p.email }}">{{ $p.email }}</a>
-</p>
+<div class="legal-block">
+  <strong>{{ $p.legalName }}</strong>
+  <span>{{ $p.legalAddr1 }}</span>
+  <span>{{ $p.legalAddr2 }}</span>
+  <a href="mailto:{{ $p.email }}">{{ $p.email }}</a>
+</div>
 {{- with $p.legalVatId }}
 <p>{{ i18n "legal_vat_label" }}: {{ . }}</p>
 {{- end }}
