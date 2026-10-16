@@ -1,7 +1,7 @@
 ---
 title: "Privatliv"
 slug: "privatliv"
-updated: "September 2026"
+updated: "oktober 2026"
 description: "Privatliv hos TidTil – transparent information om appen og hjemmesiden."
 ---
 
@@ -21,7 +21,7 @@ Der er på nuværende tidspunkt ikke udpeget en databeskyttelsesrådgiver, da vi
 - Kalender- og profildata behandles lokalt på enheden og via **Apple iCloud/CloudKit**.
 - Familiedeling bruger **CloudKit Sharing**. Delt indhold er tilgængeligt for de personer, du inviterer.
 - TidTil driver **ingen egen backendserver til kalenderindhold**.
-- Den nuværende kode indeholder **ingen reklame-, tracking- eller tredjepartsanalyse-SDK'er**.
+- Der er **ingen tracking** og **ingen tredjeparts-SDK'er**.
 - Påmindelser og beskeder om nye familieaftaler oprettes som **lokale iOS-notifikationer**.
 - **TidTil Familie** kan prøves gratis én gang i 14 dage. Prøveadgangen slutter automatisk og bliver ikke til et betalt abonnement.
 - Køb og abonnementer håndteres via **Apple StoreKit/App Store**.
@@ -89,9 +89,10 @@ Til den gratis 14-dages prøveadgang til **TidTil Familie** behandler appen tekn
 
 - prøveperiodens start og slutning,
 - prøveadgangens aktuelle status,
-- oplysningen om, hvorvidt prøveadgangen allerede er blevet brugt.
+- oplysningen om, hvorvidt prøveadgangen allerede er blevet brugt,
+- en hashet iCloud-identifikator.
 
-Disse oplysninger gemmes i det private iCloud-/CloudKit-område og kan mellemlagres på enheden. De indeholder ikke kalenderindhold og bruges udelukkende til at levere prøveadgangen, beregne den resterende prøveperiode og forhindre gentagen brug.
+Disse oplysninger gemmes i det private iCloud-/CloudKit-område. Til den gratis prøveperiode gemmes den hashede iCloud-identifikator i CloudKit. Oplysningerne kan mellemlagres på enheden. De indeholder ikke kalenderindhold og bruges udelukkende til at levere prøveadgangen, beregne den resterende prøveperiode og forhindre gentagen brug.
 
 ### 1.2 Lokal lagring og iCloud/CloudKit
 
@@ -100,6 +101,8 @@ TidTil bruger **Core Data** til lokal lagring og **Apple CloudKit** til synkroni
 Den lokale database er beskyttet med iOS-filbeskyttelsen `CompleteUntilFirstUserAuthentication`. Efter genstart af enheden bliver data derfor først tilgængelige efter den første oplåsning; derefter kan iOS tilgå dem i det omfang, det er nødvendigt for baggrundssynkronisering.
 
 Apples privatlivs- og sikkerhedsvilkår gælder desuden for CloudKit. TidTil driver ikke en egen applikationsserver, hvortil privat kalenderindhold sendes med henblik på analyse eller reklamer.
+
+Der er ingen tracking og ingen tredjeparts-SDK'er. Til den gratis prøveperiode gemmes en hashet iCloud-identifikator i CloudKit. En valgfri kontakt, **„Del abonnementsstatistik“**, er slået fra som standard. Kun når den er slået til, sender appen abonnementsbegivenheder til udviklerens eget CloudKit-lager.
 
 ### 1.3 Familiedeling og synkronisering
 
@@ -150,12 +153,12 @@ Køb, fornyelse, gendannelse og opsigelse foregår **udelukkende via Apple og Ap
 
 Kontrollen af, om der findes et gyldigt betalt abonnement, sker **udelukkende på din enhed** via Apples StoreKit. Der er ingen egen TidTil-server involveret, og ingen betalingsdata overføres til os. Den separate kontrol af den gratis engangsprøve bruger de tekniske adgangsdata i iCloud/CloudKit, som er beskrevet ovenfor. Har du brugt TidTil før version 2.2, beholder du familiekalenderen gratis permanent; også den kontrol sker lokalt ud fra den kvittering, Apple har signeret.
 
-### 1.8 Ingen reklamer, tracking eller tredjepartsanalyse
+### 1.8 Ingen reklamer, ingen tracking og ingen tredjeparts-SDK'er
 
-Ud fra den aktuelt gennemgåede appkode:
+TidTil bruger ingen tracking og ingen tredjeparts-SDK'er.
 
 - indeholder TidTil ingen reklame-SDK'er,
-- indeholder TidTil ingen tredjepartsanalyse-SDK'er,
+- indeholder TidTil ingen tredjeparts-SDK'er,
 - bruger TidTil ikke en reklameidentifikator til tracking,
 - opretter TidTil ikke brugerprofiler til reklame- eller markedsføringsformål,
 - sender TidTil ikke kalenderindhold til en egen analyse- eller trackingtjeneste.
