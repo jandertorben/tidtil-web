@@ -1,7 +1,7 @@
 ---
 title: "Privacy"
 slug: "privacy"
-updated: "September 2026"
+updated: "October 2026"
 description: "Privacy at TidTil – transparent information about the app and website."
 ---
 
@@ -21,7 +21,7 @@ No data protection officer is currently designated because, based on the present
 - Calendar and profile data are processed locally on the device and through **Apple iCloud/CloudKit**.
 - Family sharing uses **CloudKit Sharing**. Shared content is accessible to the people you invite.
 - TidTil operates **no proprietary backend server for calendar content**.
-- Based on the current code, the app contains **no advertising, tracking or third-party analytics SDKs**.
+- There is **no tracking** and there are **no third-party SDKs**.
 - Event reminders and notifications about new family events are generated as **local iOS notifications**.
 - **TidTil Family** can be tried once free of charge for 14 days. The trial access ends automatically and does not convert into a paid subscription.
 - Purchases and subscriptions are handled through **Apple StoreKit/App Store**.
@@ -89,9 +89,10 @@ For the one-time 14-day trial access to **TidTil Family**, the app processes tec
 
 - the start and end of the trial period,
 - the current status of the trial access,
-- whether the trial access has already been used.
+- whether the trial access has already been used,
+- a hashed iCloud identifier.
 
-This information is stored in the private iCloud/CloudKit area and may be cached on the device. It contains no calendar content and is used solely to provide the trial access, determine the remaining trial period and prevent repeated use.
+This information is stored in the private iCloud/CloudKit area. For the free trial, the hashed iCloud identifier is stored in CloudKit. The information may be cached on the device. It contains no calendar content and is used solely to provide the trial access, determine the remaining trial period and prevent repeated use.
 
 ### 1.2 Local storage and iCloud/CloudKit
 
@@ -100,6 +101,8 @@ TidTil uses **Core Data** for local storage and **Apple CloudKit** for synchroni
 The local database is protected using the iOS file-protection class `CompleteUntilFirstUserAuthentication`. After a device restart, the data therefore becomes available only after the first unlock; afterwards iOS can access it as necessary for background synchronisation.
 
 Apple's privacy and security terms also apply to CloudKit. TidTil does not operate a proprietary application server to which private calendar content is sent for analytics or advertising.
+
+There is no tracking and there are no third-party SDKs. For the free trial, a hashed iCloud identifier is stored in CloudKit. An optional switch, **“Share subscription statistics”**, is off by default. Only when it is turned on does the app send subscription events to the developer’s own CloudKit storage.
 
 ### 1.3 Family sharing and synchronisation
 
@@ -150,12 +153,12 @@ Purchase, renewal, restoration and cancellation run **exclusively through Apple 
 
 Whether a valid paid subscription exists is checked **entirely on your device** via Apple's StoreKit. No proprietary TidTil server is involved, and no payment data is transmitted to us. The separate check for the one-time trial access uses the technical entitlement data in iCloud/CloudKit described above. Anyone who used TidTil before version 2.2 keeps the family calendar free permanently; that check is also performed locally, based on the purchase receipt signed by Apple.
 
-### 1.8 No advertising, tracking or third-party analytics
+### 1.8 No advertising, no tracking and no third-party SDKs
 
-Based on the currently reviewed app code:
+TidTil uses no tracking and no third-party SDKs.
 
 - TidTil contains no advertising SDKs,
-- TidTil contains no third-party analytics SDKs,
+- TidTil contains no third-party SDKs,
 - TidTil does not use an advertising identifier for tracking,
 - TidTil does not create user profiles for advertising or marketing purposes,
 - TidTil does not send calendar content to a proprietary analytics or tracking service.
