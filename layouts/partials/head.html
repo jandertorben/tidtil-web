@@ -37,6 +37,9 @@
 
 <meta name="color-scheme" content="light">
 <meta name="theme-color" content="#f6f2ea">
+{{ with .Site.Params.appStoreID }}
+<meta name="apple-itunes-app" content="app-id={{ . }}">
+{{ end }}
 
 {{ range .AllTranslations }}
 <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
@@ -45,13 +48,31 @@
   {{ if eq .Language.Lang "de" }}<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">{{ end }}
 {{ end }}
 
+{{ $orgURL := hugo.Sites.Default.Home.Permalink }}
+{{ $orgID := printf "%s#organization" $orgURL }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": {{ $orgID | jsonify | safeJS }},
+  "name": "TidTil",
+  "url": {{ $orgURL | jsonify | safeJS }},
+  "logo": {{ "apple-touch-icon.png" | absURL | jsonify | safeJS }},
+  "email": {{ .Site.Params.emailSupport | jsonify | safeJS }},
+  "sameAs": [
+    "https://www.instagram.com/tidtil.app/",
+    {{ .Site.Params.appStoreURL | jsonify | safeJS }}
+  ]
+}
+</script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "TidTil",
   "url": {{ .Site.Home.Permalink | jsonify | safeJS }},
-  "inLanguage": {{ .Site.Language.Lang | jsonify | safeJS }}
+  "inLanguage": {{ .Site.Language.Lang | jsonify | safeJS }},
+  "publisher": {"@id": {{ $orgID | jsonify | safeJS }}}
 }
 </script>
 
@@ -67,6 +88,7 @@
   "url": {{ .Permalink | jsonify | safeJS }},
   "installUrl": {{ .Site.Params.appStoreURL | jsonify | safeJS }},
   "image": {{ $ogImage | jsonify | safeJS }},
+  "screenshot": {{ "img/feature-tagesueberblick.webp" | absURL | jsonify | safeJS }},
   "offers": [
     {"@type":"Offer","name":{{ i18n "offer_name_personal" | jsonify | safeJS }},"price":"0","priceCurrency":"EUR"},
     {"@type":"Offer","name":{{ i18n "offer_name_family_monthly" | jsonify | safeJS }},"price":"1.99","priceCurrency":"EUR"},
