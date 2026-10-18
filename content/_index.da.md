@@ -2,7 +2,7 @@
 title: "TidTil"
 h1: "Vid, hvad der sker i dag."
 sub: "Den enkle familiekalender til iPhone: fælles og private aftaler på ét blik – uden opgavelister, chats og unødvendige funktioner."
-proof: "Gratis · Ingen reklamer · Ingen konto"
+proof: "Gratis at hente · Ingen reklamer · Ingen konto"
 hero_alt: "TidTil i familiens hverdag"
 
 live:

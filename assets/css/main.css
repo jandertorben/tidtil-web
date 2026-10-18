@@ -19,11 +19,13 @@
   --ink:#1d1714;
   --ink-2:#3a322c;
   --prose:#2a231e;
-  --muted:#6b645c;
+  --muted:#5a544e;
+  --dim:#6b645c;
   --rule:#ddd4c4;
   --img-bg:#ece5d8;
   --sand:#c4a466;
   --sand-text:#8a6d3b;
+  --sand-strong:#70562e;
   --sand-tint:#efe6d3;
   --sage:#84a383;
   --sage-text:#56704f;
@@ -93,9 +95,33 @@ html:not(.js) .js-only{display:none!important}
 .site-nav a{text-decoration:none;color:var(--ink);opacity:.72}
 .site-nav a:hover,.site-nav a[aria-current]{opacity:1;color:var(--ink)}
 .lang-switch{display:flex;gap:10px;font-size:13px;font-weight:600;letter-spacing:.02em}
-.lang-switch a{text-decoration:none;color:var(--ink);opacity:.5;border-bottom:1px solid transparent;padding-bottom:1px}
-.lang-switch a:hover{opacity:1;color:var(--ink)}
-.lang-switch a[aria-current]{opacity:1;border-bottom-color:var(--ink)}
+.lang-switch a{text-decoration:none;color:var(--muted);border-bottom:1px solid transparent;padding-bottom:1px}
+.lang-switch a:hover{color:var(--ink)}
+.lang-switch a[aria-current]{color:var(--ink);border-bottom-color:var(--ink)}
+.nav-toggle{display:none;width:40px;height:40px;margin:0;padding:0;border:0;background:transparent;color:var(--ink);cursor:pointer;align-items:center;justify-content:center;flex:none}
+.nav-toggle:hover{color:var(--sand-text)}
+.nav-toggle-icon,.nav-toggle-icon::before,.nav-toggle-icon::after{display:block;width:18px;height:2px;background:currentColor;position:relative}
+.nav-toggle-icon::before,.nav-toggle-icon::after{content:"";position:absolute;left:0}
+.nav-toggle-icon::before{top:-6px}
+.nav-toggle-icon::after{top:6px}
+.site-header.is-open .nav-toggle-icon{background:transparent}
+.site-header.is-open .nav-toggle-icon::before{top:0;transform:rotate(45deg)}
+.site-header.is-open .nav-toggle-icon::after{top:0;transform:rotate(-45deg)}
+
+/* Unter 800px bricht die deutsche Navigation um. Desktop bleibt eine Zeile. */
+@media (max-width:799px){
+  .header-inner{flex-wrap:wrap;align-items:center;column-gap:12px;row-gap:0;padding-top:10px;padding-bottom:10px}
+  .brand{order:1;margin-right:auto;flex:none}
+  .header-inner>.btn,.nav-toggle{order:2;flex:none}
+  html.js .nav-toggle{display:inline-flex}
+  .site-nav,.lang-switch{order:3;flex:1 0 100%;margin-left:0}
+  .site-nav{flex-direction:column;align-items:flex-start;gap:0;margin-top:8px;padding:8px 0 2px;border-top:1px solid var(--rule);font-size:17px}
+  .site-nav a{display:block;padding:9px 0;opacity:1}
+  .lang-switch{gap:20px;padding:4px 0 12px;font-size:14px}
+  .lang-switch a{padding:8px 2px}
+  html.js .site-nav,html.js .lang-switch{display:none}
+  html.js .site-header.is-open .site-nav,html.js .site-header.is-open .lang-switch{display:flex}
+}
 
 /* ---------- Home: Hero ---------- */
 .hero{padding-top:clamp(40px,6vw,88px);padding-bottom:clamp(56px,7vw,104px);display:flex;flex-wrap:wrap;align-items:flex-end;gap:48px var(--gap-cols)}
@@ -115,8 +141,10 @@ html:not(.js) .js-only{display:none!important}
 .scrubber-clock{color:var(--ink);font-size:20px;font-weight:700;font-feature-settings:"tnum" 1}
 .scrubber input{width:100%;accent-color:var(--ink);margin:0}
 .day-list{list-style:none;margin:0;padding:0}
-.day-row{display:grid;grid-template-columns:clamp(64px,9vw,120px) minmax(0,1fr) auto;align-items:baseline;gap:16px clamp(16px,3vw,40px);padding:18px 0;border-bottom:1px solid var(--rule);transition:background .3s,opacity .3s,padding .3s}
-.day-row.is-past{opacity:.38}
+.day-row{display:grid;grid-template-columns:clamp(64px,9vw,120px) minmax(0,1fr) auto;align-items:baseline;gap:16px clamp(16px,3vw,40px);padding:18px 0;border-bottom:1px solid var(--rule);transition:background .3s,color .3s,padding .3s}
+.day-row.is-past{color:var(--dim)}
+.day-row.is-past .day-who,.day-row.is-past .day-badge{color:var(--dim)}
+.day-row.is-past .dot{opacity:.72}
 .day-row.is-now{background:var(--sand-tint);padding-left:14px;padding-right:14px}
 .day-row.is-new{background:var(--sage-tint);padding-left:14px;padding-right:14px}
 .day-time{font-size:clamp(20px,2vw,28px);font-weight:600;letter-spacing:-.01em;font-feature-settings:"tnum" 1}
@@ -124,7 +152,7 @@ html:not(.js) .js-only{display:none!important}
 .day-what{font-size:clamp(19px,1.8vw,24px);font-weight:600;letter-spacing:-.01em}
 .day-who{display:inline-flex;align-items:center;gap:8px;font-size:15px;color:var(--muted)}
 .dot{width:9px;height:9px;border-radius:50%;flex:none;background:var(--c,var(--ink))}
-.day-badge{font-size:14px;font-weight:600;color:var(--sand-text);white-space:nowrap}
+.day-badge{font-size:14px;font-weight:600;color:var(--sand-strong);white-space:nowrap}
 
 /* ---------- Home: Features ---------- */
 .features{padding-top:var(--section)}

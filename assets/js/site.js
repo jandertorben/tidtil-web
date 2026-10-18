@@ -1,6 +1,7 @@
 // TidTil – kleine Verbesserungen für die serverseitig gerenderte Seite.
 // Alles funktioniert auch ohne dieses Skript; es macht nur lebendig:
-// Live-Tag + Zeitregler, Satz-Demo, Monat/Jahr-Preis, Personenzähler, FAQ.
+// Live-Tag + Zeitregler, Satz-Demo, Monat/Jahr-Preis, Personenzähler, FAQ
+// und das kompakte Menü auf schmalen Bildschirmen.
 (function () {
   "use strict";
 
@@ -22,6 +23,70 @@
       });
     });
   });
+
+  // ---------- Schmale Navigation: Logo, App Store, Menü ----------
+  // Ohne dieses Skript bleibt die Leiste aufgeklappt (html.no-js), die Links
+  // sind also erreichbar. Mit Skript klappt ein Button sie auf.
+  var header = $(".site-header");
+  var navToggle = $(".nav-toggle");
+  if (header && navToggle) {
+    var desktopNav = window.matchMedia("(min-width: 800px)");
+
+    function menuLinks() {
+      var nav = document.getElementById("site-nav");
+      var lang = document.getElementById("lang-switch");
+      return (nav ? $$("a", nav) : []).concat(lang ? $$("a", lang) : []);
+    }
+    function isOpen() {
+      return navToggle.getAttribute("aria-expanded") === "true";
+    }
+    function setOpen(open) {
+      navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+      header.classList.toggle("is-open", open);
+    }
+
+    navToggle.addEventListener("click", function () {
+      setOpen(!isOpen());
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && isOpen()) {
+        setOpen(false);
+        navToggle.focus();
+        return;
+      }
+      if (e.key !== "Tab" || !e.shiftKey || !isOpen() || desktopNav.matches) return;
+      var links = menuLinks();
+      if (links.length && document.activeElement === links[0]) {
+        e.preventDefault();
+        navToggle.focus();
+      }
+    });
+
+    navToggle.addEventListener("keydown", function (e) {
+      if (e.key !== "Tab" || e.shiftKey || !isOpen() || desktopNav.matches) return;
+      var first = menuLinks()[0];
+      if (!first) return;
+      e.preventDefault();
+      first.focus();
+    });
+
+    header.addEventListener("click", function (e) {
+      if (!isOpen() || !e.target.closest) return;
+      var link = e.target.closest("a");
+      if (link && (link.closest("#site-nav") || link.closest("#lang-switch"))) setOpen(false);
+    });
+
+    document.addEventListener("click", function (e) {
+      if (isOpen() && !header.contains(e.target)) setOpen(false);
+    });
+
+    function closeOnDesktop(ev) {
+      if (ev.matches) setOpen(false);
+    }
+    if (desktopNav.addEventListener) desktopNav.addEventListener("change", closeOnDesktop);
+    else if (desktopNav.addListener) desktopNav.addListener(closeOnDesktop);
+  }
 
   var dataEl = $("#tt-data");
   if (!dataEl) return;
