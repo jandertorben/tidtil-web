@@ -22,7 +22,10 @@
 <section class="wrap hero">
   <div class="hero-copy">
     <p class="dateline js-only" data-dateline></p>
-    <h1 class="h-display">{{ $p.h1 }}</h1>
+    <div class="hero-lead">
+      <h1 class="h-display">{{ $p.h1 }}</h1>
+      {{ with $p.kicker }}<p class="hero-kicker">{{ . }}</p>{{ end }}
+    </div>
     <p class="hero-sub">{{ $p.sub }}</p>
     <div class="cta-row">
       <a class="btn" href="{{ $app }}" target="_blank" rel="noopener">{{ i18n "get_app" }}</a>

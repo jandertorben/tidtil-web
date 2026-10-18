@@ -1,7 +1,8 @@
 ---
 title: "TidTil"
 h1: "Wissen, was heute ansteht."
-sub: "Der einfache Familienkalender fürs iPhone: gemeinsame und private Termine auf einen Blick – ohne Aufgabenlisten, Chats und Funktionsballast."
+kicker: "Der ruhige Familienkalender fürs iPhone"
+sub: "Gemeinsame und private Termine auf einen Blick – ohne Aufgabenlisten, Chats und Funktionsballast."
 proof: "Kostenlos laden · Keine Werbung · Kein Konto"
 hero_alt: "TidTil im Familienalltag"
 
