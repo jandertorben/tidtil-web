@@ -84,8 +84,8 @@ price:
   year: "Jahr"
   per_month: "/ Monat"
   per_year: "/ Jahr"
-  month_note: "1,99 €/Monat oder 19,99 €/Jahr. Einer zahlt für die ganze Familie."
-  year_note: "1,99 €/Monat oder 19,99 €/Jahr. Einer zahlt für die ganze Familie. Entspricht {m} im Monat."
+  month_note: "1,99 € / Monat · Monatlich kündbar. Einer zahlt für die ganze Familie."
+  year_note: "19,99 € / Jahr · Entspricht {m} im Monat. Kündbar zum Ende der Laufzeit. Einer zahlt für die ganze Familie."
   per_head: "Bei {n} Personen sind das {p} pro Kopf und Monat."
   fewer: "Weniger"
   more: "Mehr"
@@ -98,8 +98,8 @@ privacy:
   facts:
     - title: "Kein Konto"
       text: "Kein TidTil-Benutzerkonto, kein zusätzliches Passwort."
-    - title: "Keine Werbung"
-      text: "Kein Tracking und keine Drittanbieter-SDKs."
+    - title: "Kein Tracking, keine Werbung"
+      text: "Abo-Statistik nur mit deiner Zustimmung – standardmäßig aus."
     - title: "Eure iCloud"
       text: "Synchronisierung über Apples iCloud und CloudKit – keine eigenen Server."
 

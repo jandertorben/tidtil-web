@@ -82,8 +82,8 @@ price:
   year: "År"
   per_month: "/ måned"
   per_year: "/ år"
-  month_note: "1,99 € pr. måned eller 19,99 € pr. år. Én betaler for hele familien."
-  year_note: "1,99 € pr. måned eller 19,99 € pr. år. Én betaler for hele familien. Svarer til {m} om måneden."
+  month_note: "1,99 € / måned · Kan opsiges månedligt. Én betaler for hele familien."
+  year_note: "19,99 € / år · Svarer til {m} om måneden. Kan opsiges når som helst, inden perioden slutter. Én betaler for hele familien."
   per_head: "For {n} personer er det {p} pr. person pr. måned."
   fewer: "Færre"
   more: "Flere"
@@ -96,8 +96,8 @@ privacy:
   facts:
     - title: "Ingen konto"
       text: "Ingen TidTil-brugerkonto, ingen ekstra adgangskode."
-    - title: "Ingen reklamer"
-      text: "Ingen tracking og ingen tredjeparts-SDK’er."
+    - title: "Ingen tracking, ingen reklamer"
+      text: "Abonnementsstatistik kun med dit samtykke – slået fra som standard."
     - title: "Jeres iCloud"
       text: "Synkronisering via Apples iCloud og CloudKit – ingen egne servere."
 

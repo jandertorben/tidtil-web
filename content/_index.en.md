@@ -82,8 +82,8 @@ price:
   year: "Year"
   per_month: "/ month"
   per_year: "/ year"
-  month_note: "€1.99 per month or €19.99 per year. One person pays for the whole family."
-  year_note: "€1.99 per month or €19.99 per year. One person pays for the whole family. Works out at {m} a month."
+  month_note: "€1.99 / month · Cancel monthly. One person pays for the whole family."
+  year_note: "€19.99 / year · Works out at {m} a month. Cancel any time before the period ends. One person pays for the whole family."
   per_head: "For {n} people that’s {p} per person per month."
   fewer: "Fewer"
   more: "More"
@@ -96,8 +96,8 @@ privacy:
   facts:
     - title: "No account"
       text: "No TidTil user account, no extra password."
-    - title: "No ads"
-      text: "No tracking and no third-party SDKs."
+    - title: "No tracking, no ads"
+      text: "Subscription statistics only with your consent – off by default."
     - title: "Your iCloud"
       text: "Syncing via Apple’s iCloud and CloudKit – no servers of our own."
 

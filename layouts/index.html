@@ -16,7 +16,6 @@
 {{- $summary = printf "%s %s" (index $live.greet 0) $summary -}}
 {{- $members := 4 -}}
 {{- $monthly := partial "money.html" (dict "amount" 1.99 "lang" $lang) -}}
-{{- $yearly := partial "money.html" (dict "amount" 19.99 "lang" $lang) -}}
 {{- $perHead := partial "money.html" (dict "amount" (div 1.99 $members) "lang" $lang) -}}
 {{- $zero := cond (eq $lang "en") "€0" "0 €" -}}
 
@@ -154,7 +153,7 @@
         <h3>{{ $price.family_title }}<span class="price-trial">{{ $price.trial }}</span></h3>
         <span class="price-figure"><span data-price-amount>{{ $monthly }}</span><span class="price-unit" data-price-unit>{{ $price.per_month }}</span></span>
         <p class="copy" data-price-note>{{ $price.month_note }}</p>
-        <noscript><p class="copy">{{ $yearly }} {{ $price.per_year }} · {{ replace $price.year_note "{m}" (partial "money.html" (dict "amount" (div 19.99 12) "lang" $lang)) }}</p></noscript>
+        <noscript><p class="copy">{{ replace $price.year_note "{m}" (partial "money.html" (dict "amount" (div 19.99 12) "lang" $lang)) }}</p></noscript>
         <div class="per-head">
           <span class="per-head-line" data-per-head aria-live="polite">{{ replace (replace $price.per_head "{n}" (string $members)) "{p}" $perHead }}</span>
           <span class="stepper js-only">

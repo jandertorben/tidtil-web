@@ -21,7 +21,8 @@ No data protection officer is currently designated because, based on the present
 - Calendar and profile data are processed locally on the device and through **Apple iCloud/CloudKit**.
 - Family sharing uses **CloudKit Sharing**. Shared content is accessible to the people you invite.
 - TidTil operates **no proprietary backend server for calendar content**.
-- There is **no tracking** and there are **no third-party SDKs**.
+- No tracking, no ads. Subscription statistics only with your consent.
+- There are **no third-party SDKs**.
 - Event reminders and notifications about new family events are generated as **local iOS notifications**.
 - **TidTil Family** can be tried once free of charge for 14 days. The trial access ends automatically and does not convert into a paid subscription.
 - Purchases and subscriptions are handled through **Apple StoreKit/App Store**.
@@ -92,7 +93,7 @@ For the one-time 14-day trial access to **TidTil Family**, the app processes tec
 - whether the trial access has already been used,
 - a hashed iCloud identifier.
 
-This information is stored in the private iCloud/CloudKit area. For the free trial, the hashed iCloud identifier is stored in CloudKit. The information may be cached on the device. It contains no calendar content and is used solely to provide the trial access, determine the remaining trial period and prevent repeated use.
+This information is stored in the public database of our iCloud container; other users cannot read the record. For the free trial, the hashed iCloud identifier is stored in CloudKit. The information may be cached on the device. It contains no calendar content and is used solely to provide the trial access, determine the remaining trial period and prevent repeated use.
 
 ### 1.2 Local storage and iCloud/CloudKit
 
@@ -102,7 +103,20 @@ The local database is protected using the iOS file-protection class `CompleteUnt
 
 Apple's privacy and security terms also apply to CloudKit. TidTil does not operate a proprietary application server to which private calendar content is sent for analytics or advertising.
 
-There is no tracking and there are no third-party SDKs. For the free trial, a hashed iCloud identifier is stored in CloudKit. An optional switch, **“Share subscription statistics”**, is off by default. Only when it is turned on does the app send subscription events to the developer’s own CloudKit storage.
+There is no tracking and there are no third-party SDKs. For the free trial, a hashed iCloud identifier is stored in CloudKit.
+
+### Subscription statistics (optional, off by default)
+
+Under "Data & Sharing" the app has a switch called **"Share subscription statistics"**. It is **off** by default. Only if you turn it on does the app send a short entry to the public database of our iCloud container for these four events – the same event at most once a day:
+
+- the subscription screen was opened (with where it was opened from),
+- the free trial was started,
+- the trial expired,
+- a subscription was purchased (with whether a trial came first).
+
+Each entry includes the time, app version, build number, iOS version and device model. It is linked pseudonymously to your iCloud account; it does not tell us your name, Apple ID or email address. Events, names, family members or other calendar content are **never** included. Other users cannot read these entries.
+
+We use subscription statistics only to understand whether TidTil Family is convincing – not for advertising, tracking or profiling. You can turn the switch off at any time; nothing is sent after that. If you want entries already sent to be deleted, write to us – the address is below.
 
 ### 1.3 Family sharing and synchronisation
 
@@ -123,11 +137,14 @@ The selected image is resized for use as a profile image and stored with the pro
 TidTil uses Apple's notification system for:
 
 - reminders you choose for events,
-- notifications about newly synchronised family events that concern you.
+- notifications about newly synchronised family events that concern you,
+- if you want, a daily overview: one local notification in the morning with everything on today. On free days it stays quiet.
 
 These notifications are generated on the device using `UNUserNotificationCenter`. Notification content may include the event title, date, time and, where available, the name of the family member who created the event.
 
 CloudKit may wake the app through system/background notifications when changes occur. TidTil does not operate its own push-notification server for this purpose.
+
+For the date invitation (“Time for us”), TidTil stores a record in the public database of our iCloud container. It contains a hash of the recipient identifier, the kind (invitation or response) and a timestamp. The hash cannot be reversed. The invitation is delivered as a CloudKit notification.
 
 Notification permission is controlled through the iOS system dialog. Notifications about new family events can also be disabled in TidTil's settings.
 
@@ -147,7 +164,7 @@ These settings are used only for app functionality and not for advertising or pr
 
 Before taking out a paid family subscription, the owner of the family share can **try TidTil Family once free of charge for 14 days**. The trial period starts only when family sharing is deliberately activated and ends automatically. It does not automatically convert into a paid subscription.
 
-The technical entitlement data required for the trial access is processed in the private iCloud/CloudKit area. The legal basis is Art. 6(1)(b) GDPR because the processing is necessary to provide the trial access you request and administer the access entitlement.
+The technical entitlement data required for the trial access is processed in the public database of our iCloud container; other users cannot read the record. The legal basis is Art. 6(1)(b) GDPR because the processing is necessary to provide the trial access you request and administer the access entitlement.
 
 Purchase, renewal, restoration and cancellation run **exclusively through Apple and the App Store**. Payment details such as credit-card or bank information are neither processed nor stored by us and never reach us at any point.
 
