@@ -21,7 +21,8 @@ Ein Datenschutzbeauftragter ist derzeit nicht benannt, da nach der aktuellen Unt
 - Kalender- und Profildaten werden lokal auf dem Gerät und über **Apple iCloud/CloudKit** verarbeitet.
 - Für die Familienfreigabe verwendet TidTil **CloudKit Sharing**. Freigegebene Inhalte sind für die von dir eingeladenen Mitglieder zugänglich.
 - TidTil betreibt **keinen eigenen Backend-Server für Kalenderinhalte**.
-- Es gibt **kein Tracking** und **keine Drittanbieter-SDKs**.
+- Kein Tracking, keine Werbung. Abo-Statistik nur mit deiner Zustimmung.
+- Es gibt **keine Drittanbieter-SDKs**.
 - Erinnerungen und Hinweise auf neue Familientermine werden als **lokale iOS-Mitteilungen** erzeugt.
 - **TidTil Familie** kann einmalig 14 Tage kostenlos getestet werden. Der Testzugang endet automatisch und wird nicht kostenpflichtig verlängert.
 - Käufe und Abonnements werden über **Apple StoreKit/App Store** abgewickelt.
@@ -92,7 +93,7 @@ Für den einmaligen 14-tägigen Testzugang zu **TidTil Familie** verarbeitet die
 - die Information, ob der Testzugang bereits verwendet wurde,
 - eine gehashte iCloud-Kennung.
 
-Diese Angaben werden im privaten iCloud-/CloudKit-Bereich gespeichert. Für den kostenlosen Testzeitraum wird die gehashte iCloud-Kennung in CloudKit gespeichert. Die Angaben können auf dem Gerät zwischengespeichert werden. Sie enthalten keine Kalenderinhalte und werden ausschließlich verwendet, um den Testzugang bereitzustellen, die verbleibende Testdauer zu bestimmen und eine mehrfache Nutzung zu verhindern.
+Diese Angaben werden in der öffentlichen Datenbank unseres iCloud-Containers gespeichert; andere Nutzer können den Datensatz nicht lesen. Für den kostenlosen Testzeitraum wird die gehashte iCloud-Kennung in CloudKit gespeichert. Die Angaben können auf dem Gerät zwischengespeichert werden. Sie enthalten keine Kalenderinhalte und werden ausschließlich verwendet, um den Testzugang bereitzustellen, die verbleibende Testdauer zu bestimmen und eine mehrfache Nutzung zu verhindern.
 
 ### 1.2 Lokale Speicherung und iCloud/CloudKit
 
@@ -102,7 +103,20 @@ Die lokale Datenbank wird mit dem iOS-Dateischutz `CompleteUntilFirstUserAuthent
 
 Für CloudKit gelten zusätzlich die Datenschutz- und Sicherheitsbestimmungen von Apple. TidTil betreibt keinen eigenen Anwendungsserver, an den deine privaten Kalenderinhalte zu Analyse- oder Werbezwecken übertragen werden.
 
-Es gibt kein Tracking und keine Drittanbieter-SDKs. Für den kostenlosen Testzeitraum wird eine gehashte iCloud-Kennung in CloudKit gespeichert. Ein optionaler Schalter **„Abo-Statistik teilen“** ist standardmäßig aus. Nur wenn er eingeschaltet ist, sendet die App Abo-Ereignisse an den eigenen CloudKit-Speicher des Entwicklers.
+Es gibt kein Tracking und keine Drittanbieter-SDKs. Für den kostenlosen Testzeitraum wird eine gehashte iCloud-Kennung in CloudKit gespeichert.
+
+### Abo-Statistik (freiwillig, standardmäßig aus)
+
+In der App gibt es unter „Daten & Freigabe“ den Schalter **„Abo-Statistik teilen“**. Er ist standardmäßig **aus**. Nur wenn du ihn einschaltest, übermittelt die App bei diesen vier Ereignissen einen kurzen Eintrag an die öffentliche Datenbank unseres iCloud-Containers – dasselbe Ereignis höchstens einmal am Tag:
+
+- die Abo-Seite wurde geöffnet (mit der Angabe, von wo aus),
+- der kostenlose Test wurde gestartet,
+- der Test ist abgelaufen,
+- ein Abo wurde abgeschlossen (mit der Angabe, ob vorher getestet wurde).
+
+Zu jedem Eintrag gehören Zeitpunkt, App-Version, Build-Nummer, iOS-Version und Gerätemodell. Der Eintrag ist pseudonym mit deinem iCloud-Konto verknüpft; deinen Namen, deine Apple-ID oder E-Mail-Adresse erfahren wir dadurch nicht. **Nie dabei** sind Termine, Namen, Familienmitglieder oder andere Kalenderinhalte. Andere Nutzer können die Einträge nicht lesen.
+
+Wir nutzen die Abo-Statistik nur, um zu verstehen, ob TidTil Familie überzeugt – nicht für Werbung, Tracking oder Profile. Du kannst den Schalter jederzeit wieder ausschalten; danach wird nichts mehr übermittelt. Möchtest du bereits übermittelte Einträge gelöscht haben, schreib uns – die Adresse steht unten.
 
 ### 1.3 Familienfreigabe und Synchronisierung
 
@@ -123,11 +137,14 @@ Das gewählte Bild wird für das Profil verkleinert und in den Profildaten gespe
 TidTil verwendet Apples Benachrichtigungssystem für:
 
 - selbst gewählte Erinnerungen an Termine,
-- Hinweise auf neu synchronisierte Familientermine, die dich betreffen.
+- Hinweise auf neu synchronisierte Familientermine, die dich betreffen,
+- auf Wunsch einen Tagesüberblick: eine lokale Mitteilung am Morgen mit allem, was heute ansteht. An freien Tagen bleibt sie still.
 
 Diese Mitteilungen werden auf dem Gerät über `UNUserNotificationCenter` erstellt. Inhalte können den Termintitel, Datum, Uhrzeit und gegebenenfalls den Namen des Familienmitglieds enthalten, das den Termin angelegt hat.
 
 CloudKit kann die App über System- bzw. Hintergrundbenachrichtigungen über Änderungen informieren. TidTil betreibt dafür keinen eigenen Push-Server.
+
+Für die Date-Einladung („Zeit für uns“) legt TidTil einen Datensatz in der öffentlichen Datenbank unseres iCloud-Containers an. Darin stehen ein Hash der Empfänger-Kennung, die Art (Einladung oder Antwort) und ein Zeitstempel. Der Hash lässt sich nicht zurückrechnen. Die Einladung wird als CloudKit-Benachrichtigung zugestellt.
 
 Die Berechtigung für Mitteilungen wird über den iOS-Systemdialog erteilt. Hinweise auf neue Familientermine können zusätzlich in den TidTil-Einstellungen deaktiviert werden.
 
@@ -147,7 +164,7 @@ Diese Einstellungen dienen ausschließlich der App-Funktion und werden nicht fü
 
 Vor dem Abschluss eines kostenpflichtigen Familienabonnements kann der Inhaber der Familienfreigabe **TidTil Familie einmalig 14 Tage kostenlos testen**. Der Testzeitraum beginnt erst mit der bewussten Aktivierung der Familienfreigabe und endet automatisch. Es findet keine automatische kostenpflichtige Verlängerung statt.
 
-Die für den Testzugang erforderlichen technischen Berechtigungsdaten werden im privaten iCloud-/CloudKit-Bereich verarbeitet. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO, da die Verarbeitung zur Bereitstellung des von dir angeforderten Testzugangs und zur Verwaltung der Zugangsberechtigung erforderlich ist.
+Die für den Testzugang erforderlichen technischen Berechtigungsdaten werden in der öffentlichen Datenbank unseres iCloud-Containers verarbeitet; andere Nutzer können den Datensatz nicht lesen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO, da die Verarbeitung zur Bereitstellung des von dir angeforderten Testzugangs und zur Verwaltung der Zugangsberechtigung erforderlich ist.
 
 Kauf, Verlängerung, Wiederherstellung und Kündigung laufen **ausschließlich über Apple bzw. den App Store**. Zahlungsdaten wie Kreditkarten- oder Bankverbindungen werden von uns weder verarbeitet noch gespeichert und erreichen uns zu keinem Zeitpunkt.
 

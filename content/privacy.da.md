@@ -21,7 +21,8 @@ Der er på nuværende tidspunkt ikke udpeget en databeskyttelsesrådgiver, da vi
 - Kalender- og profildata behandles lokalt på enheden og via **Apple iCloud/CloudKit**.
 - Familiedeling bruger **CloudKit Sharing**. Delt indhold er tilgængeligt for de personer, du inviterer.
 - TidTil driver **ingen egen backendserver til kalenderindhold**.
-- Der er **ingen tracking** og **ingen tredjeparts-SDK'er**.
+- Ingen tracking, ingen reklamer. Abonnementsstatistik kun med dit samtykke.
+- Der er **ingen tredjeparts-SDK'er**.
 - Påmindelser og beskeder om nye familieaftaler oprettes som **lokale iOS-notifikationer**.
 - **TidTil Familie** kan prøves gratis én gang i 14 dage. Prøveadgangen slutter automatisk og bliver ikke til et betalt abonnement.
 - Køb og abonnementer håndteres via **Apple StoreKit/App Store**.
@@ -92,7 +93,7 @@ Til den gratis 14-dages prøveadgang til **TidTil Familie** behandler appen tekn
 - oplysningen om, hvorvidt prøveadgangen allerede er blevet brugt,
 - en hashet iCloud-identifikator.
 
-Disse oplysninger gemmes i det private iCloud-/CloudKit-område. Til den gratis prøveperiode gemmes den hashede iCloud-identifikator i CloudKit. Oplysningerne kan mellemlagres på enheden. De indeholder ikke kalenderindhold og bruges udelukkende til at levere prøveadgangen, beregne den resterende prøveperiode og forhindre gentagen brug.
+Disse oplysninger gemmes i den offentlige database i vores iCloud-container; andre brugere kan ikke læse posten. Til den gratis prøveperiode gemmes den hashede iCloud-identifikator i CloudKit. Oplysningerne kan mellemlagres på enheden. De indeholder ikke kalenderindhold og bruges udelukkende til at levere prøveadgangen, beregne den resterende prøveperiode og forhindre gentagen brug.
 
 ### 1.2 Lokal lagring og iCloud/CloudKit
 
@@ -102,7 +103,20 @@ Den lokale database er beskyttet med iOS-filbeskyttelsen `CompleteUntilFirstUser
 
 Apples privatlivs- og sikkerhedsvilkår gælder desuden for CloudKit. TidTil driver ikke en egen applikationsserver, hvortil privat kalenderindhold sendes med henblik på analyse eller reklamer.
 
-Der er ingen tracking og ingen tredjeparts-SDK'er. Til den gratis prøveperiode gemmes en hashet iCloud-identifikator i CloudKit. En valgfri kontakt, **„Del abonnementsstatistik“**, er slået fra som standard. Kun når den er slået til, sender appen abonnementsbegivenheder til udviklerens eget CloudKit-lager.
+Der er ingen tracking og ingen tredjeparts-SDK'er. Til den gratis prøveperiode gemmes en hashet iCloud-identifikator i CloudKit.
+
+### Abonnementsstatistik (frivillig, slået fra som standard)
+
+I appen findes kontakten **„Del abonnementsstatistik“**. Den er som standard **slået fra**. Kun hvis du slår den til, sender appen en kort post til den offentlige database i vores iCloud-container ved disse fire hændelser – den samme hændelse højst én gang om dagen:
+
+- abonnementssiden blev åbnet (med angivelse af, hvorfra),
+- den gratis prøveperiode blev startet,
+- prøveperioden er udløbet,
+- et abonnement blev købt (med angivelse af, om der var prøvet forinden).
+
+Hver post indeholder tidspunkt, appversion, buildnummer, iOS-version og enhedsmodel. Posten er pseudonymt knyttet til din iCloud-konto; den fortæller os ikke dit navn, dit Apple-id eller din e-mailadresse. Aftaler, navne, familiemedlemmer eller andet kalenderindhold er **aldrig** med. Andre brugere kan ikke læse posterne.
+
+Vi bruger abonnementsstatistikken kun til at forstå, om TidTil Familie overbeviser – ikke til reklamer, tracking eller profilering. Du kan slå kontakten fra igen når som helst; derefter sendes der ikke mere. Hvis du vil have allerede sendte poster slettet, så skriv til os – adressen står nedenfor.
 
 ### 1.3 Familiedeling og synkronisering
 
@@ -123,11 +137,14 @@ Det valgte billede skaleres ned til brug som profilbillede og gemmes sammen med 
 TidTil bruger Apples notifikationssystem til:
 
 - påmindelser, som du selv vælger til aftaler,
-- beskeder om nye synkroniserede familieaftaler, der vedrører dig.
+- beskeder om nye synkroniserede familieaftaler, der vedrører dig,
+- efter ønske et dagsoverblik: en lokal notifikation om morgenen med alt, hvad der er på programmet i dag. På fridage forbliver den stille.
 
 Disse notifikationer oprettes på enheden via `UNUserNotificationCenter`. Indholdet kan omfatte aftalens titel, dato, tidspunkt og eventuelt navnet på det familiemedlem, der oprettede aftalen.
 
 CloudKit kan vække appen via system-/baggrundsnotifikationer, når der sker ændringer. TidTil driver ikke en egen push-server til dette formål.
+
+Til date-invitationen gemmer TidTil en post i den offentlige database i vores iCloud-container. Den indeholder et hash af modtagerens identifikator, arten (invitation eller svar) og et tidsstempel. Hashet kan ikke regnes tilbage. Invitationen leveres som en CloudKit-notifikation.
 
 Tilladelse til notifikationer gives via iOS' systemdialog. Beskeder om nye familieaftaler kan desuden deaktiveres i TidTils indstillinger.
 
@@ -147,7 +164,7 @@ Disse indstillinger bruges kun til appens funktion og ikke til reklamer eller pr
 
 Inden der tegnes et betalt familieabonnement, kan ejeren af familiedelingen **prøve TidTil Familie gratis én gang i 14 dage**. Prøveperioden begynder først, når familiedelingen aktiveres bevidst, og den slutter automatisk. Den bliver ikke automatisk til et betalt abonnement.
 
-De tekniske adgangsdata, der er nødvendige for prøveadgangen, behandles i det private iCloud-/CloudKit-område. Retsgrundlaget er GDPR artikel 6, stk. 1, litra b, da behandlingen er nødvendig for at levere den prøveadgang, du anmoder om, og administrere adgangsretten.
+De tekniske adgangsdata, der er nødvendige for prøveadgangen, behandles i den offentlige database i vores iCloud-container; andre brugere kan ikke læse posten. Retsgrundlaget er GDPR artikel 6, stk. 1, litra b, da behandlingen er nødvendig for at levere den prøveadgang, du anmoder om, og administrere adgangsretten.
 
 Køb, fornyelse, gendannelse og opsigelse foregår **udelukkende via Apple og App Store**. Betalingsoplysninger som kreditkort- eller bankoplysninger bliver hverken behandlet eller gemt af os og når os på intet tidspunkt.
 
