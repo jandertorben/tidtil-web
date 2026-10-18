@@ -2,7 +2,7 @@
 title: "TidTil"
 h1: "Know what’s on today."
 sub: "The simple family calendar for iPhone: shared and private events at a glance – without task lists, chats or feature overload."
-proof: "Free · No ads · No account"
+proof: "Free download · No ads · No account"
 hero_alt: "TidTil in everyday family life"
 
 live:

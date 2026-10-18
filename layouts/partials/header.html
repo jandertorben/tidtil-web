@@ -5,7 +5,7 @@
   <div class="wrap header-inner">
     <a class="brand" href="{{ $home }}"><img src="{{ "img/tidtil-icon-light.png" | relURL }}" alt="" width="28" height="28">TidTil</a>
 
-    <nav class="site-nav" aria-label="{{ i18n "nav_label" }}">
+    <nav class="site-nav" id="site-nav" aria-label="{{ i18n "nav_label" }}">
       <a href="{{ $home }}#features">{{ i18n "nav_features" }}</a>
       <a href="{{ $home }}#pricing">{{ i18n "nav_pricing" }}</a>
       <a href="{{ $privacy.RelPermalink }}"{{ if eq .RelPermalink $privacy.RelPermalink }} aria-current="page"{{ end }}>{{ i18n "nav_privacy" }}</a>
@@ -13,7 +13,7 @@
     </nav>
 
     {{- /* Jede Sprache verlinkt auf dieselbe Seite; fehlt eine Übersetzung, auf deren Startseite. */}}
-    <nav class="lang-switch" aria-label="{{ i18n "lang_label" }}">
+    <nav class="lang-switch" id="lang-switch" aria-label="{{ i18n "lang_label" }}">
       {{- $page := . }}
       {{- range hugo.Sites }}
         {{- $lang := .Language.Lang }}
@@ -24,5 +24,9 @@
     </nav>
 
     {{ with .Site.Params.appStoreURL }}<a class="btn btn-sm" href="{{ . }}" target="_blank" rel="noopener">{{ i18n "cta_short" }}</a>{{ end }}
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav lang-switch">
+      <span class="nav-toggle-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">{{ i18n "nav_menu" }}</span>
+    </button>
   </div>
 </header>
