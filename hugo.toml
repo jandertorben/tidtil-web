@@ -40,9 +40,8 @@ disableKinds = ["taxonomy", "term"]
   tiktokURL = "https://www.tiktok.com/@tidtil.app"
   threadsURL = "https://www.threads.com/@tidtil.app"
   pinterestURL = "https://www.pinterest.com/tidtilapp/"
-  # Pinterest-Domain-Verifizierung. Leer lassen, bis der Code vorliegt.
-  # Nur dann wird <meta name="p:domain_verify"> im Head ausgegeben.
-  pinterestDomainVerify = ""
+  # Pinterest-Domain-Verifizierung. Wird als <meta name="p:domain_verify"> im Head ausgegeben.
+  pinterestDomainVerify = "e0b989d59270936063a4d7c8dffefad0"
 
   legalName  = "Torben Jander"
   legalAddr1 = "Arster Landstraße 22"
