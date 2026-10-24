@@ -61,8 +61,8 @@ TidTil ist kein Ersatz für einen vollständigen Kalender, sondern bewusst schla
 <tr><td>Privat/gemeinsam pro Termin wählbar</td><td>Ja, bei jedem Termin</td><td>Nein – der Familienkalender ist ein separater, gemeinsamer Kalender; keine Sichtbarkeits-Einstellung pro Termin<sup>1,2</sup></td><td>Ja, mit Einschränkung – Mitglieder mit Bearbeitungsrechten sehen als privat markierte Termine trotzdem<sup>4</sup></td><td>In offiziellen Quellen nicht dokumentiert<sup>5,6</sup></td></tr>
 <tr><td>Familienmitglieder ohne eigenen Account</td><td>Ja, nur mit Namen</td><td>Nein – jedes Mitglied benötigt eine Apple-ID, auch Kinder (als Kinder-Account)<sup>7</sup></td><td>Nein – jedes Mitglied benötigt ein eigenes Google-Konto<sup>8</sup></td><td>In offiziellen Quellen nicht dokumentiert<sup>5,6</sup></td></tr>
 <tr><td>Aufgabenlisten, Notizen &amp; Extras</td><td>Bewusst nicht enthalten</td><td>Nicht Teil der Kalender-App (separate Erinnerungen-App)</td><td>Nicht Teil der Kalender-App (separate Tasks-App)</td><td>Ja – u.&nbsp;a. Aufgaben, Notizen, Rezepte, Reisekosten<sup>6</sup></td></tr>
-<tr><td>Werbung</td><td>Keine</td><td></td><td></td><td>Ja, laut App Store „Enthält Werbung“<sup>3</sup></td></tr>
-<tr><td>Tracking</td><td>Kein Tracking</td><td></td><td></td><td>Ja, laut Datenschutzangaben des Anbieters im App Store (Standort, Kontaktinformationen, Kennungen, Nutzungsdaten, Diagnose)<sup>9</sup></td></tr>
+<tr><td>Werbung</td><td>Keine</td><td>–</td><td>–</td><td>Ja, laut App Store „Enthält Werbung“<sup>3</sup></td></tr>
+<tr><td>Tracking</td><td>Kein Tracking</td><td>–</td><td>–</td><td>Ja, laut Datenschutzangaben des Anbieters im App Store (Standort, Kontaktinformationen, Kennungen, Nutzungsdaten, Diagnose)<sup>9</sup></td></tr>
 </tbody>
 </table>
 </div>
@@ -80,7 +80,7 @@ TidTil ist kein Ersatz für einen vollständigen Kalender, sondern bewusst schla
 <li>Offizielle FamCal-Website. <a href="https://www.famcal.app/home" target="_blank" rel="nofollow noopener noreferrer">famcal.app/home</a>. Abgerufen 24.10.2026.</li>
 <li>Apple Support – „How to set up Family Sharing on your iPhone, iPad, or Mac". <a href="https://support.apple.com/en-us/108380" target="_blank" rel="noopener">support.apple.com/en-us/108380</a>. Abgerufen 31.08.2026.</li>
 <li>Google-Hilfe für Familien – „Use a family calendar on Google". <a href="https://support.google.com/families/answer/7157782" target="_blank" rel="noopener">support.google.com/families/answer/7157782</a>. Abgerufen 31.08.2026.</li>
-<li>Angaben des Anbieters, von Apple nicht geprüft. Apple App Store (Deutschland) – „FamCal: Gemeinsamer Kalender". <a href="https://apps.apple.com/de/app/famcal-gemeinsamer-kalender/id1098999871" target="_blank" rel="nofollow noopener noreferrer">apps.apple.com/de/app/…/id1098999871</a>. Stand 24.10.2026.</li>
+<li>Angaben des Anbieters, von Apple nicht geprüft. Apple App Store (Deutschland) – „FamCal: Gemeinsamer Kalender". <a href="https://apps.apple.com/de/app/famcal-gemeinsamer-kalender/id1098999871" target="_blank" rel="nofollow noopener noreferrer">apps.apple.com/de/app/…/id1098999871</a>. Abgerufen 24.10.2026.</li>
 </ol>
 </details>
 

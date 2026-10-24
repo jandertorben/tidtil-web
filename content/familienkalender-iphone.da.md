@@ -61,8 +61,8 @@ TidTil skal ikke erstatte en fuld kalender-app – det er bevidst enklere. Denne
 <tr><td>Privat/fælles pr. aftale</td><td>Ja, for hver aftale</td><td>Nej – familiekalenderen er en separat, fælles kalender; ingen synlighedsindstilling pr. aftale<sup>1,2</sup></td><td>Ja, med forbehold – medlemmer med redigeringsrettigheder kan stadig se aftaler markeret som private<sup>4</sup></td><td>Ikke dokumenteret i officielle kilder<sup>5,6</sup></td></tr>
 <tr><td>Familiemedlemmer uden egen konto</td><td>Ja, kun med navn</td><td>Nej – hvert medlem skal have et Apple-ID, også børn (som børnekonto)<sup>7</sup></td><td>Nej – hvert medlem skal have sin egen Google-konto<sup>8</sup></td><td>Ikke dokumenteret i officielle kilder<sup>5,6</sup></td></tr>
 <tr><td>Opgavelister, notater &amp; ekstra</td><td>Bevidst ikke inkluderet</td><td>Ikke del af Kalender-appen (separat Påmindelser-app)</td><td>Ikke del af Kalender-appen (separat Tasks-app)</td><td>Ja – bl.&nbsp;a. opgaver, notater, opskrifter, rejseudgifter<sup>6</sup></td></tr>
-<tr><td>Reklamer</td><td>Ingen</td><td></td><td></td><td>Ja, App Store: „Indeholder reklame“<sup>3</sup></td></tr>
-<tr><td>Sporing</td><td>Ingen sporing</td><td></td><td></td><td>Ja, ifølge udviklerens privatlivsoplysninger i App Store (lokalitet, kontaktoplysninger, id'er, brugsdata, diagnostik)<sup>9</sup></td></tr>
+<tr><td>Reklamer</td><td>Ingen</td><td>–</td><td>–</td><td>Ja, App Store: „Indeholder reklame“<sup>3</sup></td></tr>
+<tr><td>Sporing</td><td>Ingen sporing</td><td>–</td><td>–</td><td>Ja, ifølge udviklerens privatlivsoplysninger i App Store (lokalitet, kontaktoplysninger, id'er, brugsdata, diagnostik)<sup>9</sup></td></tr>
 </tbody>
 </table>
 </div>

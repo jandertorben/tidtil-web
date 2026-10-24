@@ -61,8 +61,8 @@ TidTil isn't meant to replace a full calendar app – it's deliberately leaner. 
 <tr><td>Private/shared per event</td><td>Yes, for every event</td><td>No – the shared Family calendar is a separate calendar; there's no per-event visibility setting<sup>1,2</sup></td><td>Yes, with a caveat – members with edit permissions can still see events marked private<sup>4</sup></td><td>Not documented in official sources<sup>5,6</sup></td></tr>
 <tr><td>Family members without their own account</td><td>Yes, by name only</td><td>No – every member needs an Apple ID, including children (as a Child Account)<sup>7</sup></td><td>No – every member needs their own Google Account<sup>8</sup></td><td>Not documented in official sources<sup>5,6</sup></td></tr>
 <tr><td>Task lists, notes &amp; extras</td><td>Deliberately not included</td><td>Not part of the Calendar app (separate Reminders app)</td><td>Not part of the Calendar app (separate Tasks app)</td><td>Yes – tasks, notes, recipes, trip expenses and more<sup>6</sup></td></tr>
-<tr><td>Ads</td><td>None</td><td></td><td></td><td>Yes, App Store: “Contains Advertising”<sup>3</sup></td></tr>
-<tr><td>Tracking</td><td>No tracking</td><td></td><td></td><td>Yes, according to the developer's privacy details in the App Store (location, contact info, identifiers, usage data, diagnostics)<sup>9</sup></td></tr>
+<tr><td>Ads</td><td>None</td><td>–</td><td>–</td><td>Yes, App Store: “Contains Advertising”<sup>3</sup></td></tr>
+<tr><td>Tracking</td><td>No tracking</td><td>–</td><td>–</td><td>Yes, according to the developer's privacy details in the App Store (location, contact info, identifiers, usage data, diagnostics)<sup>9</sup></td></tr>
 </tbody>
 </table>
 </div>
