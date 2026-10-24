@@ -3,6 +3,23 @@
     <div class="footer-brand">
       <span class="brand"><img src="{{ "img/tidtil-icon-light.png" | relURL }}" alt="" width="28" height="28" loading="lazy">TidTil</span>
       <span class="footer-made">{{ i18n "footer_made" }}</span>
+      <nav class="footer-social" aria-label="{{ i18n "footer_social" }}">
+        {{ $social := slice
+          (dict "id" "instagram" "url" .Site.Params.instagramURL)
+          (dict "id" "tiktok" "url" .Site.Params.tiktokURL)
+          (dict "id" "threads" "url" .Site.Params.threadsURL)
+          (dict "id" "pinterest" "url" .Site.Params.pinterestURL)
+        }}
+        {{ range $social }}
+          {{ $id := .id }}
+          {{ with .url }}
+          <a href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="{{ i18n (printf "social_%s_label" $id) }}">
+            {{ partial "social-icon.html" $id }}
+            <span>{{ i18n (printf "social_%s" $id) }}</span>
+          </a>
+          {{ end }}
+        {{ end }}
+      </nav>
     </div>
     <nav class="footer-nav" aria-label="{{ i18n "nav_family_calendar" }}">
       <a href="{{ (.Site.GetPage "familienkalender-iphone").RelPermalink }}">{{ i18n "nav_family_calendar" }}</a>

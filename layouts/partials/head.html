@@ -40,6 +40,9 @@
 {{ with .Site.Params.appStoreID }}
 <meta name="apple-itunes-app" content="app-id={{ . }}">
 {{ end }}
+{{ with .Site.Params.pinterestDomainVerify }}
+<meta name="p:domain_verify" content="{{ . }}">
+{{ end }}
 
 {{ range .AllTranslations }}
 <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
@@ -50,6 +53,11 @@
 
 {{ $orgURL := hugo.Sites.Default.Home.Permalink }}
 {{ $orgID := printf "%s#organization" $orgURL }}
+{{ $sameAs := slice "https://www.instagram.com/tidtil.app/" .Site.Params.appStoreURL }}
+{{ range slice .Site.Params.instagramURL .Site.Params.tiktokURL .Site.Params.threadsURL .Site.Params.pinterestURL }}
+  {{ if . }}{{ $sameAs = $sameAs | append . }}{{ end }}
+{{ end }}
+{{ $sameAs = uniq $sameAs }}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -59,10 +67,7 @@
   "url": {{ $orgURL | jsonify | safeJS }},
   "logo": {{ "apple-touch-icon.png" | absURL | jsonify | safeJS }},
   "email": {{ .Site.Params.emailSupport | jsonify | safeJS }},
-  "sameAs": [
-    "https://www.instagram.com/tidtil.app/",
-    {{ .Site.Params.appStoreURL | jsonify | safeJS }}
-  ]
+  "sameAs": {{ $sameAs | jsonify | safeJS }}
 }
 </script>
 <script type="application/ld+json">

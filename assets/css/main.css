@@ -266,6 +266,9 @@ html:not(.js) .js-only{display:none!important}
 .footer-nav{display:flex;flex-direction:column;gap:8px;flex:0 1 260px}
 .footer-nav + .footer-nav{flex-basis:200px}
 .footer-nav a{text-decoration:none;font-size:15px}
+.footer-social{display:flex;flex-wrap:wrap;align-items:center;gap:4px 18px;margin-top:8px;max-width:28rem}
+.footer-social a{display:inline-flex;align-items:center;gap:7px;padding:6px 0;text-decoration:none;font-size:15px;line-height:1.2;white-space:nowrap}
+.footer-social svg{width:16px;height:16px;flex:none;display:block}
 .footer-copy{padding-bottom:32px;font-size:13px;color:var(--muted)}
 
 /* ---------- Unterseiten ---------- */
