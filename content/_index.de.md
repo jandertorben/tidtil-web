@@ -43,6 +43,7 @@ features:
       alt: "Heute-Ansicht in TidTil"
     - title: "Was? Wann? Für wen? Wer darf’s sehen?"
       text: "Mehr braucht ein Familientermin meistens nicht."
+      siri: "Seit TidTil 2.5 und mit iOS 18 oder neuer kannst du Termine mit Siri eintragen. Damit der Termin in TidTil landet, sag „TidTil“ im Satz mit."
       image: "img/feature-neuer-termin.webp"
       alt: "Neuen Familientermin anlegen"
     - title: "Fühlt sich nach euch an"
@@ -129,6 +130,8 @@ faq:
     a: "Private Termine sind nur für dich sichtbar und werden getrennt von den Familienterminen gespeichert."
   - q: "Gibt es Erinnerungen?"
     a: "Ja, für jeden Termin einzeln. Optional zeigt der Tagesüberblick morgens kompakt, was ansteht."
+  - q: "Kann ich Termine mit Siri eintragen?"
+    a: "Ja. Seit TidTil 2.5 und mit iOS 18 oder neuer kannst du Termine in TidTil mit Siri eintragen. Damit der Termin in TidTil landet, sag „TidTil“ im Satz mit. Zum Beispiel: „Termin in TidTil eintragen“ oder „Termin für [Name] in TidTil eintragen“. Beim ersten Mal fragt dein iPhone, ob es die TidTil-Kurzbefehle aktivieren soll. Tippe dann auf „Aktivieren“. Siri fragt nach Titel, Beginn und ob der Termin privat oder für die Familie ist, fasst zusammen und bittet um Bestätigung, bevor der Termin gespeichert wird. Die App muss dazu nicht offen sein. Damit Siri die Namen deiner Familie kennt, öffne TidTil nach dem Update einmal. Private Termine gehen ohne Abo. Termine für die Familie oder für ein genanntes Familienmitglied brauchen Familienzugang – das Abo TidTil Familie, die Testphase oder die Mitgliedschaft in einer Familie, die zahlt."
 
 close:
   title: "Wissen, was ansteht. Dann das Handy weglegen."

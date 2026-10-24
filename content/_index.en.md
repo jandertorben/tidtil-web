@@ -41,6 +41,7 @@ features:
       alt: "Today view in TidTil"
     - title: "What? When? Who? Who can see it?"
       text: "That’s usually all a family event needs."
+      siri: "Since TidTil 2.5 and with iOS 18 or later, you can add events with Siri. To make sure the event lands in TidTil, say “TidTil” in the sentence."
       image: "img/feature-neuer-termin.webp"
       alt: "Creating a family event"
     - title: "Feels like yours"
@@ -127,6 +128,8 @@ faq:
     a: "Private events are visible only to you and stored separately from family events."
   - q: "Are there reminders?"
     a: "Yes, for each event individually. Optionally, the daily overview shows what’s on each morning."
+  - q: "Can I add events with Siri?"
+    a: "Yes. Since TidTil 2.5 and with iOS 18 or later, you can add events in TidTil with Siri. To make sure the event lands in TidTil, say “TidTil” in the sentence. For example: “Add an event in TidTil” or “Add an event for [Name] in TidTil”. The first time, your iPhone asks whether to turn on the TidTil shortcuts. Confirm it. Siri then asks for the title, the start time and “Private or Family”, summarizes and asks for confirmation before the event is saved. The app does not need to be open. So that Siri knows your family’s names, open TidTil once after the update. Private events need no subscription. Family events, or an event for a named family member, need family access: the TidTil Family subscription, the trial, or membership in a family that pays."
 
 close:
   title: "Know what’s ahead. Then put the phone away."
