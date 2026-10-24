@@ -1,7 +1,6 @@
 {{ define "main" }}
 {{- $p := .Params -}}
 {{- $lang := .Site.Language.Lang -}}
-{{- $app := .Site.Params.appStoreURL -}}
 {{- $live := $p.live -}}
 {{- $demo := $p.demo -}}
 {{- $price := $p.price -}}
@@ -28,7 +27,7 @@
     </div>
     <p class="hero-sub">{{ $p.sub }}</p>
     <div class="cta-row">
-      <a class="btn" href="{{ $app }}" target="_blank" rel="noopener">{{ i18n "get_app" }}</a>
+      {{ partial "appstore-button.html" (dict "page" . "ct" "web-hero") }}
       <span class="proof">{{ $p.proof }}</span>
     </div>
   </div>
@@ -166,6 +165,7 @@
         </div>
       </div>
     </div>
+    <div class="pricing-cta">{{ partial "appstore-button.html" (dict "page" . "ct" "web-pricing") }}</div>
     <p class="price-fine">{{ $price.trial_note }} {{ $price.no_sub }}</p>
   </div>
 </section>
@@ -207,7 +207,7 @@
       <h2 class="h-section-lg">{{ $p.close.title }}</h2>
     </div>
     <div class="closing-cta">
-      <a class="btn" href="{{ $app }}" target="_blank" rel="noopener">{{ i18n "get_app" }}</a>
+      {{ partial "appstore-button.html" (dict "page" . "ct" "web-closing") }}
       <span class="proof">{{ $p.proof }}</span>
     </div>
   </div>

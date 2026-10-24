@@ -1,1 +1,3 @@
-<a class="btn" href="{{ .Site.Params.appStoreURL }}" target="_blank" rel="noopener">{{ i18n "get_app" }}</a>
+{{- /* Offizielles Apple-Badge, unverändert. Dict: page, ct. */ -}}
+{{- $href := partial "appstore-url.html" . -}}
+<a class="store-badge" href="{{ $href }}" target="_blank" rel="noopener"><img src="{{ printf "img/badges/app-store-%s.svg" .page.Site.Language.Lang | relURL }}" alt="{{ i18n "get_app" }}" width="120" height="40"></a>

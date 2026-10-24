@@ -1,0 +1,17 @@
+{{- /* Zentrale App-Store-URL. Dict: page, ct.
+     https://apps.apple.com/app/apple-store/id<ID>?pt=<token>&ct=<ct>&mt=8
+     pt nur, wenn params.appStoreProviderToken nicht leer ist. */ -}}
+{{- $page := .page -}}
+{{- $ct := .ct -}}
+{{- if not $ct -}}
+  {{- $slug := path.Base (strings.TrimSuffix "/" $page.RelPermalink) -}}
+  {{- $ct = printf "web-lp-%s" $slug -}}
+{{- end -}}
+{{- $id := $page.Site.Params.appStoreID -}}
+{{- $pt := $page.Site.Params.appStoreProviderToken -}}
+{{- $base := printf "https://apps.apple.com/app/apple-store/id%s" $id -}}
+{{- $url := printf "%s?ct=%s&mt=8" $base $ct -}}
+{{- if $pt -}}
+  {{- $url = printf "%s?pt=%s&ct=%s&mt=8" $base $pt $ct -}}
+{{- end -}}
+{{- return $url -}}

@@ -1,1 +1,2 @@
-{{ partial "appstore-button.html" .Page }}
+{{- $slug := path.Base (strings.TrimSuffix "/" .Page.RelPermalink) -}}
+{{- partial "appstore-button.html" (dict "page" .Page "ct" (printf "web-lp-%s" $slug)) -}}
