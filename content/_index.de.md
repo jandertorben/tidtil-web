@@ -3,7 +3,7 @@ title: "TidTil"
 h1: "Wissen, was heute ansteht."
 kicker: "Der ruhige Familienkalender fürs iPhone"
 sub: "Gemeinsame und private Termine auf einen Blick – ohne Aufgabenlisten, Chats und Funktionsballast."
-proof: "Kostenlos laden · Keine Werbung · Kein Konto"
+proof: "Kostenlos laden · Familie 14 Tage gratis · Kein Konto · Keine Werbung"
 hero_alt: "TidTil im Familienalltag"
 
 # „Euer Tag“ – Live-Tagesansicht. Zeiten in Minuten ab Mitternacht,
@@ -51,8 +51,15 @@ features:
       alt: "Farben in TidTil anpassen"
     - title: "Direkt loslegen"
       text: "Kein Konto, kein Passwort, kein langes Onboarding. Hilfe gibt’s direkt in der App."
-      image: "img/feature-einfacher-start.webp"
-      alt: "Hilfe und Feedback in TidTil"
+      image: "img/feature-familie-einladen-de.webp"
+      alt: "Familie in TidTil einladen"
+
+for_us:
+  title: "Zeit für uns."
+  text: "Ladet euch gegenseitig zu einem Date ein – zusagen, absagen oder eine andere Zeit vorschlagen."
+  note: "Teil von TidTil Familie"
+  image: "img/feature-zeit-fuer-uns-de.webp"
+  alt: "Einladung zu einem Date in TidTil"
 
 demo:
   title: "Tragt es gleich hier ein."
@@ -91,6 +98,7 @@ price:
   fewer: "Weniger"
   more: "Mehr"
   trial_note: "14 Tage gratis testen: einmalige Testphase, keine automatische Verlängerung."
+  trial_end: "Der Test endet automatisch – keine Kündigung nötig."
   no_sub: "Ohne Abo bleiben persönliche Termine auf deinem Gerät erhalten."
 
 privacy:
@@ -105,7 +113,7 @@ privacy:
       text: "Synchronisierung über Apples iCloud und CloudKit – keine eigenen Server."
 
 faq:
-  - q: "Brauche ich einen Account?"
+  - q: "Brauche ich ein Konto?"
     a: "Nein. Es gibt kein eigenes Benutzerkonto und kein zusätzliches Passwort. TidTil nutzt Apples iCloud- und CloudKit-Infrastruktur."
   - q: "Braucht jedes Familienmitglied ein Abo?"
     a: "Nein. TidTil Familie kostet 1,99 €/Monat oder 19,99 €/Jahr. Einer zahlt für die ganze Familie."

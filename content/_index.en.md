@@ -3,7 +3,7 @@ title: "TidTil"
 h1: "Know what’s on today."
 kicker: "The family calendar for iPhone"
 sub: "Shared and private events at a glance – without task lists, chats or feature overload."
-proof: "Free download · No ads · No account"
+proof: "Free to download · Family free for 14 days · No account · No ads"
 hero_alt: "TidTil in everyday family life"
 
 live:
@@ -49,8 +49,15 @@ features:
       alt: "Customising colours in TidTil"
     - title: "Start right away"
       text: "No account, no password, no lengthy onboarding. Help lives right in the app."
-      image: "img/feature-einfacher-start.webp"
-      alt: "Help and feedback in TidTil"
+      image: "img/feature-familie-einladen-en.webp"
+      alt: "Invite your family to TidTil"
+
+for_us:
+  title: "Time for us."
+  text: "Invite each other to a date – accept, decline or suggest another time."
+  note: "Part of TidTil Family"
+  image: "img/feature-zeit-fuer-uns-en.webp"
+  alt: "Invitation to a date in TidTil"
 
 demo:
   title: "Try it right here."
@@ -89,6 +96,7 @@ price:
   fewer: "Fewer"
   more: "More"
   trial_note: "Try free for 14 days: a one-time trial, with no automatic renewal."
+  trial_end: "The trial ends automatically – no need to cancel."
   no_sub: "Without a subscription, personal events stay on your device."
 
 privacy:
