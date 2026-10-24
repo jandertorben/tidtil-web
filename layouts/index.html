@@ -99,11 +99,26 @@
       {{- end }}
       {{- with index $r 3 }}
       <div class="feature-card">
-        <figure class="photo"><img src="{{ .image | relURL }}" alt="{{ .alt }}" width="853" height="1844" loading="lazy" decoding="async" style="object-position:50% 30%"></figure>
+        <figure class="photo"><img src="{{ .image | relURL }}" alt="{{ .alt }}" width="660" height="1318" loading="lazy" decoding="async" style="object-position:center 48%"></figure>
         <h3 class="h-feature-sm">{{ .title }}</h3>
         <p class="copy">{{ .text }}</p>
       </div>
       {{- end }}
+    </div>
+  </div>
+</section>
+{{- end }}
+
+{{- with $p.for_us }}
+<section class="wrap zeit" aria-labelledby="zeit-title">
+  <div class="feature">
+    <figure class="photo feature-photo-phone">
+      <img src="{{ .image | relURL }}" alt="{{ .alt }}" width="660" height="1318" loading="lazy" decoding="async">
+    </figure>
+    <div class="feature-text">
+      <h2 id="zeit-title" class="h-section">{{ .title }}</h2>
+      <p class="copy">{{ .text }}</p>
+      <p class="zeit-note">{{ .note }}</p>
     </div>
   </div>
 </section>
@@ -166,7 +181,7 @@
       </div>
     </div>
     <div class="pricing-cta">{{ partial "appstore-button.html" (dict "page" . "ct" "web-pricing") }}</div>
-    <p class="price-fine">{{ $price.trial_note }} {{ $price.no_sub }}</p>
+    <p class="price-fine">{{ $price.trial_note }} {{ $price.trial_end }} {{ $price.no_sub }}</p>
   </div>
 </section>
 

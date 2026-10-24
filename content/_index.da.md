@@ -3,7 +3,7 @@ title: "TidTil"
 h1: "Vid, hvad der sker i dag."
 kicker: "Familiekalenderen til iPhone"
 sub: "Fælles og private aftaler på ét blik – uden opgavelister, chats og unødvendige funktioner."
-proof: "Gratis at hente · Ingen reklamer · Ingen konto"
+proof: "Gratis at hente · Familie 14 dage gratis · Ingen konto · Ingen reklamer"
 hero_alt: "TidTil i familiens hverdag"
 
 live:
@@ -49,8 +49,15 @@ features:
       alt: "Tilpas farver i TidTil"
     - title: "Kom i gang med det samme"
       text: "Ingen konto, ingen adgangskode, ingen lang introduktion. Hjælp findes i appen."
-      image: "img/feature-einfacher-start.webp"
-      alt: "Hjælp og feedback i TidTil"
+      image: "img/feature-familie-einladen-de.webp"
+      alt: "Inviter din familie til TidTil"
+
+for_us:
+  title: "Tid til os."
+  text: "Inviter hinanden til en date – accepter, afvis eller foreslå et andet tidspunkt."
+  note: "En del af TidTil Familie"
+  image: "img/feature-zeit-fuer-uns-de.webp"
+  alt: "Invitation til en date i TidTil"
 
 demo:
   title: "Prøv det lige her."
@@ -89,6 +96,7 @@ price:
   fewer: "Færre"
   more: "Flere"
   trial_note: "Prøv gratis i 14 dage: engangsprøveperiode, ingen automatisk fornyelse."
+  trial_end: "Prøveperioden slutter automatisk – ingen opsigelse nødvendig."
   no_sub: "Uden abonnement bliver personlige aftaler på din enhed."
 
 privacy:
