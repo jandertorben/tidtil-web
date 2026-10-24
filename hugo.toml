@@ -34,7 +34,8 @@ disableKinds = ["taxonomy", "term"]
   appStoreURL = "https://apps.apple.com/app/id6780019857"
   # Apple Smart App Banner. Nur die numerische App-Store-ID.
   appStoreID = "6780019857"
-  ogImage = "img/AB14F977-D8D0-4346-BADC-8E84A292D4FC.png"
+  # Provider Token (pt). Leer lassen, dann wird pt an Kampagnenlinks nicht angehängt.
+  appStoreProviderToken = "129035554"
 
   instagramURL = "https://www.instagram.com/tidtil.app/"
   tiktokURL = "https://www.tiktok.com/@tidtil.app"

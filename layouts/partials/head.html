@@ -1,11 +1,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="preload" as="font" type="font/woff2" href="{{ "fonts/archivo-latin-700.woff2" | relURL }}" crossorigin>
-<link rel="preload" as="font" type="font/woff2" href="{{ "fonts/archivo-latin-400.woff2" | relURL }}" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="{{ "fonts/eb-garamond-latin.woff2" | relURL }}" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="{{ "fonts/jost-latin.woff2" | relURL }}" crossorigin>
 
 {{ $description := cond (ne .Description "") .Description (i18n "meta_description") }}
 {{ $pageTitle := cond .IsHome (printf "%s – %s" .Site.Title (i18n "tagline")) (printf "%s · %s" (cond (eq .Kind "404") (i18n "error_404_title") .Title) .Site.Title) }}
-{{ $ogImage := (.Site.Params.ogImage | default "img/tidtil-social-preview.jpg") | absURL }}
+{{ $ogImage := printf "img/og-%s.jpg" .Site.Language.Lang | absURL }}
 {{ $localeMap := dict "de" "de_DE" "en" "en_GB" "da" "da_DK" }}
 {{ $ogLocale := index $localeMap .Site.Language.Lang | default .Site.Language.Lang }}
 
@@ -23,7 +23,7 @@
 <meta property="og:image" content="{{ $ogImage }}">
 <meta property="og:image:url" content="{{ $ogImage }}">
 <meta property="og:image:secure_url" content="{{ $ogImage }}">
-<meta property="og:image:type" content="image/png">
+<meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="{{ i18n "og_image_alt" }}">
@@ -91,7 +91,7 @@
   "operatingSystem": "iOS",
   "description": {{ $description | jsonify | safeJS }},
   "url": {{ .Permalink | jsonify | safeJS }},
-  "installUrl": {{ .Site.Params.appStoreURL | jsonify | safeJS }},
+  "installUrl": {{ partial "appstore-url.html" (dict "page" . "ct" "web-hero") | jsonify | safeJS }},
   "image": {{ $ogImage | jsonify | safeJS }},
   "screenshot": {{ "img/feature-tagesueberblick.webp" | absURL | jsonify | safeJS }},
   "offers": [
