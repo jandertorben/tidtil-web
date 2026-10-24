@@ -1,0 +1,8 @@
+{{- /* Trenner · gehört zum folgenden Punkt, damit er nicht am Zeilenende stehen bleibt. Der sichtbare Text bleibt der übergebene String. */ -}}
+{{- $parts := split . " · " -}}
+<span class="proof">
+{{- range $i, $part := $parts -}}
+{{- if $i }} {{ end -}}
+<span class="proof-item">{{ if $i }}· {{ end }}{{ $part }}</span>
+{{- end -}}
+</span>
