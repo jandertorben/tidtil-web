@@ -41,6 +41,7 @@ features:
       alt: "I dag-visning i TidTil"
     - title: "Hvad? Hvornår? For hvem? Hvem må se det?"
       text: "Mere behøver en familieaftale som regel ikke."
+      siri: "Siden TidTil 2.5 og med iOS 18 eller nyere kan du oprette aftaler med Siri. Sig “TidTil” med i sætningen, ellers bruger Siri Apples egen Kalender."
       image: "img/feature-neuer-termin.webp"
       alt: "Opret en familieaftale"
     - title: "Føles som jeres"
@@ -127,6 +128,8 @@ faq:
     a: "Private aftaler er kun synlige for dig og gemmes adskilt fra familieaftaler."
   - q: "Er der påmindelser?"
     a: "Ja, for hver aftale. Valgfrit viser dagens overblik om morgenen, hvad der skal ske."
+  - q: "Kan jeg oprette aftaler med Siri?"
+    a: "Ja. Siden TidTil 2.5 og med iOS 18 eller nyere kan du oprette aftaler i TidTil med Siri, lige efter opdateringen og uden at sætte noget op. Vigtigt: Sig “TidTil” med i sætningen, ellers bruger Siri Apples egen Kalender. For eksempel: “Opret en aftale i TidTil” eller “Opret en aftale for [Name] i TidTil”. Siri spørger derefter om titel, starttidspunkt og om aftalen er privat eller for familien, opsummerer og beder om bekræftelse, før aftalen gemmes. Appen behøver ikke at være åben. Private aftaler kræver ikke abonnement. Familieaftaler eller en aftale for et navngivet familiemedlem kræver familieadgang: abonnementet TidTil Familie, prøveperioden eller medlemskab af en familie, der betaler."
 
 close:
   title: "Se, hvad der skal ske. Læg så telefonen væk."
