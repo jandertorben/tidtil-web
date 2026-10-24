@@ -36,6 +36,13 @@ disableKinds = ["taxonomy", "term"]
   appStoreID = "6780019857"
   ogImage = "img/AB14F977-D8D0-4346-BADC-8E84A292D4FC.png"
 
+  instagramURL = "https://www.instagram.com/tidtil.app/"
+  tiktokURL = "https://www.tiktok.com/@tidtil.app"
+  threadsURL = "https://www.threads.com/@tidtil.app"
+  pinterestURL = "https://www.pinterest.com/tidtilapp/"
+  # Pinterest-Domain-Verifizierung. Wird als <meta name="p:domain_verify"> im Head ausgegeben.
+  pinterestDomainVerify = "e0b989d59270936063a4d7c8dffefad0"
+
   legalName  = "Torben Jander"
   legalAddr1 = "Arster Landstraße 22"
   legalAddr2 = "28279 Bremen"
