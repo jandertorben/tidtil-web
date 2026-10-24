@@ -9,8 +9,8 @@
 /* Metric-matched fallbacks so the swap from local faces barely moves text.
    size-adjust matches average advance width; ascent/descent match the web font
    after that scale. Tuned against Arial and Times New Roman. */
-@font-face{font-family:"Jost Fallback";src:local("Arial");size-adjust:94.2%;ascent-override:113.6%;descent-override:39.8%;line-gap-override:0%}
-@font-face{font-family:"EB Garamond Fallback";src:local("Times New Roman");size-adjust:96.4%;ascent-override:104.5%;descent-override:30.9%;line-gap-override:0%}
+@font-face{font-family:"Jost Fallback";src:local("Arial");size-adjust:95.2%;ascent-override:112.4%;descent-override:39.4%;line-gap-override:0%}
+@font-face{font-family:"EB Garamond Fallback";src:local("Times New Roman");size-adjust:99.9%;ascent-override:100.8%;descent-override:29.8%;line-gap-override:0%}
 
 /* ---------- Tokens ---------- */
 :root{
