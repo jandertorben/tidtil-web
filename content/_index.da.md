@@ -49,14 +49,14 @@ features:
       alt: "Tilpas farver i TidTil"
     - title: "Kom i gang med det samme"
       text: "Ingen konto, ingen adgangskode, ingen lang introduktion. Hjælp findes i appen."
-      image: "img/feature-familie-einladen-de.webp"
+      image: "img/feature-familie-einladen-en.webp"
       alt: "Inviter din familie til TidTil"
 
 for_us:
   title: "Tid til os."
   text: "Inviter hinanden til en date – accepter, afvis eller foreslå et andet tidspunkt."
   note: "En del af TidTil Familie"
-  image: "img/feature-zeit-fuer-uns-de.webp"
+  image: "img/feature-zeit-fuer-uns-en.webp"
   alt: "Invitation til en date i TidTil"
 
 demo:

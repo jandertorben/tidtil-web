@@ -28,7 +28,7 @@
     <p class="hero-sub">{{ $p.sub }}</p>
     <div class="cta-row">
       {{ partial "appstore-button.html" (dict "page" . "ct" "web-hero") }}
-      <span class="proof">{{ $p.proof }}</span>
+      {{ partial "proof.html" $p.proof }}
     </div>
   </div>
   <figure class="photo hero-photo">
@@ -98,8 +98,10 @@
       </div>
       {{- end }}
       {{- with index $r 3 }}
+      {{- $src := .image -}}
+      {{- $src2 := replace $src ".webp" "@2x.webp" -}}
       <div class="feature-card">
-        <figure class="photo"><img src="{{ .image | relURL }}" alt="{{ .alt }}" width="660" height="1318" loading="lazy" decoding="async" style="object-position:center 48%"></figure>
+        <figure class="photo"><img src="{{ $src | relURL }}" srcset="{{ $src | relURL }} 1x, {{ $src2 | relURL }} 2x" alt="{{ .alt }}" width="740" height="740" loading="lazy" decoding="async"></figure>
         <h3 class="h-feature-sm">{{ .title }}</h3>
         <p class="copy">{{ .text }}</p>
       </div>
@@ -112,8 +114,10 @@
 {{- with $p.for_us }}
 <section class="wrap zeit" aria-labelledby="zeit-title">
   <div class="feature">
+    {{- $src := .image -}}
+    {{- $src2 := replace $src ".webp" "@2x.webp" -}}
     <figure class="photo feature-photo-phone">
-      <img src="{{ .image | relURL }}" alt="{{ .alt }}" width="660" height="1318" loading="lazy" decoding="async">
+      <img src="{{ $src | relURL }}" srcset="{{ $src | relURL }} 1x, {{ $src2 | relURL }} 2x" alt="{{ .alt }}" width="740" height="925" loading="lazy" decoding="async">
     </figure>
     <div class="feature-text">
       <h2 id="zeit-title" class="h-section">{{ .title }}</h2>
@@ -223,7 +227,7 @@
     </div>
     <div class="closing-cta">
       {{ partial "appstore-button.html" (dict "page" . "ct" "web-closing") }}
-      <span class="proof">{{ $p.proof }}</span>
+      {{ partial "proof.html" $p.proof }}
     </div>
   </div>
 </section>
