@@ -3,7 +3,7 @@ title: "TidTil"
 h1: "Know what’s on today."
 kicker: "The family calendar for iPhone"
 sub: "Shared and private events at a glance – without task lists, chats or feature overload."
-proof: "Free download · Family 14 days free · No account · No ads"
+proof: "Free to download · Family free for 14 days · No account · No ads"
 hero_alt: "TidTil in everyday family life"
 
 live:
@@ -55,7 +55,7 @@ features:
 for_us:
   title: "Time for us."
   text: "Invite each other to a date – accept, decline or suggest another time."
-  note: "Part of TidTil Familie"
+  note: "Part of TidTil Family"
   image: "img/feature-zeit-fuer-uns-en.webp"
   alt: "Invitation to a date in TidTil"
 
