@@ -67,19 +67,19 @@ TidTil isn't meant to replace a full calendar app – it's deliberately leaner. 
 </table>
 </div>
 
-<p class="compare-caveat">All figures are based on official sources (Apple and Google support pages, and official App Store / manufacturer sites), as of 24 Oct 2026. FamCal's price is from the German App Store (as of 24 Oct 2026) and may vary by country or App Store account. Where a cell shows "not documented in official sources," that doesn't mean the feature doesn't exist – only that we couldn't find an official, verifiable source for it.</p>
+<p class="compare-caveat">All figures are based on official sources (Apple and Google support pages, and official App Store / manufacturer sites). Figures for Apple and Google are as of 31 Aug 2026, figures for FamCal as of 24 Oct 2026. FamCal's price is from the German App Store (as of 24 Oct 2026) and may vary by country or App Store account. Where a cell shows "not documented in official sources," that doesn't mean the feature doesn't exist – only that we couldn't find an official, verifiable source for it.</p>
 
 <details class="sources-details">
 <summary>Sources and verification date</summary>
 <ol>
-<li>Apple Support – "Share a calendar on iCloud.com". <a href="https://support.apple.com/guide/icloud/share-a-calendar-mm6b1a9479/icloud" target="_blank" rel="noopener">support.apple.com/guide/icloud/share-a-calendar-mm6b1a9479</a>. Checked 24 Oct 2026.</li>
-<li>Apple Support – "Add events to your Family Sharing calendar". <a href="https://support.apple.com/en-ie/guide/mac-help/add-events-to-your-family-sharing-calendar-mhd8f2037623" target="_blank" rel="noopener">support.apple.com/…/add-events-to-your-family-sharing-calendar</a>. Checked 24 Oct 2026.</li>
+<li>Apple Support – "Share a calendar on iCloud.com". <a href="https://support.apple.com/guide/icloud/share-a-calendar-mm6b1a9479/icloud" target="_blank" rel="noopener">support.apple.com/guide/icloud/share-a-calendar-mm6b1a9479</a>. Checked 31 Aug 2026.</li>
+<li>Apple Support – "Add events to your Family Sharing calendar". <a href="https://support.apple.com/en-ie/guide/mac-help/add-events-to-your-family-sharing-calendar-mhd8f2037623" target="_blank" rel="noopener">support.apple.com/…/add-events-to-your-family-sharing-calendar</a>. Checked 31 Aug 2026.</li>
 <li>Apple App Store (Germany) – "FamCal: Gemeinsamer Kalender". <a href="https://apps.apple.com/de/app/famcal-gemeinsamer-kalender/id1098999871" target="_blank" rel="nofollow noopener noreferrer">apps.apple.com/de/app/…/id1098999871</a>. Pricing as of 24 Oct 2026, German App Store.</li>
-<li>Google Calendar Help – "Change your event visibility settings". <a href="https://support.google.com/calendar/answer/34580" target="_blank" rel="noopener">support.google.com/calendar/answer/34580</a>. Checked 24 Oct 2026.</li>
+<li>Google Calendar Help – "Change your event visibility settings". <a href="https://support.google.com/calendar/answer/34580" target="_blank" rel="noopener">support.google.com/calendar/answer/34580</a>. Checked 31 Aug 2026.</li>
 <li>Google Play Store – "Family Shared Calendar: FamCal" listing (documents visibility for lists, not events). <a href="https://play.google.com/store/apps/details?id=com.appxy.famcal&amp;hl=de&amp;gl=DE" target="_blank" rel="nofollow noopener noreferrer">play.google.com/store/apps/details?id=com.appxy.famcal</a>. Checked 24 Oct 2026.</li>
 <li>Official FamCal website. <a href="https://www.famcal.app/home" target="_blank" rel="nofollow noopener noreferrer">famcal.app/home</a>. Checked 24 Oct 2026.</li>
-<li>Apple Support – "How to set up Family Sharing on your iPhone, iPad, or Mac". <a href="https://support.apple.com/en-us/108380" target="_blank" rel="noopener">support.apple.com/en-us/108380</a>. Checked 24 Oct 2026.</li>
-<li>Google Families Help – "Use a family calendar on Google". <a href="https://support.google.com/families/answer/7157782" target="_blank" rel="noopener">support.google.com/families/answer/7157782</a>. Checked 24 Oct 2026.</li>
+<li>Apple Support – "How to set up Family Sharing on your iPhone, iPad, or Mac". <a href="https://support.apple.com/en-us/108380" target="_blank" rel="noopener">support.apple.com/en-us/108380</a>. Checked 31 Aug 2026.</li>
+<li>Google Families Help – "Use a family calendar on Google". <a href="https://support.google.com/families/answer/7157782" target="_blank" rel="noopener">support.google.com/families/answer/7157782</a>. Checked 31 Aug 2026.</li>
 <li>Developer's own information, not verified by Apple. Apple App Store (Germany) – "FamCal: Gemeinsamer Kalender". <a href="https://apps.apple.com/de/app/famcal-gemeinsamer-kalender/id1098999871" target="_blank" rel="nofollow noopener noreferrer">apps.apple.com/de/app/…/id1098999871</a>. Checked 24 Oct 2026.</li>
 </ol>
 </details>
