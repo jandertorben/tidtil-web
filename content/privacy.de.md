@@ -233,9 +233,9 @@ Weitere Informationen findest du in den Datenschutzinformationen von GitHub.
 
 ### 2.2 Lokale Webfonts
 
-Die auf dieser Website verwendete Schriftart **Archivo** wird zusammen mit der Website über GitHub Pages ausgeliefert. Beim Anzeigen der Schrift wird daher **keine Verbindung zu Google Fonts oder anderen externen Font-Diensten** hergestellt.
+Die auf dieser Website verwendeten Schriftarten **EB Garamond** und **Jost** werden zusammen mit der Website über GitHub Pages ausgeliefert. Beim Anzeigen der Schriften wird daher **keine Verbindung zu Google Fonts oder anderen externen Font-Diensten** hergestellt.
 
-Die Schriftdateien basieren auf der Google-Fonts-Ausgabe der Schrift (bezogen über das Open-Source-Projekt Fontsource) und werden unter der **SIL Open Font License (OFL)** verwendet. Der Lizenztext wird zusammen mit den Schriftdateien bereitgestellt.
+Die Schriftdateien werden unter der jeweiligen **SIL Open Font License (OFL)** verwendet. Die Lizenztexte werden zusammen mit den Schriftdateien bereitgestellt.
 
 ### 2.3 Keine eigene Webanalyse und keine Werbetracker
 
