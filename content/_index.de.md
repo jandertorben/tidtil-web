@@ -61,6 +61,13 @@ for_us:
   image: "img/feature-zeit-fuer-uns-de.webp"
   alt: "Einladung zu einem Date in TidTil"
 
+soon:
+  title: "Kommt bald."
+  version: "TidTil 2.6"
+  items:
+    - title: "Kalenderimport"
+      text: "Termine aus dem Apple Kalender auswählen und in TidTil übernehmen. Dazu die Kalender und einen Zeitraum ab heute wählen, zum Beispiel die nächsten drei Monate. Der Apple Kalender bleibt unverändert. Übernommene Termine sind zuerst privat und werden einzeln für die Familie freigegeben. Im Profilmenü unter „Kalenderimport“."
+
 demo:
   title: "Tragt es gleich hier ein."
   hint: "Tippt auf die unterstrichenen Wörter. Der Termin landet oben in eurem Tag."

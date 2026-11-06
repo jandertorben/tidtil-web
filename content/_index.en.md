@@ -59,6 +59,13 @@ for_us:
   image: "img/feature-zeit-fuer-uns-en.webp"
   alt: "Invitation to a date in TidTil"
 
+soon:
+  title: "Coming soon."
+  version: "TidTil 2.6"
+  items:
+    - title: "Calendar import"
+      text: "Choose events from Apple Calendar and bring them into TidTil. Pick the calendars and a period starting today, for example the next three months. Apple Calendar stays unchanged. Imported events are private at first and can then be shared with the family one by one. In the profile menu, under “Calendar import”."
+
 demo:
   title: "Try it right here."
   hint: "Tap the underlined words. The event lands in your day above."

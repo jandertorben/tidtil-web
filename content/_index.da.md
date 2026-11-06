@@ -59,6 +59,13 @@ for_us:
   image: "img/feature-zeit-fuer-uns-en.webp"
   alt: "Invitation til en date i TidTil"
 
+soon:
+  title: "Kommer snart."
+  version: "TidTil 2.6"
+  items:
+    - title: "Kalenderimport"
+      text: "Vælg aftaler i Apple Kalender og tag dem med over i TidTil. Vælg kalenderne og et tidsrum fra i dag, for eksempel de næste tre måneder. Apple Kalender forbliver uændret. Importerede aftaler er først private og kan derefter enkeltvis gøres synlige for familien. I profilmenuen under „Kalenderimport“."
+
 demo:
   title: "Prøv det lige her."
   hint: "Tryk på de understregede ord. Aftalen lander i jeres dag ovenfor."

@@ -187,6 +187,15 @@ html:not(.js) .js-only{display:none!important}
 .zeit .feature-text{max-width:28em;gap:18px}
 .zeit-note{font-size:15px;font-weight:600;color:var(--sage-text)}
 
+/* ---------- Home: Kommt bald ---------- */
+.soon{padding-top:clamp(72px,9vw,128px)}
+.soon-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 18px;max-width:40em;margin-bottom:clamp(8px,2vw,20px)}
+.soon-version{font-size:15px;font-weight:600;color:var(--sage-text)}
+.soon-list{list-style:none;margin:0;padding:0}
+.soon-list li{border-top:1px solid var(--ink);padding:26px 0 30px;display:flex;flex-direction:column;gap:10px;max-width:40em}
+.soon-list h3{font-family:var(--font)}
+.soon-list p{max-width:38em}
+
 /* ---------- Home: Demo ---------- */
 .demo-wrap{padding-top:clamp(88px,10vw,152px);padding-bottom:clamp(88px,10vw,152px)}
 .demo{background:var(--sage-tint);padding:clamp(40px,6vw,88px) clamp(24px,5vw,80px);display:flex;flex-direction:column;gap:32px}

@@ -128,6 +128,23 @@
 </section>
 {{- end }}
 
+{{- with $p.soon }}
+<section id="soon" class="wrap soon" aria-labelledby="soon-title">
+  <div class="soon-head">
+    <h2 id="soon-title" class="h-section">{{ .title }}</h2>
+    {{ with .version }}<p class="soon-version">{{ . }}</p>{{ end }}
+  </div>
+  <ul class="soon-list">
+    {{- range .items }}
+    <li>
+      <h3 class="h-feature-sm">{{ .title }}</h3>
+      <p class="copy">{{ .text }}</p>
+    </li>
+    {{- end }}
+  </ul>
+</section>
+{{- end }}
+
 <section id="demo" class="wrap demo-wrap" aria-labelledby="demo-title">
   <div class="demo">
     <div class="demo-head">
