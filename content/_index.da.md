@@ -65,7 +65,7 @@ soon:
   items:
     - title: "Kalenderimport"
       text: "Vælg aftaler i Apple Kalender og tag dem med over i TidTil, også i den gratis version. Vælg kalenderne og et tidsrum fra i dag: den næste måned eller de næste 3, 6 eller 12 måneder. Apple Kalender forbliver uændret. Importerede aftaler er først private og kan derefter enkeltvis gøres synlige for familien. I profilmenuen under „Kalenderimport“."
-    - title: "Tidlig eller sen uge på et øjeblik"
+    - title: "Tidlig eller sen vagt på et øjeblik"
       text: "Til skifteholdsarbejde: Et lille T eller S ved profilcirklen viser, hvilken uge det er. Det skifter selv hver uge, og du kan ændre enkelte uger. Indstillingen bliver kun på din iPhone. I profilmenuen under „Arbejdsuge“."
     - title: "Helligdage for din delstat"
       text: "Tyske helligdage for hele landet, for din delstat eller slået fra. Alle i familien vælger selv."
