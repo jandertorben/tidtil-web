@@ -1,6 +1,6 @@
 ---
 title: "TidTil"
-h1: "Vid, hvad der sker i dag."
+h1: "Vid, hvad der sker i dag. Og få tid til hinanden igen."
 kicker: "Familiekalenderen til iPhone"
 sub: "Fælles og private aftaler på ét blik – uden opgavelister, chats og unødvendige funktioner."
 proof: "Gratis at hente · Familie 14 dage gratis · Ingen konto · Ingen reklamer"
@@ -59,6 +59,25 @@ for_us:
   image: "img/feature-zeit-fuer-uns-en.webp"
   alt: "Invitation til en date i TidTil"
 
+soon:
+  title: "Kommer snart."
+  version: "TidTil 2.6"
+  items:
+    - title: "Kalenderimport"
+      text: "Vælg aftaler i Apple Kalender og tag dem med over i TidTil. Vælg kalenderne og et tidsrum fra i dag, for eksempel de næste tre måneder. Apple Kalender forbliver uændret. Importerede aftaler er først private og kan derefter enkeltvis gøres synlige for familien. I profilmenuen under „Kalenderimport“."
+    - title: "Tidlig eller sen vagt på et øjeblik"
+      text: "Til skifteholdsarbejde: Et lille T eller S ved profilcirklen viser, hvilken uge det er. Det skifter selv hver uge, og enkelte uger kan ændres. Indstillingen bliver kun på din iPhone."
+    - title: "Helligdage for din delstat"
+      text: "Tyske helligdage for hele landet, for din delstat eller slået fra. Indstillingen bliver på din iPhone."
+    - title: "„Tid til os“ altid i syne"
+      text: "Jeres foto med et hjerte rykker op ved siden af datoen, med jeres egen sætning nedenunder. Tryk på hjertet for at invitere til en date. En del af TidTil Familie."
+    - title: "Mere fleksible date-invitationer"
+      text: "Et tryk på notifikationen fører direkte til invitationen. Din egen invitation kan flyttes eller trækkes tilbage, så længe der ikke er kommet et svar."
+    - title: "Ugen på tværs"
+      text: "Vend din iPhone, og ugeplanen fra mandag til søndag er der."
+    - title: "Et nyt, roligt design"
+      text: "Et kalenderblad med dagens dato, en rund profilcirkel og en ryddelig bjælke øverst, lyst og mørkt."
+
 demo:
   title: "Prøv det lige her."
   hint: "Tryk på de understregede ord. Aftalen lander i jeres dag ovenfor."
@@ -105,7 +124,7 @@ privacy:
   facts:
     - title: "Ingen konto"
       text: "Ingen TidTil-brugerkonto, ingen ekstra adgangskode."
-    - title: "Ingen tracking, ingen reklamer"
+    - title: "Ingen reklamer, ingen reklametracking"
       text: "Abonnementsstatistik kun med dit samtykke – slået fra som standard."
     - title: "Jeres iCloud"
       text: "Synkronisering via Apples iCloud og CloudKit – ingen egne servere."

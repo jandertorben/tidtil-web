@@ -53,7 +53,7 @@ Kostenpflichtig ist nur die **Familienfreigabe**, mit der ihr Familienmitglieder
 
 ## Für wen das wichtig ist
 
-Wenn ihr einen Familienkalender sucht, der sich auf gemeinsame Termine konzentriert und dabei ohne Werbung, ohne Registrierung und ohne Datenauswertung auskommt, ist TidTil dafür gemacht.
+Wenn ihr einen Familienkalender sucht, der sich auf gemeinsame Termine konzentriert und dabei ohne Werbung, ohne Registrierung und ohne Auswertung eurer Termine auskommt, ist TidTil dafür gemacht.
 
 {{< appstore-button >}}
 

@@ -1,7 +1,7 @@
 ---
 title: "Datenschutz"
 slug: "datenschutz"
-updated: "Oktober 2026"
+updated: "November 2026"
 description: "Datenschutz bei TidTil: lokale Speicherung, iCloud/CloudKit, TidTil Familie, Käufe, Feedback und Website transparent erklärt."
 ---
 
@@ -21,7 +21,7 @@ Ein Datenschutzbeauftragter ist derzeit nicht benannt, da nach der aktuellen Unt
 - Kalender- und Profildaten werden lokal auf dem Gerät und über **Apple iCloud/CloudKit** verarbeitet.
 - Für die Familienfreigabe verwendet TidTil **CloudKit Sharing**. Freigegebene Inhalte sind für die von dir eingeladenen Mitglieder zugänglich.
 - TidTil betreibt **keinen eigenen Backend-Server für Kalenderinhalte**.
-- Kein Tracking, keine Werbung. Abo-Statistik nur mit deiner Zustimmung.
+- Keine Werbung, kein Werbe-Tracking. Abo-Statistik nur mit deiner Zustimmung.
 - Es gibt **keine Drittanbieter-SDKs**.
 - Erinnerungen und Hinweise auf neue Familientermine werden als **lokale iOS-Mitteilungen** erzeugt.
 - **TidTil Familie** kann einmalig 14 Tage kostenlos getestet werden. Der Testzugang endet automatisch und wird nicht kostenpflichtig verlängert.
@@ -103,7 +103,7 @@ Die lokale Datenbank wird mit dem iOS-Dateischutz `CompleteUntilFirstUserAuthent
 
 Für CloudKit gelten zusätzlich die Datenschutz- und Sicherheitsbestimmungen von Apple. TidTil betreibt keinen eigenen Anwendungsserver, an den deine privaten Kalenderinhalte zu Analyse- oder Werbezwecken übertragen werden.
 
-Es gibt kein Tracking und keine Drittanbieter-SDKs. Für den kostenlosen Testzeitraum wird eine gehashte iCloud-Kennung in CloudKit gespeichert.
+Es gibt kein Tracking zu Werbezwecken und keine Drittanbieter-SDKs. Für den kostenlosen Testzeitraum wird eine gehashte iCloud-Kennung in CloudKit gespeichert.
 
 ### Abo-Statistik (freiwillig, standardmäßig aus)
 
@@ -170,9 +170,9 @@ Kauf, Verlängerung, Wiederherstellung und Kündigung laufen **ausschließlich �
 
 Die Prüfung, ob ein gültiges kostenpflichtiges Abo vorliegt, findet **ausschließlich auf deinem Gerät** über Apples StoreKit statt. Dafür gibt es keinen eigenen TidTil-Server und keine Übermittlung von Zahlungsdaten an uns. Die davon getrennte Prüfung des einmaligen Testzugangs verwendet die oben beschriebenen technischen Berechtigungsdaten in iCloud/CloudKit. Wer TidTil bereits vor Version 2.2 genutzt hat, behält den Familienkalender dauerhaft kostenlos; auch diese Prüfung erfolgt lokal anhand des von Apple signierten Kaufnachweises.
 
-### 1.8 Keine Werbung, kein Tracking und keine Drittanbieter-SDKs
+### 1.8 Keine Werbung, kein Werbe-Tracking und keine Drittanbieter-SDKs
 
-TidTil verwendet kein Tracking und keine Drittanbieter-SDKs.
+TidTil betreibt kein Tracking zu Werbezwecken (auch nicht im Sinne von Apples App Tracking Transparency) und verwendet keine Drittanbieter-SDKs.
 
 - enthält TidTil keine Werbe-SDKs,
 - enthält TidTil keine Drittanbieter-SDKs,

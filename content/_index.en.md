@@ -1,6 +1,6 @@
 ---
 title: "TidTil"
-h1: "Know what’s on today."
+h1: "Know what’s on today. And make time for each other again."
 kicker: "The family calendar for iPhone"
 sub: "Shared and private events at a glance – without task lists, chats or feature overload."
 proof: "Free to download · Family free for 14 days · No account · No ads"
@@ -59,6 +59,25 @@ for_us:
   image: "img/feature-zeit-fuer-uns-en.webp"
   alt: "Invitation to a date in TidTil"
 
+soon:
+  title: "Coming soon."
+  version: "TidTil 2.6"
+  items:
+    - title: "Calendar import"
+      text: "Choose events from Apple Calendar and bring them into TidTil. Pick the calendars and a period starting today, for example the next three months. Apple Calendar stays unchanged. Imported events are private at first and can then be shared with the family one by one. In the profile menu, under “Calendar import”."
+    - title: "Early or late shift at a glance"
+      text: "For shift work: a small E or L on your profile circle shows which week it is. It switches every week on its own, and single weeks can be changed. The setting stays on your iPhone only."
+    - title: "Public holidays for your state"
+      text: "Public holidays in Germany, nationwide, for your federal state or switched off. The setting stays on your iPhone."
+    - title: "“Time for us”, always in view"
+      text: "Your photo with a heart moves next to the date, with your own line of text below. Tap the heart to invite your partner on a date. Part of TidTil Family."
+    - title: "More flexible date invitations"
+      text: "Tapping the notification takes you straight to the invitation. You can move or withdraw your own invitation as long as there is no answer yet."
+    - title: "Your week in landscape"
+      text: "Turn your iPhone sideways to see the week from Monday to Sunday."
+    - title: "A new, calm design"
+      text: "A calendar page showing the date, a round profile circle and a tidy bar at the top, in light and dark."
+
 demo:
   title: "Try it right here."
   hint: "Tap the underlined words. The event lands in your day above."
@@ -105,7 +124,7 @@ privacy:
   facts:
     - title: "No account"
       text: "No TidTil user account, no extra password."
-    - title: "No tracking, no ads"
+    - title: "No ads, no ad tracking"
       text: "Subscription statistics only with your consent – off by default."
     - title: "Your iCloud"
       text: "Syncing via Apple’s iCloud and CloudKit – no servers of our own."

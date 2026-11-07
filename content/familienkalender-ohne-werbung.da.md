@@ -53,7 +53,7 @@ Det eneste, der koster, er **familiedeling**, hvor I kan invitere familiemedlemm
 
 ## Hvem det betyder noget for
 
-Hvis I leder efter en familiekalender, der koncentrerer sig om de fælles aftaler og samtidig klarer sig uden reklamer, registrering og dataanalyse, er det præcis det, TidTil er bygget til.
+Hvis I leder efter en familiekalender, der koncentrerer sig om de fælles aftaler og samtidig klarer sig uden reklamer, registrering og analyse af jeres aftaler, er det præcis det, TidTil er bygget til.
 
 {{< appstore-button >}}
 

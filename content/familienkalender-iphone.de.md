@@ -62,7 +62,7 @@ TidTil ist kein Ersatz für einen vollständigen Kalender, sondern bewusst schla
 <tr><td>Familienmitglieder ohne eigenen Account</td><td>Ja, nur mit Namen</td><td>Nein – jedes Mitglied benötigt eine Apple-ID, auch Kinder (als Kinder-Account)<sup>7</sup></td><td>Nein – jedes Mitglied benötigt ein eigenes Google-Konto<sup>8</sup></td><td>In offiziellen Quellen nicht dokumentiert<sup>5,6</sup></td></tr>
 <tr><td>Aufgabenlisten, Notizen &amp; Extras</td><td>Bewusst nicht enthalten</td><td>Nicht Teil der Kalender-App (separate Erinnerungen-App)</td><td>Nicht Teil der Kalender-App (separate Tasks-App)</td><td>Ja – u.&nbsp;a. Aufgaben, Notizen, Rezepte, Reisekosten<sup>6</sup></td></tr>
 <tr><td>Werbung</td><td>Keine</td><td>–</td><td>–</td><td>Ja, laut App Store „Enthält Werbung“<sup>3</sup></td></tr>
-<tr><td>Tracking</td><td>Kein Tracking</td><td>–</td><td>–</td><td>Ja, laut Datenschutzangaben des Anbieters im App Store (Standort, Kontaktinformationen, Kennungen, Nutzungsdaten, Diagnose)<sup>9</sup></td></tr>
+<tr><td>Tracking</td><td>Kein Werbe-Tracking</td><td>–</td><td>–</td><td>Ja, laut Datenschutzangaben des Anbieters im App Store (Standort, Kontaktinformationen, Kennungen, Nutzungsdaten, Diagnose)<sup>9</sup></td></tr>
 </tbody>
 </table>
 </div>

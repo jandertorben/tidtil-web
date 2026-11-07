@@ -1,7 +1,7 @@
 ---
 title: "Privatliv"
 slug: "privatliv"
-updated: "oktober 2026"
+updated: "november 2026"
 description: "Privatliv hos TidTil – transparent information om appen og hjemmesiden."
 ---
 
@@ -21,7 +21,7 @@ Der er på nuværende tidspunkt ikke udpeget en databeskyttelsesrådgiver, da vi
 - Kalender- og profildata behandles lokalt på enheden og via **Apple iCloud/CloudKit**.
 - Familiedeling bruger **CloudKit Sharing**. Delt indhold er tilgængeligt for de personer, du inviterer.
 - TidTil driver **ingen egen backendserver til kalenderindhold**.
-- Ingen tracking, ingen reklamer. Abonnementsstatistik kun med dit samtykke.
+- Ingen reklamer, ingen reklametracking. Abonnementsstatistik kun med dit samtykke.
 - Der er **ingen tredjeparts-SDK'er**.
 - Påmindelser og beskeder om nye familieaftaler oprettes som **lokale iOS-notifikationer**.
 - **TidTil Familie** kan prøves gratis én gang i 14 dage. Prøveadgangen slutter automatisk og bliver ikke til et betalt abonnement.
@@ -103,7 +103,7 @@ Den lokale database er beskyttet med iOS-filbeskyttelsen `CompleteUntilFirstUser
 
 Apples privatlivs- og sikkerhedsvilkår gælder desuden for CloudKit. TidTil driver ikke en egen applikationsserver, hvortil privat kalenderindhold sendes med henblik på analyse eller reklamer.
 
-Der er ingen tracking og ingen tredjeparts-SDK'er. Til den gratis prøveperiode gemmes en hashet iCloud-identifikator i CloudKit.
+Der er ingen tracking til reklameformål og ingen tredjeparts-SDK'er. Til den gratis prøveperiode gemmes en hashet iCloud-identifikator i CloudKit.
 
 ### Abonnementsstatistik (frivillig, slået fra som standard)
 
@@ -170,9 +170,9 @@ Køb, fornyelse, gendannelse og opsigelse foregår **udelukkende via Apple og Ap
 
 Kontrollen af, om der findes et gyldigt betalt abonnement, sker **udelukkende på din enhed** via Apples StoreKit. Der er ingen egen TidTil-server involveret, og ingen betalingsdata overføres til os. Den separate kontrol af den gratis engangsprøve bruger de tekniske adgangsdata i iCloud/CloudKit, som er beskrevet ovenfor. Har du brugt TidTil før version 2.2, beholder du familiekalenderen gratis permanent; også den kontrol sker lokalt ud fra den kvittering, Apple har signeret.
 
-### 1.8 Ingen reklamer, ingen tracking og ingen tredjeparts-SDK'er
+### 1.8 Ingen reklamer, ingen reklametracking og ingen tredjeparts-SDK'er
 
-TidTil bruger ingen tracking og ingen tredjeparts-SDK'er.
+TidTil sporer dig ikke til reklameformål (heller ikke i betydningen af Apples App Tracking Transparency) og bruger ingen tredjeparts-SDK'er.
 
 - indeholder TidTil ingen reklame-SDK'er,
 - indeholder TidTil ingen tredjeparts-SDK'er,
