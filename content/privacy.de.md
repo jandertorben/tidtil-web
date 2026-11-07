@@ -23,6 +23,7 @@ Ein Datenschutzbeauftragter ist derzeit nicht benannt, da nach der aktuellen Unt
 - TidTil betreibt **keinen eigenen Backend-Server für Kalenderinhalte**.
 - Keine Werbung, kein Werbe-Tracking. Abo-Statistik nur mit deiner Zustimmung.
 - Es gibt **keine Drittanbieter-SDKs**.
+- Für den **Kalenderimport** liest TidTil nur mit deiner Erlaubnis den Apple Kalender auf deinem Gerät. Übernommen werden nur **Titel, Beginn und Ende** der Termine, die du auswählst. Nichts davon wird an uns übermittelt.
 - Erinnerungen und Hinweise auf neue Familientermine werden als **lokale iOS-Mitteilungen** erzeugt.
 - **TidTil Familie** kann einmalig 14 Tage kostenlos getestet werden. Der Testzugang endet automatisch und wird nicht kostenpflichtig verlängert.
 - Käufe und Abonnements werden über **Apple StoreKit/App Store** abgewickelt.
@@ -65,12 +66,12 @@ Bei einer aktiven Familienfreigabe können Namen und Terminzuordnungen der zur F
 Im eigenen Profil können folgende Daten gespeichert werden:
 
 - Name,
-- Telefonnummer,
-- E-Mail-Adresse,
 - frei gewählter Text für die Startkarte,
 - optionales Profilfoto.
 
-Diese Profildaten werden grundsätzlich dem privaten CloudKit-Bereich des jeweiligen Nutzers zugeordnet. Wenn du einen gemeinsamen Familienkalender verwendest, wird dein **Profilname zusätzlich im gemeinsamen Familienbereich veröffentlicht**, damit andere Familienmitglieder dich in der Teilnehmerliste erkennen können. Telefonnummer, E-Mail-Adresse, Profilfoto und Startkartentext werden durch diese Namensveröffentlichung nicht automatisch für Familienmitglieder freigegeben.
+Versionen vor 2.4 konnten im Profil auch eine Telefonnummer und eine E-Mail-Adresse speichern. Ab Version 2.6 leert TidTil diese beiden Felder beim Start der App; die Leerung wird auch über iCloud synchronisiert.
+
+Diese Profildaten werden grundsätzlich dem privaten CloudKit-Bereich des jeweiligen Nutzers zugeordnet. Wenn du einen gemeinsamen Familienkalender verwendest, wird dein **Profilname zusätzlich im gemeinsamen Familienbereich veröffentlicht**, damit andere Familienmitglieder dich in der Teilnehmerliste erkennen können. Profilfoto und Startkartentext werden durch diese Namensveröffentlichung nicht automatisch für Familienmitglieder freigegeben.
 
 ### CloudKit-Teilnehmerdaten
 
@@ -114,7 +115,7 @@ In der App gibt es unter „Daten & Freigabe“ den Schalter **„Abo-Statistik 
 - der Test ist abgelaufen,
 - ein Abo wurde abgeschlossen (mit der Angabe, ob vorher getestet wurde).
 
-Zu jedem Eintrag gehören Zeitpunkt, App-Version, Build-Nummer, iOS-Version und Gerätemodell. Der Eintrag ist pseudonym mit deinem iCloud-Konto verknüpft; deinen Namen, deine Apple-ID oder E-Mail-Adresse erfahren wir dadurch nicht. **Nie dabei** sind Termine, Namen, Familienmitglieder oder andere Kalenderinhalte. Andere Nutzer können die Einträge nicht lesen.
+Zu jedem Eintrag gehören Zeitpunkt, App-Version, Build-Nummer, iOS-Version und Gerätemodell. Der Eintrag selbst enthält keine Kennung. CloudKit vermerkt aber automatisch eine Kennung des Erstellers, die nur für unsere App gilt; dadurch ist der Eintrag pseudonym mit deinem iCloud-Konto verknüpft. Deinen Namen, deine Apple-ID oder E-Mail-Adresse erfahren wir dadurch nicht. **Nie dabei** sind Termine, Namen, Familienmitglieder oder andere Kalenderinhalte. Andere Nutzer können die Einträge nicht lesen.
 
 Wir nutzen die Abo-Statistik nur, um zu verstehen, ob TidTil Familie überzeugt – nicht für Werbung, Tracking oder Profile. Du kannst den Schalter jederzeit wieder ausschalten; danach wird nichts mehr übermittelt. Möchtest du bereits übermittelte Einträge gelöscht haben, schreib uns – die Adresse steht unten.
 
@@ -132,13 +133,23 @@ Für die Auswahl eines Profilfotos verwendet TidTil Apples **System-Fotoauswahl 
 
 Das gewählte Bild wird für das Profil verkleinert und in den Profildaten gespeichert. Es wird nicht an einen eigenen TidTil-Server übertragen.
 
+### Kalenderimport aus Apple Kalender (ab Version 2.6)
+
+Mit dem Kalenderimport kannst du Termine aus Apples Kalender-App in TidTil übernehmen. Dafür nutzt TidTil Apples Schnittstelle **EventKit**. Erst wenn du im Import auf „Zugriff erlauben“ tippst, fragt iOS, ob TidTil auf deine Kalender zugreifen darf. Ohne diese Erlaubnis liest TidTil keine Kalenderdaten. Du kannst sie jederzeit in den iOS-Einstellungen unter TidTil widerrufen.
+
+- **Nur lesen:** TidTil liest den Kalender ausschließlich, während du den Kalenderimport verwendest, und ändert, löscht oder ergänzt in Apple Kalender nichts.
+- **Nur auf dem Gerät:** Angezeigt werden die Kalender, die auf deinem Gerät in Apple Kalender eingebunden sind (gegebenenfalls auch von anderen Konten), und deren Termine im gewählten Zeitraum ab heute. Das Lesen, Anzeigen und Auswählen geschieht ausschließlich auf deinem Gerät. Kalenderdaten aus Apple Kalender werden nicht an uns übermittelt.
+- **Nur Titel, Beginn und Ende:** Von den Terminen, die du auswählst, übernimmt TidTil nur Titel, Beginn und Ende. Ort, Notizen, Teilnehmer, Erinnerungen, Farben und sonstige Angaben werden nicht übernommen.
+- **Zuerst privat:** Übernommene Termine werden wie selbst angelegte private Termine gespeichert, also lokal und in deinem privaten iCloud/CloudKit-Bereich (siehe 1.2). Für deine Familie werden sie erst sichtbar, wenn du einen Termin selbst freigibst.
+- **Einmalig:** Es gibt keinen laufenden Abgleich. Spätere Änderungen in Apple Kalender werden nicht automatisch übernommen.
+
 ### 1.5 Mitteilungen und Erinnerungen
 
 TidTil verwendet Apples Benachrichtigungssystem für:
 
 - selbst gewählte Erinnerungen an Termine,
 - Hinweise auf neu synchronisierte Familientermine, die dich betreffen,
-- auf Wunsch einen Tagesüberblick: eine lokale Mitteilung am Morgen mit allem, was heute ansteht. An freien Tagen bleibt sie still.
+- auf Wunsch einen Tagesüberblick (standardmäßig aus, einschaltbar unter „Daten & Freigabe“): eine lokale Mitteilung am Morgen mit allem, was heute ansteht. An freien Tagen bleibt sie still.
 
 Diese Mitteilungen werden auf dem Gerät über `UNUserNotificationCenter` erstellt. Inhalte können den Termintitel, Datum, Uhrzeit und gegebenenfalls den Namen des Familienmitglieds enthalten, das den Termin angelegt hat.
 
@@ -154,7 +165,13 @@ Einige nicht-inhaltliche Einstellungen werden lokal über Apples `UserDefaults` 
 
 - gewählte Akzentfarbe,
 - Einstellung für Hinweise auf neue Familientermine,
-- eine technische Fortschrittsmarke, damit bereits verarbeitete CloudKit-Änderungen nicht mehrfach gemeldet werden.
+- eine technische Fortschrittsmarke, damit bereits verarbeitete CloudKit-Änderungen nicht mehrfach gemeldet werden,
+- die Feiertags-Einstellung (aus, bundesweit oder ein Bundesland, gegebenenfalls mit örtlichen Feiertagen wie Mariä Himmelfahrt, Augsburger Friedensfest oder Fronleichnam in Teilen von Sachsen und Thüringen),
+- die Einstellung „Arbeitswoche“ (Früh- oder Spätschicht, Bezugswoche und einzeln geänderte Wochen),
+- die Einstellungen für den Tagesüberblick (ein oder aus, Uhrzeit),
+- deine Entscheidung zur Abo-Statistik und technische Zeitstempel, damit ein Ereignis nicht mehrfach übermittelt wird.
+
+Feiertage und Arbeitswoche werden nur auf diesem Gerät gespeichert. Sie werden weder mit deiner Familie geteilt noch über iCloud/CloudKit synchronisiert.
 
 Diese Einstellungen dienen ausschließlich der App-Funktion und werden nicht für Werbung oder Profiling verwendet.
 
@@ -264,7 +281,7 @@ Soweit die DSGVO anwendbar ist, stützen wir die Verarbeitung insbesondere auf:
 - **Art. 6 Abs. 1 lit. b DSGVO**, soweit die Verarbeitung zur Bereitstellung von App-Funktionen, Synchronisierung, Testzugängen, Käufen und Abonnements oder zur Bearbeitung vertragsbezogener Anfragen erforderlich ist,
 - **Art. 6 Abs. 1 lit. f DSGVO**, soweit die Verarbeitung zur sicheren und zuverlässigen Bereitstellung der Website oder zur Bearbeitung allgemeiner Anfragen erforderlich ist.
 
-Soweit eine Verarbeitung ausschließlich durch eine freiwillige Funktion ausgelöst wird – etwa das Auswählen eines Profilfotos, das Aktivieren einer Erinnerung oder das Einladen von Familienmitgliedern – erfolgt die Verarbeitung nur, wenn du diese Funktion aktiv nutzt. Soweit für einzelne Vorgänge künftig eine Einwilligung erforderlich sein sollte, wird TidTil diese gesondert einholen.
+Soweit eine Verarbeitung ausschließlich durch eine freiwillige Funktion ausgelöst wird – etwa das Auswählen eines Profilfotos, das Aktivieren einer Erinnerung, das Übernehmen von Terminen aus Apple Kalender oder das Einladen von Familienmitgliedern – erfolgt die Verarbeitung nur, wenn du diese Funktion aktiv nutzt. Soweit für einzelne Vorgänge künftig eine Einwilligung erforderlich sein sollte, wird TidTil diese gesondert einholen.
 
 ## 5. Deine Rechte
 
