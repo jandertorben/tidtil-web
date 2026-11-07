@@ -67,7 +67,7 @@ soon:
   items:
     - title: "Kalenderimport"
       text: "Termine aus dem Apple Kalender auswählen und in TidTil übernehmen. Dazu die Kalender und einen Zeitraum ab heute wählen, zum Beispiel die nächsten drei Monate. Der Apple Kalender bleibt unverändert. Übernommene Termine sind zuerst privat und werden einzeln für die Familie freigegeben. Im Profilmenü unter „Kalenderimport“."
-    - title: "Früh- oder Spätwoche auf einen Blick"
+    - title: "Früh- oder Spätschicht auf einen Blick"
       text: "Für Schichtdienst: Ein kleines F oder S am Profilkreis zeigt, welche Woche ist. Es wechselt jede Woche von selbst, einzelne Wochen lassen sich ändern. Die Einstellung bleibt nur auf deinem iPhone."
     - title: "Feiertage für dein Bundesland"
       text: "Gesetzliche Feiertage in Deutschland, bundesweit, für dein Bundesland oder ganz aus. Die Einstellung bleibt auf deinem iPhone."
