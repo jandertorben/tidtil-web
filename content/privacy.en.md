@@ -23,6 +23,7 @@ No data protection officer is currently designated because, based on the present
 - TidTil operates **no proprietary backend server for calendar content**.
 - No ads, no ad tracking. Subscription statistics only with your consent.
 - There are **no third-party SDKs**.
+- For the **calendar import**, TidTil reads Apple Calendar on your device only with your permission. Only the **title, start and end** of the events you select are taken over. None of this is sent to us.
 - Event reminders and notifications about new family events are generated as **local iOS notifications**.
 - **TidTil Family** can be tried once free of charge for 14 days. The trial access ends automatically and does not convert into a paid subscription.
 - Purchases and subscriptions are handled through **Apple StoreKit/App Store**.
@@ -65,12 +66,12 @@ When family sharing is active, names and event assignments of people belonging t
 Your own profile may contain:
 
 - name,
-- telephone number,
-- email address,
 - custom text for the home card,
 - optional profile photo.
 
-These profile details are generally associated with the user's private CloudKit area. When you use a shared family calendar, your **profile name is additionally published within the shared family area** so that other family members can identify you in the participant list. This name publication does not automatically share your telephone number, email address, profile photo or home-card text with family members.
+Versions before 2.4 could also store a telephone number and an email address in the profile. From version 2.6, TidTil clears these two fields when the app starts; the cleared fields are also synchronised through iCloud.
+
+These profile details are generally associated with the user's private CloudKit area. When you use a shared family calendar, your **profile name is additionally published within the shared family area** so that other family members can identify you in the participant list. This name publication does not automatically share your profile photo or home-card text with family members.
 
 ### CloudKit participant data
 
@@ -114,7 +115,7 @@ Under "Data & Sharing" the app has a switch called **"Share subscription statist
 - the trial expired,
 - a subscription was purchased (with whether a trial came first).
 
-Each entry includes the time, app version, build number, iOS version and device model. It is linked pseudonymously to your iCloud account; it does not tell us your name, Apple ID or email address. Events, names, family members or other calendar content are **never** included. Other users cannot read these entries.
+Each entry includes the time, app version, build number, iOS version and device model. The entry itself contains no identifier. CloudKit does, however, automatically record an identifier of the creator that is valid only for our app; this links the entry pseudonymously to your iCloud account. It does not tell us your name, Apple ID or email address. Events, names, family members or other calendar content are **never** included. Other users cannot read these entries.
 
 We use subscription statistics only to understand whether TidTil Family is convincing – not for advertising, tracking or profiling. You can turn the switch off at any time; nothing is sent after that. If you want entries already sent to be deleted, write to us – the address is below.
 
@@ -132,13 +133,23 @@ TidTil uses Apple's **system photo picker (PhotosPicker)** to select a profile p
 
 The selected image is resized for use as a profile image and stored with the profile data. It is not uploaded to a proprietary TidTil server.
 
+### Calendar import from Apple Calendar (from version 2.6)
+
+The calendar import lets you take over events from Apple's Calendar app into TidTil. TidTil uses Apple's **EventKit** interface for this. Only when you tap “Allow access” in the import does iOS ask whether TidTil may access your calendars. Without this permission, TidTil reads no calendar data. You can revoke it at any time in the iOS Settings under TidTil.
+
+- **Read only:** TidTil reads the calendar only while you use the calendar import, and does not change, delete or add anything in Apple Calendar.
+- **On the device only:** The import shows the calendars set up in Apple Calendar on your device (including those from other accounts, if any) and their events within the period you choose, starting today. Reading, displaying and selecting happen on your device only. Calendar data from Apple Calendar is not sent to us.
+- **Only title, start and end:** For the events you select, TidTil takes over only the title, start and end. Location, notes, attendees, alerts, colours and other details are not taken over.
+- **Private first:** Imported events are stored like private events you create yourself, i.e. locally and in your private iCloud/CloudKit scope (see 1.2). Your family sees an event only once you share it yourself.
+- **One-off:** There is no ongoing sync. Later changes in Apple Calendar are not taken over automatically.
+
 ### 1.5 Notifications and reminders
 
 TidTil uses Apple's notification system for:
 
 - reminders you choose for events,
 - notifications about newly synchronised family events that concern you,
-- if you want, a daily overview: one local notification in the morning with everything on today. On free days it stays quiet.
+- if you want, a daily overview (off by default, can be switched on under “Data & Sharing”): one local notification in the morning with everything on today. On free days it stays quiet.
 
 These notifications are generated on the device using `UNUserNotificationCenter`. Notification content may include the event title, date, time and, where available, the name of the family member who created the event.
 
@@ -154,7 +165,13 @@ Some non-content settings are stored locally through Apple's `UserDefaults` / Sw
 
 - selected accent colour,
 - preference for notifications about new family events,
-- a technical progress token that prevents already processed CloudKit changes from generating duplicate notifications.
+- a technical progress token that prevents already processed CloudKit changes from generating duplicate notifications,
+- the public holiday setting (off, nationwide or a federal state, optionally with local holidays such as Assumption Day, the Augsburg Peace Festival or Corpus Christi in parts of Saxony and Thuringia),
+- the “Work week” setting (early or late week, reference week and individually changed weeks),
+- daily overview settings (on or off, time),
+- your choice regarding subscription statistics and technical timestamps that prevent an event from being sent more than once.
+
+Holidays and work week are stored on this device only. They are neither shared with your family nor synchronised through iCloud/CloudKit.
 
 These settings are used only for app functionality and not for advertising or profiling.
 
@@ -264,7 +281,7 @@ Where the GDPR applies, we rely in particular on:
 - **Art. 6(1)(b) GDPR** where processing is necessary to provide app functionality, synchronisation, trial access, purchases and subscriptions or to handle contract-related enquiries,
 - **Art. 6(1)(f) GDPR** where processing is necessary for secure and reliable website operation or handling general enquiries.
 
-Where processing is triggered solely by an optional feature – such as selecting a profile photo, enabling a reminder or inviting family members – processing occurs only when you actively use that feature. If consent becomes legally required for a particular operation in the future, TidTil will request it separately.
+Where processing is triggered solely by an optional feature – such as selecting a profile photo, enabling a reminder, taking over events from Apple Calendar or inviting family members – processing occurs only when you actively use that feature. If consent becomes legally required for a particular operation in the future, TidTil will request it separately.
 
 ## 5. Your rights
 

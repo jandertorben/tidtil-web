@@ -23,6 +23,7 @@ Der er på nuværende tidspunkt ikke udpeget en databeskyttelsesrådgiver, da vi
 - TidTil driver **ingen egen backendserver til kalenderindhold**.
 - Ingen reklamer, ingen reklametracking. Abonnementsstatistik kun med dit samtykke.
 - Der er **ingen tredjeparts-SDK'er**.
+- Til **kalenderimporten** læser TidTil kun Apple Kalender på din enhed med din tilladelse. Kun **titel, start og slut** for de aftaler, du vælger, overføres. Intet af det sendes til os.
 - Påmindelser og beskeder om nye familieaftaler oprettes som **lokale iOS-notifikationer**.
 - **TidTil Familie** kan prøves gratis én gang i 14 dage. Prøveadgangen slutter automatisk og bliver ikke til et betalt abonnement.
 - Køb og abonnementer håndteres via **Apple StoreKit/App Store**.
@@ -65,12 +66,12 @@ Når familiedeling er aktiv, kan navne og aftaletilknytninger for personer i fam
 Din egen profil kan indeholde:
 
 - navn,
-- telefonnummer,
-- e-mailadresse,
 - en valgfri tekst til startkortet,
 - valgfrit profilbillede.
 
-Disse profildata er som udgangspunkt knyttet til brugerens private CloudKit-område. Når du bruger en delt familiekalender, offentliggøres dit **profilnavn desuden i familiens delte område**, så andre familiemedlemmer kan genkende dig på deltagerlisten. Denne navnedeling deler ikke automatisk dit telefonnummer, din e-mailadresse, dit profilbillede eller teksten på startkortet med familien.
+Versioner før 2.4 kunne også gemme et telefonnummer og en e-mailadresse i profilen. Fra version 2.6 tømmer TidTil disse to felter, når appen starter; tømningen synkroniseres også via iCloud.
+
+Disse profildata er som udgangspunkt knyttet til brugerens private CloudKit-område. Når du bruger en delt familiekalender, offentliggøres dit **profilnavn desuden i familiens delte område**, så andre familiemedlemmer kan genkende dig på deltagerlisten. Denne navnedeling deler ikke automatisk dit profilbillede eller teksten på startkortet med familien.
 
 ### CloudKit-deltagerdata
 
@@ -114,7 +115,7 @@ I appen findes kontakten **„Del abonnementsstatistik“**. Den er som standard
 - prøveperioden er udløbet,
 - et abonnement blev købt (med angivelse af, om der var prøvet forinden).
 
-Hver post indeholder tidspunkt, appversion, buildnummer, iOS-version og enhedsmodel. Posten er pseudonymt knyttet til din iCloud-konto; den fortæller os ikke dit navn, dit Apple-id eller din e-mailadresse. Aftaler, navne, familiemedlemmer eller andet kalenderindhold er **aldrig** med. Andre brugere kan ikke læse posterne.
+Hver post indeholder tidspunkt, appversion, buildnummer, iOS-version og enhedsmodel. Selve posten indeholder ingen identifikator. CloudKit registrerer dog automatisk en identifikator for den, der har oprettet posten, og den gælder kun for vores app; derved er posten pseudonymt knyttet til din iCloud-konto. Den fortæller os ikke dit navn, dit Apple-id eller din e-mailadresse. Aftaler, navne, familiemedlemmer eller andet kalenderindhold er **aldrig** med. Andre brugere kan ikke læse posterne.
 
 Vi bruger abonnementsstatistikken kun til at forstå, om TidTil Familie overbeviser – ikke til reklamer, tracking eller profilering. Du kan slå kontakten fra igen når som helst; derefter sendes der ikke mere. Hvis du vil have allerede sendte poster slettet, så skriv til os – adressen står nedenfor.
 
@@ -132,13 +133,23 @@ TidTil bruger Apples **system-billedvælger (PhotosPicker)** til valg af profilb
 
 Det valgte billede skaleres ned til brug som profilbillede og gemmes sammen med profildataene. Det uploades ikke til en egen TidTil-server.
 
+### Kalenderimport fra Apple Kalender (fra version 2.6)
+
+Med kalenderimporten kan du overføre aftaler fra Apples Kalender-app til TidTil. TidTil bruger hertil Apples grænseflade **EventKit**. Først når du trykker på „Tillad adgang“ i importen, spørger iOS, om TidTil må få adgang til dine kalendere. Uden denne tilladelse læser TidTil ingen kalenderdata. Du kan til enhver tid tilbagekalde den i iOS-indstillingerne under TidTil.
+
+- **Kun læsning:** TidTil læser kun kalenderen, mens du bruger kalenderimporten, og ændrer, sletter eller tilføjer intet i Apple Kalender.
+- **Kun på enheden:** Importen viser de kalendere, der er sat op i Apple Kalender på din enhed (evt. også fra andre konti), og deres aftaler i det valgte tidsrum fra i dag. Læsning, visning og valg sker udelukkende på din enhed. Kalenderdata fra Apple Kalender sendes ikke til os.
+- **Kun titel, start og slut:** For de aftaler, du vælger, overfører TidTil kun titel, start og slut. Sted, noter, deltagere, påmindelser, farver og andre oplysninger overføres ikke.
+- **Først privat:** Overførte aftaler gemmes som private aftaler, du selv har oprettet, dvs. lokalt og i dit private iCloud/CloudKit-område (se 1.2). Din familie ser først en aftale, når du selv deler den.
+- **Én gang:** Der er ingen løbende synkronisering. Senere ændringer i Apple Kalender overføres ikke automatisk.
+
 ### 1.5 Notifikationer og påmindelser
 
 TidTil bruger Apples notifikationssystem til:
 
 - påmindelser, som du selv vælger til aftaler,
 - beskeder om nye synkroniserede familieaftaler, der vedrører dig,
-- efter ønske et dagsoverblik: en lokal notifikation om morgenen med alt, hvad der er på programmet i dag. På fridage forbliver den stille.
+- efter ønske et dagsoverblik (slået fra som standard, kan slås til i appens indstillinger): en lokal notifikation om morgenen med alt, hvad der er på programmet i dag. På fridage forbliver den stille.
 
 Disse notifikationer oprettes på enheden via `UNUserNotificationCenter`. Indholdet kan omfatte aftalens titel, dato, tidspunkt og eventuelt navnet på det familiemedlem, der oprettede aftalen.
 
@@ -154,7 +165,13 @@ Nogle ikke-indholdsmæssige indstillinger gemmes lokalt via Apples `UserDefaults
 
 - valgt accentfarve,
 - indstilling for beskeder om nye familieaftaler,
-- et teknisk fremdriftstoken, der forhindrer, at allerede behandlede CloudKit-ændringer udløser dobbelte beskeder.
+- et teknisk fremdriftstoken, der forhindrer, at allerede behandlede CloudKit-ændringer udløser dobbelte beskeder,
+- indstillingen for helligdage (slået fra, hele landet eller en delstat, evt. med lokale helligdage som Mariæ Himmelfart, fredsfesten i Augsburg eller Kristi Legemsfest i dele af Sachsen og Thüringen),
+- indstillingen „Arbejdsuge“ (tidlig eller sen uge, referenceuge og enkeltvis ændrede uger),
+- indstillingerne for dagsoverblikket (til eller fra, tidspunkt),
+- dit valg om abonnementsstatistik og tekniske tidsstempler, så en hændelse ikke sendes flere gange.
+
+Helligdage og arbejdsuge gemmes kun på denne enhed. De deles hverken med din familie eller synkroniseres via iCloud/CloudKit.
 
 Disse indstillinger bruges kun til appens funktion og ikke til reklamer eller profilering.
 
@@ -264,7 +281,7 @@ Når GDPR finder anvendelse, baserer vi især behandlingen på:
 - **GDPR artikel 6, stk. 1, litra b**, når behandlingen er nødvendig for at levere appfunktioner, synkronisering, prøveadgang, køb og abonnementer eller behandle kontraktrelaterede henvendelser,
 - **GDPR artikel 6, stk. 1, litra f**, når behandlingen er nødvendig for sikker og pålidelig drift af hjemmesiden eller behandling af generelle henvendelser.
 
-Når behandling alene udløses af en valgfri funktion – f.eks. valg af profilbillede, aktivering af en påmindelse eller invitation af familiemedlemmer – sker behandlingen kun, når du aktivt bruger funktionen. Hvis samtykke fremover bliver juridisk nødvendigt for en bestemt behandling, vil TidTil indhente det særskilt.
+Når behandling alene udløses af en valgfri funktion – f.eks. valg af profilbillede, aktivering af en påmindelse, overførsel af aftaler fra Apple Kalender eller invitation af familiemedlemmer – sker behandlingen kun, når du aktivt bruger funktionen. Hvis samtykke fremover bliver juridisk nødvendigt for en bestemt behandling, vil TidTil indhente det særskilt.
 
 ## 5. Dine rettigheder
 
