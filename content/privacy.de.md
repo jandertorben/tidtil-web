@@ -167,7 +167,7 @@ Einige nicht-inhaltliche Einstellungen werden lokal über Apples `UserDefaults` 
 - Einstellung für Hinweise auf neue Familientermine,
 - eine technische Fortschrittsmarke, damit bereits verarbeitete CloudKit-Änderungen nicht mehrfach gemeldet werden,
 - die Feiertags-Einstellung (aus, bundesweit oder ein Bundesland, gegebenenfalls mit örtlichen Feiertagen wie Mariä Himmelfahrt, Augsburger Friedensfest oder Fronleichnam in Teilen von Sachsen und Thüringen),
-- die Einstellung „Arbeitswoche“ (Früh- oder Spätwoche, Bezugswoche und einzeln geänderte Wochen),
+- die Einstellung „Arbeitswoche“ (Früh- oder Spätschicht, Bezugswoche und einzeln geänderte Wochen),
 - die Einstellungen für den Tagesüberblick (ein oder aus, Uhrzeit),
 - deine Entscheidung zur Abo-Statistik und technische Zeitstempel, damit ein Ereignis nicht mehrfach übermittelt wird.
 

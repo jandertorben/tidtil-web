@@ -139,7 +139,7 @@ faq:
   - q: "Was wird beim Import übernommen?"
     a: "Titel, Beginn und Ende. Ort, Notizen, Teilnehmer und Erinnerungen kommen nicht mit. Wiederkehrende Termine kommen als einzelne Termine im gewählten Zeitraum an. Mehrtägige ganztägige Termine wie ein Urlaub werden übernommen, ganztägige Termine an einem einzelnen Tag noch nicht. Was es in TidTil schon gibt (gleicher Titel, gleicher Beginn), wird nicht doppelt übernommen, abgesagte Termine bleiben draußen. Pro Durchgang sind es bis zu 300 Termine. Der Import ist einmalig: Spätere Änderungen im Apple Kalender kommen nicht automatisch nach."
   - q: "Sieht meine Familie meine Schicht?"
-    a: "Nein. Das F oder S für Früh- oder Spätwoche bleibt nur auf deinem iPhone. Es geht weder an die Familie noch in iCloud."
+    a: "Nein. Das F oder S für Früh- oder Spätschicht bleibt nur auf deinem iPhone. Es geht weder an die Familie noch in iCloud."
   - q: "Brauche ich ein Konto?"
     a: "Nein. Es gibt kein eigenes Benutzerkonto und kein zusätzliches Passwort. TidTil nutzt Apples iCloud- und CloudKit-Infrastruktur."
   - q: "Braucht jedes Familienmitglied ein Abo?"

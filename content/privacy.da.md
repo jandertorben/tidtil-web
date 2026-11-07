@@ -149,7 +149,7 @@ TidTil bruger Apples notifikationssystem til:
 
 - påmindelser, som du selv vælger til aftaler,
 - beskeder om nye synkroniserede familieaftaler, der vedrører dig,
-- efter ønske et dagsoverblik (slået fra som standard, kan slås til i appens indstillinger): en lokal notifikation om morgenen med alt, hvad der er på programmet i dag. På fridage forbliver den stille.
+- efter ønske et dagsoverblik (slået fra som standard, kan slås til under „Data & deling“): en lokal notifikation om morgenen med alt, hvad der er på programmet i dag. På fridage forbliver den stille.
 
 Disse notifikationer oprettes på enheden via `UNUserNotificationCenter`. Indholdet kan omfatte aftalens titel, dato, tidspunkt og eventuelt navnet på det familiemedlem, der oprettede aftalen.
 
@@ -167,7 +167,7 @@ Nogle ikke-indholdsmæssige indstillinger gemmes lokalt via Apples `UserDefaults
 - indstilling for beskeder om nye familieaftaler,
 - et teknisk fremdriftstoken, der forhindrer, at allerede behandlede CloudKit-ændringer udløser dobbelte beskeder,
 - indstillingen for helligdage (slået fra, hele landet eller en delstat, evt. med lokale helligdage som Mariæ Himmelfart, fredsfesten i Augsburg eller Kristi Legemsfest i dele af Sachsen og Thüringen),
-- indstillingen „Arbejdsuge“ (tidlig eller sen uge, referenceuge og enkeltvis ændrede uger),
+- indstillingen „Arbejdsuge“ (tidlig eller sen vagt, referenceuge og enkeltvis ændrede uger),
 - indstillingerne for dagsoverblikket (til eller fra, tidspunkt),
 - dit valg om abonnementsstatistik og tekniske tidsstempler, så en hændelse ikke sendes flere gange.
 

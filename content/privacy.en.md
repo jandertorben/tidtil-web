@@ -167,7 +167,7 @@ Some non-content settings are stored locally through Apple's `UserDefaults` / Sw
 - preference for notifications about new family events,
 - a technical progress token that prevents already processed CloudKit changes from generating duplicate notifications,
 - the public holiday setting (off, nationwide or a federal state, optionally with local holidays such as Assumption Day, the Augsburg Peace Festival or Corpus Christi in parts of Saxony and Thuringia),
-- the “Work week” setting (early or late week, reference week and individually changed weeks),
+- the “Work week” setting (early or late shift, reference week and individually changed weeks),
 - daily overview settings (on or off, time),
 - your choice regarding subscription statistics and technical timestamps that prevent an event from being sent more than once.
 
