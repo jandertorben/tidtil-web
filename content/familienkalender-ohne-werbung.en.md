@@ -53,7 +53,7 @@ The only paid part is **family sharing**, which lets you invite family members a
 
 ## Who this matters for
 
-If you're looking for a family calendar that concentrates on shared events while doing without ads, registration and data analysis, that's exactly what TidTil is built for.
+If you're looking for a family calendar that concentrates on shared events while doing without ads, registration and analysis of your events, that's exactly what TidTil is built for.
 
 {{< appstore-button >}}
 

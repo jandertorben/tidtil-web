@@ -1,6 +1,6 @@
 ---
 title: "TidTil"
-h1: "Wissen, was heute ansteht."
+h1: "Wissen, was heute ansteht. Und wieder Zeit für euch."
 kicker: "Der ruhige Familienkalender fürs iPhone"
 sub: "Gemeinsame und private Termine auf einen Blick – ohne Aufgabenlisten, Chats und Funktionsballast."
 proof: "Kostenlos laden · Familie 14 Tage gratis · Kein Konto · Keine Werbung"
@@ -67,6 +67,18 @@ soon:
   items:
     - title: "Kalenderimport"
       text: "Termine aus dem Apple Kalender auswählen und in TidTil übernehmen. Dazu die Kalender und einen Zeitraum ab heute wählen, zum Beispiel die nächsten drei Monate. Der Apple Kalender bleibt unverändert. Übernommene Termine sind zuerst privat und werden einzeln für die Familie freigegeben. Im Profilmenü unter „Kalenderimport“."
+    - title: "Früh- oder Spätwoche auf einen Blick"
+      text: "Für Schichtdienst: Ein kleines F oder S am Profilkreis zeigt, welche Woche ist. Es wechselt jede Woche von selbst, einzelne Wochen lassen sich ändern. Die Einstellung bleibt nur auf deinem iPhone."
+    - title: "Feiertage für dein Bundesland"
+      text: "Gesetzliche Feiertage in Deutschland, bundesweit, für dein Bundesland oder ganz aus. Die Einstellung bleibt auf deinem iPhone."
+    - title: "„Zeit für uns“ immer im Blick"
+      text: "Euer Foto mit Herz rückt neben das Datum, darunter steht euer eigener Satz. Ein Tipp aufs Herz lädt zum Date ein. Teil von TidTil Familie."
+    - title: "Date-Einladungen, flexibler"
+      text: "Ein Tipp auf die Mitteilung führt direkt zur Einladung. Die eigene Einladung lässt sich verschieben oder zurückziehen, solange noch keine Antwort da ist."
+    - title: "Die Woche im Querformat"
+      text: "iPhone quer drehen, und der Wochenplan von Montag bis Sonntag ist da."
+    - title: "Ein neues, ruhiges Design"
+      text: "Ein Kalenderblatt mit der Tageszahl, ein runder Profilkreis und eine aufgeräumte Leiste oben, hell wie dunkel."
 
 demo:
   title: "Tragt es gleich hier ein."
@@ -114,7 +126,7 @@ privacy:
   facts:
     - title: "Kein Konto"
       text: "Kein TidTil-Benutzerkonto, kein zusätzliches Passwort."
-    - title: "Kein Tracking, keine Werbung"
+    - title: "Keine Werbung, kein Werbe-Tracking"
       text: "Abo-Statistik nur mit deiner Zustimmung – standardmäßig aus."
     - title: "Eure iCloud"
       text: "Synchronisierung über Apples iCloud und CloudKit – keine eigenen Server."
