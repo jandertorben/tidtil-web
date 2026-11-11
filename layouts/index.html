@@ -85,6 +85,7 @@
       <div class="feature-text">
         <h3 class="h-feature">{{ .title }}</h3>
         <p class="copy">{{ .text }}</p>
+        {{- with .siri }}<p class="copy">{{ . }}</p>{{ end }}
       </div>
       <figure class="photo feature-photo"><img src="{{ .image | relURL }}" alt="{{ .alt }}" width="1122" height="1402" loading="lazy" decoding="async"></figure>
     </div>
