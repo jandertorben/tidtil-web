@@ -211,7 +211,7 @@ Die aktuelle App-Version behandelt Daten insbesondere wie folgt:
 - „App vollständig zurücksetzen“ entfernt bzw. leert die eigenen Termine, eigenen Personen-Einträge und Profildaten. Daten anderer Teilnehmer im gemeinsamen Kalender werden dadurch nicht pauschal gelöscht.
 - Eine bestehende CloudKit-Freigabe muss gegebenenfalls zusätzlich über die Familien-/Freigabeverwaltung beendet oder verlassen werden.
 - Das bloße Löschen der App vom iPhone bedeutet **nicht zwingend**, dass bereits in iCloud/CloudKit gespeicherte Daten gelöscht werden.
-- Beginn, Ende und Status des Testzugangs werden so lange gespeichert, wie dies für seine Bereitstellung und Abwicklung erforderlich ist. Die Information, dass der einmalige Testzugang bereits verwendet wurde, bleibt gespeichert, solange dies erforderlich ist, um eine erneute Nutzung zu verhindern. Gesetzliche Löschungsansprüche bleiben unberührt.
+- Beginn, Ende und Status des Testzugangs werden so lange gespeichert, wie dies für seine Bereitstellung und Abwicklung erforderlich ist. Dieselbe Speicherung ermöglicht uns die oben beschriebene Zählung in der Summe. Die Information, dass der einmalige Testzugang bereits verwendet wurde, bleibt gespeichert, solange dies erforderlich ist, um eine erneute Nutzung zu verhindern. Gesetzliche Löschungsansprüche bleiben unberührt.
 
 ### 1.10 Kinder und andere Personen ohne eigenes Gerät
 

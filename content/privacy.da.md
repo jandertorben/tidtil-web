@@ -211,7 +211,7 @@ Den nuværende appversion håndterer data blandt andet således:
 - “Nulstil appen helt” fjerner eller nulstiller dine egne aftaler, egne personposter og profildata. Andre deltageres data i den fælles kalender slettes ikke generelt af denne funktion.
 - En eksisterende CloudKit-deling skal eventuelt også afsluttes eller forlades via familie-/delingsadministrationen.
 - Hvis du blot sletter appen fra din iPhone, betyder det **ikke nødvendigvis**, at data, der allerede er gemt i iCloud/CloudKit, slettes.
-- Prøveadgangens start, slutning og status gemmes, så længe det er nødvendigt for at levere og administrere den. Oplysningen om, at engangsprøven allerede er blevet brugt, gemmes, så længe det er nødvendigt for at forhindre gentagen brug. Lovbestemte rettigheder til sletning berøres ikke.
+- Prøveadgangens start, slutning og status gemmes, så længe det er nødvendigt for at levere og administrere den. Den samme opbevaring gør det muligt for os at foretage den samlede optælling, der er beskrevet ovenfor. Oplysningen om, at engangsprøven allerede er blevet brugt, gemmes, så længe det er nødvendigt for at forhindre gentagen brug. Lovbestemte rettigheder til sletning berøres ikke.
 
 ### 1.10 Børn og andre personer uden egen enhed
 

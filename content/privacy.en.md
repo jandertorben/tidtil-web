@@ -211,7 +211,7 @@ The current app version handles data in particular as follows:
 - “Reset app completely” removes or clears your own events, your own person entries and profile data. It does not indiscriminately delete other participants' data from the shared calendar.
 - An existing CloudKit share may additionally need to be ended or left through the family/sharing controls.
 - Simply deleting the app from the iPhone does **not necessarily** delete data already stored in iCloud/CloudKit.
-- The start, end and status of trial access are retained for as long as necessary to provide and administer it. The information that the one-time trial access has already been used is retained for as long as necessary to prevent repeated use. Statutory rights to erasure remain unaffected.
+- The start, end and status of trial access are retained for as long as necessary to provide and administer it. The same storage allows us to carry out the aggregate count described above. The information that the one-time trial access has already been used is retained for as long as necessary to prevent repeated use. Statutory rights to erasure remain unaffected.
 
 ### 1.10 Children and other people without their own device
 
