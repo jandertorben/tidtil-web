@@ -1,7 +1,7 @@
 ---
 title: "Datenschutz"
 slug: "datenschutz"
-updated: "November 2026"
+updated: "15. November 2026"
 description: "Datenschutz bei TidTil: lokale Speicherung, iCloud/CloudKit, TidTil Familie, Käufe, Feedback und Website transparent erklärt."
 ---
 
@@ -94,7 +94,7 @@ Für den einmaligen 14-tägigen Testzugang zu **TidTil Familie** verarbeitet die
 - die Information, ob der Testzugang bereits verwendet wurde,
 - eine gehashte iCloud-Kennung.
 
-Diese Angaben werden in der öffentlichen Datenbank unseres iCloud-Containers gespeichert; andere Nutzer können den Datensatz nicht lesen. Für den kostenlosen Testzeitraum wird die gehashte iCloud-Kennung in CloudKit gespeichert. Die Angaben können auf dem Gerät zwischengespeichert werden. Sie enthalten keine Kalenderinhalte und werden ausschließlich verwendet, um den Testzugang bereitzustellen, die verbleibende Testdauer zu bestimmen und eine mehrfache Nutzung zu verhindern.
+Diese Angaben werden in der öffentlichen Datenbank unseres iCloud-Containers gespeichert; andere Nutzer können den Datensatz nicht lesen. Für den kostenlosen Testzeitraum wird die gehashte iCloud-Kennung in CloudKit gespeichert. Die Angaben können auf dem Gerät zwischengespeichert werden. Sie enthalten keine Kalenderinhalte. Wir verwenden sie, um den Testzugang bereitzustellen, die verbleibende Testdauer zu bestimmen und eine mehrfache Nutzung zu verhindern. Außerdem werten wir Beginn und Status dieser Datensätze in der Summe aus, um zu zählen, wie viele Tests gestartet und in ein Abo umgewandelt wurden – ohne Namen, Apple-ID oder Kalenderinhalte und nicht für Werbung oder Tracking. Diese Zählung in der Summe ist von der freiwilligen Abo-Statistik getrennt, die weiterhin nur mit deiner Zustimmung erfolgt.
 
 ### 1.2 Lokale Speicherung und iCloud/CloudKit
 
@@ -181,7 +181,7 @@ Diese Einstellungen dienen ausschließlich der App-Funktion und werden nicht fü
 
 Vor dem Abschluss eines kostenpflichtigen Familienabonnements kann der Inhaber der Familienfreigabe **TidTil Familie einmalig 14 Tage kostenlos testen**. Der Testzeitraum beginnt erst mit der bewussten Aktivierung der Familienfreigabe und endet automatisch. Es findet keine automatische kostenpflichtige Verlängerung statt.
 
-Die für den Testzugang erforderlichen technischen Berechtigungsdaten werden in der öffentlichen Datenbank unseres iCloud-Containers verarbeitet; andere Nutzer können den Datensatz nicht lesen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO, da die Verarbeitung zur Bereitstellung des von dir angeforderten Testzugangs und zur Verwaltung der Zugangsberechtigung erforderlich ist.
+Die für den Testzugang erforderlichen technischen Berechtigungsdaten werden in der öffentlichen Datenbank unseres iCloud-Containers verarbeitet; andere Nutzer können den Datensatz nicht lesen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO, da die Verarbeitung zur Bereitstellung des von dir angeforderten Testzugangs und zur Verwaltung der Zugangsberechtigung erforderlich ist. Rechtsgrundlage für die Auswertung von Beginn und Status dieser Datensätze in der Summe ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse).
 
 Kauf, Verlängerung, Wiederherstellung und Kündigung laufen **ausschließlich über Apple bzw. den App Store**. Zahlungsdaten wie Kreditkarten- oder Bankverbindungen werden von uns weder verarbeitet noch gespeichert und erreichen uns zu keinem Zeitpunkt.
 
@@ -279,7 +279,8 @@ Bei internationalen Anbietern kann eine Verarbeitung auch außerhalb der Europä
 Soweit die DSGVO anwendbar ist, stützen wir die Verarbeitung insbesondere auf:
 
 - **Art. 6 Abs. 1 lit. b DSGVO**, soweit die Verarbeitung zur Bereitstellung von App-Funktionen, Synchronisierung, Testzugängen, Käufen und Abonnements oder zur Bearbeitung vertragsbezogener Anfragen erforderlich ist,
-- **Art. 6 Abs. 1 lit. f DSGVO**, soweit die Verarbeitung zur sicheren und zuverlässigen Bereitstellung der Website oder zur Bearbeitung allgemeiner Anfragen erforderlich ist.
+- **Art. 6 Abs. 1 lit. f DSGVO**, soweit die Verarbeitung zur sicheren und zuverlässigen Bereitstellung der Website oder zur Bearbeitung allgemeiner Anfragen erforderlich ist,
+- **Art. 6 Abs. 1 lit. f DSGVO**, soweit Beginn und Status der Datensätze zum Testzugang in der Summe ausgewertet werden, um zu zählen, wie viele Tests gestartet und in ein Abo umgewandelt wurden.
 
 Soweit eine Verarbeitung ausschließlich durch eine freiwillige Funktion ausgelöst wird – etwa das Auswählen eines Profilfotos, das Aktivieren einer Erinnerung, das Übernehmen von Terminen aus Apple Kalender oder das Einladen von Familienmitgliedern – erfolgt die Verarbeitung nur, wenn du diese Funktion aktiv nutzt. Soweit für einzelne Vorgänge künftig eine Einwilligung erforderlich sein sollte, wird TidTil diese gesondert einholen.
 

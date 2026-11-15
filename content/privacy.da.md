@@ -1,7 +1,7 @@
 ---
 title: "Privatliv"
 slug: "privatliv"
-updated: "november 2026"
+updated: "15. november 2026"
 description: "Privatliv hos TidTil – transparent information om appen og hjemmesiden."
 ---
 
@@ -94,7 +94,7 @@ Til den gratis 14-dages prøveadgang til **TidTil Familie** behandler appen tekn
 - oplysningen om, hvorvidt prøveadgangen allerede er blevet brugt,
 - en hashet iCloud-identifikator.
 
-Disse oplysninger gemmes i den offentlige database i vores iCloud-container; andre brugere kan ikke læse posten. Til den gratis prøveperiode gemmes den hashede iCloud-identifikator i CloudKit. Oplysningerne kan mellemlagres på enheden. De indeholder ikke kalenderindhold og bruges udelukkende til at levere prøveadgangen, beregne den resterende prøveperiode og forhindre gentagen brug.
+Disse oplysninger gemmes i den offentlige database i vores iCloud-container; andre brugere kan ikke læse posten. Til den gratis prøveperiode gemmes den hashede iCloud-identifikator i CloudKit. Oplysningerne kan mellemlagres på enheden. De indeholder ikke kalenderindhold. Vi bruger dem til at levere prøveadgangen, beregne den resterende prøveperiode og forhindre gentagen brug. Derudover opgør vi start og status for disse poster samlet, så vi kan tælle, hvor mange prøver der er startet, og hvor mange der er blevet til et abonnement – uden navne, Apple-id eller kalenderindhold og ikke til reklamer eller tracking. Denne samlede optælling er adskilt fra den frivillige abonnementsstatistik, som fortsat kun sker med dit samtykke.
 
 ### 1.2 Lokal lagring og iCloud/CloudKit
 
@@ -181,7 +181,7 @@ Disse indstillinger bruges kun til appens funktion og ikke til reklamer eller pr
 
 Inden der tegnes et betalt familieabonnement, kan ejeren af familiedelingen **prøve TidTil Familie gratis én gang i 14 dage**. Prøveperioden begynder først, når familiedelingen aktiveres bevidst, og den slutter automatisk. Den bliver ikke automatisk til et betalt abonnement.
 
-De tekniske adgangsdata, der er nødvendige for prøveadgangen, behandles i den offentlige database i vores iCloud-container; andre brugere kan ikke læse posten. Retsgrundlaget er GDPR artikel 6, stk. 1, litra b, da behandlingen er nødvendig for at levere den prøveadgang, du anmoder om, og administrere adgangsretten.
+De tekniske adgangsdata, der er nødvendige for prøveadgangen, behandles i den offentlige database i vores iCloud-container; andre brugere kan ikke læse posten. Retsgrundlaget er GDPR artikel 6, stk. 1, litra b, da behandlingen er nødvendig for at levere den prøveadgang, du anmoder om, og administrere adgangsretten. Retsgrundlaget for den samlede opgørelse af start og status for disse poster er art. 6, stk. 1, litra f, i GDPR (legitim interesse).
 
 Køb, fornyelse, gendannelse og opsigelse foregår **udelukkende via Apple og App Store**. Betalingsoplysninger som kreditkort- eller bankoplysninger bliver hverken behandlet eller gemt af os og når os på intet tidspunkt.
 
@@ -279,7 +279,8 @@ Internationale udbydere kan behandle data uden for EU eller EØS. Sådanne overf
 Når GDPR finder anvendelse, baserer vi især behandlingen på:
 
 - **GDPR artikel 6, stk. 1, litra b**, når behandlingen er nødvendig for at levere appfunktioner, synkronisering, prøveadgang, køb og abonnementer eller behandle kontraktrelaterede henvendelser,
-- **GDPR artikel 6, stk. 1, litra f**, når behandlingen er nødvendig for sikker og pålidelig drift af hjemmesiden eller behandling af generelle henvendelser.
+- **GDPR artikel 6, stk. 1, litra f**, når behandlingen er nødvendig for sikker og pålidelig drift af hjemmesiden eller behandling af generelle henvendelser,
+- **GDPR artikel 6, stk. 1, litra f**, når start og status for prøveadgangens poster opgøres samlet for at tælle, hvor mange prøver der er startet, og hvor mange der er blevet til et abonnement.
 
 Når behandling alene udløses af en valgfri funktion – f.eks. valg af profilbillede, aktivering af en påmindelse, overførsel af aftaler fra Apple Kalender eller invitation af familiemedlemmer – sker behandlingen kun, når du aktivt bruger funktionen. Hvis samtykke fremover bliver juridisk nødvendigt for en bestemt behandling, vil TidTil indhente det særskilt.
 

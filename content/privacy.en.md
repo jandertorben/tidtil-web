@@ -1,7 +1,7 @@
 ---
 title: "Privacy"
 slug: "privacy"
-updated: "November 2026"
+updated: "15 November 2026"
 description: "Privacy at TidTil – transparent information about the app and website."
 ---
 
@@ -94,7 +94,7 @@ For the one-time 14-day trial access to **TidTil Family**, the app processes tec
 - whether the trial access has already been used,
 - a hashed iCloud identifier.
 
-This information is stored in the public database of our iCloud container; other users cannot read the record. For the free trial, the hashed iCloud identifier is stored in CloudKit. The information may be cached on the device. It contains no calendar content and is used solely to provide the trial access, determine the remaining trial period and prevent repeated use.
+This information is stored in the public database of our iCloud container; other users cannot read the record. For the free trial, the hashed iCloud identifier is stored in CloudKit. The information may be cached on the device. It contains no calendar content. We use it to provide the trial access, determine the remaining trial period and prevent repeated use. We also evaluate the start and status of these records in aggregate to count how many trials were started and converted into a subscription – without names, Apple ID or calendar content, and not for advertising or tracking. This aggregate count is separate from the optional subscription statistics, which still only happen with your consent.
 
 ### 1.2 Local storage and iCloud/CloudKit
 
@@ -181,7 +181,7 @@ These settings are used only for app functionality and not for advertising or pr
 
 Before taking out a paid family subscription, the owner of the family share can **try TidTil Family once free of charge for 14 days**. The trial period starts only when family sharing is deliberately activated and ends automatically. It does not automatically convert into a paid subscription.
 
-The technical entitlement data required for the trial access is processed in the public database of our iCloud container; other users cannot read the record. The legal basis is Art. 6(1)(b) GDPR because the processing is necessary to provide the trial access you request and administer the access entitlement.
+The technical entitlement data required for the trial access is processed in the public database of our iCloud container; other users cannot read the record. The legal basis is Art. 6(1)(b) GDPR because the processing is necessary to provide the trial access you request and administer the access entitlement. The legal basis for evaluating the start and status of these records in aggregate is Art. 6(1)(f) GDPR (legitimate interest).
 
 Purchase, renewal, restoration and cancellation run **exclusively through Apple and the App Store**. Payment details such as credit-card or bank information are neither processed nor stored by us and never reach us at any point.
 
@@ -279,7 +279,8 @@ International providers may process data outside the European Union or European 
 Where the GDPR applies, we rely in particular on:
 
 - **Art. 6(1)(b) GDPR** where processing is necessary to provide app functionality, synchronisation, trial access, purchases and subscriptions or to handle contract-related enquiries,
-- **Art. 6(1)(f) GDPR** where processing is necessary for secure and reliable website operation or handling general enquiries.
+- **Art. 6(1)(f) GDPR** where processing is necessary for secure and reliable website operation or handling general enquiries,
+- **Art. 6(1)(f) GDPR** where the start and status of the trial-access records are evaluated in aggregate to count how many trials were started and converted into a subscription.
 
 Where processing is triggered solely by an optional feature – such as selecting a profile photo, enabling a reminder, taking over events from Apple Calendar or inviting family members – processing occurs only when you actively use that feature. If consent becomes legally required for a particular operation in the future, TidTil will request it separately.
 
