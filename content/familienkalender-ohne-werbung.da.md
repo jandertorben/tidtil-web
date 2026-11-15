@@ -3,10 +3,10 @@ title: "Familiekalender uden reklamer og uden konto"
 description: "Familiekalender til iPhone uden reklamer, uden egen konto og uden forretningsmodel bygget på jeres data. Jeres aftaler bliver i jeres egen iCloud."
 url: "/familiekalender-uden-reklamer/"
 layout: "landing"
-hero_image: "img/tidtil-header-clean.webp"
-hero_width: 1672
-hero_height: 941
-hero_alt: "TidTil familiekalender uden reklamer på iPhone"
+hero_image: "img/2.6/seite-ohne-werbung-privat-da.webp"
+hero_width: 560
+hero_height: 420
+hero_alt: "En privat aftale i TidTil, tandlæge, kun synlig for dig."
 hero_lead: "Ingen reklamer, ingen egen konto, ingen forretningsmodel bygget på jeres kalenderdata."
 faq:
   - q: "Viser TidTil reklamer?"

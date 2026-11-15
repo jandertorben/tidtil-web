@@ -3,8 +3,10 @@ title: "Familiekalender til børn uden egen telefon"
 description: "Børn uden egen iPhone hører også til i familiekalenderen: opret dem én gang med navn og tildel aftaler – uden enhed og uden konto til barnet."
 url: "/familiekalender-boern-uden-telefon/"
 layout: "landing"
-hero_image: "img/familien-sync-banner.webp"
-hero_alt: "Opret familiemedlemmer i TidTil og tildel dem aftaler"
+hero_image: "img/2.6/seite-familie-da.webp"
+hero_width: 560
+hero_height: 420
+hero_alt: "Inviter familie i TidTil, så også børn uden iPhone kan få aftaler."
 hero_lead: "Tildel aftaler tydeligt – også til børn, der endnu ikke har en egen iPhone."
 faq:
   - q: "Kan børn uden iPhone også være med?"

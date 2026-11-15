@@ -4,7 +4,10 @@ h1: "Wissen, was heute ansteht. Und wieder Zeit für euch."
 kicker: "Der ruhige Familienkalender fürs iPhone"
 sub: "Gemeinsame und private Termine auf einen Blick – ohne Aufgabenlisten, Chats und Funktionsballast. Deine Termine aus dem Apple Kalender holst du mit wenigen Tipps herüber."
 proof: "Kostenlos laden · Familie 14 Tage gratis · Kein Konto · Keine Werbung"
-hero_alt: "TidTil im Familienalltag"
+hero_alt: "TidTil Tagesansicht am Donnerstag, dem 3. Dezember, hell, mit Zeit für uns."
+hero_image: "img/2.6/hero-tag-de.webp"
+hero_width: 520
+hero_height: 650
 
 # „Euer Tag“ – Live-Tagesansicht. Zeiten in Minuten ab Mitternacht,
 # who = Index in live.who, family = für die Familie sichtbar (sonst privat).
@@ -39,31 +42,41 @@ features:
   rows:
     - title: "Was steht bei uns an?"
       text: "Was heute ansteht, wann und für wen. Die Monatsansicht zeigt, was als Nächstes kommt. Quer gedreht siehst du die ganze Woche."
-      image: "img/feature-tagesueberblick.webp"
-      alt: "Heute-Ansicht in TidTil"
+      image: "img/2.6/feature-woche-de.webp"
+      alt: "TidTil Wochenplan im Querformat, Montag bis Sonntag."
+      width: 760
+      height: 608
     - title: "Was? Wann? Für wen? Wer darf’s sehen?"
       text: "Mehr braucht ein Familientermin meistens nicht."
-      image: "img/feature-neuer-termin.webp"
-      alt: "Neuen Familientermin anlegen"
+      image: "img/2.6/feature-termin-de.webp"
+      alt: "Neuen Termin in TidTil anlegen, mit Uhrzeit und Sichtbarkeit für die Familie."
+      width: 760
+      height: 608
     - title: "Fühlt sich nach euch an"
       text: "Ruhig und klar – wählt eure Farbe, ohne Business-Kalender-Gefühl."
-      image: "img/feature-personalisierung.webp"
-      alt: "Farben in TidTil anpassen"
+      image: "img/2.6/feature-design-de.webp"
+      alt: "TidTil Tagesansicht im dunklen Design."
+      width: 740
+      height: 740
     - title: "Direkt loslegen"
       text: "Kein Konto, kein Passwort, kein langes Onboarding. Deine Termine aus dem Apple Kalender holst du mit wenigen Tipps herüber, auch ohne Abo."
-      image: "img/feature-familie-einladen-de.webp"
-      alt: "Familie in TidTil einladen"
+      image: "img/2.6/feature-import-de.webp"
+      alt: "Kalender importieren in TidTil, Termine aus dem Apple Kalender übernehmen."
+      width: 740
+      height: 740
 
 for_us:
   title: "Zeit für uns."
   text: "Euer Foto mit Herz steht neben dem Datum, darunter euer eigener Satz. Ein Tipp aufs Herz, und ihr ladet euch zu einem Date ein – zusagen, absagen oder eine andere Zeit vorschlagen. Die eigene Einladung lässt sich verschieben oder zurückziehen."
   note: "Teil von TidTil Familie"
-  image: "img/feature-zeit-fuer-uns-de.webp"
-  alt: "Einladung zu einem Date in TidTil"
+  image: "img/2.6/feature-zeit-fuer-uns-de.webp"
+  alt: "Zeit für uns in TidTil: Einladung an Ben am 3. Dezember."
+  width: 480
+  height: 600
 
 soon:
   title: "Neu in TidTil 2.6."
-  version: "Jetzt im Update"
+  version: "Jetzt in 2.6"
   items:
     - title: "Kalenderimport"
       text: "Termine aus dem Apple Kalender auswählen und in TidTil übernehmen, auch in der kostenlosen Version. Kalender und einen Zeitraum ab heute wählen: den nächsten Monat oder die nächsten 3, 6 oder 12 Monate. Der Apple Kalender bleibt unverändert. Übernommene Termine sind zuerst privat und werden einzeln für die Familie freigegeben. Im Profilmenü unter „Kalenderimport“."
@@ -159,4 +172,8 @@ faq:
 
 close:
   title: "Wissen, was ansteht. Dann das Handy weglegen."
+  image: "img/2.6/schluss-woche-de.webp"
+  image_alt: "TidTil Wochenplan im Querformat, die Woche von Montag bis Sonntag."
+  image_width: 1440
+  image_height: 630
 ---

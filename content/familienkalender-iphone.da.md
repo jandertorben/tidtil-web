@@ -3,8 +3,10 @@ title: "Familiekalender til iPhone – planlæg enkelt sammen"
 description: "TidTil er en enkel familiekalender til iPhone: organisér fælles og private aftaler, synkronisér med familien, og bevar overblikket over dagen."
 url: "/familiekalender-iphone/"
 layout: "landing"
-hero_image: "img/familien-sync-banner.webp"
-hero_alt: "Invitér familiemedlemmer og synkronisér sammen i TidTil"
+hero_image: "img/2.6/seite-familie-da.webp"
+hero_width: 560
+hero_height: 420
+hero_alt: "Inviter familie i TidTil, den fælles kalender er låst op."
 hero_lead: "Organisér familiens fælles aftaler – uden opgavelister, chats og kalenderrod."
 faq:
   - q: "Kan jeg dele aftaler med min familie?"

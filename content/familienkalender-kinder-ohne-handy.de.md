@@ -3,8 +3,10 @@ title: "Familienkalender für Kinder ohne eigenes Handy"
 description: "Auch Kinder ohne eigenes iPhone gehören in den Familienkalender: einmal mit Namen anlegen und Termine zuordnen – ohne Gerät und ohne Konto fürs Kind."
 url: "/familienkalender-kinder-ohne-handy/"
 layout: "landing"
-hero_image: "img/familien-sync-banner.webp"
-hero_alt: "Familienmitglieder in TidTil anlegen und Termine zuordnen"
+hero_image: "img/2.6/seite-familie-de.webp"
+hero_width: 560
+hero_height: 420
+hero_alt: "Familie einladen in TidTil, damit auch Kinder ohne iPhone Termine bekommen."
 hero_lead: "Termine eindeutig zuordnen – auch für Kinder, die noch kein eigenes iPhone haben."
 faq:
   - q: "Können auch Kinder ohne iPhone dabei sein?"

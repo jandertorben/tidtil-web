@@ -4,7 +4,10 @@ h1: "Know what’s on today. And make time for each other again."
 kicker: "The family calendar for iPhone"
 sub: "Shared and private events at a glance – without task lists, chats or feature overload. Bring your events over from Apple Calendar in just a few taps."
 proof: "Free to download · Family free for 14 days · No account · No ads"
-hero_alt: "TidTil in everyday family life"
+hero_alt: "TidTil day view on Thursday 3 December, light, with Time for us."
+hero_image: "img/2.6/hero-tag-en.webp"
+hero_width: 520
+hero_height: 650
 
 live:
   title: "Your day."
@@ -39,29 +42,40 @@ features:
       text: "Today’s events, their times and who they’re for. The month view shows what’s next. Turn your iPhone sideways to see the whole week."
       image: "img/feature-tagesueberblick.webp"
       alt: "Today view in TidTil"
+      width: 1003
+      height: 1568
+      position: "50% 40%"
     - title: "What? When? Who? Who can see it?"
       text: "That’s usually all a family event needs."
-      image: "img/feature-neuer-termin.webp"
-      alt: "Creating a family event"
+      image: "img/2.6/feature-termin-en.webp"
+      alt: "Creating a new event in TidTil, with time and visibility for the family."
+      width: 760
+      height: 608
     - title: "Feels like yours"
       text: "Calm and clear – pick your colour, without the business-calendar feel."
-      image: "img/feature-personalisierung.webp"
-      alt: "Customising colours in TidTil"
+      image: "img/2.6/feature-design-en.webp"
+      alt: "TidTil day view in the dark design."
+      width: 740
+      height: 740
     - title: "Start right away"
       text: "No account, no password, no lengthy onboarding. Bring your events over from Apple Calendar in a few taps, even without a subscription."
-      image: "img/feature-familie-einladen-en.webp"
-      alt: "Invite your family to TidTil"
+      image: "img/2.6/feature-import-en.webp"
+      alt: "Importing a calendar in TidTil, bringing events over from Apple Calendar."
+      width: 740
+      height: 740
 
 for_us:
   title: "Time for us."
   text: "Your photo with a heart sits next to the date, with your own line of text below. Tap the heart to invite each other to a date – accept, decline or suggest another time. You can move or withdraw your own invitation."
   note: "Part of TidTil Family"
-  image: "img/feature-zeit-fuer-uns-en.webp"
-  alt: "Invitation to a date in TidTil"
+  image: "img/2.6/feature-zeit-fuer-uns-en.webp"
+  alt: "Time for us in TidTil: an invitation to Ben on 3 December."
+  width: 480
+  height: 600
 
 soon:
   title: "New in TidTil 2.6."
-  version: "Out now as an update"
+  version: "New in 2.6"
   items:
     - title: "Calendar import"
       text: "Choose events from Apple Calendar and bring them into TidTil, in the free version too. Pick the calendars and a period starting today: the next month, or the next 3, 6 or 12 months. Apple Calendar stays unchanged. Imported events are private at first and can then be shared with the family one by one. In the profile menu, under “Calendar import”."
@@ -157,4 +171,5 @@ faq:
 
 close:
   title: "Know what’s ahead. Then put the phone away."
+  image_alt: "Mother and child at the kitchen table, TidTil with a light day view on the iPhone."
 ---
