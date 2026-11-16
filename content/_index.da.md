@@ -52,7 +52,7 @@ features:
       width: 760
       height: 608
     - title: "Føles som jeres"
-      text: "Rolig og klar – vælg jeres farve, uden erhvervskalender-følelse."
+      text: "Rolig og klar – lyst eller mørkt, vælg jeres farve, uden erhvervskalender-følelse."
       image: "img/2.6/feature-design-da.webp"
       alt: "TidTil dagsvisning i mørkt design."
       width: 740

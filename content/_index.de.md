@@ -53,7 +53,7 @@ features:
       width: 760
       height: 608
     - title: "Fühlt sich nach euch an"
-      text: "Ruhig und klar – wählt eure Farbe, ohne Business-Kalender-Gefühl."
+      text: "Ruhig und klar – hell wie dunkel, wählt eure Farbe, ohne Business-Kalender-Gefühl."
       image: "img/2.6/feature-design-de.webp"
       alt: "TidTil Tagesansicht im dunklen Design."
       width: 740

@@ -52,7 +52,7 @@ features:
       width: 760
       height: 608
     - title: "Feels like yours"
-      text: "Calm and clear – pick your colour, without the business-calendar feel."
+      text: "Calm and clear – light or dark, pick your colour, without the business-calendar feel."
       image: "img/2.6/feature-design-en.webp"
       alt: "TidTil day view in the dark design."
       width: 740
