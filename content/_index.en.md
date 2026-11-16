@@ -81,8 +81,6 @@ soon:
       text: "Choose events from Apple Calendar and bring them into TidTil, in the free version too. Pick the calendars and a period starting today: the next month, or the next 3, 6 or 12 months. Apple Calendar stays unchanged. Imported events are private at first and can then be shared with the family one by one. In the profile menu, under “Calendar import”."
     - title: "Early or late shift at a glance"
       text: "For shift work: a small E or L on your profile circle shows which week it is. It switches every week on its own, and you can change single weeks. The setting stays on your iPhone only. In the profile menu, under “Work week”."
-    - title: "Public holidays for your state"
-      text: "Public holidays in Germany, nationwide, for your federal state or switched off. Everyone in the family chooses for themselves. In the profile menu, under “Public Holidays”."
     - title: "“Time for us”, always in view"
       text: "Your photo with a heart sits next to the date, with your own line of text below. Tap the heart to invite your partner on a date. Part of TidTil Family."
     - title: "More flexible date invitations"
@@ -143,7 +141,7 @@ privacy:
     - title: "Your iCloud"
       text: "Syncing via Apple’s iCloud and CloudKit – no servers of our own."
     - title: "Private stays private"
-      text: "Private events, and those brought over from Apple Calendar, are visible only to you until you share them. Holidays and work week stay on your iPhone."
+      text: "Private events, and those brought over from Apple Calendar, are visible only to you until you share them. Work week stays on your iPhone."
 
 faq:
   - q: "I use another calendar app right now. How do I switch?"

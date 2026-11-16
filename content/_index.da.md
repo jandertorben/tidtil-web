@@ -81,8 +81,6 @@ soon:
       text: "Vælg aftaler i Apple Kalender og tag dem med over i TidTil, også i den gratis version. Vælg kalenderne og et tidsrum fra i dag: den næste måned eller de næste 3, 6 eller 12 måneder. Apple Kalender forbliver uændret. Importerede aftaler er først private og kan derefter enkeltvis gøres synlige for familien. I profilmenuen under „Kalenderimport“."
     - title: "Tidlig eller sen vagt på et øjeblik"
       text: "Til skifteholdsarbejde: Et lille T eller S ved profilcirklen viser, hvilken uge det er. Det skifter selv hver uge, og du kan ændre enkelte uger. Indstillingen bliver kun på din iPhone. I profilmenuen under „Arbejdsuge“."
-    - title: "Helligdage for din delstat"
-      text: "Tyske helligdage for hele landet, for din delstat eller slået fra. Alle i familien vælger selv. I profilmenuen under „Helligdage“."
     - title: "„Tid til os“ altid i syne"
       text: "Jeres foto med et hjerte står ved siden af datoen, med jeres egen sætning nedenunder. Tryk på hjertet for at invitere til en date. En del af TidTil Familie."
     - title: "Mere fleksible date-invitationer"
@@ -143,7 +141,7 @@ privacy:
     - title: "Jeres iCloud"
       text: "Synkronisering via Apples iCloud og CloudKit – ingen egne servere."
     - title: "Privat forbliver privat"
-      text: "Private aftaler og aftaler hentet fra Apple Kalender ser kun du, indtil du deler dem. Helligdage og arbejdsuge bliver på din iPhone."
+      text: "Private aftaler og aftaler hentet fra Apple Kalender ser kun du, indtil du deler dem. Arbejdsuge bliver på din iPhone."
 
 faq:
   - q: "Jeg bruger en anden kalender-app i dag. Hvordan skifter jeg?"
