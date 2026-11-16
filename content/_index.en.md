@@ -89,7 +89,7 @@ soon:
       text: "Turn your iPhone sideways to see the week from Monday to Sunday."
     - title: "A new, calm design"
       text: "A calendar page showing the date, your round profile circle and a tidy bar at the top, in light and dark."
-    - title: "Small improvements"
+    - title: "Fixes and improvements"
       text: "Fixes for uploading to iCloud, plus many small improvements."
 
 demo:
@@ -149,7 +149,7 @@ faq:
   - q: "I use another calendar app right now. How do I switch?"
     a: "If your events are in Apple Calendar on your iPhone, bring them into TidTil in a few taps: profile menu, “Calendar import”. Pick the calendars and a period starting today (1, 3, 6 or 12 months) and tick the events. Apple Calendar stays unchanged, and everything arrives private first. The import is included in the free version."
   - q: "What does the import bring over?"
-    a: "Title, start and end. Location, notes, attendees and alerts don’t come along. Repeating events arrive as single events within the period. Multi-day all-day events such as a holiday trip are imported, all-day events on a single day not. Events that already exist in TidTil (same title, same start) aren’t imported twice, and cancelled events stay out. Up to 300 events per run. The import is one-off: later changes in Apple Calendar don’t follow automatically."
+    a: "Title, start and end. Location, notes, attendees and alerts don’t come along. Repeating events arrive as single events within the period. Multi-day all-day events such as a holiday trip are imported, but all-day events on a single day are not. Events that already exist in TidTil (same title, same start) aren’t imported twice, and cancelled events stay out. Up to 300 events per run. The import is one-off: later changes in Apple Calendar don’t follow automatically."
   - q: "Can my family see my shift?"
     a: "No. The E or L for early or late shift stays on your iPhone only. It isn’t shared with your family or stored in iCloud."
   - q: "Do I need an account?"

@@ -92,7 +92,7 @@ soon:
       text: "iPhone quer drehen, und der Wochenplan von Montag bis Sonntag ist da."
     - title: "Ein neues, ruhiges Design"
       text: "Ein Kalenderblatt mit der Tageszahl, dein runder Profilkreis und eine aufgeräumte Leiste oben, hell wie dunkel."
-    - title: "Kleine Verbesserungen"
+    - title: "Korrekturen und Verbesserungen"
       text: "Korrekturen beim Hochladen zu iCloud und viele kleine Verbesserungen."
 
 demo:
@@ -162,7 +162,7 @@ faq:
   - q: "Kann ich TidTil Familie kostenlos testen?"
     a: "Ja, 14 Tage gratis. Es ist eine einmalige Testphase ohne automatische Verlängerung."
   - q: "Was passiert ohne Abo?"
-    a: "TidTil bleibt auf deinem Gerät kostenlos. Ohne Familienabo kannst du nur keine Familienmitglieder einladen und nicht mit ihnen synchronisieren."
+    a: "TidTil bleibt auf deinem Gerät kostenlos. Ohne Familienabo kannst du nur keine Familienmitglieder einladen und keine Termine mit ihnen teilen."
   - q: "Wo liegen meine Daten?"
     a: "In eurer iCloud. TidTil betreibt keine eigenen Server für Kalenderdaten; nichts wird zu Werbezwecken ausgewertet."
   - q: "Können Kinder ohne iPhone dabei sein?"

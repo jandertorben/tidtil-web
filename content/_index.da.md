@@ -89,7 +89,7 @@ soon:
       text: "Vend din iPhone, og ugeplanen fra mandag til søndag er der."
     - title: "Et nyt, roligt design"
       text: "Et kalenderblad med dagens dato, din runde profilcirkel og en ryddelig bjælke øverst, lyst og mørkt."
-    - title: "Små forbedringer"
+    - title: "Rettelser og forbedringer"
       text: "Rettelser ved upload til iCloud og mange små forbedringer."
 
 demo:
