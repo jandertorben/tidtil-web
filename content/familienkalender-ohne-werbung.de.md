@@ -1,6 +1,6 @@
 ---
 title: "Familienkalender ohne Werbung und ohne Konto"
-description: "Familienkalender fürs iPhone ohne Werbung, ohne eigenes Konto und ohne Tracking-Geschäftsmodell. Eure Termine bleiben in eurer eigenen iCloud."
+description: "Familienkalender fürs iPhone ohne Werbung, ohne eigenes Konto und ohne Werbe-Tracking. Eure Termine bleiben in eurer eigenen iCloud."
 url: "/familienkalender-ohne-werbung/"
 layout: "landing"
 hero_image: "img/2.6/seite-ohne-werbung-privat-de.webp"

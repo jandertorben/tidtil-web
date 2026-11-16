@@ -6,7 +6,7 @@ layout: "landing"
 hero_image: "img/2.6/seite-familie-en.webp"
 hero_width: 560
 hero_height: 420
-hero_alt: "Invite family in TidTil, so children without an iPhone can have events too."
+hero_alt: "The family page in TidTil with Anna and Ben, the shared calendar unlocked."
 hero_lead: "Assign events clearly – including to children who don't have an iPhone yet."
 faq:
   - q: "Can children without an iPhone be included?"

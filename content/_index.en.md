@@ -66,7 +66,7 @@ features:
 
 for_us:
   title: "Time for us."
-  text: "Your photo with a heart sits next to the date, with your own line of text below. Tap the heart to invite each other to a date – accept, decline or suggest another time. You can move or withdraw your own invitation."
+  text: "Your photo with a heart sits next to the date, with your own line of text below. Tap the heart to invite each other to a date – accept, decline or suggest another time. You can move or withdraw your own invitation as long as there’s no answer yet."
   note: "Part of TidTil Family"
   image: "img/2.6/feature-zeit-fuer-uns-en.webp"
   alt: "Time for us in TidTil: an invitation to Ben on 3 December."
@@ -78,7 +78,7 @@ soon:
   version: "New in 2.6"
   items:
     - title: "Calendar import"
-      text: "Choose events from Apple Calendar and bring them into TidTil, in the free version too. Pick the calendars and a period starting today: the next month, or the next 3, 6 or 12 months. Apple Calendar stays unchanged. Imported events are private at first and can then be shared with the family one by one. In the profile menu, under “Calendar import”."
+      text: "Choose events from Apple Calendar and bring them into TidTil, in the free version too. Pick the calendars and a period starting today: the next month, or the next 3, 6 or 12 months. Apple Calendar stays unchanged. Imported events start out private. With TidTil Family, you can share them with your family one by one. Single-day all-day events aren’t imported. In the profile menu, under “Calendar import”."
     - title: "Early or late shift at a glance"
       text: "For shift work: a small E or L on your profile circle shows which week it is. It switches every week on its own, and you can change single weeks. The setting stays on your iPhone only. In the profile menu, under “Work week”."
     - title: "“Time for us”, always in view"
@@ -89,6 +89,8 @@ soon:
       text: "Turn your iPhone sideways to see the week from Monday to Sunday."
     - title: "A new, calm design"
       text: "A calendar page showing the date, your round profile circle and a tidy bar at the top, in light and dark."
+    - title: "Small improvements"
+      text: "Fixes for uploading to iCloud, plus many small improvements."
 
 demo:
   title: "Try it right here."
@@ -147,7 +149,7 @@ faq:
   - q: "I use another calendar app right now. How do I switch?"
     a: "If your events are in Apple Calendar on your iPhone, bring them into TidTil in a few taps: profile menu, “Calendar import”. Pick the calendars and a period starting today (1, 3, 6 or 12 months) and tick the events. Apple Calendar stays unchanged, and everything arrives private first. The import is included in the free version."
   - q: "What does the import bring over?"
-    a: "Title, start and end. Location, notes, attendees and alerts don’t come along. Repeating events arrive as single events within the period. Multi-day all-day events such as a holiday trip are imported, all-day events on a single day not yet. Events that already exist in TidTil (same title, same start) aren’t imported twice, and cancelled events stay out. Up to 300 events per run. The import is one-off: later changes in Apple Calendar don’t follow automatically."
+    a: "Title, start and end. Location, notes, attendees and alerts don’t come along. Repeating events arrive as single events within the period. Multi-day all-day events such as a holiday trip are imported, all-day events on a single day not. Events that already exist in TidTil (same title, same start) aren’t imported twice, and cancelled events stay out. Up to 300 events per run. The import is one-off: later changes in Apple Calendar don’t follow automatically."
   - q: "Can my family see my shift?"
     a: "No. The E or L for early or late shift stays on your iPhone only. It isn’t shared with your family or stored in iCloud."
   - q: "Do I need an account?"
@@ -163,7 +165,7 @@ faq:
   - q: "Can children without an iPhone be included?"
     a: "Yes. Add them once by name and assign events like anyone else."
   - q: "What does “private” mean?"
-    a: "Private events have a small lock. They are visible only to you and stored separately from family events. You can share a private event with your family at any time."
+    a: "Private events have a small lock. They are visible only to you and stored separately from family events. With TidTil Family, you can share a private event with your family at any time."
   - q: "Are there reminders?"
     a: "Yes, for each event individually. Optionally, the daily overview shows what’s on each morning."
 

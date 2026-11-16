@@ -66,7 +66,7 @@ features:
 
 for_us:
   title: "Tid til os."
-  text: "Jeres foto med et hjerte står ved siden af datoen, med jeres egen sætning nedenunder. Tryk på hjertet, og inviter hinanden til en date – accepter, afvis eller foreslå et andet tidspunkt. Din egen invitation kan flyttes eller trækkes tilbage."
+  text: "Jeres foto med et hjerte står ved siden af datoen, med jeres egen sætning nedenunder. Tryk på hjertet, og inviter hinanden til en date – accepter, afvis eller foreslå et andet tidspunkt. Din egen invitation kan flyttes eller trækkes tilbage, så længe der ikke er kommet et svar."
   note: "En del af TidTil Familie"
   image: "img/2.6/feature-zeit-fuer-uns-da.webp"
   alt: "Tid til os i TidTil: invitation til Ben den 3. december."
@@ -78,10 +78,10 @@ soon:
   version: "Nyt i 2.6"
   items:
     - title: "Kalenderimport"
-      text: "Vælg aftaler i Apple Kalender og tag dem med over i TidTil, også i den gratis version. Vælg kalenderne og et tidsrum fra i dag: den næste måned eller de næste 3, 6 eller 12 måneder. Apple Kalender forbliver uændret. Importerede aftaler er først private og kan derefter enkeltvis gøres synlige for familien. I profilmenuen under „Kalenderimport“."
+      text: "Vælg aftaler i Apple Kalender og tag dem med over i TidTil, også i den gratis version. Vælg kalenderne og et tidsrum fra i dag: den næste måned eller de næste 3, 6 eller 12 måneder. Apple Kalender forbliver uændret. Importerede aftaler er først private. Med TidTil Familie deler du dem enkeltvis med familien. Heldagsaftaler på en enkelt dag overføres ikke. I profilmenuen under »Kalenderimport«."
     - title: "Tidlig eller sen vagt på et øjeblik"
-      text: "Til skifteholdsarbejde: Et lille T eller S ved profilcirklen viser, hvilken uge det er. Det skifter selv hver uge, og du kan ændre enkelte uger. Indstillingen bliver kun på din iPhone. I profilmenuen under „Arbejdsuge“."
-    - title: "„Tid til os“ altid i syne"
+      text: "Til skifteholdsarbejde: Et lille T eller S ved profilcirklen viser, hvilken uge det er. Det skifter selv hver uge, og du kan ændre enkelte uger. Indstillingen bliver kun på din iPhone. I profilmenuen under »Arbejdsuge«."
+    - title: "»Tid til os« altid i syne"
       text: "Jeres foto med et hjerte står ved siden af datoen, med jeres egen sætning nedenunder. Tryk på hjertet for at invitere til en date. En del af TidTil Familie."
     - title: "Mere fleksible date-invitationer"
       text: "Et tryk på notifikationen fører direkte til invitationen. Din egen invitation kan du flytte eller trække tilbage, så længe der ikke er kommet et svar."
@@ -89,6 +89,8 @@ soon:
       text: "Vend din iPhone, og ugeplanen fra mandag til søndag er der."
     - title: "Et nyt, roligt design"
       text: "Et kalenderblad med dagens dato, din runde profilcirkel og en ryddelig bjælke øverst, lyst og mørkt."
+    - title: "Små forbedringer"
+      text: "Rettelser ved upload til iCloud og mange små forbedringer."
 
 demo:
   title: "Prøv det lige her."
@@ -136,8 +138,8 @@ privacy:
   facts:
     - title: "Ingen konto"
       text: "Ingen TidTil-brugerkonto, ingen ekstra adgangskode."
-    - title: "Ingen reklamer, ingen reklametracking"
-      text: "Ingen reklame-SDK'er, ingen fremmede analysetjenester. Abonnementsstatistik kun med dit samtykke – slået fra som standard."
+    - title: "Ingen reklamer, ingen reklamesporing"
+      text: "Ingen reklame-SDK'er, ingen analysetjenester fra tredjepart. Abonnementsstatistik kun med dit samtykke – slået fra som standard."
     - title: "Jeres iCloud"
       text: "Synkronisering via Apples iCloud og CloudKit – ingen egne servere."
     - title: "Privat forbliver privat"
@@ -145,9 +147,9 @@ privacy:
 
 faq:
   - q: "Jeg bruger en anden kalender-app i dag. Hvordan skifter jeg?"
-    a: "Står dine aftaler i Apple Kalender på din iPhone, henter du dem over i TidTil med få tryk: profilmenuen, „Kalenderimport“. Vælg kalendere og et tidsrum fra i dag (1, 3, 6 eller 12 måneder), og sæt flueben ved aftalerne. Apple Kalender forbliver uændret, og alt kommer først ind som privat. Importen er med i den gratis version."
+    a: "Står dine aftaler i Apple Kalender på din iPhone, henter du dem over i TidTil med få tryk: profilmenuen, »Kalenderimport«. Vælg kalendere og et tidsrum fra i dag (1, 3, 6 eller 12 måneder), og sæt flueben ved aftalerne. Apple Kalender forbliver uændret, og alt kommer først ind som privat. Importen er med i den gratis version."
   - q: "Hvad bliver overført ved importen?"
-    a: "Titel, start og slut. Sted, noter, deltagere og påmindelser kommer ikke med. Gentagne aftaler kommer ind som enkelte aftaler i tidsrummet. Heldagsaftaler over flere dage, f.eks. en ferie, overføres, heldagsaftaler på en enkelt dag endnu ikke. Aftaler, der allerede findes i TidTil (samme titel, samme start), overføres ikke to gange, og aflyste aftaler bliver ude. Op til 300 aftaler pr. gang. Importen sker én gang: Senere ændringer i Apple Kalender følger ikke automatisk med."
+    a: "Titel, start og slut. Sted, noter, deltagere og påmindelser kommer ikke med. Gentagne aftaler kommer ind som enkelte aftaler i tidsrummet. Heldagsaftaler over flere dage, f.eks. en ferie, overføres, heldagsaftaler på en enkelt dag ikke. Aftaler, der allerede findes i TidTil (samme titel, samme start), overføres ikke to gange, og aflyste aftaler bliver ude. Op til 300 aftaler pr. gang. Importen sker én gang: Senere ændringer i Apple Kalender følger ikke automatisk med."
   - q: "Kan min familie se mit skift?"
     a: "Nej. T eller S for tidlig eller sen vagt bliver kun på din iPhone. Det deles hverken med familien eller gemmes i iCloud."
   - q: "Skal jeg have en konto?"
@@ -157,13 +159,13 @@ faq:
   - q: "Kan jeg prøve TidTil Familie gratis?"
     a: "Ja, i 14 dage. Det er en engangsprøveperiode uden automatisk fornyelse."
   - q: "Hvad sker der uden abonnement?"
-    a: "TidTil er fortsat gratis på din enhed. Du kan blot ikke invitere familiemedlemmer eller synkronisere."
+    a: "TidTil er fortsat gratis på din enhed. Du kan blot ikke invitere familiemedlemmer eller synkronisere med dem."
   - q: "Hvor gemmes mine data?"
     a: "I jeres iCloud. TidTil driver ingen servere til kalenderdata; intet analyseres til reklameformål."
   - q: "Kan børn uden iPhone være med?"
     a: "Ja. Opret dem én gang med navn, og tildel aftaler som til alle andre."
-  - q: "Hvad betyder “privat”?"
-    a: "Private aftaler har en lille lås. De er kun synlige for dig og gemmes adskilt fra familieaftaler. Du kan til enhver tid dele en privat aftale med familien."
+  - q: "Hvad betyder »privat«?"
+    a: "Private aftaler har en lille lås. De er kun synlige for dig og gemmes adskilt fra familieaftaler. Med TidTil Familie kan du til enhver tid dele en privat aftale med familien."
   - q: "Er der påmindelser?"
     a: "Ja, for hver aftale. Valgfrit viser dagens overblik om morgenen, hvad der skal ske."
 

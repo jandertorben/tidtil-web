@@ -1,6 +1,6 @@
 ---
 title: "Family Calendar Without Ads or an Account"
-description: "TidTil is a family calendar for iPhone with no ads, no account of its own and no tracking business model. Your events stay in your own iCloud."
+description: "TidTil is a family calendar for iPhone with no ads, no account of its own and no ad tracking. Your events stay in your own iCloud."
 url: "/family-calendar-without-ads/"
 layout: "landing"
 hero_image: "img/2.6/seite-ohne-werbung-privat-en.webp"

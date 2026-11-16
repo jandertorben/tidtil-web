@@ -21,7 +21,7 @@ Der er på nuværende tidspunkt ikke udpeget en databeskyttelsesrådgiver, da vi
 - Kalender- og profildata behandles lokalt på enheden og via **Apple iCloud/CloudKit**.
 - Familiedeling bruger **CloudKit Sharing**. Delt indhold er tilgængeligt for de personer, du inviterer.
 - TidTil driver **ingen egen backendserver til kalenderindhold**.
-- Ingen reklamer, ingen reklametracking. Abonnementsstatistik kun med dit samtykke.
+- Ingen reklamer, ingen reklamesporing. Abonnementsstatistik kun med dit samtykke.
 - Der er **ingen tredjeparts-SDK'er**.
 - Til **kalenderimporten** læser TidTil kun Apple Kalender på din enhed med din tilladelse. Kun **titel, start og slut** for de aftaler, du vælger, overføres. Intet af det sendes til os.
 - Påmindelser og beskeder om nye familieaftaler oprettes som **lokale iOS-notifikationer**.
@@ -187,7 +187,7 @@ Køb, fornyelse, gendannelse og opsigelse foregår **udelukkende via Apple og Ap
 
 Kontrollen af, om der findes et gyldigt betalt abonnement, sker **udelukkende på din enhed** via Apples StoreKit. Der er ingen egen TidTil-server involveret, og ingen betalingsdata overføres til os. Den separate kontrol af den gratis engangsprøve bruger de tekniske adgangsdata i iCloud/CloudKit, som er beskrevet ovenfor. Har du brugt TidTil før version 2.2, beholder du familiekalenderen gratis permanent; også den kontrol sker lokalt ud fra den kvittering, Apple har signeret.
 
-### 1.8 Ingen reklamer, ingen reklametracking og ingen tredjeparts-SDK'er
+### 1.8 Ingen reklamer, ingen reklamesporing og ingen tredjeparts-SDK'er
 
 TidTil sporer dig ikke til reklameformål (heller ikke i betydningen af Apples App Tracking Transparency) og bruger ingen tredjeparts-SDK'er.
 

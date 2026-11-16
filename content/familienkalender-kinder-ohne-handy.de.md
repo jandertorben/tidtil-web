@@ -6,7 +6,7 @@ layout: "landing"
 hero_image: "img/2.6/seite-familie-de.webp"
 hero_width: 560
 hero_height: 420
-hero_alt: "Familie einladen in TidTil, damit auch Kinder ohne iPhone Termine bekommen."
+hero_alt: "Familienseite in TidTil mit Anna und Ben, der gemeinsame Kalender ist freigeschaltet."
 hero_lead: "Termine eindeutig zuordnen – auch für Kinder, die noch kein eigenes iPhone haben."
 faq:
   - q: "Können auch Kinder ohne iPhone dabei sein?"

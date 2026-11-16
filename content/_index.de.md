@@ -67,7 +67,7 @@ features:
 
 for_us:
   title: "Zeit für uns."
-  text: "Euer Foto mit Herz steht neben dem Datum, darunter euer eigener Satz. Ein Tipp aufs Herz, und ihr ladet euch zu einem Date ein – zusagen, absagen oder eine andere Zeit vorschlagen. Die eigene Einladung lässt sich verschieben oder zurückziehen."
+  text: "Euer Foto mit Herz steht neben dem Datum, darunter euer eigener Satz. Ein Tipp aufs Herz, und ihr ladet euch zu einem Date ein – zusagen, absagen oder eine andere Zeit vorschlagen. Die eigene Einladung lässt sich verschieben oder zurückziehen, solange noch keine Antwort da ist."
   note: "Teil von TidTil Familie"
   image: "img/2.6/feature-zeit-fuer-uns-de.webp"
   alt: "Zeit für uns in TidTil: Einladung an Ben am 3. Dezember."
@@ -79,11 +79,11 @@ soon:
   version: "Jetzt in 2.6"
   items:
     - title: "Kalenderimport"
-      text: "Termine aus dem Apple Kalender auswählen und in TidTil übernehmen, auch in der kostenlosen Version. Kalender und einen Zeitraum ab heute wählen: den nächsten Monat oder die nächsten 3, 6 oder 12 Monate. Der Apple Kalender bleibt unverändert. Übernommene Termine sind zuerst privat und werden einzeln für die Familie freigegeben. Im Profilmenü unter „Kalenderimport“."
+      text: "Termine aus dem Apple Kalender auswählen und in TidTil übernehmen, auch in der kostenlosen Version. Kalender und einen Zeitraum ab heute wählen: den nächsten Monat oder die nächsten 3, 6 oder 12 Monate. Der Apple Kalender bleibt unverändert. Übernommene Termine sind zuerst privat. Mit TidTil Familie gibst du sie einzeln für die Familie frei. Eintägige Ganztagstermine werden nicht übernommen. Im Profilmenü unter „Kalenderimport“."
     - title: "Früh- oder Spätschicht auf einen Blick"
       text: "Für Schichtdienst: Ein kleines F oder S am Profilkreis zeigt, welche Woche ist. Es wechselt jede Woche von selbst, einzelne Wochen kannst du ändern. Die Einstellung bleibt nur auf deinem iPhone. Im Profilmenü unter „Arbeitswoche“."
     - title: "Feiertage für dein Bundesland"
-      text: "Gesetzliche Feiertage in Deutschland, bundesweit, für dein Bundesland oder ganz aus. Jeder in der Familie wählt selbst. Im Profilmenü unter „Feiertage“."
+      text: "Gesetzliche Feiertage in Deutschland: bundesweit oder – einmal eingestellt – für dein Bundesland, auf Wunsch auch aus. Jeder in der Familie wählt selbst. Im Profilmenü unter „Feiertage“."
     - title: "„Zeit für uns“ immer im Blick"
       text: "Euer Foto mit Herz steht neben dem Datum, darunter euer eigener Satz. Ein Tipp aufs Herz lädt zum Date ein. Teil von TidTil Familie."
     - title: "Date-Einladungen, flexibler"
@@ -92,6 +92,8 @@ soon:
       text: "iPhone quer drehen, und der Wochenplan von Montag bis Sonntag ist da."
     - title: "Ein neues, ruhiges Design"
       text: "Ein Kalenderblatt mit der Tageszahl, dein runder Profilkreis und eine aufgeräumte Leiste oben, hell wie dunkel."
+    - title: "Kleine Verbesserungen"
+      text: "Korrekturen beim Hochladen zu iCloud und viele kleine Verbesserungen."
 
 demo:
   title: "Tragt es gleich hier ein."
@@ -150,7 +152,7 @@ faq:
   - q: "Ich nutze gerade eine andere Kalender-App. Wie wechsle ich?"
     a: "Wenn deine Termine im Apple Kalender auf deinem iPhone stehen, holst du sie mit wenigen Tipps in TidTil: Profilmenü, „Kalenderimport“. Kalender und Zeitraum ab heute wählen (1, 3, 6 oder 12 Monate) und die Termine abhaken. Der Apple Kalender bleibt unverändert, alles kommt zuerst privat an. Der Import ist auch in der kostenlosen Version dabei."
   - q: "Was wird beim Import übernommen?"
-    a: "Titel, Beginn und Ende. Ort, Notizen, Teilnehmer und Erinnerungen kommen nicht mit. Wiederkehrende Termine kommen als einzelne Termine im gewählten Zeitraum an. Mehrtägige ganztägige Termine wie ein Urlaub werden übernommen, ganztägige Termine an einem einzelnen Tag noch nicht. Was es in TidTil schon gibt (gleicher Titel, gleicher Beginn), wird nicht doppelt übernommen, abgesagte Termine bleiben draußen. Pro Durchgang sind es bis zu 300 Termine. Der Import ist einmalig: Spätere Änderungen im Apple Kalender kommen nicht automatisch nach."
+    a: "Titel, Beginn und Ende. Ort, Notizen, Teilnehmer und Erinnerungen kommen nicht mit. Wiederkehrende Termine kommen als einzelne Termine im gewählten Zeitraum an. Mehrtägige ganztägige Termine wie ein Urlaub werden übernommen, ganztägige Termine an einem einzelnen Tag nicht. Was es in TidTil schon gibt (gleicher Titel, gleicher Beginn), wird nicht doppelt übernommen, abgesagte Termine bleiben draußen. Pro Durchgang sind es bis zu 300 Termine. Der Import ist einmalig: Spätere Änderungen im Apple Kalender kommen nicht automatisch nach."
   - q: "Sieht meine Familie meine Schicht?"
     a: "Nein. Das F oder S für Früh- oder Spätschicht bleibt nur auf deinem iPhone. Es geht weder an die Familie noch in iCloud."
   - q: "Brauche ich ein Konto?"
@@ -160,13 +162,13 @@ faq:
   - q: "Kann ich TidTil Familie kostenlos testen?"
     a: "Ja, 14 Tage gratis. Es ist eine einmalige Testphase ohne automatische Verlängerung."
   - q: "Was passiert ohne Abo?"
-    a: "TidTil bleibt auf deinem Gerät kostenlos. Ohne Familienabo kannst du nur keine Familienmitglieder einladen und synchronisieren."
+    a: "TidTil bleibt auf deinem Gerät kostenlos. Ohne Familienabo kannst du nur keine Familienmitglieder einladen und nicht mit ihnen synchronisieren."
   - q: "Wo liegen meine Daten?"
     a: "In eurer iCloud. TidTil betreibt keine eigenen Server für Kalenderdaten; nichts wird zu Werbezwecken ausgewertet."
   - q: "Können Kinder ohne iPhone dabei sein?"
     a: "Ja. Einmal mit Namen anlegen, dann ganz normal Termine zuordnen."
   - q: "Was bedeutet „privat“?"
-    a: "Private Termine erkennst du am kleinen Schloss. Sie sind nur für dich sichtbar und werden getrennt von den Familienterminen gespeichert. Du kannst einen privaten Termin jederzeit für die Familie freigeben."
+    a: "Private Termine erkennst du am kleinen Schloss. Sie sind nur für dich sichtbar und werden getrennt von den Familienterminen gespeichert. Mit TidTil Familie kannst du einen privaten Termin jederzeit für die Familie freigeben."
   - q: "Gibt es Erinnerungen?"
     a: "Ja, für jeden Termin einzeln. Optional zeigt der Tagesüberblick morgens kompakt, was ansteht."
 
