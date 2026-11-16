@@ -93,7 +93,7 @@
   "url": {{ .Permalink | jsonify | safeJS }},
   "installUrl": {{ partial "appstore-url.html" (dict "page" . "ct" "web-hero") | jsonify | safeJS }},
   "image": {{ $ogImage | jsonify | safeJS }},
-  "screenshot": {{ "img/feature-tagesueberblick.webp" | absURL | jsonify | safeJS }},
+  "screenshot": {{ printf "img/2.6/hero-tag-%s.webp" .Site.Language.Lang | absURL | jsonify | safeJS }},
   "offers": [
     {"@type":"Offer","name":{{ i18n "offer_name_personal" | jsonify | safeJS }},"price":"0","priceCurrency":"EUR"},
     {"@type":"Offer","name":{{ i18n "offer_name_family_monthly" | jsonify | safeJS }},"price":"1.99","priceCurrency":"EUR"},

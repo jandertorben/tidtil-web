@@ -3,8 +3,10 @@ title: "Family Calendar for Children Without a Phone"
 description: "Include children without their own iPhone in your family calendar: add them once by name and assign events – no device or account needed for the child."
 url: "/family-calendar-kids-without-phone/"
 layout: "landing"
-hero_image: "img/familien-sync-banner.webp"
-hero_alt: "Adding family members in TidTil and assigning events to them"
+hero_image: "img/2.6/seite-familie-en.webp"
+hero_width: 560
+hero_height: 420
+hero_alt: "The family page in TidTil with Anna and Ben, the shared calendar unlocked."
 hero_lead: "Assign events clearly – including to children who don't have an iPhone yet."
 faq:
   - q: "Can children without an iPhone be included?"

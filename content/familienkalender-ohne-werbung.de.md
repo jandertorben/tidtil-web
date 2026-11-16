@@ -1,12 +1,12 @@
 ---
 title: "Familienkalender ohne Werbung und ohne Konto"
-description: "Familienkalender fürs iPhone ohne Werbung, ohne eigenes Konto und ohne Tracking-Geschäftsmodell. Eure Termine bleiben in eurer eigenen iCloud."
+description: "Familienkalender fürs iPhone ohne Werbung, ohne eigenes Konto und ohne Werbe-Tracking. Eure Termine bleiben in eurer eigenen iCloud."
 url: "/familienkalender-ohne-werbung/"
 layout: "landing"
-hero_image: "img/tidtil-header-clean.webp"
-hero_width: 1672
-hero_height: 941
-hero_alt: "TidTil Familienkalender ohne Werbung auf dem iPhone"
+hero_image: "img/2.6/seite-ohne-werbung-privat-de.webp"
+hero_width: 560
+hero_height: 420
+hero_alt: "Privater Termin in TidTil, Zahnarzt, nur für dich sichtbar."
 hero_lead: "Keine Werbung, kein eigenes Konto, kein Geschäftsmodell mit euren Kalenderdaten."
 faq:
   - q: "Zeigt TidTil Werbung?"

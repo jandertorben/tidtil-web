@@ -27,7 +27,8 @@
     </div>
     {{- with .Params.hero_image }}
     <figure class="photo doc-photo">
-      <img src="{{ . | relURL }}" alt="{{ $.Params.hero_alt }}" width="{{ $.Params.hero_width | default 1536 }}" height="{{ $.Params.hero_height | default 1024 }}" loading="eager" fetchpriority="high">
+      {{- $src2 := replace . ".webp" "@2x.webp" -}}
+      <img src="{{ . | relURL }}"{{ if fileExists (printf "static/%s" $src2) }} srcset="{{ . | relURL }} 1x, {{ $src2 | relURL }} 2x"{{ end }} alt="{{ $.Params.hero_alt }}" width="{{ $.Params.hero_width | default 1536 }}" height="{{ $.Params.hero_height | default 1024 }}" loading="eager" fetchpriority="high">
     </figure>
     {{- end }}
   </header>

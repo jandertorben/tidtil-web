@@ -3,8 +3,10 @@ title: "Family Calendar for iPhone – Plan Together, Simply"
 description: "TidTil is a simple family calendar for iPhone: organise shared and private events, sync with family members and keep your day in view."
 url: "/family-calendar-iphone/"
 layout: "landing"
-hero_image: "img/familien-sync-banner.webp"
-hero_alt: "Inviting family members and syncing together in TidTil"
+hero_image: "img/2.6/seite-familie-en.webp"
+hero_width: 560
+hero_height: 420
+hero_alt: "Invite family in TidTil, with the shared calendar unlocked."
 hero_lead: "Organise shared events – without task lists, chats or calendar clutter."
 faq:
   - q: "Can I share events with my family?"

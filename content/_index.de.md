@@ -2,9 +2,12 @@
 title: "TidTil"
 h1: "Wissen, was heute ansteht. Und wieder Zeit für euch."
 kicker: "Der ruhige Familienkalender fürs iPhone"
-sub: "Gemeinsame und private Termine auf einen Blick – ohne Aufgabenlisten, Chats und Funktionsballast."
+sub: "Gemeinsame und private Termine auf einen Blick – ohne Aufgabenlisten, Chats und Funktionsballast. Deine Termine aus dem Apple Kalender holst du mit wenigen Tipps herüber."
 proof: "Kostenlos laden · Familie 14 Tage gratis · Kein Konto · Keine Werbung"
-hero_alt: "TidTil im Familienalltag"
+hero_alt: "TidTil Tagesansicht am Donnerstag, dem 3. Dezember, hell, mit Zeit für uns."
+hero_image: "img/2.6/hero-tag-de.webp"
+hero_width: 520
+hero_height: 650
 
 # „Euer Tag“ – Live-Tagesansicht. Zeiten in Minuten ab Mitternacht,
 # who = Index in live.who, family = für die Familie sichtbar (sonst privat).
@@ -38,47 +41,59 @@ features:
   text: "Kein Kalender für alles – ein Planer für eure Familie. Viele Familienplaner wollen alles abdecken. TidTil bleibt bei einer Frage: Was steht heute bei uns an?"
   rows:
     - title: "Was steht bei uns an?"
-      text: "Was heute ansteht, wann und für wen. Die Monatsansicht zeigt, was als Nächstes kommt."
-      image: "img/feature-tagesueberblick.webp"
-      alt: "Heute-Ansicht in TidTil"
+      text: "Was heute ansteht, wann und für wen. Die Monatsansicht zeigt, was als Nächstes kommt. Quer gedreht siehst du die ganze Woche."
+      image: "img/2.6/feature-woche-de.webp"
+      alt: "TidTil Wochenplan im Querformat, Montag bis Sonntag."
+      width: 760
+      height: 608
     - title: "Was? Wann? Für wen? Wer darf’s sehen?"
       text: "Mehr braucht ein Familientermin meistens nicht."
-      image: "img/feature-neuer-termin.webp"
-      alt: "Neuen Familientermin anlegen"
+      image: "img/2.6/feature-termin-de.webp"
+      alt: "Neuen Termin in TidTil anlegen, mit Uhrzeit und Sichtbarkeit für die Familie."
+      width: 760
+      height: 608
     - title: "Fühlt sich nach euch an"
       text: "Ruhig und klar – wählt eure Farbe, ohne Business-Kalender-Gefühl."
-      image: "img/feature-personalisierung.webp"
-      alt: "Farben in TidTil anpassen"
+      image: "img/2.6/feature-design-de.webp"
+      alt: "TidTil Tagesansicht im dunklen Design."
+      width: 740
+      height: 740
     - title: "Direkt loslegen"
-      text: "Kein Konto, kein Passwort, kein langes Onboarding. Hilfe gibt’s direkt in der App."
-      image: "img/feature-familie-einladen-de.webp"
-      alt: "Familie in TidTil einladen"
+      text: "Kein Konto, kein Passwort, kein langes Onboarding. Deine Termine aus dem Apple Kalender holst du mit wenigen Tipps herüber, auch ohne Abo."
+      image: "img/2.6/feature-import-de.webp"
+      alt: "Kalender importieren in TidTil, Termine aus dem Apple Kalender übernehmen."
+      width: 740
+      height: 740
 
 for_us:
   title: "Zeit für uns."
-  text: "Ladet euch gegenseitig zu einem Date ein – zusagen, absagen oder eine andere Zeit vorschlagen."
+  text: "Euer Foto mit Herz steht neben dem Datum, darunter euer eigener Satz. Ein Tipp aufs Herz, und ihr ladet euch zu einem Date ein – zusagen, absagen oder eine andere Zeit vorschlagen. Die eigene Einladung lässt sich verschieben oder zurückziehen, solange noch keine Antwort da ist."
   note: "Teil von TidTil Familie"
-  image: "img/feature-zeit-fuer-uns-de.webp"
-  alt: "Einladung zu einem Date in TidTil"
+  image: "img/2.6/feature-zeit-fuer-uns-de.webp"
+  alt: "Zeit für uns in TidTil: Einladung an Ben am 3. Dezember."
+  width: 480
+  height: 600
 
 soon:
-  title: "Kommt bald."
-  version: "TidTil 2.6"
+  title: "Neu in TidTil 2.6."
+  version: "Jetzt in 2.6"
   items:
     - title: "Kalenderimport"
-      text: "Termine aus dem Apple Kalender auswählen und in TidTil übernehmen. Dazu die Kalender und einen Zeitraum ab heute wählen, zum Beispiel die nächsten drei Monate. Der Apple Kalender bleibt unverändert. Übernommene Termine sind zuerst privat und werden einzeln für die Familie freigegeben. Im Profilmenü unter „Kalenderimport“."
+      text: "Termine aus dem Apple Kalender auswählen und in TidTil übernehmen, auch in der kostenlosen Version. Kalender und einen Zeitraum ab heute wählen: den nächsten Monat oder die nächsten 3, 6 oder 12 Monate. Der Apple Kalender bleibt unverändert. Übernommene Termine sind zuerst privat. Mit TidTil Familie gibst du sie einzeln für die Familie frei. Eintägige Ganztagstermine werden nicht übernommen. Im Profilmenü unter „Kalenderimport“."
     - title: "Früh- oder Spätschicht auf einen Blick"
-      text: "Für Schichtdienst: Ein kleines F oder S am Profilkreis zeigt, welche Woche ist. Es wechselt jede Woche von selbst, einzelne Wochen lassen sich ändern. Die Einstellung bleibt nur auf deinem iPhone."
+      text: "Für Schichtdienst: Ein kleines F oder S am Profilkreis zeigt, welche Woche ist. Es wechselt jede Woche von selbst, einzelne Wochen kannst du ändern. Die Einstellung bleibt nur auf deinem iPhone. Im Profilmenü unter „Arbeitswoche“."
     - title: "Feiertage für dein Bundesland"
-      text: "Gesetzliche Feiertage in Deutschland, bundesweit, für dein Bundesland oder ganz aus. Die Einstellung bleibt auf deinem iPhone."
+      text: "Gesetzliche Feiertage in Deutschland: bundesweit oder – einmal eingestellt – für dein Bundesland, auf Wunsch auch aus. Jeder in der Familie wählt selbst. Im Profilmenü unter „Feiertage“."
     - title: "„Zeit für uns“ immer im Blick"
-      text: "Euer Foto mit Herz rückt neben das Datum, darunter steht euer eigener Satz. Ein Tipp aufs Herz lädt zum Date ein. Teil von TidTil Familie."
+      text: "Euer Foto mit Herz steht neben dem Datum, darunter euer eigener Satz. Ein Tipp aufs Herz lädt zum Date ein. Teil von TidTil Familie."
     - title: "Date-Einladungen, flexibler"
-      text: "Ein Tipp auf die Mitteilung führt direkt zur Einladung. Die eigene Einladung lässt sich verschieben oder zurückziehen, solange noch keine Antwort da ist."
+      text: "Ein Tipp auf die Mitteilung führt direkt zur Einladung. Deine eigene Einladung kannst du verschieben oder zurückziehen, solange noch keine Antwort da ist."
     - title: "Die Woche im Querformat"
       text: "iPhone quer drehen, und der Wochenplan von Montag bis Sonntag ist da."
     - title: "Ein neues, ruhiges Design"
-      text: "Ein Kalenderblatt mit der Tageszahl, ein runder Profilkreis und eine aufgeräumte Leiste oben, hell wie dunkel."
+      text: "Ein Kalenderblatt mit der Tageszahl, dein runder Profilkreis und eine aufgeräumte Leiste oben, hell wie dunkel."
+    - title: "Korrekturen und Verbesserungen"
+      text: "Korrekturen beim Hochladen zu iCloud und viele kleine Verbesserungen."
 
 demo:
   title: "Tragt es gleich hier ein."
@@ -104,7 +119,7 @@ stance:
 price:
   title: "Persönlich kostenlos. Gemeinsam, wenn ihr es braucht."
   personal_title: "TidTil Persönlich"
-  personal_text: "Eigene Termine auf deinem Gerät. Dauerhaft."
+  personal_text: "Eigene Termine auf deinem Gerät, auch aus dem Apple Kalender übernommen. Dauerhaft."
   family_title: "TidTil Familie"
   trial: "14 Tage gratis testen"
   month: "Monat"
@@ -127,11 +142,19 @@ privacy:
     - title: "Kein Konto"
       text: "Kein TidTil-Benutzerkonto, kein zusätzliches Passwort."
     - title: "Keine Werbung, kein Werbe-Tracking"
-      text: "Abo-Statistik nur mit deiner Zustimmung – standardmäßig aus."
+      text: "Keine Werbe-SDKs, keine fremden Analysedienste. Abo-Statistik nur mit deiner Zustimmung – standardmäßig aus."
     - title: "Eure iCloud"
       text: "Synchronisierung über Apples iCloud und CloudKit – keine eigenen Server."
+    - title: "Privat bleibt privat"
+      text: "Private und aus dem Apple Kalender übernommene Termine siehst nur du, bis du sie freigibst. Feiertage und Arbeitswoche bleiben auf deinem iPhone."
 
 faq:
+  - q: "Ich nutze gerade eine andere Kalender-App. Wie wechsle ich?"
+    a: "Wenn deine Termine im Apple Kalender auf deinem iPhone stehen, holst du sie mit wenigen Tipps in TidTil: Profilmenü, „Kalenderimport“. Kalender und Zeitraum ab heute wählen (1, 3, 6 oder 12 Monate) und die Termine abhaken. Der Apple Kalender bleibt unverändert, alles kommt zuerst privat an. Der Import ist auch in der kostenlosen Version dabei."
+  - q: "Was wird beim Import übernommen?"
+    a: "Titel, Beginn und Ende. Ort, Notizen, Teilnehmer und Erinnerungen kommen nicht mit. Wiederkehrende Termine kommen als einzelne Termine im gewählten Zeitraum an. Mehrtägige ganztägige Termine wie ein Urlaub werden übernommen, ganztägige Termine an einem einzelnen Tag nicht. Was es in TidTil schon gibt (gleicher Titel, gleicher Beginn), wird nicht doppelt übernommen, abgesagte Termine bleiben draußen. Pro Durchgang sind es bis zu 300 Termine. Der Import ist einmalig: Spätere Änderungen im Apple Kalender kommen nicht automatisch nach."
+  - q: "Sieht meine Familie meine Schicht?"
+    a: "Nein. Das F oder S für Früh- oder Spätschicht bleibt nur auf deinem iPhone. Es geht weder an die Familie noch in iCloud."
   - q: "Brauche ich ein Konto?"
     a: "Nein. Es gibt kein eigenes Benutzerkonto und kein zusätzliches Passwort. TidTil nutzt Apples iCloud- und CloudKit-Infrastruktur."
   - q: "Braucht jedes Familienmitglied ein Abo?"
@@ -139,16 +162,20 @@ faq:
   - q: "Kann ich TidTil Familie kostenlos testen?"
     a: "Ja, 14 Tage gratis. Es ist eine einmalige Testphase ohne automatische Verlängerung."
   - q: "Was passiert ohne Abo?"
-    a: "TidTil bleibt auf deinem Gerät kostenlos. Ohne Familienabo kannst du nur keine Familienmitglieder einladen und synchronisieren."
+    a: "TidTil bleibt auf deinem Gerät kostenlos. Ohne Familienabo kannst du nur keine Familienmitglieder einladen und keine Termine mit ihnen teilen."
   - q: "Wo liegen meine Daten?"
     a: "In eurer iCloud. TidTil betreibt keine eigenen Server für Kalenderdaten; nichts wird zu Werbezwecken ausgewertet."
   - q: "Können Kinder ohne iPhone dabei sein?"
     a: "Ja. Einmal mit Namen anlegen, dann ganz normal Termine zuordnen."
   - q: "Was bedeutet „privat“?"
-    a: "Private Termine sind nur für dich sichtbar und werden getrennt von den Familienterminen gespeichert."
+    a: "Private Termine erkennst du am kleinen Schloss. Sie sind nur für dich sichtbar und werden getrennt von den Familienterminen gespeichert. Mit TidTil Familie kannst du einen privaten Termin jederzeit für die Familie freigeben."
   - q: "Gibt es Erinnerungen?"
     a: "Ja, für jeden Termin einzeln. Optional zeigt der Tagesüberblick morgens kompakt, was ansteht."
 
 close:
   title: "Wissen, was ansteht. Dann das Handy weglegen."
+  image: "img/2.6/schluss-woche-de.webp"
+  image_alt: "TidTil Wochenplan im Querformat, die Woche von Montag bis Sonntag."
+  image_width: 1440
+  image_height: 630
 ---

@@ -2,9 +2,12 @@
 title: "TidTil"
 h1: "Know what’s on today. And make time for each other again."
 kicker: "The family calendar for iPhone"
-sub: "Shared and private events at a glance – without task lists, chats or feature overload."
+sub: "Shared and private events at a glance – without task lists, chats or feature overload. Bring your events over from Apple Calendar in just a few taps."
 proof: "Free to download · Family free for 14 days · No account · No ads"
-hero_alt: "TidTil in everyday family life"
+hero_alt: "TidTil day view on Thursday 3 December, light, with Time for us."
+hero_image: "img/2.6/hero-tag-en.webp"
+hero_width: 520
+hero_height: 650
 
 live:
   title: "Your day."
@@ -36,47 +39,58 @@ features:
   text: "Not a calendar for everything – a planner for your family. Many family planners try to cover it all. TidTil sticks to one question: what’s on for us today?"
   rows:
     - title: "What’s happening in our day?"
-      text: "Today’s events, their times and who they’re for. The month view shows what’s next."
+      text: "Today’s events, their times and who they’re for. The month view shows what’s next. Turn your iPhone sideways to see the whole week."
       image: "img/feature-tagesueberblick.webp"
       alt: "Today view in TidTil"
+      width: 1003
+      height: 1568
+      position: "50% 40%"
     - title: "What? When? Who? Who can see it?"
       text: "That’s usually all a family event needs."
-      image: "img/feature-neuer-termin.webp"
-      alt: "Creating a family event"
+      image: "img/2.6/feature-termin-en.webp"
+      alt: "Creating a new event in TidTil, with time and visibility for the family."
+      width: 760
+      height: 608
     - title: "Feels like yours"
       text: "Calm and clear – pick your colour, without the business-calendar feel."
-      image: "img/feature-personalisierung.webp"
-      alt: "Customising colours in TidTil"
+      image: "img/2.6/feature-design-en.webp"
+      alt: "TidTil day view in the dark design."
+      width: 740
+      height: 740
     - title: "Start right away"
-      text: "No account, no password, no lengthy onboarding. Help lives right in the app."
-      image: "img/feature-familie-einladen-en.webp"
-      alt: "Invite your family to TidTil"
+      text: "No account, no password, no lengthy onboarding. Bring your events over from Apple Calendar in a few taps, even without a subscription."
+      image: "img/2.6/feature-import-en.webp"
+      alt: "Importing a calendar in TidTil, bringing events over from Apple Calendar."
+      width: 740
+      height: 740
 
 for_us:
   title: "Time for us."
-  text: "Invite each other to a date – accept, decline or suggest another time."
+  text: "Your photo with a heart sits next to the date, with your own line of text below. Tap the heart to invite each other to a date – accept, decline or suggest another time. You can move or withdraw your own invitation as long as there’s no answer yet."
   note: "Part of TidTil Family"
-  image: "img/feature-zeit-fuer-uns-en.webp"
-  alt: "Invitation to a date in TidTil"
+  image: "img/2.6/feature-zeit-fuer-uns-en.webp"
+  alt: "Time for us in TidTil: an invitation to Ben on 3 December."
+  width: 480
+  height: 600
 
 soon:
-  title: "Coming soon."
-  version: "TidTil 2.6"
+  title: "New in TidTil 2.6."
+  version: "New in 2.6"
   items:
     - title: "Calendar import"
-      text: "Choose events from Apple Calendar and bring them into TidTil. Pick the calendars and a period starting today, for example the next three months. Apple Calendar stays unchanged. Imported events are private at first and can then be shared with the family one by one. In the profile menu, under “Calendar import”."
+      text: "Choose events from Apple Calendar and bring them into TidTil, in the free version too. Pick the calendars and a period starting today: the next month, or the next 3, 6 or 12 months. Apple Calendar stays unchanged. Imported events start out private. With TidTil Family, you can share them with your family one by one. Single-day all-day events aren’t imported. In the profile menu, under “Calendar import”."
     - title: "Early or late shift at a glance"
-      text: "For shift work: a small E or L on your profile circle shows which week it is. It switches every week on its own, and single weeks can be changed. The setting stays on your iPhone only."
-    - title: "Public holidays for your state"
-      text: "Public holidays in Germany, nationwide, for your federal state or switched off. The setting stays on your iPhone."
+      text: "For shift work: a small E or L on your profile circle shows which week it is. It switches every week on its own, and you can change single weeks. The setting stays on your iPhone only. In the profile menu, under “Work week”."
     - title: "“Time for us”, always in view"
-      text: "Your photo with a heart moves next to the date, with your own line of text below. Tap the heart to invite your partner on a date. Part of TidTil Family."
+      text: "Your photo with a heart sits next to the date, with your own line of text below. Tap the heart to invite your partner on a date. Part of TidTil Family."
     - title: "More flexible date invitations"
       text: "Tapping the notification takes you straight to the invitation. You can move or withdraw your own invitation as long as there is no answer yet."
     - title: "Your week in landscape"
       text: "Turn your iPhone sideways to see the week from Monday to Sunday."
     - title: "A new, calm design"
-      text: "A calendar page showing the date, a round profile circle and a tidy bar at the top, in light and dark."
+      text: "A calendar page showing the date, your round profile circle and a tidy bar at the top, in light and dark."
+    - title: "Fixes and improvements"
+      text: "Fixes for uploading to iCloud, plus many small improvements."
 
 demo:
   title: "Try it right here."
@@ -102,7 +116,7 @@ stance:
 price:
   title: "Personal is free. Share when you need it."
   personal_title: "TidTil Personal"
-  personal_text: "Your own events on your device. For good."
+  personal_text: "Your own events on your device, including those brought over from Apple Calendar. For good."
   family_title: "TidTil Family"
   trial: "Try free for 14 days"
   month: "Month"
@@ -125,11 +139,19 @@ privacy:
     - title: "No account"
       text: "No TidTil user account, no extra password."
     - title: "No ads, no ad tracking"
-      text: "Subscription statistics only with your consent – off by default."
+      text: "No ad SDKs, no third-party analytics. Subscription statistics only with your consent – off by default."
     - title: "Your iCloud"
       text: "Syncing via Apple’s iCloud and CloudKit – no servers of our own."
+    - title: "Private stays private"
+      text: "Private events, and those brought over from Apple Calendar, are visible only to you until you share them. Work week stays on your iPhone."
 
 faq:
+  - q: "I use another calendar app right now. How do I switch?"
+    a: "If your events are in Apple Calendar on your iPhone, bring them into TidTil in a few taps: profile menu, “Calendar import”. Pick the calendars and a period starting today (1, 3, 6 or 12 months) and tick the events. Apple Calendar stays unchanged, and everything arrives private first. The import is included in the free version."
+  - q: "What does the import bring over?"
+    a: "Title, start and end. Location, notes, attendees and alerts don’t come along. Repeating events arrive as single events within the period. Multi-day all-day events such as a holiday trip are imported, but all-day events on a single day are not. Events that already exist in TidTil (same title, same start) aren’t imported twice, and cancelled events stay out. Up to 300 events per run. The import is one-off: later changes in Apple Calendar don’t follow automatically."
+  - q: "Can my family see my shift?"
+    a: "No. The E or L for early or late shift stays on your iPhone only. It isn’t shared with your family or stored in iCloud."
   - q: "Do I need an account?"
     a: "No. There is no separate user account and no extra password. TidTil uses Apple’s iCloud and CloudKit infrastructure."
   - q: "Does every family member need a subscription?"
@@ -143,10 +165,11 @@ faq:
   - q: "Can children without an iPhone be included?"
     a: "Yes. Add them once by name and assign events like anyone else."
   - q: "What does “private” mean?"
-    a: "Private events are visible only to you and stored separately from family events."
+    a: "Private events have a small lock. They are visible only to you and stored separately from family events. With TidTil Family, you can share a private event with your family at any time."
   - q: "Are there reminders?"
     a: "Yes, for each event individually. Optionally, the daily overview shows what’s on each morning."
 
 close:
   title: "Know what’s ahead. Then put the phone away."
+  image_alt: "Mother and child at the kitchen table, TidTil with a light day view on the iPhone."
 ---

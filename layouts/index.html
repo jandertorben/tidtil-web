@@ -32,7 +32,9 @@
     </div>
   </div>
   <figure class="photo hero-photo">
-    <img src="{{ "img/hero-familienalltag.webp" | relURL }}" alt="{{ $p.hero_alt }}" width="1024" height="1536" loading="eager" fetchpriority="high">
+    {{- $hero := $p.hero_image | default "img/hero-familienalltag.webp" -}}
+    {{- $hero2 := replace $hero ".webp" "@2x.webp" -}}
+    <img src="{{ $hero | relURL }}"{{ if fileExists (printf "static/%s" $hero2) }} srcset="{{ $hero | relURL }} 1x, {{ $hero2 | relURL }} 2x"{{ end }} alt="{{ $p.hero_alt }}" width="{{ $p.hero_width | default 1024 }}" height="{{ $p.hero_height | default 1536 }}" loading="eager" fetchpriority="high">
   </figure>
 </section>
 
@@ -73,7 +75,7 @@
   <div class="feature-stack">
     {{- with index $r 0 }}
     <div class="feature">
-      <figure class="photo feature-photo"><img src="{{ .image | relURL }}" alt="{{ .alt }}" width="1003" height="1568" loading="lazy" decoding="async" style="object-position:50% 40%"></figure>
+      <figure class="photo feature-photo"><img src="{{ .image | relURL }}"{{ if fileExists (printf "static/%s" (replace .image ".webp" "@2x.webp")) }} srcset="{{ .image | relURL }} 1x, {{ replace .image ".webp" "@2x.webp" | relURL }} 2x"{{ end }} alt="{{ .alt }}" width="{{ .width | default 1003 }}" height="{{ .height | default 1568 }}" loading="lazy" decoding="async"{{ with .position }} style="object-position:{{ . | safeCSS }}"{{ end }}></figure>
       <div class="feature-text">
         <h3 class="h-feature">{{ .title }}</h3>
         <p class="copy">{{ .text }}</p>
@@ -86,13 +88,13 @@
         <h3 class="h-feature">{{ .title }}</h3>
         <p class="copy">{{ .text }}</p>
       </div>
-      <figure class="photo feature-photo"><img src="{{ .image | relURL }}" alt="{{ .alt }}" width="1122" height="1402" loading="lazy" decoding="async"></figure>
+      <figure class="photo feature-photo"><img src="{{ .image | relURL }}"{{ if fileExists (printf "static/%s" (replace .image ".webp" "@2x.webp")) }} srcset="{{ .image | relURL }} 1x, {{ replace .image ".webp" "@2x.webp" | relURL }} 2x"{{ end }} alt="{{ .alt }}" width="{{ .width | default 1122 }}" height="{{ .height | default 1402 }}" loading="lazy" decoding="async"></figure>
     </div>
     {{- end }}
     <div class="feature-pair">
       {{- with index $r 2 }}
       <div class="feature-card">
-        <figure class="photo"><img src="{{ .image | relURL }}" alt="{{ .alt }}" width="1122" height="1402" loading="lazy" decoding="async"></figure>
+        <figure class="photo"><img src="{{ .image | relURL }}"{{ if fileExists (printf "static/%s" (replace .image ".webp" "@2x.webp")) }} srcset="{{ .image | relURL }} 1x, {{ replace .image ".webp" "@2x.webp" | relURL }} 2x"{{ end }} alt="{{ .alt }}" width="{{ .width | default 1122 }}" height="{{ .height | default 1402 }}" loading="lazy" decoding="async"></figure>
         <h3 class="h-feature-sm">{{ .title }}</h3>
         <p class="copy">{{ .text }}</p>
       </div>
@@ -101,7 +103,7 @@
       {{- $src := .image -}}
       {{- $src2 := replace $src ".webp" "@2x.webp" -}}
       <div class="feature-card">
-        <figure class="photo"><img src="{{ $src | relURL }}" srcset="{{ $src | relURL }} 1x, {{ $src2 | relURL }} 2x" alt="{{ .alt }}" width="740" height="740" loading="lazy" decoding="async"></figure>
+        <figure class="photo"><img src="{{ $src | relURL }}" srcset="{{ $src | relURL }} 1x, {{ $src2 | relURL }} 2x" alt="{{ .alt }}" width="{{ .width | default 740 }}" height="{{ .height | default 740 }}" loading="lazy" decoding="async"></figure>
         <h3 class="h-feature-sm">{{ .title }}</h3>
         <p class="copy">{{ .text }}</p>
       </div>
@@ -117,7 +119,7 @@
     {{- $src := .image -}}
     {{- $src2 := replace $src ".webp" "@2x.webp" -}}
     <figure class="photo feature-photo-phone">
-      <img src="{{ $src | relURL }}" srcset="{{ $src | relURL }} 1x, {{ $src2 | relURL }} 2x" alt="{{ .alt }}" width="740" height="925" loading="lazy" decoding="async">
+      <img src="{{ $src | relURL }}" srcset="{{ $src | relURL }} 1x, {{ $src2 | relURL }} 2x" alt="{{ .alt }}" width="{{ .width | default 740 }}" height="{{ .height | default 925 }}" loading="lazy" decoding="async">
     </figure>
     <div class="feature-text">
       <h2 id="zeit-title" class="h-section">{{ .title }}</h2>
@@ -235,7 +237,9 @@
 
 <section class="closing">
   <figure class="photo closing-photo">
-    <img src="{{ "img/tidtil-header-clean.webp" | relURL }}" alt="{{ $p.hero_alt }}" width="1672" height="941" loading="lazy" decoding="async">
+    {{- $close := $p.close.image | default "img/tidtil-header-clean.webp" -}}
+    {{- $close2 := replace $close ".webp" "@2x.webp" -}}
+    <img src="{{ $close | relURL }}"{{ if fileExists (printf "static/%s" $close2) }} srcset="{{ $close | relURL }} 1x, {{ $close2 | relURL }} 2x"{{ end }} alt="{{ $p.close.image_alt | default $p.hero_alt }}" width="{{ $p.close.image_width | default 1672 }}" height="{{ $p.close.image_height | default 941 }}" loading="lazy" decoding="async">
   </figure>
   <div class="wrap closing-inner">
     <div class="closing-copy">
