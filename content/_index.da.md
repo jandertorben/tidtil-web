@@ -87,6 +87,8 @@ soon:
       text: "Et tryk på notifikationen fører direkte til invitationen. Din egen invitation kan du flytte eller trække tilbage, så længe der ikke er kommet et svar."
     - title: "Ugen på tværs"
       text: "Vend din iPhone, og ugeplanen fra mandag til søndag er der."
+    - title: "Foldet ud på tværs på iPhone Duo"
+      text: "Foldet ud på tværs: kalenderen med måneden til venstre og til højre din dag eller den aftale, du trykker på. Foldet sammen fungerer alt som vanligt."
     - title: "Et nyt, roligt design"
       text: "Et kalenderblad med dagens dato, din runde profilcirkel og en ryddelig bjælke øverst, lyst og mørkt."
     - title: "Rettelser og forbedringer"

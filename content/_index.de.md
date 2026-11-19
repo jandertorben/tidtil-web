@@ -90,6 +90,8 @@ soon:
       text: "Ein Tipp auf die Mitteilung führt direkt zur Einladung. Deine eigene Einladung kannst du verschieben oder zurückziehen, solange noch keine Antwort da ist."
     - title: "Die Woche im Querformat"
       text: "iPhone quer drehen, und der Wochenplan von Montag bis Sonntag ist da."
+    - title: "Quer aufgeklappt auf dem iPhone Duo"
+      text: "Quer aufgeklappt links der Kalender mit dem Monat, rechts dein Tagesplan oder der Termin, den du antippst. Zugeklappt ist alles wie gewohnt."
     - title: "Ein neues, ruhiges Design"
       text: "Ein Kalenderblatt mit der Tageszahl, dein runder Profilkreis und eine aufgeräumte Leiste oben, hell wie dunkel."
     - title: "Korrekturen und Verbesserungen"
