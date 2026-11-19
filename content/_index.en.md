@@ -87,6 +87,8 @@ soon:
       text: "Tapping the notification takes you straight to the invitation. You can move or withdraw your own invitation as long as there is no answer yet."
     - title: "Your week in landscape"
       text: "Turn your iPhone sideways to see the week from Monday to Sunday."
+    - title: "Opened in landscape on iPhone Duo"
+      text: "Opened in landscape: the calendar with the month on the left, and on the right your day or the event you tap. Closed, everything works as usual."
     - title: "A new, calm design"
       text: "A calendar page showing the date, your round profile circle and a tidy bar at the top, in light and dark."
     - title: "Fixes and improvements"
