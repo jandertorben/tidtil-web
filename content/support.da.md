@@ -21,10 +21,10 @@ Måske hjælper et af disse råd allerede:
 - **Aftaler vises ikke hos familien?** Alle involverede skal have TidTil
   installeret på deres iPhone i forvejen og have accepteret invitationen.
   Invitationslinket kan ikke selv installere appen – installer først, tryk så på linket.
-- **Intet synkroniseres?** Tjek, at en tilmeldt iCloud-konto er aktiv på alle
+- **Intet synkroniseres?** Tjek, at der er logget ind med en iCloud-konto, som er aktiv på alle
   enheder, og at iCloud er tilladt for TidTil.
 - **Påmindelser kommer ikke?** Tillad TidTil at sende notifikationer i iPhone-
-  indstillingerne under "Notifikationer".
+  indstillingerne under "Meddelelser".
 
 ## Privatliv
 
