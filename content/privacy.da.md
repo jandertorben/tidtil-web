@@ -242,7 +242,7 @@ Vi opbevarer kun meldinger, så længe det er nødvendigt for at behandle dem. P
 
 ### 2.1 Hosting via GitHub Pages
 
-Denne hjemmeside hostes via **GitHub Pages**. Når en GitHub Pages-side besøges, kan GitHub blandt andet logge den besøgendes IP-adresse og gemme den til sikkerhedsformål. Andre teknisk nødvendige forbindelses- og requestdata kan også blive behandlet.
+Denne hjemmeside hostes via **GitHub Pages**. Når en GitHub Pages-side besøges, kan GitHub blandt andet logge den besøgendes IP-adresse og gemme den til sikkerhedsformål. Andre teknisk nødvendige forbindelses- og request-data kan også blive behandlet.
 
 Behandlingen sker for at levere hjemmesiden sikkert, stabilt og teknisk pålideligt på grundlag af vores legitime interesse, jf. GDPR artikel 6, stk. 1, litra f.
 
