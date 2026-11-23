@@ -25,6 +25,10 @@
       <a href="{{ (.Site.GetPage "familienkalender-iphone").RelPermalink }}">{{ i18n "nav_family_calendar" }}</a>
       <a href="{{ (.Site.GetPage "familienkalender-ohne-werbung").RelPermalink }}">{{ i18n "nav_no_ads" }}</a>
       <a href="{{ (.Site.GetPage "familienkalender-kinder-ohne-handy").RelPermalink }}">{{ i18n "nav_kids" }}</a>
+      {{- /* Übersicht der Alternativ-Seiten. Fehlt die Übersetzung, kein Link – sonst bricht die Sprache. */}}
+      {{- with .Site.GetPage "alternativen" }}
+      <a href="{{ .RelPermalink }}">{{ i18n "nav_alternatives" }}</a>
+      {{- end }}
     </nav>
     <nav class="footer-nav" aria-label="{{ i18n "nav_label" }}">
       <a href="{{ (.Site.GetPage "privacy").RelPermalink }}">{{ i18n "nav_privacy" }}</a>

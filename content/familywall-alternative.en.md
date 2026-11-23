@@ -24,6 +24,8 @@ faq:
     a: "No. TidTil does not import a calendar from another family app. Events already in Apple Calendar on your iPhone can be brought over once: title, start and end. Apple Calendar stays unchanged."
 ---
 
+Overview: [TidTil as an alternative](/alternatives/).
+
 ## A FamilyWall alternative without ads
 
 If you are looking for a FamilyWall alternative, ads are often the reason, and what you want is to know what the family has on. TidTil is a family calendar for iPhone that stays with events.

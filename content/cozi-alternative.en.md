@@ -24,6 +24,8 @@ faq:
     a: "No. TidTil does not import a calendar from another family app. Events already in Apple Calendar on your iPhone can be brought over once: title, start and end. Apple Calendar stays unchanged."
 ---
 
+Overview: [TidTil as an alternative](/alternatives/).
+
 ## A Cozi alternative without ads
 
 If you are looking for a Cozi alternative without ads, you want to see the family day and then put the phone down – without ads in between. TidTil is a family calendar for iPhone that stays with events.
