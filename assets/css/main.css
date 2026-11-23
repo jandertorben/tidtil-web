@@ -360,6 +360,14 @@ html:not(.js) .js-only{display:none!important}
 .prose .sources-details li{font-size:14px;line-height:1.5;color:var(--ink-2)}
 .sources-details a{word-break:break-all}
 
+/* Übersicht der Alternativ-Seiten: flache Einträge, wie der Rest ohne Radius und Schatten. */
+.hub-list{display:flex;flex-direction:column;margin:8px 0 28px;border-top:2px solid var(--ink)}
+.hub-card{display:block;padding:20px 0;border-bottom:1px solid var(--rule);text-decoration:none;color:var(--ink)}
+.hub-card:hover{color:var(--sand-text)}
+.hub-card-title{display:block;font-family:var(--serif);font-weight:560;font-size:clamp(24px,2.2vw,32px);letter-spacing:-.015em;line-height:1.15;margin-bottom:6px}
+.hub-card-text{display:block;font-size:17px;line-height:1.55;color:var(--ink-2)}
+.hub-card:hover .hub-card-text{color:inherit}
+
 /* Weiterführende Seiten */
 .related{border-top:1px solid var(--ink);padding:28px 0 clamp(56px,7vw,96px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:12px 40px}
 .related a{font-size:clamp(20px,1.8vw,24px);font-weight:600;letter-spacing:-.015em;line-height:1.2;text-underline-offset:5px;text-decoration-thickness:1px}
